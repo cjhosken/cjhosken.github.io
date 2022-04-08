@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Christopher Hosken</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/load.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="showreel-container">
+        <button id="showreel-button-close" onclick="stopShowreel()">
+            X
+        </button>
+        <video id="showreel-video" controls>
+            <source src="videos/showreel.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="cover">
+        <div id="cover-video-container">
+            <video autoplay muted loop id="cover-video">
+                <source src="videos/cover.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="overlay">
+            <h1> CHRISTOPHER </h1>
+            <h1> HOSKEN </h1>
+            <h2> Director </h2>
+            <h2> 3D Generalist </h2>
+            <button id="showreel-button-open" onclick="playShowreel()"> Showreel </button>
+        </div>
+    </div>
+    <div id="about" class="section-container">
+        <h1> GET TO KNOW ME </h1>
+        <img src="images/profile.png" id="profile-image">
+        <p> Hey! I'm Christopher Hosken and I'm a 17 year old Director and 3D Generalist.</p>
+    </div>
+
+    <div id="projects" class="section-container">
+        <h1> PROJECTS </h1>
+        <div id="slider">
+            <script>
+                $.getJSON("scripts/projects.json", function (data) {
+                    var items = [];
+                    $.each(data, function (key, val) {
+                        items.push(
+                            "<a href='" + val.link + "'> <div class='project-panel'>"
+                            + "<img src='" + "images/projects/" + val.folder + "/cover.jpg'>"
+
+                            + "</div>" + "</a>"
+                        );
+                    });
+
+                    document.getElementById("slider").innerHTML += items.join("");
+                });
+            </script>
+        </div>
+        <a href="pages/gallery.html" id="gallery-button"> SEE MORE </a>
+    </div>
+
+    <div id="experience" class="section-container">
+        <div id="history">
+            <h1> EXPERIENCE </h1>
+            <div id="jobs">
+                <script>
+                    $.getJSON("scripts/history.json", function (data) {
+                        var items = [];
+                        $.each(data, function (key, val) {
+                            html = "<div class='experience-panel'>";
+                            if (val.type == "school") {
+                                html += "<i class='fa fa-solid fa-graduation-cap'> </i>"
+                            }
+                            items.push(
+                                html + "<div>"
+                                + "<h1>" + val.name + "</h1>"
+                                + "<h2>" + val.year + "</h2>"
+                                + "<p>" + val.desc + "</p>"
+                                + "</div> </div>"
+                            );
+                        });
+
+                        document.getElementById("jobs").innerHTML += items.join("");
+                    });
+                </script>
+            </div>
+
+        </div>
+        <div id="software">
+            <h1> Software </h1>
+            <div id="softwares">
+                <script>
+                    $.getJSON("scripts/softwares.json", function (data) {
+                        var items = [];
+                        $.each(data, function (key, val) {
+                            items.push(
+                                "<a href='" + val.link + "'> <div class='software-panel'>" 
+                                    + "<img src='" + "images/softwares/" + val.logo + "'/>"
+                                    
+                                    
+                                    + "</div>" + "</a>"
+                            );
+                        });
+
+                        document.getElementById("softwares").innerHTML += items.join("");
+                    });
+                </script>
+            </div>
+        </div>
+        <div id="skills">
+            <div id="3d">
+
+            </div>
+            <div id="animation">
+
+            </div>
+            <div id="vfx">
+
+            </div>
+            <div id="managemennt">
+
+            </div>
+            <div id="creative">
+
+            </div>
+            <div id="technical">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section-container">
+        <div id="email-container">
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact.php">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            </div>
+        </div>
+        <div id="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60433.37473051721!2d98.92145778157561!3d18.79432389151791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7e90bb6f5d%3A0x98d46270a59b4367!2sChiang%20Mai%2C%20Mueang%20Chiang%20Mai%20District%2C%20Chiang%20Mai!5e0!3m2!1sen!2sth!4v1649392038012!5m2!1sen!2sth" 
+            style="border:0;" 
+            id="map"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p> Email, Instagram, Discord </p>
+        <p> Setup a mailchimp kind of service (oh boy) </p>
+        <p> have my location in google maps? </p>
+    </div>
+
+    <footer>
+        logo, linkedin, twitter, artstation, facebook, instagram (do icons)
+    </footer>
+</body>
+
+</html>

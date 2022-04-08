@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Lamp Attack!",
+        "year": 2021,
+        "folder": "lampattack",
+        "syn": "When Pixar meets War Of The Worlds.",
+        "roles": [
+            "director",
+            "animator"
+        ],
+        "link": "https://www.youtube.com/watch?v=w5oKCQUjC4A",
+        "page": "lamp_attack.html"
+    },
+    {
+        "name": "Sparky",
+        "year": 2020,
+        "folder": "sparky",
+        "syn": "A robot wakes up one day to help save the planet.",
+        "roles": [
+            "producer",
+            "animator"
+        ],
+        "link": "https://www.youtube.com/watch?v=7oVpCkehnio",
+        "page": "sparky.html"
+    }
+]

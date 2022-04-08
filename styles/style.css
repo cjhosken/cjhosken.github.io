@@ -1,0 +1,195 @@
+html,
+body {
+    overflow-x: hidden;
+    min-height: -webkit-fill-available;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+
+#showreel-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(25px);
+    z-index: 1;
+    display: none;
+}
+
+#showreel-video {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    margin: 0 auto;
+}
+
+#cover {
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+#cover-video {
+    top: 0;
+    max-height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+}
+
+video::-webkit-media-controls-panel {
+    background-image: none !important;
+}
+
+#overlay {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica';
+}
+
+#overlay h1,
+h2 {
+    text-align: left;
+    margin-left: 25px;
+}
+
+#overlay h1 {
+    font-size: 50px;
+}
+
+#overlay h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#showreel-button-open {
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-weight: 200;
+    width: 100px;
+    margin-left: 25px;
+    border: solid transparent 0px;
+    border-radius: 2px;
+}
+
+#showreel-button-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.section-container {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.section-container h1 {
+    font-family: 'Helvetica';
+}
+
+#profile-image {
+    margin: 0 auto;
+    width: 250px;
+    border: solid white 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#project {
+    text-align: center;
+}
+
+#projects a {
+    text-decoration: none;
+}
+
+.project-panel {
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.project-panel img {
+    width: 290px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#gallery-button {
+    padding: 10px;
+    color: black;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+
+.experience-panel {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.experience-panel i {
+    font-size: 25px;
+}
+
+.experience-panel i, .experience-panel div {
+    margin: 10px;
+}
+
+.experience-panel h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.experience-panel h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.experience-panel p {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+#software {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#softwares a {
+    text-decoration: none;
+}
+
+.software-panel {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+}
+
+.software-panel img {
+    margin: 25px auto;
+    height: 100px;
+    filter: saturate(100%) brightness(100%);
+}
