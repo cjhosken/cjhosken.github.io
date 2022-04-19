@@ -170,18 +170,32 @@ nav div {
 }
 
 .caption {
+    background-color: transparent;
     margin: 0 auto;
     color: white;
 }
 
 .caption h1 {
-    font-size: 1em;
+    text-align: center;
+    font-size: 500%;
     font-weight: 800;
 }
 
 .caption h2 {
     font-size: 1.25em;
     font-weight: 400;
+}
+
+@media (max-width: 899px) {
+    .caption h1 {
+        font-size: 200%;
+        font-weight: 800;
+    }
+    
+    .caption h2 {
+        font-size: 1.25em;
+        font-weight: 400;
+    }
 }
 
 #about {
