@@ -70,6 +70,82 @@ nav div {
     border-left: solid rgba(255, 255, 255, 0.1) 2px;
 }
 
+.dropdown {
+    margin-right: 25px;
+    color: white;
+    display: none;
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+@media (max-width: 899px) {
+    .nav-social-container {
+        display: none;
+    }
+
+    .nav-button-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: 75px;
+    }
+
+    .nav-logo-container {
+        width: 25%;
+    }
+
+    .nav-social-container {
+        display: none;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-buttons.active {
+        display: block;
+        text-align: right;
+        float: right;
+        width: 9em;
+    }
+
+    .nav-buttons.active ul {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 7em;
+        margin-top: 76px;
+        margin-right: 0;
+        padding: 0;
+        text-align: center;
+        align-items: normal;
+        background-color: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(25px);
+        border-radius: 2px;
+    }
+
+    .nav-buttons.active ul li {
+        padding: 1em;
+    }
+
+    .nav-button-container {
+        align-items: center;
+        justify-content: end;
+        width: 75%;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+}
+
 .cover-container {
     height: 100vh;
 }
@@ -145,13 +221,13 @@ nav div {
 
 
 #contact {
-    height: 65vh;
     width: 100vw;
     display: inline-flex;
+    flex-wrap: nowrap;
 }
 
 .email-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     width: 50%;
     background-color: rgb(245, 245, 245);
@@ -168,8 +244,8 @@ nav div {
 }
 
 .email-container ul li div {
-    width: 200px;
-    margin: 0 auto;
+    width: 250px;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -202,29 +278,30 @@ nav div {
 .email-container .contact-info-container {
     text-align: center;
     padding-top: 2em;
-    height: 40%;
 }
 
 .email-container .contact-form-container {
-    height: 60%;
-    padding: 0em 2em 2em 2em;
+    padding: 0em 2em 0em 2em;
 }
 
 .email-container table {
     margin: 0 auto;
-    height: 100%;
     width: 100%;
     border-spacing: 1em;
 }
 
 table tr:first-child td {
+    height: 4em;
     text-align: center;
-    height: 20%;
 }
 
 table td {
-    height: 80%;
+    height: 10em;
     text-align: center;
+}
+
+table tr:last-child td {
+    height: 3em;
 }
 
 .email-container input, textarea {
@@ -256,19 +333,28 @@ table td {
 }
 
 .map-container {
-    display: inline-flex;
+    display: flex;
     width: 50%;
     background-color: rgb(17, 17, 17);
 }
 
-@media only screen and (max-width: 1115px) {
+#map {
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
     #contact {
         display: flex;
+        flex-wrap: wrap-reverse;
     }
 
     .email-container {
-        display: flex;
         width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 25vh
     }
 }
 
