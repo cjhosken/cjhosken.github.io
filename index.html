@@ -39,7 +39,9 @@
         </div>
     </nav>
     <div class="cover-container">
-        <img class="video" src="images/cover.png">
+        <video class="video" autoplay muted loop>
+            <source src="videos/cover.mp4" type="video/mp4">
+        </video>
         <div class="overlay">
             <div class="caption">
                 <h1> CHRISTOPHER HOSKEN </h1>
@@ -63,10 +65,39 @@
     </div>
     </div>
     <div id="portfolio">
-        wabadaba
+        <div class="title">
+            <h1> PORTFOLIO </h1>
+        </div>
+        <div class="project-container">
+            <div class="project-panel">
+                <img src=""> 
+                <h1> Lamp Attack!</h1>
+                <h2> October 4, 2021 </h2>
+                <p> I love lamps</p>
+            </div>
+            <div class="project-panel">
+                <img src=""> 
+                <h1> Sparky!</h1>
+                <h2> October 4, 2021 </h2>
+                <p> I love lamps</p>
+            </div>
+        </div>
+        <a href="pages/portfolio.html"><button class="more-button"> SEE MORE! </button></a>
     </div>
+    <div class="mini-banner"></div>
     <div id="history">
-        henlo
+        <div class="title">
+            <h1> HISTORY </h1>
+        </div>
+        <div class="history-panel">
+            <i class="fa fa-graduation-cap"> </i>
+            <h2>
+                Chiang Mai International School
+            </h2>
+            <h3> APRIL 2010 - PRESENT | CHIANG MAI </h3>
+            <p> For all of my early life I attended Chiang Mai International School. I was lucky enough to grow and learn in a diverse environment. 
+                CMIS was small enough to let me explore my own interests and begin my passion for 3D.  </p>
+        </div>
     </div>
     <div id="contact">
         <div class="email-container">
@@ -96,42 +127,47 @@
                 </ul>
                 <p> SAY HELLO </p>
             </div>
-            <div class="contact-form-container">
+            <form name="email" class="contact-form-container" action="php/email.php" method="post">
                 <table>
                     <tr>
                         <td>
-                            <input type="text" id="name" name="Name" placeholder="Name">
+                            <input type="text" id="name" name="Name" placeholder="Name" required>
                         </td>
                         <td>
-                            <input type="text" id="email" name="Email" placeholder="Email">
+                            <input type="email" id="email" name="Email" placeholder="Email" required>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea id="message" name="Message" placeholder="Message"></textarea>
+                            <input type="text" id="subject" name="Subject" placeholder="Subject" required>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button> SUBMIT </button>
+                            <textarea id="message" name="Message" placeholder="Message" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="SUBMIT" id="submit" value="SUBMIT">
                         </td>
                     </tr>
                 </table>
-            </div>
+            </form>
         </div>
         <div class="map-container">
-            <div id="map" style="width: 100%; height: 100%;"></div>
+            <div id="map"></div>
             <script>
                 mapboxgl.accessToken = "pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY2wwbmpsd2llMWY4cDNkbnNudXlxd3N5biJ9.wBJjdtYQDyXNbtqujSwLDA";
                 const map = new mapboxgl.Map({
                     container: "map",
                     style: 'mapbox://styles/cjhosken/cl25xzbj6001115qnvj5d7dyl',
-                    center: [99.023541, 18.825267],
+                    center: [98.9853, 18.7883],
                     zoom: 12,
                     scrollZoom: false,
                 });
 
-                const pin = new mapboxgl.Marker({ color: "red" }).setLngLat([99.023541, 18.825267]).addTo(map);
+                const pin = new mapboxgl.Marker({ color: "red" }).setLngLat([98.9853, 18.7883]).addTo(map);
             </script>
         </div>
     </div>

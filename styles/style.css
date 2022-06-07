@@ -159,9 +159,8 @@ nav div {
 
 .overlay {
     top: 25%;
-    left: 25%;
     height: 50%;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     text-align: center;
@@ -173,11 +172,12 @@ nav div {
     background-color: transparent;
     margin: 0 auto;
     color: white;
+    width: 100%;
 }
 
 .caption h1 {
     text-align: center;
-    font-size: 500%;
+    font-size: 800%;
     font-weight: 800;
 }
 
@@ -188,7 +188,7 @@ nav div {
 
 @media (max-width: 899px) {
     .caption h1 {
-        font-size: 200%;
+        font-size: 300%;
         font-weight: 800;
     }
     
@@ -233,6 +233,92 @@ nav div {
 }
 
 
+#portfolio {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+}
+
+
+.title {
+    padding: 2em;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.title h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: solid red 2px;
+}
+
+#portfolio .title h1 {
+    color: white;
+}
+
+.project-container {
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-panel {
+    display: flexbox;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.more-button {
+    background-color: white;
+    padding: 1em;
+    color: rgb(17, 17, 17);
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    margin: 2em;
+    border-radius: 2px;
+    
+}
+
+
+.mini-banner {
+    height: 12em;
+    overflow: hidden;
+    background-image: url("../images/banner_1.png");
+    background-position: -1500px -200px;
+    background-attachment:fixed;
+}
+
+
+#history {
+    margin: 0 auto;
+    background-color: white;
+}
+
+.history-panel {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.history-panel i {
+    color: red;
+    font-size: 1.5em;
+}
+
+.history-panel h3 {
+    font-size: 1em;
+}
+
+.history-panel p {
+    margin: 0 auto;
+    text-align: center;
+    width: 20em;
+}
 
 #contact {
     width: 100vw;
@@ -304,7 +390,7 @@ nav div {
     border-spacing: 1em;
 }
 
-table tr:first-child td {
+table tr:first-child td, table tr:nth-child(2) td {
     height: 4em;
     text-align: center;
 }
@@ -333,7 +419,7 @@ table tr:last-child td {
     padding: 1em;
 }
 
-.email-container button {
+.email-container #submit {
     width: 100%;
     height: 3em;
     border: none;
@@ -354,6 +440,7 @@ table tr:last-child td {
 
 #map {
     width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1199px) {
