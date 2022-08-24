@@ -109,6 +109,7 @@ main #home {
 .company-container img {
     width: 25vh;
     filter: saturate(5%) contrast(10%) brightness(110%);
+    transition: filter 0.35s;
 }
 
 .company-container img:hover {
