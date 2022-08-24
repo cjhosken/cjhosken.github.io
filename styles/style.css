@@ -1,6 +1,7 @@
 :root {
     --primary-background: white;
     --secondary-background: rgb(249, 249, 249);
+    --third-background: rgb(239, 239, 239);
     --accent: rgb(255, 50, 30);
     --dark-black: rgb(50,50,50);
 }
@@ -92,6 +93,26 @@ main #home {
 #showreel iframe {
     width: 70vw;
     aspect-ratio: 16/9;
+}
+
+.company-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#companies {
+    width: 100%;
+    background-color: var(--third-background);
+}
+
+.company-container img {
+    width: 25vh;
+    filter: saturate(5%) contrast(10%) brightness(110%);
+}
+
+.company-container img:hover {
+    filter: saturate(5%) contrast(10%) brightness(70%);
 }
 
 /*
