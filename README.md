@@ -8,3 +8,4 @@ Christopher Hosken - Technical Artist
  - More works
  - About me
  - Footer
+ - Stop title scroll
