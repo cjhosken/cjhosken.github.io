@@ -5,6 +5,7 @@ $(document).ready(function() {
     setTimeout(function() {
         $("#university-container").fadeIn(350);
         document.getElementById("university-container").style.display = "flex";
+        console.log("POPUP");
     }, 500);
 
     window.addEventListener('resize', changeVideoSize);
@@ -17,7 +18,6 @@ $(document).ready(function() {
         let ratio = 16.0/9.0;
         let solve = width / height;
 
-        console.log(solve);
 
         if (solve > ratio) {
             vid.style.width = "100%";
