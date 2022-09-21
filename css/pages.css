@@ -10,9 +10,8 @@
 
 #video {
     margin: 0% 2%;
-    width: 60%;
-    height: 100%;
-    aspect-ratio: 16/9;
+    width: 90vw;
+    height: 70vh;
     border-radius: 5px;
 }
 
@@ -46,4 +45,20 @@
 
 #poster {
     width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    #main-container {
+        flex-direction: column;
+    }
+
+    #info-container {
+        margin: 0;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .button {
+        margin: 0 auto;
+    }
 }

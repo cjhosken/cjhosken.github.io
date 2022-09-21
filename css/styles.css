@@ -208,12 +208,12 @@ a:hover {
 
     #hero-icons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         align-items: center;
         justify-content: center;
-        bottom: 3vh;
-        left: 2vh;
+        bottom: 2vh;
+        right: 2vh;
     }
 }
 
