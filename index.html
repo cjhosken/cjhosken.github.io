@@ -12,11 +12,11 @@
     <script src="https://kit.fontawesome.com/412e60a948.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-    <link href="style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title> Christopher Hosken </title>
 </head>
 
-<body>
+<body id="body">
     <div id="showreel-lightbox" class="hidden">
         <iframe id="showreel" src="https://www.youtube.com/embed/uWlNI-2GehE?enablejsapi=1"
             frameborder="0"
@@ -26,33 +26,34 @@
         <script>
             $("#showreel-close-button").click(function(event) {
                 $("#showreel-lightbox").fadeOut(250);
+                document.getElementById("body").style.overflowY = "auto";
                 $("#showreel")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             });
         </script>
     </div>
     <nav>
-        <a href="../index.html"> <img src="images/logo.png"> </a>
-        <div>
-            <a href="index.html" class="active-page">ABOUT</a>
-            <a href="works.html">WORKS</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+        <script>
+            $(function() {
+                $("nav").load("html/nav.html");
+            });
+        </script>
     </nav>
     <div id="hero-container">
         <div id="hero-canvas">
-            <i class="fa-solid fa-arrow-down"></i>
+            <!--<i class="fa-solid fa-arrow-down"></i>-->
             <video autoplay muted loop>
                 <source src="images/Desert_Temple.mov" type="video/mp4">
             </video>
         </div>
         <div id="hero-text">
-            <h1> I'M CHRISTOPHER HOSKEN </h1>
+            <h1> Christopher Hosken </h1>
             <h2> VFX Artist | Technical Artist | Director </h2>
             <button id="showreel-open-button"> Showreel </button>
             <script>
 
                 $("#showreel-open-button").click(function(event) {
                     $("#showreel-lightbox").fadeIn(250);
+                    document.getElementById("body").style.overflowY = "hidden";
                     document.getElementById("showreel-lightbox").style.display = "flex";
                 });
             </script>

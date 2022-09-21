@@ -8,13 +8,25 @@ class Project {
     }
 }
 
+class Company {
+    constructor(name, image, link) {
+        this.name = name;
+        this.image = image;
+        this.link = link;
+    }
+}
+
 let works = [
-    new Project("FALLOUT SHOPPING", "falloutshopping.png", "Director / Animator", "Personal Project", ""),
-    new Project("THE SCRAMBLE", "thescramble.jpg", "Director / VFX Artist", "Team Project", ""),
-    new Project("HYDRATE", "hydrate.png", "Director / Editor", "Hydrate", ""),
-    new Project("LAMP ATTACK!", "lampattack.png", "Director / Animator", "Team Project", ""),
-    new Project("SPARKY", "sparky.jpg", "Producer / Animator", "BOAP Studios", ""),
+    new Project("FALLOUT SHOPPING", "falloutshopping.png", "Director / Animator", "Personal Project", "falloutshopping.html"),
+    new Project("THE SCRAMBLE", "thescramble.jpg", "Director / VFX Artist", "Team Project", "thescramble.html"),
+    new Project("HYDRATE", "hydrate.png", "Director / Editor", "Hydrate", "hydrate.html"),
+    new Project("LAMP ATTACK!", "lampattack.png", "Director / Animator", "Team Project", "lampattack.html"),
+    new Project("SPARKY", "sparky.jpg", "Producer / Animator", "BOAP Studios", "sparky.html"),
 ];
+
+let companies = [
+    new Company("BOAP Studios", "boap_minimal.png", "https://sites.google.com/view/boap-studio/")
+]
 
 function load_works() {
     var html = ""
@@ -23,7 +35,7 @@ function load_works() {
         var w = works[idx];
 
         html += "<div class='work-item'>";
-        html += "<a href='" + w.link + "'>"
+        html += "<a href='" + "../html/" + w.link + "'>"
         html += "<img src='" + "../images/works/" + w.image + "'> </img>";
         html += "<h1>" + w.name + "</h1>";
         html += "<h2>" + w.role + "</h2>";
@@ -36,7 +48,19 @@ function load_works() {
 }
 
 function load_companies() {
+    var html = ""
 
+    for (let idx = 0; idx < works.length; idx++) {
+        var c = companies[idx];
+
+        html += "<div class='company-item'>";
+        html += "<a href='" + c.link + "'>"
+        html += "<img src='" + "../images/companies/" + c.image + "'> </img>";
+        html += "</a>"
+        html += "</div>";
+
+        $("#companies-list-container").html(html);
+    }
 }
 
 

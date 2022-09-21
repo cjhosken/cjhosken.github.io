@@ -22,6 +22,8 @@ html, body {
     padding: 0;
     font-family: 'Segoe UI';
     background-color: var(--basewhite);
+    overflow-y: overlay;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,7 +31,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 a, a:visited {
@@ -45,7 +46,7 @@ a:hover {
 
 
 #showreel-lightbox {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -82,40 +83,6 @@ a:hover {
 
 #showreel-lightbox #showreel-close-button:hover {
     color: var(--primary);
-}
-
-
-nav {
-    position: fixed;
-    width: 100vw;
-    height: 7vh;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    backdrop-filter: blur(10px);
-    align-items: center;
-    box-shadow: 0px 1px 25px var(--shadow);
-    z-index: 3;
-}
-
-nav img {
-    margin-top: 1vh;
-    margin-bottom: 0.5vh;
-    height: 6vh;
-    margin-left: 1vh;
-}
-
-nav div a {
-    font-size: 1em;
-    margin-right: 6vw;
-    user-select: none;
-    border-bottom: solid var(--primary) 0px;
-}
-
-nav div a:hover, nav div .active-page {
-    color: var(--primary);
-    border-bottom: solid var(--primary) 2px;
 }
 
 #hero-container {
@@ -196,22 +163,21 @@ nav div a:hover, nav div .active-page {
 
 #hero-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     align-items: center;
     justify-content: center;
-    bottom: 1vh;
-    left: 1vw;
+    bottom: 3vh;
+    right: 2vw;
 }
 
 #hero-icons a {
     font-size: large;
-    margin: 0.5vh;
+    margin: 1vh;
 }
 
 #hero-icons a:hover {
     font-size: large;
-    margin: 0.5vh;
 }
 
 @media screen and (max-width: 767px) {
@@ -348,7 +314,7 @@ nav div a:hover, nav div .active-page {
     aspect-ratio: 16 / 9;
 }
 
-.company-container {
+#companies-list-container {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -356,17 +322,13 @@ nav div a:hover, nav div .active-page {
     background-color: var(--secondary-background);
 }
 
-#companies {
-    width: 100%;
-}
-
-.company-container img {
+#companies-list-container img {
     width: 25vh;
     filter: saturate(5%) contrast(10%) brightness(110%);
     transition: filter 0.35s;
 }
 
-.company-container img:hover {
+#companies-list-container img:hover {
     filter: saturate(5%) contrast(10%) brightness(70%);
 }
 
@@ -387,14 +349,7 @@ nav div a:hover, nav div .active-page {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0px 0px 10px var(--shadow);
-    background-color: rgb(10, 10, 10);
-}
-
-#contact-container h1 {
-    color: white;
-    font-weight: 400;
-    margin-bottom: 5vh;
-    border-bottom: solid var(--primary) 3px;
+    background-color: var(--white);
 }
 
 #map {
@@ -441,22 +396,67 @@ nav div a:hover, nav div .active-page {
 #general-info-container div i {
     margin: 1vh;
     font-size: 3vh;
-    color: white;
+    cursor: pointer;
+}
+
+#general-info-container div a {
+    color: var(--black);
+    transition: color 0.35s;
+}
+
+#general-info-container div a:hover {
+    color: var(--primary);
 }
 
 #general-info-container div p {
     font-weight: 400;
     font-size: 2vh;
-    color: var(--darkgray);
 }
 
-#contact-container button {
+.button {
+    position: relative;
     margin: 2vh;
-    padding: 1.5vh 3vh;
+    height: 5vh;
+    width: 20vh;
     background-color: transparent;
-    border: solid white 2px;
+    border: solid var(--black) 2px;
     border-radius: 25px;
-    color: white;
+    color: var(--black);
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.button p {
+    color: black;
+}
+
+.button div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-1vh);
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    border-color: var(--primary);
+}
+
+.button:hover p, .button:hover i {
+    color: var(--primary);
+}
+
+.button:hover div {
+    transform: translateY(-6.5vh);
+}
+
+.button div p {
+    height: 50%;
 }
 
 /* SCROLLBAR */
@@ -469,11 +469,10 @@ nav div a:hover, nav div .active-page {
   /* Track */
 ::-webkit-scrollbar-track {
     background-color: transparent;
-    color: transparent;
 }
   
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background-color: var(--primary);
     border-radius: 5px;
 }
