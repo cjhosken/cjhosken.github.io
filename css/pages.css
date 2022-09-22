@@ -57,8 +57,60 @@
         text-align: center;
         width: 90vw;
     }
+}
 
-    .button {
-        margin: 0 auto;
-    }
+#work-page-button-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-page-button-container .button {
+    position: relative;
+    min-width: 50%;
+    max-height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    position: relative;
+    margin: 2%;
+    width: 35%;
+    aspect-ratio: 4/1;
+    max-height: 8%;
+
+    background-color: transparent;
+    border: solid var(--black) 2px;
+    border-radius: 50vh;
+    color: var(--black);
+    overflow-y: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button p {
+    color: black;
+}
+
+.button div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    transform: translateY(0%);
+    height: 200%;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.button div:hover {
+    transform: translateY(-63%); 
 }

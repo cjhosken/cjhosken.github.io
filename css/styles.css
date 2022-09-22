@@ -7,6 +7,7 @@
     --purewhite: white;
     --basewhite: white;
     --primary: rgb(235, 40, 90);
+    --primarydark: rgb(163, 24, 59);
     --darkgray: rgb(80, 80, 80);
     --black: rgb(40, 40, 40);
     --pureblack: black;
@@ -24,8 +25,6 @@ html, body {
     background-color: var(--basewhite);
     overflow-y: overlay;
     overflow-x: hidden;
-    width: 100%;
-    height: 100%;
 }
 
 body {
@@ -88,6 +87,7 @@ a:hover {
 }
 
 #hero-container {
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -106,7 +106,8 @@ a:hover {
 }
 
 #canvas-video {
-    object-fit: cover; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0;
+    object-fit: cover; width: 100vw; height: 100vh; position: fixed;
+    z-index: 0;
 }
 
 @keyframes scroll-hint {
@@ -246,6 +247,20 @@ a:hover {
         display: none;
     }
 }
+
+
+/* ABOUT SECTION */
+
+#about-container {
+    position: relative;
+    margin-top: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+
+
 
 /* WORKS PAGE */
 
@@ -430,15 +445,20 @@ a:hover {
 
 .button {
     position: relative;
-    margin: 2vh;
-    height: 5vh;
-    width: 20vh;
+    margin: 2%;
+    width: 35%;
+    aspect-ratio: 4/1;
+    max-height: 8%;
+
     background-color: transparent;
     border: solid var(--black) 2px;
-    border-radius: 25px;
+    border-radius: 50vh;
     color: var(--black);
     overflow-y: hidden;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .button p {
@@ -447,14 +467,14 @@ a:hover {
 
 .button div {
     position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 10vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    top: 0%;
+    transform: translateY(0%);
+    height: 200%;
     width: 100%;
-    transform: translateY(-1vh);
     transition: transform 0.5s;
 }
 
@@ -467,7 +487,7 @@ a:hover {
 }
 
 .button:hover div {
-    transform: translateY(-6.5vh);
+    transform: translateY(-50%);
 }
 
 .button div p {
@@ -493,21 +513,39 @@ a:hover {
 }
 
 
+
+#works-button-container {
+    width: 100%;
+    min-height: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#works-button-container .button {
+    margin: 0px;
+    min-height: 25%;
+    aspect-ratio: 1/1;
+}
+
+
+/* UNIVERSITY POPUP */
+
 #university-container {
     align-self: center;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     background-color: var(--primary);
     z-index: 1000;
-    width: 35vh;
     text-align: center;
-    height: 20vh;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
-    top: 1vh;
+    top: 1%;
+    max-width: 60%;
 }
 
 #university-container #university-close-button {
@@ -519,23 +557,76 @@ a:hover {
 }
 
 #university-container #university-close-button i {
-    font-size: 1.5em;
+    font-size: 200%;
+    color: white;
+    transition: color 0.35s;
+}
+
+#university-container #university-close-button i:hover {
+    color: var(--primarydark);
 }
 
 #university-container p {
-    margin-top: 2vh;
+    margin: 5%;
     color: white;
 }
 
 #university-container #portfolio-button {
     display: flex;
-    margin: 2vh auto;
+    margin: 2% auto;
     justify-content: center;
     align-items: center;
-    width: 15vh;
-    height: 4vh;
+    width: 50%;
+    aspect-ratio: 5/1;
     border: solid white 2px;
     background-color: transparent;
     color: white;
-    border-radius: 10px;
+    border-radius: 100vw;
+    border-color: white;
+    transition: color 0.35s, border 0.35s;
+}
+
+#university-container #portfolio-button:hover {
+    color: var(--primarydark);
+    border-color: var(--primarydark);
+}
+
+/* SPLASH SCREEN */
+
+#splash {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash img {
+    height: 25%;
+    animation: splash 3.5s;
+}
+
+@keyframes splash {
+    0% {
+        opacity: 0.0;
+        transform: translateY(-50vh);
+    }
+
+    50% {
+        opacity: 1.0;
+        transform: translateY(0vw);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(300%);
+    }
 }
