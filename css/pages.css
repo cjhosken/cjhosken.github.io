@@ -14,9 +14,11 @@
 }
 
 #video {
-    margin: 0% 2%;
-    width: 90%;
-    height: 70%;
+    position: relative;
+    margin: 1%;
+    width: 48%;
+    height: 100%;
+    aspect-ratio: 3/2;
     text-align: center;
     display: flex;
     align-items: center;
