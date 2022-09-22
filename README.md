@@ -2,8 +2,8 @@
 Christopher Hosken - Technical Artist
 
 
-//TODO:
- - Contact form (need php?)
+TODO:
  - About me
  - Portfolio Page
  - Better fonts
+ - Responsive UI for works page

@@ -26,7 +26,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $("#university-container").fadeIn(350);
             document.getElementById("university-container").style.display = "flex";
-        }, 350);
+        }, 3500);
     }
 });
 

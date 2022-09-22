@@ -1,0 +1,7 @@
+.portfolio-section-item {
+    display: inline-block;
+}
+
+.portfolio-section-item img {
+    height: 25vw;
+}
