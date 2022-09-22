@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
         <script>
             $("#showreel-close-button").click(function(event) {
                 $("#showreel-lightbox").fadeOut(250);
-                document.getElementById("body").style.overflowY = "auto";
+                document.getElementById("html").style.overflowY = "overlay";
                 $("#showreel")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             });
         </script>
@@ -73,7 +73,7 @@
             <script>
                 $("#showreel-open-button").click(function(event) {
                     $("#showreel-lightbox").fadeIn(250);
-                    document.getElementById("body").style.overflowY = "hidden";
+                    document.getElementById("html").style.overflowY = "hidden";
                     document.getElementById("showreel-lightbox").style.display = "flex";
                 });
             </script>
@@ -100,6 +100,13 @@
             <p> I'm Christopher Hosken! </p> 
         </div>
     </div>
+    <footer>
+        <script>
+            $(function() {
+                $("footer").load("html/footer.html");
+            });
+        </script>
+    </footer>
 </body>
 <script src="scripts/load.js"></script>
 </html>
