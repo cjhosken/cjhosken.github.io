@@ -1,3 +1,11 @@
+.banner {
+    position: absolute;   
+    background-image: url("../images/banner_portfolio.jpg");
+    background-size: cover;
+    background-position-y: 7%;
+}
+
+
 .portfolio-section-item {
     display: inline-block;
 }

@@ -19,7 +19,8 @@ $(document).ready(function() {
 
     }
 
-
+    
+    sessionStorage.setItem("popup", "true");
 
     if (sessionStorage.getItem("popup") !== 'true') {
         sessionStorage.setItem("popup", "true");
