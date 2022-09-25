@@ -252,11 +252,41 @@ a:hover {
 #about-container {
     position: relative;
     margin-top: 100vh;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
+#specific-skills-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.specific-skill-item {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specific-skill-item img {
+    width: 70%;
+}
 
 
 
@@ -310,12 +340,13 @@ a:hover {
     align-items: center;
     padding: 0.5vw;
     border-radius: 10px;
-    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.1s;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .work-item:hover {
-    box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.05);;
+    transform: scale(110%);
 }
 
 .work-item h1 {
@@ -344,6 +375,7 @@ a:hover {
     width: 40vh;
     object-fit: cover;
     aspect-ratio: 16 / 9;
+    border-radius: 1vh;
 }
 
 #companies-list-container {

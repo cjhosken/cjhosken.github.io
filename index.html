@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,600,700&amp;lang=en" />
 
     <link href="css/styles.css" rel="stylesheet">
-    <title> Christopher Hosken </title>
+    <title> Christopher Hosken | VFX Artist | Technical Artist | Director </title>
 </head>
 
 <body id="body">
@@ -24,29 +24,28 @@
     </div>
 
     <div id="university-container">
-            <button id="university-close-button">
-                <i class="fa-solid fa-close"></i>
-            </button>
-            <script>
-                $("#university-close-button").click(function(event) {
+        <button id="university-close-button">
+            <i class="fa-solid fa-close"></i>
+        </button>
+        <script>
+            $("#university-close-button").click(function (event) {
                 $("#university-container").fadeOut(350);
             });
-            </script>
-            <p>
-                Hey! Are you a University coordinator? If so, click here to view my portfolio.
-            </p>
-            <a id="portfolio-button" href="html/portfolio.html">
-                View Portfolio
-            </a>
+        </script>
+        <p>
+            Hey! Are you a University coordinator? If so, click here to view my portfolio.
+        </p>
+        <a id="portfolio-button" href="html/portfolio.html">
+            View Portfolio
+        </a>
     </div>
     <div id="showreel-lightbox" class="hidden">
-        <iframe id="showreel" src="https://www.youtube.com/embed/uWlNI-2GehE?enablejsapi=1"
-            frameborder="0"
+        <iframe id="showreel" src="https://www.youtube.com/embed/uWlNI-2GehE?enablejsapi=1" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <button id="showreel-close-button"> <i class="fa-solid fa-xmark"></i> </button>
         <script>
-            $("#showreel-close-button").click(function(event) {
+            $("#showreel-close-button").click(function (event) {
                 $("#showreel-lightbox").fadeOut(250);
                 document.getElementById("html").style.overflowY = "overlay";
                 $("#showreel")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -55,7 +54,7 @@
     </div>
     <nav>
         <script>
-            $(function() {
+            $(function () {
                 $("nav").load("html/nav.html");
             });
         </script>
@@ -72,7 +71,7 @@
             <h2> VFX Artist | Technical Artist | Director </h2>
             <button id="showreel-open-button"> Showreel </button>
             <script>
-                $("#showreel-open-button").click(function(event) {
+                $("#showreel-open-button").click(function (event) {
                     $("#showreel-lightbox").fadeIn(250);
                     document.getElementById("html").style.overflowY = "hidden";
                     document.getElementById("showreel-lightbox").style.display = "flex";
@@ -90,9 +89,9 @@
     <div id="about-container">
         <div>
             <h1> About Me </h1>
-            <p> Hi! I'm Christopher Hosken, a 17 year old Technical Artist. 
-                With over 6 years of experience in 3D, I have an understanding of every part of the 3D pipeline. 
-                I have knowledge in Blender, Houdini, Nuke, DaVicini Resolve, Python, and Java, 
+            <p> Hi! I'm Christopher Hosken, a 17 year old Technical Artist.
+                With over 6 years of experience in 3D, I have an understanding of every part of the 3D pipeline.
+                I have knowledge in Blender, Houdini, Nuke, DaVicini Resolve, Python, and Java,
                 alongside leadership skills that I have used to create my own short films. </p>
         </div>
         <div>
@@ -102,21 +101,30 @@
                     <h1> Director at BOAP Studios </h1>
                     <h2> SEP 2020 - APR 2021 | REMOTE </h2>
                     <p>
-                        During my second year at BOAP Studios, I took on the role of director for the short film, Proxima. Alongside co-writing and envisioning the story, I also worked with the R&D team to develop our own facial motion capture plugin. As well as that, I helped with modeling and animation.
+                        During my second year at BOAP Studios, I took on the role of director for the short film,
+                        Proxima. Alongside co-writing and envisioning the story, I also worked with the R&D team to
+                        develop our own facial motion capture plugin. As well as that, I helped with modeling and
+                        animation.
                     </p>
                 </div>
                 <div id="history-item">
                     <h1> Producer at BOAP Studios </h1>
                     <h2> MAR 2019 - SEP 2020 | REMOTE </h2>
                     <p>
-                        During my first year and a half at BOAP Studios, I helped with writing, modeling, and animation alongside managing a small team of artists. I learned the foundations of how a studio operates, and what to do when conflicts arise amongst the team.
+                        During my first year and a half at BOAP Studios, I helped with writing, modeling, and animation
+                        alongside managing a small team of artists. I learned the foundations of how a studio operates,
+                        and what to do when conflicts arise amongst the team.
                     </p>
                 </div>
                 <div id="history-item">
                     <h1> Chiang Mai International School </h1>
                     <h2> AUG 2010 - PRESENT | CHIANG MAI </h2>
                     <p>
+                        Grade: 12
+                        Activities and societies: Junior Track & Field, Chess Club, U14 Football & Badminton, Drama
+                        Performances, Varsity Basketball
 
+                        Vice President of STUCO (Student Council)
                     </p>
                 </div>
             </div>
@@ -124,20 +132,103 @@
         <div>
             <h1> Skills </h1>
             <div id="general-skills-container">
-
+                <div class="general-skill-item">
+                    <h1>
+                        ANIMATION
+                    </h1>
+                    <p>
+                        Bla bla bla
+                    </p>
+                </div>
+                <div class="general-skill-item">
+                    <h1>
+                        LEADERSHIP
+                    </h1>
+                    <p>
+                        Bla bla bla
+                    </p>
+                </div>
+                <div class="general-skill-item">
+                    <h1>
+                        TECHNICAL
+                    </h1>
+                    <p>
+                        Bla bla bla
+                    </p>
+                </div>
             </div>
             <div id="specific-skills-container">
-
+                <a href="https://www.blender.org/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/blender.png"> <!-- Blender -->
+                    </div>
+                </a>
+                <a href="https://www.sidefx.com/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/houdini.png"> <!-- Houdini -->
+                    </div>
+                </a>
+                <a href="https://www.unrealengine.com/en-US/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/unreal.png"> <!-- Unreal Engine -->
+                    </div>
+                </a>
+                <a href="https://www.adobe.com/uk/products/substance3d-painter.html" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/subsp.png"> <!-- Substance Painter -->
+                    </div>
+                </a>
+                <a href="https://www.foundry.com/products/nuke-family/nuke" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/nuke.png"> <!-- Nuke -->
+                    </div>
+                </a>
+                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/resolve.png"> <!-- DaVinci Resolve -->
+                    </div>
+                </a>
+                <a href="https://krita.org/en/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/krita.png"> <!-- Krita -->
+                    </div>
+                </a>
+                <a href="https://www.figma.com/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/figma.png"> <!-- Figma -->
+                    </div>
+                </a>
+                <a href="https://www.python.org/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/python.png"> <!-- Python -->
+                    </div>
+                </a>
+                <a href="https://www.oracle.com/java/" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/java.png"> <!-- JAVA -->
+                    </div>
+                </a>
+                <a href="https://learn.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/cpp.png"> <!-- C++ -->
+                    </div>
+                </a>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                    <div class="specific-skill-item">
+                        <img src="images/software/web.png"> <!-- HTML, CSS, JS -->
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <footer>
         <script>
-            $(function() {
+            $(function () {
                 $("footer").load("html/footer.html");
             });
         </script>
     </footer>
 </body>
 <script src="scripts/load.js"></script>
+
 </html>
