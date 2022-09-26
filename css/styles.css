@@ -65,7 +65,9 @@ a:hover {
     height: 80vh;
     border-radius: 1vh;
     aspect-ratio: 16/9;
+    border-color: transparent;
 }
+
 
 #showreel-lightbox #showreel-close-button {
     position: absolute;
@@ -261,6 +263,81 @@ a:hover {
     align-items: center;
 }
 
+#info-container {
+    margin: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#description {
+    margin: 0vh 10vh;
+    width: 35vh;
+    text-align: center;
+}
+
+#headshot img {
+    width: 35vh;
+}
+
+#history-list-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-item {
+    text-align: center;
+    margin: 2vh;
+    width: 40vh;
+    display: inline-block;
+}
+
+.history-item h1 {
+    font-size: 1.5em;
+}
+
+.history-item h2 {
+    font-size: 1em;
+}
+
+.history-item p {
+    font-size: 1em;
+}
+
+
+
+
+#general-skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.general-skill-item {
+    margin: 5vh 10vh;
+}
+
+.general-skill-item h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.general-skill-item p {
+    font-size: 1em;
+    text-align: center;
+}
+
 
 #specific-skills-container {
     width: 80%;
@@ -273,15 +350,22 @@ a:hover {
 }
 
 .specific-skill-item {
-    width: 150px;
-    height: 150px;
-    margin: 25px;
+    width: 15vh;
+    max-width: 30%;
+    aspect-ratio: 1;
+    margin: 15px;
     padding: 10px;
     border-radius: 10%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: box-shadow 0.35s, transform 0.35s;
+}
+
+.specific-skill-item:hover {
+    transform: scale(110%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
 }
 
 .specific-skill-item img {
@@ -633,7 +717,7 @@ a:hover {
     height: 100vh;
     width: 100vw;
     z-index: 1000000;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     display: none;
     justify-content: center;
     align-items: center;
@@ -642,7 +726,7 @@ a:hover {
 
 #splash img {
     height: 25%;
-    animation: splash 3.5s forwards;
+    animation: splash 3.5s forwards ease;
     overflow-y: hidden;
 }
 
@@ -654,16 +738,15 @@ a:hover {
 
     50% {
         opacity: 1.0;
-        transform: translateY(0vw);
     }
 
     80% {
         opacity: 1;
-        transform: scale(100%);
+        transform: scale(100%) translateY(-5vh);
     }
 
     100% {
         opacity: 0;
-        transform: scale(300%);
+        transform: scale(300%) translateY(0vh);
     }
 }

@@ -36,7 +36,7 @@ function load_works() {
 
         html += "<div class='work-item'>";
         html += "<a href='" + "../html/" + w.link + "'>"
-        html += "<img src='" + "../images/works/" + w.image + "'> </img>";
+        html += "<img src='" + "../images/works/" + w.image + "' alt='" + w.name + "'> </img>";
         html += "<h1>" + w.name + "</h1>";
         html += "<h2>" + w.role + "</h2>";
         html += "<p>" + w.company + "</p>";
@@ -54,8 +54,8 @@ function load_companies() {
         var c = companies[idx];
 
         html += "<div class='company-item'>";
-        html += "<a href='" + c.link + "'>"
-        html += "<img src='" + "../images/companies/" + c.image + "'> </img>";
+        html += "<a href='" + c.link + "' target=_blank>"
+        html += "<img src='" + "../images/companies/" + c.image + "' alt='" + c.name + "'> </img>";
         html += "</a>"
         html += "</div>";
 
