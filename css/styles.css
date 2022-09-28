@@ -379,12 +379,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: opacity 0.6s;
+    transition: opacity 0.5s;    
+    color: var(--darkgray);
 }
 
 .specific-skill-item:hover .info {
     opacity: 1.0;
-    color: var(--darkgray);
 }
 
 .specific-skill-item img {

@@ -20,3 +20,5 @@ TODO:
 
  - Validate HTML
  - Validate CSS
+ 
+ - Finish showreel
