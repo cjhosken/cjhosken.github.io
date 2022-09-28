@@ -284,7 +284,7 @@ a:hover {
 
 #history-list-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -293,7 +293,7 @@ a:hover {
 .history-item {
     text-align: center;
     margin: 2vh;
-    width: 40vh;
+    width: 50vh;
     display: inline-block;
 }
 
@@ -309,14 +309,12 @@ a:hover {
     font-size: 1em;
 }
 
-
-
-
 #general-skills-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .container-header {
@@ -326,6 +324,8 @@ a:hover {
 
 .general-skill-item {
     margin: 5vh 10vh;
+    width: 25vh;
+    height: 40vh;
 }
 
 .general-skill-item h1 {
