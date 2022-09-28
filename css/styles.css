@@ -366,10 +366,34 @@ a:hover {
 .specific-skill-item:hover {
     transform: scale(110%);
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+
+}
+
+.specific-skill-item .info {
+    opacity: 0.0;
+    width: 15vh;
+    aspect-ratio: 1;
+    border-radius: 10%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.6s;
+}
+
+.specific-skill-item:hover .info {
+    opacity: 1.0;
+    color: var(--darkgray);
 }
 
 .specific-skill-item img {
     width: 70%;
+}
+
+
+.info .checked {
+    color: var(--primary);
 }
 
 

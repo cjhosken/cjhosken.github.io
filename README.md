@@ -7,6 +7,7 @@ TODO:
     - On hover, give description
 
     - Need to scan sketchbooks
+    - Better UI
     - Get photo of art room pillars
     - Get photo of gym
     - Start narrowing down best pieces
@@ -14,12 +15,8 @@ TODO:
  - Better UI for individual works on mobile
 
  - About me
-   - Responsive for mobile
-   - Write better text
-   - Better UI
+   - Better Decoration
    - Get light theme headshot
-
- - Better CV
 
  - Validate HTML
  - Validate CSS
