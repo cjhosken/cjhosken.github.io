@@ -9,14 +9,14 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    background-color: white;
     overflow: hidden;
+    background-color: blue;
 }
 
 #video {
     position: relative;
     margin: 1%;
-    width: 48%;
+    width: 100%;
     height: 100%;
     aspect-ratio: 3/2;
     text-align: center;
@@ -24,6 +24,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+}
+
+#video-container {
+    width: 50%;
+    height: 80%;
 }
 
 #info-container {
@@ -44,13 +49,19 @@
 }
 
 #info {
+    width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+#info p {
+    text-align: left;
 }
 
 #info div {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -63,14 +74,22 @@
 }
 
 @media screen and (max-width: 767px) {
+    #video-container {
+        margin-top: 2vh;
+        width: 90%;
+        height: 25%;
+    }
+
     #main-container {
         flex-direction: column;
     }
 
     #info-container {
-        margin: 0;
-        text-align: center;
-        width: 90vw;
+        margin: 1% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
