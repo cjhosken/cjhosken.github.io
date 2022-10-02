@@ -352,7 +352,7 @@ a:hover {
 .specific-skill-item {
     width: 15vh;
     max-width: 30%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     margin: 15px;
     padding: 10px;
     border-radius: 10%;
@@ -372,7 +372,7 @@ a:hover {
 .specific-skill-item .info {
     opacity: 0.0;
     width: 15vh;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     border-radius: 10%;
     background-color: white;
     position: absolute;
