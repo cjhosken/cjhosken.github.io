@@ -5,11 +5,35 @@
     background-position-y: 7%;
 }
 
+.portfolio-section-item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .portfolio-section-item {
-    display: inline-block;
+    position: relative;
+    height: 25vw;
+    aspect-ratio: 1/1;
 }
 
 .portfolio-section-item img {
+    position: absolute;
+    width: 25vw;
     height: 25vw;
+    object-fit: cover;
+}
+
+.portfolio-section-item-flipped {
+    position: absolute;
+    width: 25vw;
+    height: 100%;
+    opacity: 0.0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--primary);
+    transition: opacity 0.35s;
+}
+
+.portfolio-section-item:hover .portfolio-section-item-flipped {
+    opacity: 1.0;
 }
