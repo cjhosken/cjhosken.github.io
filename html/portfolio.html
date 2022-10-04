@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" id="html">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,22 +19,23 @@
     <title> Christopher Hosken | Portfolio </title>
 </head>
 
-<body id="body">
+<body>
     <nav>
         <script>
-            $(function() {
+            $(function () {
                 $("nav").load("nav.html");
             });
         </script>
     </nav>
-    <div class="portfolio-section-item-lightbox" id="portfolio-popup">
+    <div class="lightbox" id="portfolio-lightbox">
         <div class="lightbox-container">
-            <i class="fa-solid fa-close" id="close"></i>
+            <button id="portfolio-close-button" class="lightbox-close-button"> <i class="fa-solid fa-xmark"></i>
+            </button>
             <script>
-                $("#close").click(function (event) {
-                $(".portfolio-section-item-lightbox").fadeOut(250);
-                document.getElementById("html").style.overflowY = "overlay";
-            });
+                $("#portfolio-close-button").click(function (event) {
+                    $("#portfolio-lightbox").fadeOut(250);
+                    document.querySelector("html").style.overflowY = "overlay";
+                });
             </script>
             <div class="lightbox-summary-container">
                 <h1 id="title"> Title </h1>
@@ -49,7 +50,7 @@
 
                 </div>
                 <a onclick="next_slide();">
-                    <i class="fa-solid fa-arrow-right arrow" ></i>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
                 </a>
 
             </div>
@@ -60,50 +61,51 @@
         <h1 class="banner-title"> PORTFOLIO </h1>
     </div>
     <div class="main-container">
-        <h1> INTRODUCTION </h1> 
-            <p>
-                This is my complete portfolio.
-            </p>
-            <div id="portfolio-container">
-                <div class="portfolio-section" >
-                    <h1> SKETCHBOOK / DRAWINGS </h1>
-                    <div class="portfolio-section-item-list" id="sketchings">
-                        
-                    </div>
-                </div>
-                <div class="portfolio-section">
-                    <h1> DIGITAL ARTWORKS </h1>
-                    <div class="portfolio-section-item-list" id="digitals">
+        <h1> INTRODUCTION </h1>
+        <p>
+            This is my complete portfolio.
+        </p>
+        <div id="portfolio-container">
+            <div class="portfolio-section">
+                <h1> SKETCHBOOK / DRAWINGS </h1>
+                <div class="portfolio-section-item-list" id="sketchings">
 
-                    </div>
                 </div>
-                <div class="portfolio-section">
-                    <h1> ANIMATIONS </h1>
-                    <div class="portfolio-section-item-list" id="animations">
+            </div>
+            <div class="portfolio-section">
+                <h1> DIGITAL ARTWORKS </h1>
+                <div class="portfolio-section-item-list" id="digitals">
 
-                    </div>
                 </div>
-                <div class="portfolio-section">
-                    <h1> FILMS </h1>
-                    <div class="portfolio-section-item-list" id="films">
-                        
-                    </div>
+            </div>
+            <div class="portfolio-section">
+                <h1> ANIMATIONS </h1>
+                <div class="portfolio-section-item-list" id="animations">
+
                 </div>
-                <div class="portfolio-section">
-                    <h1> PROGRAMMING / OTHERS </h1>
-                    <div class="portfolio-section-item-list" id="others">
-                        
-                    </div>
+            </div>
+            <div class="portfolio-section">
+                <h1> FILMS </h1>
+                <div class="portfolio-section-item-list" id="films">
+
+                </div>
+            </div>
+            <div class="portfolio-section">
+                <h1> PROGRAMMING / OTHERS </h1>
+                <div class="portfolio-section-item-list" id="others">
+
                 </div>
             </div>
         </div>
-        <script src="../scripts/portfolio.js"></script>
+    </div>
+    <script src="../scripts/portfolio.js"></script>
     <footer>
         <script>
-            $(function() {
+            $(function () {
                 $("footer").load("footer.html");
             });
         </script>
     </footer>
 </body>
+
 </html>

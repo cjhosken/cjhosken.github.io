@@ -3,11 +3,7 @@ Christopher Hosken - Technical Artist
 
 TODO:
  - Portfolio Page
-    - On hover, give description
-
     - Find and Scan Blender Sketchbook
-    
-    - Better UI
     - Get photo of art room pillars
     - Get photo of gym
     - Start narrowing down best pieces
@@ -20,3 +16,7 @@ TODO:
  - Validate CSS
  
  - Finish showreel
+
+
+ - Nice tidbits
+   - Portfolio scrolling

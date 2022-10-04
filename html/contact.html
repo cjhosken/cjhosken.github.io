@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html id="html" lang="EN">
+<html lang="EN">
 
 <head>
     <meta charset="UTF-8">
@@ -15,13 +15,14 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
 
     <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/contact.css" rel="stylesheet">
     <title> Christopher Hosken | Contact </title>
 </head>
 
 <body>
     <nav>
         <script>
-            $(function() {
+            $(function () {
                 $("nav").load("nav.html");
             });
         </script>
@@ -31,49 +32,53 @@
         <h1 class="banner-title"> CONTACT </h1>
     </div>
     <div class="main-container">
-            <div id="horizontal-container">
-        <div id="contact-container">
-            <div id="general-info-container">
-                <div>
-                    <a href="https://goo.gl/maps/5N2DSYre9eW8AKA88" target="_blank">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p> Chiang Mai, Thailand </p>
-                    </a>
+        <div id="horizontal-container">
+            <div id="contact-container">
+                <div id="general-info-container">
+                    <div>
+                        <a href="https://goo.gl/maps/5N2DSYre9eW8AKA88" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Chiang Mai, Thailand </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:hoskenchristopher@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p> hoskenchristopher@gmail.com </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.discordapp.com/users/363326394987708417" target="_blank">
+                            <i class="fa-brands fa-discord"></i>
+                            <p> cjhosken#2924 </p>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="mailto:hoskenchristopher@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p> hoskenchristopher@gmail.com </p>
+                <a href="../assets/cv_2022.pdf" target="_blank" class="flip-button">
+                    <div>
+                        <p> Curriculum Vitae </p> <i class="fa-solid fa-download"></i>
+                    </div>
                 </a>
-                </div>
-                <div>
-                    <a href="https://www.discordapp.com/users/363326394987708417" target="_blank">
-                        <i class="fa-brands fa-discord"></i>
-                        <p> cjhosken#2924 </p>
-                    </a>
-                </div>
             </div>
-            <a href="../assets/cv_2022.pdf" target="_blank" class="button"> <div> <p> Curriculum Vitae </p> <i class="fa-solid fa-download"></i> </div> </a>
-        </div>
-        <div id="map"></div>
-        <script>
-            mapboxgl.accessToken = "pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY2wwbmpsd2llMWY4cDNkbnNudXlxd3N5biJ9.wBJjdtYQDyXNbtqujSwLDA";
-            const map = new mapboxgl.Map({
-                container: "map",
-                style: 'mapbox://styles/cjhosken/cl76cg0za001914m6ia43ct42',
-                center: [98.98531, 18.78835],
-                pitch: 30,
-                zoom: 14,
-                projection: "globe",
-            });
+            <div id="map"></div>
+            <script>
+                mapboxgl.accessToken = "pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY2wwbmpsd2llMWY4cDNkbnNudXlxd3N5biJ9.wBJjdtYQDyXNbtqujSwLDA";
+                const map = new mapboxgl.Map({
+                    container: "map",
+                    style: 'mapbox://styles/cjhosken/cl76cg0za001914m6ia43ct42',
+                    center: [98.98531, 18.78835],
+                    pitch: 30,
+                    zoom: 14,
+                    projection: "globe",
+                });
 
-            const pin = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" }).setLngLat([98.98531, 18.78835]).addTo(map);
-        </script>
+                const pin = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" }).setLngLat([98.98531, 18.78835]).addTo(map);
+            </script>
         </div>
     </div>
     <footer>
         <script>
-            $(function() {
+            $(function () {
                 $("footer").load("footer.html");
             });
         </script>

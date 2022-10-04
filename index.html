@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html id="html" lang="EN">
+<html lang="EN">
 
 <head>
     <meta charset="UTF-8">
@@ -19,37 +19,19 @@
     <title> Christopher Hosken | VFX Artist | Technical Artist | Director </title>
 </head>
 
-<body id="body">
-    <div id="splash">
-        <img src="images/logo.png" alt="Logo">
-    </div>
-
-    <div id="university-container">
-        <button id="university-close-button">
-            <i class="fa-solid fa-close"></i>
-        </button>
-        <script>
-            $("#university-close-button").click(function (event) {
-                $("#university-container").fadeOut(350);
-            });
-        </script>
-        <p>
-            Hey! Are you a University coordinator? If so, click here to view my portfolio.
-        </p>
-        <a id="portfolio-button" href="html/portfolio.html">
-            View Portfolio
-        </a>
-    </div>
-    <div id="showreel-lightbox" class="hidden">
-        <iframe id="showreel" src="https://www.youtube.com/embed/uWlNI-2GehE?enablejsapi=1"
+<body>
+    <div id="splash"><img src="images/logo.png" alt="Logo"></div>
+    <div id="showreel-lightbox" class="lightbox">
+        <iframe id="showreel-video" src="https://www.youtube.com/embed/uWlNI-2GehE?enablejsapi=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <button id="showreel-close-button"> <i class="fa-solid fa-xmark"></i> </button>
+            allowfullscreen>
+        </iframe>
+        <button id="showreel-close-button" class="lightbox-close-button"> <i class="fa-solid fa-xmark"></i> </button>
         <script>
             $("#showreel-close-button").click(function (event) {
                 $("#showreel-lightbox").fadeOut(250);
-                document.getElementById("html").style.overflowY = "overlay";
-                $("#showreel")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                document.querySelector("html").style.overflowY = "overlay";
+                $("#showreel-video")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
             });
         </script>
     </div>
@@ -62,7 +44,6 @@
     </nav>
     <div id="hero-container">
         <div id="hero-canvas">
-            <!--<i class="fa-solid fa-arrow-down"></i>-->
             <video id="canvas-video" autoplay muted loop>
                 <source src="images/Desert_Temple.mov" type="video/mp4">
             </video>
@@ -70,12 +51,12 @@
         <div id="hero-text">
             <h1> Christopher Hosken </h1>
             <h2> VFX Artist | Technical Artist | Director </h2>
-            <button id="showreel-open-button"> Showreel </button>
+            <button id="showreel-open-button" class="wire-button"> Showreel </button>
             <script>
                 $("#showreel-open-button").click(function (event) {
                     $("#showreel-lightbox").fadeIn(250);
-                    document.getElementById("html").style.overflowY = "hidden";
-                    document.getElementById("showreel-lightbox").style.display = "flex";
+                    document.querySelector("html").style.overflowY = "hidden";
+                    document.querySelector("#showreel-lightbox").style.display = "flex";
                 });
             </script>
         </div>
@@ -101,8 +82,8 @@
                 <img src="images/headshot.jpg" alt="headshot">
             </div>
         </div>
-        <div id="works-button-container">
-            <a href="/html/portfolio.html" target="_blank" class="button"> <div> <p> View Portfolio </p> <i class="fa-solid fa-images"></i> </div> </a>
+        <div id="portfolio-button-container">
+            <a href="/html/portfolio.html" target="_blank" class="flip-button"> <div> <p> View Portfolio </p> <i class="fa-solid fa-images"></i> </div> </a>
         </div>
         <div>
             <h1 class="container-header"> Experience </h1>
@@ -329,6 +310,6 @@
             });
         </script>
     </footer>
-    <script src="scripts/load.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

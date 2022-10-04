@@ -294,7 +294,7 @@ function load_other_items() {
 }
 
 function load_lightbox(name, description, group, index) {
-    var lightbox = document.getElementById("portfolio-popup");
+    var lightbox = document.getElementById("portfolio-lightbox");
 
     lightbox.querySelector("#title").innerHTML = name;
     lightbox.querySelector("#description").innerHTML = description;
@@ -331,11 +331,9 @@ function load_lightbox(name, description, group, index) {
 
     slideIndex = 0;
 
-
-
-    $(".portfolio-section-item-lightbox").fadeIn(250);
-    document.getElementById("portfolio-popup").style.display = "flex";
-    document.getElementById("html").style.overflowY = "hidden";
+    $("#portfolio-lightbox").fadeIn(250);
+    lightbox.style.display = "flex";
+    document.querySelector("html").style.overflowY = "hidden";
 
     next_slide();
 }
