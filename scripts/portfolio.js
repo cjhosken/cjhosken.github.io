@@ -127,8 +127,8 @@ let animation_items = [
 
     new PortfolioItem("Moving Day", "../assets/portfolio/animations/moving_day/cover.png", "desc", [
         new LightBoxItem("Final Animation", "<video controls class='lightbox-media'> <source src='../assets/portfolio/animations/moving_day/8-final.mp4' type='video/mp4'> </video>"),
-        new LightBoxItem("wide shot", "<img src='../assets/portfolio/animations/moving_day/sketch.png' alt='layout' class='lightbox-media'>"),
-        new LightBoxItem("wide shot", "<img src='../assets/portfolio/animations/moving_day/paint.png' alt='layout' class='lightbox-media'>"),
+        new LightBoxItem("wide shot", "<img src='../assets/portfolio/animations/moving_day/sketch.jpg' alt='layout' class='lightbox-media'>"),
+        new LightBoxItem("wide shot", "<img src='../assets/portfolio/animations/moving_day/paint.jpg' alt='layout' class='lightbox-media'>"),
         new LightBoxItem("wide shot", "<img src='../assets/portfolio/animations/moving_day/rig.png' alt='layout' class='lightbox-media'>"),
         new LightBoxItem("Final Animation", "<video controls class='lightbox-media'> <source src='../assets/portfolio/animations/moving_day/0-concept.mp4' type='video/mp4'> </video>"),
         new LightBoxItem("Final Animation", "<video controls class='lightbox-media'> <source src='../assets/portfolio/animations/moving_day/6-polish.mp4' type='video/mp4'> </video>"),
