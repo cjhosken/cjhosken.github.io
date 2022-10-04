@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,34 @@
             });
         </script>
     </nav>
+    <div class="portfolio-section-item-lightbox" id="portfolio-popup">
+        <div class="lightbox-container">
+            <i class="fa-solid fa-close" id="close"></i>
+            <script>
+                $("#close").click(function (event) {
+                $(".portfolio-section-item-lightbox").fadeOut(250);
+                document.getElementById("html").style.overflowY = "overlay";
+            });
+            </script>
+            <div class="lightbox-summary-container">
+                <h1 id="title"> Title </h1>
+                <p id="description"> Bla bla bla</p>
+            </div>
+            <div class="lightbox-media-container">
+                <a onclick="last_slide();">
+                    <i class="fa-solid fa-arrow-left arrow"></i>
+                </a>
+
+                <div class="lightbox-media-carousel" id="carousel">
+
+                </div>
+                <a onclick="next_slide();">
+                    <i class="fa-solid fa-arrow-right arrow" ></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
     <div id="banner-container">
         <span class="banner"> </span>
         <h1 class="banner-title"> PORTFOLIO </h1>
@@ -37,246 +65,39 @@
                 This is my complete portfolio.
             </p>
             <div id="portfolio-container">
-                <div class="portfolio-section">
+                <div class="portfolio-section" >
                     <h1> SKETCHBOOK / DRAWINGS </h1>
-                    <div class="portfolio-section-item-list">
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/sketches/tree_study.jpg" alt="Tree Study">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Tree Study </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/sketches/ldr_sketch.png" alt="Love Death + Robots Sketch">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Love Death + Robots Sketch </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/sketches/light_study.png" alt="Light Study">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Lighting Study </h1>
-                                <p> Bla bla bla</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/sketches/monster_concept.png" alt="Monster Concept">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Monster Concept </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
+                    <div class="portfolio-section-item-list" id="sketchings">
+                        
                     </div>
                 </div>
                 <div class="portfolio-section">
                     <h1> DIGITAL ARTWORKS </h1>
-                    <div class="portfolio-section-item-list">
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg" alt="A Ghost Story">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> A Ghost Story </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/a_teaching_moment.jpg" alt="A Teaching Moment">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> A Teaching Moment </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/blm/1_paint.png" alt="BLM">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> As the Paint Wears Away </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/dalek.jpg" alt="Dalek">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Dalek on the Moon </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/deep_sea.png" alt="Deep Sea">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Deep Sea </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/earth.png" alt="Earth">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Earth </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/fire_at_night.png" alt="Fire at Night">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Night Driving </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/i_knew_youd_hit_it.jpg" alt="I Knew You'd Hit It!">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> I Knew You'd Hit it! </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/let_me_be.jpg" alt="Let Me Be">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Let Me Be </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/p66/11_new_grade.png" alt="P66">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> P66 Probe </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/under_the_moon.png" alt="Under The Moon">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Under the Cover of the Moon </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/art/walkman.jpeg" alt="Walkman">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Walkman </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
+                    <div class="portfolio-section-item-list" id="digital">
+
                     </div>
                 </div>
                 <div class="portfolio-section">
                     <h1> ANIMATIONS </h1>
-                    <div class="portfolio-section-item-list">
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/car_drift/banner.png" alt="Car Drift">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> City Racing </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/creature_breach/banner.png" alt="Creature Breach">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Creature Breach </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                            <div class="portfolio-section-item-showroom">
-                                <p> lol </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/desert_temple/banner.png" alt="Desert Temple">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Desert Temple </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/dune_ornithopter/cover.png" alt="Dune Ornithopter">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Dune Ornithopter </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/low_orbit/2_grading.png" alt="Low Orbit">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Low Orbit </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/maui_skit/cover.png" alt="Maui Skit">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Maui Skit </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/moving_day/cover.png" alt="Moving Day">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Moving Day </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/animations/sci_fi_plains/7_grade.png" alt="Sci Fi Plains">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Sci Fi Plains </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
+                    <div class="portfolio-section-item-list" id="animations">
+
                     </div>
                 </div>
                 <div class="portfolio-section">
                     <h1> FILMS </h1>
-                    <div class="portfolio-section-item-list">
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/shorts/fallout_shopping/cover.png" alt="Fallout Shopping">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Fallout Shopping </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/shorts/lamp_attack/cover.png" alt="Lamp Attack!">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Lamp Attack! </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/shorts/sparky/cover.jpg" alt="Sparky">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Sparky </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
+                    <div class="portfolio-section-item-list" id="films">
+                        
                     </div>
                 </div>
                 <div class="portfolio-section">
                     <h1> PROGRAMMING / OTHERS </h1>
-                    <div class="portfolio-section-item-list">
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/other/breeze/breeze_render_engine.png" alt="Breeze Render Engine">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Breeze Render Engine </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/other/sicle/sicle_maps_app.jpg" alt="Sicle App">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> Sicle </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
-                        <div class="portfolio-section-item">
-                            <img src="../assets/portfolio/other/my_website.png" alt="My Website">
-                            <div class="portfolio-section-item-flipped">
-                                <h1> My Website </h1>
-                                <p> Bla bla bla </p>
-                            </div>
-                        </div>
+                    <div class="portfolio-section-item-list" id="others">
+                        
                     </div>
                 </div>
             </div>
         </div>
+        <script src="../scripts/portfolio.js"></script>
     <footer>
         <script>
             $(function() {

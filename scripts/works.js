@@ -63,7 +63,6 @@ function load_companies() {
     }
 }
 
-
 $(document).ready(function() {
     load_works();
     load_companies();
