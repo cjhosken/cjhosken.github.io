@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     load_splash();
+    document.getElementById("about-link").classList.add("active");
 });
 
 

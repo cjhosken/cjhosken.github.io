@@ -273,19 +273,39 @@ a:hover {
     width: 35vh;
 }
 
+#portfolio-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-button-container .flip-button {
+    margin: 5%;
+    max-height: 5%;
+    min-width: 10%;
+    max-width: 25vh;
+}
+
 #history-list-container {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+
 }
 
 .history-item {
     text-align: center;
     margin: 2vh;
-    width: 40vh;
-    display: inline-block;
+    width: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-item i {
+    font-size: 2vh;
+    margin: 1vh;
+    color: var(--primary);
 }
 
 .history-item h1 {
@@ -297,12 +317,12 @@ a:hover {
 }
 
 .history-item p {
+    margin: 1em;
     font-size: 1em;
 }
 
 #general-skills-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -315,7 +335,17 @@ a:hover {
 
 .general-skill-item {
     margin: 5vh 5vh;
-    width: 25vh;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-skill-item i {
+    color: var(--primary);
+    font-size: 2vh;
+    margin: 1em;
+    text-align: center;
 }
 
 .general-skill-item h1 {
@@ -325,6 +355,7 @@ a:hover {
 
 .general-skill-item p {
     font-size: 1em;
+    margin: 1em;
     text-align: center;
 }
 
@@ -491,20 +522,6 @@ a:hover {
     border-radius: 5px;
 }
 
-#portfolio-button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#portfolio-button-container .flip-button {
-    margin: 5%;
-    max-height: 5%;
-    min-width: 10%;
-    max-width: 25vh;
-}
-
 /* SPLASH SCREEN */
 
 #splash {
@@ -544,4 +561,19 @@ a:hover {
         opacity: 0;
         transform: scale(300%) translateY(0vh);
     }
+}
+
+#index #about-link {
+    color: var(--primary);
+    border-bottom: solid var(--primary) 2px;
+}
+
+#portfolio #portfolio-link {
+    color: var(--primary);
+    border-bottom: solid var(--primary) 2px;
+}
+
+#contact #contact-link {
+    color: var(--primary);
+    border-bottom: solid var(--primary) 2px;
 }
