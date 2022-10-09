@@ -30,7 +30,7 @@ function item_to_html(item) {
 }
 
 function load_portfolio_items() {
-    fetch("../scripts/data.json")
+    fetch("../scripts/portfolio.json")
         .then(response => response.json())
         .then(result => {
 
@@ -77,7 +77,7 @@ function load_portfolio_items() {
 }
 
 function load_lightbox(category_index, item_index) {
-    fetch("../scripts/data.json")
+    fetch("../scripts/portfolio.json")
         .then(response => response.json())
         .then(result => {
 

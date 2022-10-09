@@ -1,0 +1,72 @@
+{
+    "skills" : [
+        {
+            "name" : "Blender",
+            "logo" : "../images/software/blender.png",
+            "link" : "https://www.blender.org/",
+            "score" : 5
+        },
+        {
+            "name" : "Houdini",
+            "logo" : "../images/software/houdini.png",
+            "link" : "https://www.sidefx.com/",
+            "score" : 3
+        },
+        {
+            "name" : "Unreal Engine 5",
+            "logo" : "../images/software/unreal.png",
+            "link" : "https://www.unrealengine.com/en-UK/",
+            "score" : 3
+        },
+        {
+            "name" : "Nuke",
+            "logo" : "../images/software/nuke.png",
+            "link" : "https://www.foundry.com/products/nuke-family/nuke",
+            "score" : 3
+        },
+        {
+            "name" : "DaVinci Resolve",
+            "logo" : "../images/software/resolve.png",
+            "link" : "https://www.blackmagicdesign.com/products/davinciresolve",
+            "score" : 4
+        },
+        {
+            "name" : "Krita",
+            "logo" : "../images/software/krita.png",
+            "link" : "https://krita.org/en/",
+            "score" : 3
+        },
+        {
+            "name" : "Python",
+            "logo" : "../images/software/python.png",
+            "link" : "https://www.python.org/",
+            "score" : 4
+        },
+        {
+            "name" : "Java",
+            "logo" : "../images/software/java.png",
+            "link" : "https://www.oracle.com/java/",
+            "score" : 4
+        },
+        {
+            "name" : "C++",
+            "logo" : "../images/software/cpp.png",
+            "link" : "https://learn.microsoft.com/en-us/cpp/?view=msvc-170",
+            "score" : 3
+        },
+        {
+            "name" : "HTML, CSS, JS",
+            "logo" : "../images/software/web.png",
+            "link" : "https://www.w3schools.com/html/default.asp",
+            "score" : 4
+        }
+    ],
+
+    "companies" : [
+        {
+            "name": "BOAP Studios",
+            "logo": "../images/companies/boap_minimal.png",
+            "link": "https://sites.google.com/view/boap-studio/"
+        }
+    ]
+}
