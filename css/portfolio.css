@@ -162,8 +162,11 @@
     width: 90%;
     height: 80%;
     display: flex;
+    overflow-x: scroll;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
+    overflow: visible;
 }
 
 .lightbox-media-item {
@@ -172,7 +175,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .lightbox-media {

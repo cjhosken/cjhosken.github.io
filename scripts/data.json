@@ -738,6 +738,12 @@
                             "description": "A turntable of the retail bot. I never gave him a name, he wasn't cool enough for that."
                         },
                         {
+                            "name": "Retail Bot Sketchfab",
+                            "type": 3,
+                            "link": "https://sketchfab.com/models/13f7d57b05d04327bcd5fd532e68c430/embed",
+                            "description" : "An interactive model of the retail bot."
+                        },
+                        {
                             "name": "Lighting Test 1",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/test.png",

@@ -18,6 +18,9 @@ function item_to_html(item) {
         case 2:
             html += "<iframe width='480' height='320' src='" + item.link + "' class='lightbox-media' title='" + item.name + "' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
             break;
+        case 3:
+            html += '<iframe title="' + item.name + '" src="' + item.link + '" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="lightbox-media" width="480" height="320"> </iframe>'
+            break;
     }
 
     html += "<p>" + item.description + "</p>";
@@ -111,6 +114,7 @@ function next_slide() {
     let slides = document.getElementsByClassName("lightbox-media-item");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides[i].style
     }
     slideIndex++;
 
