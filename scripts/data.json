@@ -1,0 +1,972 @@
+{
+    "categories": [
+        {
+            "name": "sketches",
+            "items": [
+                
+            ]
+        },
+        {
+            "name": "animations",
+            "items": [
+                {
+                    "name": "City Racing",
+                    "cover": "../assets/portfolio/animations/car_drift/banner.png",
+                    "year": "2022",
+                    "synopsis": "I had always wanted to do a high energy car chase animation. So one day I sat down and did it!",
+                    "description": "Lol",
+                    "tools": "Blender, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/car_drift/10_final.mp4",
+                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                        },
+                        {
+                            "name": "Concept",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/car_drift/0_concept.png",
+                            "description": "The first concept. I ended changing things because I wasn't getting the up close action packed feeling."
+                        },
+                        {
+                            "name": "Layout",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/car_drift/scene_layout.png",
+                            "description": "The scene layout. I remember basing it off a street in tokyo."
+                        },
+                        {
+                            "name": "Viewport",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/car_drift/6_person.mp4",
+                            "description": "I was very proud of the motion of the car. The sharp swing and the levelling out, all while the wheels kept spinning was very satisfying."
+                        }
+                    ]
+                },
+                {
+                    "name": "Creature Breach",
+                    "cover": "../assets/portfolio/animations/creature_breach/banner.png",
+                    "year": "2021",
+                    "synopsis": "After spending a couple weeks messing around in Houdini. I decided I wanted to attempt a large scale fluid simulation. I had seen a similar creature breach animation online and felt like learning how to do that myself.",
+                    "description": "Lol",
+                    "tools": "Blender, Houdini",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Fluid",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creature_breach/fluid.mp4",
+                            "description": "The fluid simulation. It took about 72 hours non-stop to bake."
+                        },
+                        {
+                            "name": "Base",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creature_breach/anim.mp4",
+                            "description": "The base animation. This was definitely the easiest part of the entire project."
+                        },
+                        {
+                            "name": "Saliva",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creature_breach/saliva.mp4",
+                            "description": "I also made a saliva simulation for the shot, but I ended up not using it for anything."
+                        }
+                    ]
+                },
+                {
+                    "name": "Desert Temple",
+                    "cover": "../assets/portfolio/animations/desert_temple/banner.png",
+                    "year": "2022",
+                    "synopsis": "After hearing about the full Unreal Engine 5 release, I decided to play around with Megascans and Lumen. I was playing Tomb Raider at the time and wanted to making something that resembled a desert temple.",
+                    "description": "Lol",
+                    "tools": "Unreal Engine 5, Quixel Megascans, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/desert_temple/desert_temple.mov",
+                            "description": "The full animation. The hardest part was getting the animation to work without breaking the scene."
+                        },
+                        {
+                            "name": "Light",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/desert_temple/light.png",
+                            "description": "A quick lighting test. The fact that this software is free amazes me."
+                        },
+                        {
+                            "name": "Wide",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/desert_temple/wide.png",
+                            "description": "A large shot of the scene. I was able to throw this together in about an hour."
+                        }
+                    ]
+                },
+                {
+                    "name": "Ornithopter",
+                    "cover": "../assets/portfolio/animations/dune_ornithopter/cover.png",
+                    "year": "2021",
+                    "synopsis": "After watching Dune, I loved the animations for the ornithopters and I had to try it for myself.",
+                    "description": "Lol",
+                    "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/dune_ornithopter/dune_animation_clean.mp4",
+                            "description": "The full animation. This was done all over a single weekend."
+                        },
+                        {
+                            "name": "Hack",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/dune_ornithopter/screenshot.png",
+                            "description": "The ornithopter itself was a basic projection mapping hack."
+                        },
+                        {
+                            "name": "Wide",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/dune_ornithopter/viewport.mp4",
+                            "description": "The hardest part of the animation was getting the wings to flutter properly. I also wanted to have the sand react to the ornithopter, but that was too difficult."
+                        }
+                    ]
+                },
+                {
+                    "name": "Low Orbit",
+                    "cover": "../assets/portfolio/animations/low_orbit/2_grading.png",
+                    "year": "2021",
+                    "synopsis": "In late 2021 I had taken a break from doing 3D to focus on programming, this piece was made during that time to get me back into the habit of animating. I also had lost my old earth asset and wanted to do a fun test with my newly created one.",
+                    "description": "Lol",
+                    "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/low_orbit/earth_with_audio.mp4",
+                            "description": "The full animation."
+                        },
+                        {
+                            "name": "Earth",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/low_orbit/earth.png",
+                            "description": "A viewport render of the earth."
+                        },
+                        {
+                            "name": "Ship",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/low_orbit/ship.png",
+                            "description": "A ship downloaded from CGTrader."
+                        },
+                        {
+                            "name": "Shuttle",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/low_orbit/shuttle.png",
+                            "description": "A shuttle downloaded from CGTrader."
+                        }
+                    ]
+                },
+                {
+                    "name": "Maui Skit",
+                    "cover": "../assets/portfolio/animations/maui_skit/cover.png",
+                    "year": "2022",
+                    "synopsis": "Using audio from the Disney film, Moana. I put my own spin on the character Maui.",
+                    "description": "Lol",
+                    "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/maui_skit/16_rendered.mp4",
+                            "description": "The finished animation. This was the first time that I had ever properly aniamted a dynamic character to audio."
+                        },
+                        {
+                            "name": "Storyboard",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/maui_skit/0_drawings.mp4",
+                            "description": "The storyboard animation. I sadly wasn't able to put the same level of personality into the 3D character."
+                        },
+                        {
+                            "name": "Blocking",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/maui_skit/1_blocking.mp4",
+                            "description": "Blocking. This gave me a good starting place as I wasn't sure how to animate Maui jumping around the scene."
+                        },
+                        {
+                            "name": "Refining",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/maui_skit/7_more_blocking.mp4",
+                            "description": "I then realized that a good animation technique is to then animate the frame between two blocking poses and to keep doing that until the animation is smooth."
+                        },
+                        {
+                            "name": "Final Viewport Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/maui_skit/15_final_animation.mp4",
+                            "description": "The final viewport animation. I wasn't too happy with Maui's speed due to the timing and size of the set, but it was a good animation excercise."
+                        },
+                        {
+                            "name": "Lighting",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/maui_skit/14_retexture.png",
+                            "description": "A basic lighting test. I wanted to light the scene similar to how shots look in early 3D Disney animations."
+                        }
+                    ]
+                },
+                {
+                    "name": "Moving Day",
+                    "cover": "../assets/portfolio/animations/moving_day/cover.png",
+                    "year": "2021",
+                    "synopsis": "Moving Day was a short animation I made after making random sketches inside of the Blender. It explores the idea of what animals consider home.",
+                    "description": "Lol",
+                    "tools": "Blender, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/moving_day/8-final.mp4",
+                            "description": "The final animation. I was very pleased with how it turned out."
+                        },
+                        {
+                            "name": "Sketch",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/moving_day/sketch.jpg",
+                            "description": "The original concept. I wanted to contrast the dark environment of an attic with with a warm sunrise glow."
+                        },
+                        {
+                            "name": "Paintover",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/moving_day/paint.jpg",
+                            "description": "Once I had finished modelling the attic, I did a paintover sketch in Krita to experiment with what details I wanted to add to the shot."
+                        },
+                        {
+                            "name": "Rig",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/moving_day/rig.png",
+                            "description": "The mouse. I began with sculpting and then retopologized, textured, rigged, and groomed him."
+                        },
+                        {
+                            "name": "Storyboard",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/moving_day/0-concept.mp4",
+                            "description": "A simple 3d storyboard. This let me figure out timing and framing."
+                        },
+                        {
+                            "name": "Lighting",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/moving_day/6-polish.mp4",
+                            "description": "The final viewport animation. This was one of the first times that I had made and used a high quality rig, so I was still learning best animation practices."
+                        }
+                    ]
+                },
+                {
+                    "name": "Sci-Fi Plains",
+                    "cover": "../assets/portfolio/animations/sci_fi_plains/7_grade.png",
+                    "year": "2022",
+                    "synopsis": "Following the concept art by Thomas Dubois, I decided to experiment with large scale environments using Quixel's Megascans.",
+                    "description": "Lol",
+                    "tools": "Blender, Quixel Megascans, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/cliff_final_wide_with_audio.mp4",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/0_layout.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/4_grade.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/5_drawover.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/7_grade.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/cliff_viewport.mp4",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "digitals",
+            "items": [
+                {
+                    "name": "A Ghost Story",
+                    "cover": "../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg",
+                    "year": "2021",
+                    "synopsis": "A piece I made after seeing the movie, A Ghost Story.",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/0_house_rough.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/3_texturing_and_grass.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/4_review.jpg",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/9_environment_base.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/a_ghost_story/11_trees.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 1,
+                            "link": "../assets/portfolio/art/a_ghost_story/15_viewport_final.mp4",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                },
+                {
+                    "name": "As the Paint Wears Away",
+                    "cover": "../assets/portfolio/art/blm/1_paint.png",
+                    "year": "2021",
+                    "synopsis": "Racism has been an issue for the past decades, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint theres a much deeper systemic problem.",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/blm/1_paint.png",
+                            "description": "The final piece. The paint represents the American Dream, and the fact it's being worn down is showing all of America's flaws. I chose to remove the eyes and ears from the sculpture to imply that people dont always see and hear the problem"
+                        },
+                        {
+                            "name": "WIP",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/blm/0_concept.png",
+                            "description": "The piece without the paint. I hadn't figured out what I wanted to tell with the piece yet."
+                        }   
+                    ]
+                },
+                {
+                    "name": "P.66",
+                    "cover": "../assets/portfolio/art/p66/11_new_grade.png",
+                    "year": "2022",
+                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create my favourite piece, P.66 Probe.",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final Render",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/11_new_grade.png",
+                            "description": "The final render. I probably would have worked more on it if my computer handled the volumetrics better."
+                        },
+                        {
+                            "name": "Breakdown",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/1_labelled.png",
+                            "description": "A breakdown of the original piece by Fang Yi. There were a tonn of buildings and I wanted to match the concept as closely as possible."
+                        },
+                        {
+                            "name": "Buildings",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/3_buildings.png",
+                            "description": "A viewport render of the finished buildings."
+                        },
+                        {
+                            "name": "Clouds",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/5_advanced_clouds.png",
+                            "description": "Figuring out how to do the clouds and mist was extremely challenging."
+                        },
+                        {
+                            "name": "New Layout",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/8_revamp.png",
+                            "description": "I ended up changing the layout of the buildings because the previous setup wasnt working."
+                        },
+                        {
+                            "name": "Personalized",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/10_new_clouds.png",
+                            "description": "Through giving myself more freedom to create, I was able to make the scene look better."
+                        },
+                        {
+                            "name": "Viewport Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/art/p66/P66_Viewport.mp4",
+                            "description": "During this time I also had the idea of making a short horror animation."
+                        },
+                        {
+                            "name": "Rendered Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/art/p66/P66_low_v01.mp4",
+                            "description": "I tried rendering it out but the sheer number of volumes broke my renders, so I gave up on the idea."
+                        }
+                    ]
+                },
+                {
+                    "name": "Default Cube",
+                    "cover": "../assets/portfolio/art/default_cube/10_final_out.png",
+                    "year": "2020",
+                    "synopsis": "WRITE ABOUT ME",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/default_cube/10_final_out.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/default_cube/0_layout.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/default_cube/1_trees.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/default_cube/3_soften.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/default_cube/5_concept.png",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                },
+                {
+                    "name": "Earths",
+                    "cover": "../assets/portfolio/art/earths/blue.png",
+                    "year": "2020",
+                    "synopsis": "WRITE ABOUT ME",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/blue.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/fluffly.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/mobile.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/wide.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/earth.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/earths/big_atmos.png",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                },
+                {
+                    "name": "Let Me Be",
+                    "cover": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
+                    "year": "2020",
+                    "synopsis": "WRITE ABOUT ME",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/let_me_be/0_blocking.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/let_me_be/3_better_lighting.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/let_me_be/5_textures.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/let_me_be/7_final_render.png",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                },
+                {
+                    "name": "Steamboat Willy",
+                    "cover": "../assets/portfolio/art/steamboat_willy/final.png",
+                    "year": "2020",
+                    "synopsis": "WRITE ABOUT ME",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/steamboat_willy/final.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/steamboat_willy/modelling.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/steamboat_willy/hair.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/steamboat_willy/scene.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/steamboat_willy/render.png",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                },
+                {
+                    "name": "Under The Moon",
+                    "cover": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
+                    "year": "2022",
+                    "synopsis": "WRITE ABOUT ME",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
+                            "description": "WRITE ABOUT ME"
+                        },
+                        {
+                            "name": "FIX",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/under_the_moon/sketch.png",
+                            "description": "WRITE ABOUT ME"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "films",
+            "items": [
+                {
+                    "name": "The Girl and The Robot",
+                    "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                    "year": "2023",
+                    "synopsis": "",
+                    "description": "Lol",
+                    "tools": "Blender, Substance Painter, Nuke, Mocha, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Team Project",
+                    "items": [
+                        {
+                            "name": "App Screenshot",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                            "description": "A screenshot of the app in use."
+                        },
+                        {
+                            "name": "App Demo Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/sicle/sicle_demo.mp4",
+                            "description": "The app runs on Android and uses the MapBox API."
+                        }
+                    ]
+                },
+                {
+                    "name": "Fallout Shopping",
+                    "cover": "../assets/portfolio/films/fallout_shopping/cover.png",
+                    "year": "2022",
+                    "synopsis": "With humanity wiped from existance, a retail robot is finally free to enjoy what he loves most; Going shopping!",
+                    "description": "Lol",
+                    "tools": "Blender, Nuke, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Fallout Shopping",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/BrBCp5VYLho",
+                            "description": "The full animation took just under 2 full months to make. 1 month for concepting and planning, another for production."
+                        },
+                        {
+                            "name": "Synopsis",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/synop.jpg",
+                            "description": "A synposis page that I threw together. This helped me determine whether or not I wanted to make Fallout Shopping."
+                        },
+                        {
+                            "name": "Storyboard",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/fallout_shopping/storyboard.mp4",
+                            "description": "A video of the storyboard matched to the music. It helped me get my thoughts together and know how long each shot was going to be."
+                        },
+                        {
+                            "name": "Concept 1",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/concept_pg1.jpg",
+                            "description": "A concept page of how I wanted the scenes to look like."
+                        },
+                        {
+                            "name": "Concept 2",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/concept_pg2.png",
+                            "description": "Another page of concepts. I based most of the scenes off the Central Festival shopping mall in Chiang Mai."
+                        },
+                        {
+                            "name": "Concept 3",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/concept_pg3.png",
+                            "description": "Another page of concepts. I never completed outdoor environment because I thought I could wing it. It ended up being the worst shot in the entire animation."
+                        },
+                        {
+                            "name": "Turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/fallout_shopping/turntable.mp4",
+                            "description": "A turntable of the retail bot. I never gave him a name, he wasn't cool enough for that."
+                        },
+                        {
+                            "name": "Lighting Test 1",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/test.png",
+                            "description": "An early lighting test of the opening shot. I struggled alot on trying to create a damaged apocalyptic floor."
+                        },
+                        {
+                            "name": "Lighting Test 2",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/sc_2_test.png",
+                            "description": "Another early lighting test. This shot gave me good experience on how to light a hallway when the main light source is from the back."
+                        },
+                        {
+                            "name": "Lighting Test 3",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/fallout_shopping/02_render.png",
+                            "description": "This shot is what inspired me to make Fallout Shopping. I had imagined it weeks before I considered making it an animation."
+                        }
+                    ]
+                },
+                {
+                    "name": "Lamp Attack!",
+                    "cover": "../assets/portfolio/films/lamp_attack/cover.png",
+                    "year": "2021",
+                    "synopsis": "We've all grown accustomed to the brutality we see in the Pixar intro. But what about those poor Pixar letters everywhere else?",
+                    "description": "Lol",
+                    "tools": "Blender, DaVinci Resolve",
+                    "pipeline": "All Aspects",
+                    "client": "Team Project",
+                    "items": [
+                        {
+                            "name": "Lamp Attack!",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/w5oKCQUjC4A",
+                            "description": "The Entire short film. I was amazed that a dumb idea I had while eating lunch ended up becoming a full short animaton."
+                        },
+                        {
+                            "name": "Sketch",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/lamp_attack/0_sketch.jpg",
+                            "description": "The first sketch. The entire animation was built off this one quick drawing."
+                        },
+                        {
+                            "name": "Storyboard",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/lamp_attack/storyboard.mp4",
+                            "description": "This was the first time that I had made a storyboard for the entire short. As I was working in a team I wanted to show them what we were aiming for."
+                        },
+                        {
+                            "name": "Rig",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/lamp_attack/rig.png",
+                            "description": "Rigging the letters was a fun experience for me. There were no tutorials online so my rigging ability was really put to the test."
+                        },
+                        {
+                            "name": "Rig Demo",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/lamp_attack/luxo_rig_demo.mp4",
+                            "description": "Rigging Luxo Jr. wasnt as difficult as there were numerous tutorials on how to do it."
+                        },
+                        {
+                            "name": "Early Animation Test",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/lamp_attack/early_anim_test.mp4",
+                            "description": "Early animation test. I started with just the core actors as I wanted them to look perfect in the final shot."
+                        },
+                        {
+                            "name": "Lighting Test",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/lamp_attack/lighting_test.png",
+                            "description": "A lighting test. I wanted the spotlight to be the main source of light as it would give off a more horror-like mood."
+                        },
+                        {
+                            "name": "Crowd Test",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/lamp_attack/failed_crowd_test.mp4",
+                            "description": "Finding a way to animate large crowds was a huge challenge. Here's one of my failed crowd tests."
+                        },
+                        {
+                            "name": "Pixar Intro",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/lamp_attack/mock_pixar_intro.mp4",
+                            "description": "While testing the letter and Luxo rigs, I made a mock Pixar intro."
+                        }
+                    ]
+                },
+                {
+                    "name": "Sparky",
+                    "cover": "../assets/portfolio/films/sparky/cover.jpg",
+                    "year": "2020",
+                    "synopsis": "In a quest to find a new power source for Glenton, a robot finds himself doing more harm than good. Or so it seems...",
+                    "description": "Lol",
+                    "tools": "Blender, Premiere Pro",
+                    "pipeline": "All Aspects",
+                    "client": "Team Project",
+                    "items": [
+                        {
+                            "name": "Sparky",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/MiW7fpVK_S4",
+                            "description": "The entire short film took about 16 months to make."
+                        },
+                        {
+                            "name": "Early Concept",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/sparky/old_sparky.png",
+                            "description": "An early concept of Sparky. I thew this together as a test to see how his limbs would interect with surroundings."
+                        },
+                        {
+                            "name": "Street",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/sparky/street.png",
+                            "description": "A screenshot of the road scene. Alot of duplication and moving was done for this."
+                        },
+                        {
+                            "name": "Animation",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/sparky/anim.png",
+                            "description": "A screenshot of Sparky during the animation phase. You can see we went for more tube based limbs so we could stretch Sparky as much as we needed to.."
+                        },
+                        {
+                            "name": "Turbines",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/sparky/turbines.png",
+                            "description": "An early shot of the turbines. The mountain was everntually removed from the shot but you can see the rest is relatively similar to the final."
+                        },
+                        {
+                            "name": "Warehouse",
+                            "type": 0,
+                            "link": "../assets/portfolio/films/sparky/warehouse.png",
+                            "description": "An interior of the warehouse. Making sure that the render settings for this scene was extremely difficult due to the amount of noise that was generated."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "others",
+            "items": [
+                {
+                    "name": "Breeze Render Engine",
+                    "cover": "../assets/portfolio/other/breeze/breeze_render_engine.png",
+                    "year": "2022",
+                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breezes custom render engine.",
+                    "description": "Lol",
+                    "tools": "Visual Studio, RenderDoc, OpenGL, Qt",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Scene Example",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/breeze_render_engine.png",
+                            "description": "A screenshot of a scene made in Breeze. All the transformations and colors are editable."
+                        },
+                        {
+                            "name": "Demo Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/breeze/breeze_demo.mp4",
+                            "description": "A demo video of the program in action."
+                        },
+                        {
+                            "name": "OBJ Importing",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/objs.png",
+                            "description": "The app also allows custom OBJ importing. Getting this working was an absolute pain."
+                        },
+                        {
+                            "name": "Render",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/render.png",
+                            "description": "The Render from the demo video."
+                        }
+                    ]
+                },
+                {
+                    "name": "Sicle Maps App",
+                    "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                    "year": "2021",
+                    "synopsis": "Sicle Maps is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
+                    "description": "Lol",
+                    "tools": "Android Studio, MapBox, Kotlin",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "App Screenshot",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                            "description": "A screenshot of the app in use."
+                        },
+                        {
+                            "name": "App Demo Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/sicle/sicle_demo.mp4",
+                            "description": "The app runs on Android and uses the MapBox API."
+                        }
+                    ]
+                },
+                {
+                    "name": "School Designs",
+                    "cover": "../assets/portfolio/other/none/none.png",
+                    "year": "2022",
+                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breezes custom render engine.",
+                    "description": "Lol",
+                    "tools": "Nuke, Wall paint, printing company",
+                    "pipeline": "All Aspects",
+                    "client": "School Project",
+                    "items": [
+                    ]
+                },
+                {
+                    "name": "Website",
+                    "cover": "../assets/portfolio/other/website/my_website.png",
+                    "year": "2022",
+                    "synopsis": "I custom built this website! With HTML, CSS, Javascript and a lot of love, everything you see here was programmed by me.",
+                    "description": "Lol",
+                    "tools": "Visual Studio Code, Github",
+                    "pipeline": "All Aspects",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Home Page",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/website/my_website.png",
+                            "description": "The wonderful home page."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
