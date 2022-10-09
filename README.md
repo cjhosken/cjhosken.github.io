@@ -13,6 +13,3 @@ TODO:
  - Validate CSS
  
  - Finish showreel
-
- - Nice tidbits
-   - Portfolio scrolling
