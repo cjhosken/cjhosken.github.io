@@ -88,6 +88,8 @@ function load_lightbox(category_index, item_index) {
     lightbox.querySelector("#title").innerHTML = item.name;
     lightbox.querySelector("#description").innerHTML = item.synopsis + "<br> </br>" + item.description;
 
+    
+
     var mediaItemsHTML = "";
 
     for (let idx = 0; idx < item.items.length; idx++) {

@@ -52,7 +52,7 @@
                     "synopsis": "After spending a couple weeks messing around in Houdini. I decided I wanted to attempt a large scale fluid simulation. I had seen a similar creature breach animation online and felt like learning how to do that myself.",
                     "description": "Lol",
                     "tools": "Blender, Houdini",
-                    "pipeline": "All Aspects",
+                    "pipeline": "Animation, Simulation",
                     "client": "Personal Project",
                     "items": [
                         {
