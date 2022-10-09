@@ -9,6 +9,14 @@ class SkillItem {
     }
 }
 
+class CompanyItem {
+    constructor(name, image, link) {
+        this.name = name;
+        this.image = image;
+        this.link = link;
+    }
+}
+
 let skill_list = [
     new SkillItem("Blender", "../images/software/blender.png", "https://www.blender.org/", 5),
     new SkillItem("Houdini", "../images/software/houdini.png", "https://www.sidefx.com/", 3),
@@ -22,6 +30,9 @@ let skill_list = [
     new SkillItem("HTML, CSS, JS", "../images/software/web.png", "https://www.w3schools.com/html/default.asp", 4),
 ];
 
+let company_list = [
+    new CompanyItem("BOAP Studios", "boap_minimal.png", "https://sites.google.com/view/boap-studio/")
+]
 
 function load_skills() {
     html = "";
@@ -49,6 +60,21 @@ function load_skills() {
     document.getElementById("specific-skills-container").innerHTML = html;
 }
 
+function load_companies() {
+    var html = ""
+
+    for (let idx = 0; idx < company_list.length; idx++) {
+        var c = company_list[idx];
+
+        html += "<div class='company-item'>";
+        html += "<a href='" + c.link + "' target=_blank>"
+        html += "<img src='" + "../images/companies/" + c.image + "' alt='" + c.name + "'> </img>";
+        html += "</a>"
+        html += "</div>";
+
+        $("#companies-list-container").html(html);
+    }
+}
 
 function load_splash() {
     if (sessionStorage.getItem("splash") !== "true") {
@@ -72,6 +98,7 @@ function load_splash() {
 
 $(document).ready(function() {
     load_skills();
+    load_companies();
     load_splash();
 });
 

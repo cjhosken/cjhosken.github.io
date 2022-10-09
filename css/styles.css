@@ -419,6 +419,25 @@ a:hover {
 }
 
 
+#companies-list-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--secondary-background);
+}
+
+#companies-list-container img {
+    width: 25vh;
+    filter: saturate(5%) contrast(10%) brightness(110%);
+    transition: filter 0.35s;
+}
+
+#companies-list-container img:hover {
+    filter: saturate(5%) contrast(10%) brightness(70%);
+}
+
+
 /* BANNERS PAGE */
 
 

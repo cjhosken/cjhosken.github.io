@@ -5,6 +5,15 @@
     background-position-y: 7%;
 }
 
+.portfolio-section > h1 {
+    margin: 5vh auto;
+    width: fit-content;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 0.25vh;
+    border-bottom: solid 5px var(--primary);
+}
+
 .portfolio-section-item-list {
     display: flex;
     flex-direction: row;

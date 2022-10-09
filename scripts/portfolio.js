@@ -67,7 +67,45 @@ let digital_items = [
         new LightBoxItem("Through giving myself more freedom to create, I was able to make the scene look better.", "<img src='../assets/portfolio/art/p66/10_new_clouds.png' alt='concept' class='lightbox-media'>"),
         new LightBoxItem("During this time I also had the idea of making a short horror animation.", "<video controls class='lightbox-media'> <source src='../assets/portfolio/art/p66/P66_Viewport.mp4' type='video/mp4'> </video>"),
         new LightBoxItem("I tried rendering it out but the sheer number of volumes broke my renders, so I gave up on the idea.", "<video controls class='lightbox-media'> <source src='../assets/portfolio/art/p66/P66_low_v01.mp4' type='video/mp4'> </video>"),
-    ], "digitals")
+    ], "digitals"),
+
+    new PortfolioItem("Default Cube", "../assets/portfolio/art/default_cube/10_final_out.png", "", [
+        new LightBoxItem("", "<img src='../assets/portfolio/art/default_cube/10_final_out.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/default_cube/0_layout.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/default_cube/1_trees.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/default_cube/3_soften.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/default_cube/5_concept.png' alt='concept' class='lightbox-media'>"),
+    ], "digitals"),
+
+    new PortfolioItem("Earths", "../assets/portfolio/art/earths/blue.png", "", [
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/blue.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/fluffly.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/mobile.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/wide.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/earth.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/earths/big_atmos.png' alt='concept' class='lightbox-media'>"),
+    ], "digitals"),
+
+    new PortfolioItem("Let Me Be", "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg", "", [
+        new LightBoxItem("", "<img src='../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/let_me_be/0_blocking.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/let_me_be/3_better_lighting.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/let_me_be/5_textures.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/let_me_be/7_final_render.png' alt='concept' class='lightbox-media'>"),
+    ], "digitals"),
+
+    new PortfolioItem("Steamboat Willy", "../assets/portfolio/art/steamboat_willy/final.png", "", [
+        new LightBoxItem("", "<img src='../assets/portfolio/art/steamboat_willy/final.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/steamboat_willy/modelling.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/steamboat_willy/hair.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/steamboat_willy/scene.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/steamboat_willy/render.png' alt='concept' class='lightbox-media'>"),
+    ], "digitals"),
+
+    new PortfolioItem("Under the Moon", "../assets/portfolio/art/under_the_moon/under_the_moon.png", "", [
+        new LightBoxItem("", "<img src='../assets/portfolio/art/under_the_moon/under_the_moon.png' alt='concept' class='lightbox-media'>"),
+        new LightBoxItem("", "<img src='../assets/portfolio/art/under_the_moon/sketch.png' alt='concept' class='lightbox-media'>"),
+    ], "digitals"),
 ];
 
 let animation_items = [
@@ -148,6 +186,9 @@ let animation_items = [
 ];
 
 let film_items = [
+    new PortfolioItem("The Girl and The Robot - IN PRODUCTION", "../assets/portfolio/films/tgatr/cover.jpg", "", [
+        
+    ], "films"),
     // FALLOUT SHOPPING
     new PortfolioItem("Fallout Shopping", "../assets/portfolio/films/fallout_shopping/cover.png", "With humanity wiped from existance, a retail robot is finally free to enjoy what he loves most; Going shopping!", [
         new LightBoxItem("The full animation took just under 2 full months to make. 1 month for concepting and planning, another for production.", "<iframe width='480' height='320' src='https://www.youtube.com/embed/BrBCp5VYLho' class='lightbox-media' title='Fallout Shopping' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"),
@@ -209,6 +250,10 @@ let other_items = [
 
     // WEBSITE
 
+    new PortfolioItem("School Designs", "../assets/portfolio/other/pillars/my_website.png", "", [
+        new LightBoxItem("The wonderful home page.", "<img src='../assets/portfolio/other/website/my_website.png' alt='home page' class='lightbox-media'>"),
+    ], "others"),
+    
     new PortfolioItem("Website", "../assets/portfolio/other/website/my_website.png", "I custom built this website! With HTML, CSS, Javascript and a lot of love, everything you see here was programmed by me.", [
         new LightBoxItem("The wonderful home page.", "<img src='../assets/portfolio/other/website/my_website.png' alt='home page' class='lightbox-media'>"),
     ], "others"),
