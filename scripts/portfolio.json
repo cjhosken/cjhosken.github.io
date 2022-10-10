@@ -944,14 +944,44 @@
                 },
                 {
                     "name": "School Designs",
-                    "cover": "../assets/portfolio/other/none/none.png",
+                    "cover": "../assets/portfolio/other/school/polaroid.png",
                     "year": "2022",
-                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breezes custom render engine.",
+                    "synopsis": "Painting and stuff.",
                     "description": "Lol",
                     "tools": "Nuke, Wall paint, printing company",
                     "pipeline": "All Aspects",
                     "client": "School Project",
                     "items": [
+                        {
+                            "name": "Pillar 1",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/pillar_1_me.jpg",
+                            "description": "A photo of me working on the first pillar."
+                        },
+                        {
+                            "name": "Polaroid",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/polaroid.png",
+                            "description": "A polaroid of me working on the pillars with my art teacher and a couple other students."
+                        },
+                        {
+                            "name": "Painting Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/school/painting.mp4",
+                            "description": "This video was taken during the time in which I was working on the second pillar."
+                        },
+                        {
+                            "name": "Measuring Walls",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/measuring_edit.png",
+                            "description": "A photo taken of me when I was estimating how large the designs should be on the wall."
+                        },
+                        {
+                            "name": "Full Frame",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/full_frame_edit.jpg",
+                            "description": "A full frame shot of the gym that I composited together inside of Nuke."
+                        }
                     ]
                 },
                 {
