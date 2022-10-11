@@ -7,6 +7,7 @@ TODO:
     - Finish TGATR and get photos for Gym 
     - Fix images that have a .PNG file extension (they dont load on Chromebooks)
     - Fix spelling on introduction and style it better.
+    - Fix overflow styling
 
  - About me
    - Get light theme headshot
