@@ -3,7 +3,218 @@
         {
             "name": "sketches",
             "items": [
-                
+                {
+                    "name": "Hand Contours",
+                    "cover": "../assets/portfolio/sketches/contour_hands/hand_8.jpg",
+                    "year": "2022",
+                    "synopsis": "As a way to avoid drawing from memory. My drawing and painting class made numerous blind, continuous, and modified hand contour drawings.",
+                    "description": "These assignemnts were a chance for me to practice my still life skills, something I haven't had much experience in doing. The biggest challenge was learning to pace myself properly and also to avoid doing hairy lines.",
+                    "tools": "Paper, Pencil",
+                    "role":"",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "First hand",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_1.jpg",
+                            "description": "My first blind contour drawing. I ended up spending too much time on the thumb and then rushing the rest of the hand."
+                        },
+                        {
+                            "name": "Interior Lines",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_2.jpg",
+                            "description": "For the second blind contour sketch I was told to focus more on doing interior lines. We were also given more time which let me pace myself better."
+                        },
+                        {
+                            "name": "Fist",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_3.jpg",
+                            "description": "Another blind contour. This time I changed my pose to give myself more of a challenge."
+                        },
+                        {
+                            "name": "2nd Hand",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_4.jpg",
+                            "description": "Another 3 minute blind contour. I once again spent too much time on the thumb an then rushed the rest of the hand."
+                        },
+                        {
+                            "name": "Continuous",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_5.jpg",
+                            "description": "After doing blind contour, the class moved onto doing continuous line countour. As I could look at the paper, I was able to join the entire hand together as once cohesive piece."
+                        },
+                        {
+                            "name": "Continuous 2",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_6.jpg",
+                            "description": "Another continuous drawing. I switched up the pose again because I wanted to practice getting the bends in the fingers right."
+                        },
+                        {
+                            "name": "Modified",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_7.jpg",
+                            "description": "Modified contour drawing. Im especially proud of the wrinkles around the thumb."
+                        },
+                        {
+                            "name": "Polygon Mesh",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_hands/hand_8.jpg",
+                            "description": "The last hand drawing we did was cross-contour. As I wanted to practice my modelling skills, I decided to make mine as if it was a wireframe render."
+                        }
+                    ]
+                },
+                {
+                    "name": "Contour Still Life",
+                    "cover": "../assets/portfolio/sketches/contour_still_life/still_life.jpg",
+                    "year": "2022",
+                    "synopsis": "As part of an assingment in my drawing & painting class, I decided to make a still life in the style of a 3d wireframe render.",
+                    "description": "Although the topology is terrible, It was an interesting challenge trying to imply the curve in the objects.",
+                    "tools": "Pencil",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "Still Life",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_still_life/still_life.jpg",
+                            "description": "The complete still life. There are a few perspective issues in certain areas, but I'm very happy with how the piece looks."
+                        },
+                        {
+                            "name": "Reference",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/contour_still_life/reference.jpg",
+                            "description": "The reference image. We weren't able to observe the objects as multiple classes needed to use them, however I did spend time analysing their form when doing the topology lines."
+                        }
+                    ]
+                },
+                {
+                    "name": "Value Head",
+                    "cover": "../assets/portfolio/sketches/value_head/head.jpg",
+                    "year": "2022",
+                    "synopsis": "As part of our value unit in drawing & painting, the class had to do value drawings of the head.",
+                    "description": "I had never done a proper portrait drawing before so this was a new experience for me. I especially enjoyed the blending technique as It was the easiest for me to add and subtract value.",
+                    "tools": "Pencil",
+                    "role":"",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "Head",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/value_head/head.jpg",
+                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                        },
+                        {
+                            "name": "Reference",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/value_head/reference.jpg",
+                            "description": "The reference image. Taking this took much longer than it should have."
+                        },
+                        {
+                            "name": "Progress photo",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/value_head/wip.jpg",
+                            "description": "A photo of me working on my face. I decided to do hair last as I knew it would be the most difficult to shade."
+                        }
+                    ]
+                },
+                {
+                    "name": "Light Study",
+                    "cover": "../assets/portfolio/sketches/light_study/light_study.png",
+                    "year": "2022",
+                    "synopsis": "A lighting study I did in the style of rembrant. I wanted to experimenting with painting light on black instead of the traditional technique of painting on white.",
+                    "description": "The piece only took an hour, I was bored one evening and felt like doing a painting so I grabbed a canvas and some paints and started playing around.",
+                    "role": "",
+                    "tools": "Acrylic",
+                    "pipeline": "",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Study",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/light_study/light_study.png",
+                            "description": "The full composition. Halfway through painting I decided to paint a hole in the center of the pot, but I feel that I didn't paint enough light for it to be noticable."
+                        }
+                    ]
+                },
+                {
+                    "name": "AP Sketchbook",
+                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                    "year": "2022",
+                    "synopsis": "AS part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
+                    "description": "",
+                    "tools": "Pencil, fineliner, watercolor pencils",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                        }
+                    ]
+                },
+                {
+                    "name": "Sketchbook Pieces",
+                    "cover": "../assets/portfolio/sketches/sketchbook/ldr_sketch.png",
+                    "year": "2020-2022",
+                    "synopsis": "A collection of my sketchbook pieces.",
+                    "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find.",
+                    "tools": "Pencil",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                        }
+                    ]
+                },
+                {
+                    "name": "Coloring Concepts",
+                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                    "year": "2022",
+                    "synopsis": "For my drawing & painting class, we were told to create a piece from our imagination and draw it using color.",
+                    "description": "I chose to make...",
+                    "tools": "Pencil, coloring pencils",
+                    "role":"",
+                    "pipeline": "",
+                    "client": "School Project",
+                    "items": [
+                        {
+                            "name": "Final Piece",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                            "description": "The final piece."
+                        }
+                    ]
+                },
+                {
+                    "name": "Figure drawing",
+                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                    "year": "2022",
+                    "synopsis": "A couple figure drawings that I did during my free time.",
+                    "description": "I generally avoid drawing characters as it a domain that I enjoy doing. However I felt I needed to do a few before heading off to university.",
+                    "tools": "Pencil",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "Personal Project",
+                    "items": [
+                        {
+                            "name": "Final Animation",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -136,9 +347,9 @@
                     ]
                 },
                 {
-                    "name": "Low Orbit",
-                    "cover": "../assets/portfolio/animations/low_orbit/2_grading.png",
-                    "year": "2021",
+                    "name": "Spiderman Swing",
+                    "cover": "../assets/portfolio/animations/spiderman/banner.png",
+                    "year": "2022",
                     "synopsis": "In late 2021 I had taken a break from doing 3D to focus on programming, this piece was made during that time to get me back into the habit of animating. I also had lost my old earth asset and wanted to do a fun test with my newly created one.",
                     "description": "Lol",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
@@ -148,26 +359,20 @@
                         {
                             "name": "Full Animation",
                             "type": 1,
-                            "link": "../assets/portfolio/animations/low_orbit/earth_with_audio.mp4",
+                            "link": "../assets/portfolio/animations/spiderman/final_animation.mp4",
                             "description": "The full animation."
                         },
                         {
-                            "name": "Earth",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/low_orbit/earth.png",
-                            "description": "A viewport render of the earth."
+                            "name": "Full Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/spiderman/gl_anim.mp4",
+                            "description": "The full animation."
                         },
                         {
-                            "name": "Ship",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/low_orbit/ship.png",
-                            "description": "A ship downloaded from CGTrader."
-                        },
-                        {
-                            "name": "Shuttle",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/low_orbit/shuttle.png",
-                            "description": "A shuttle downloaded from CGTrader."
+                            "name": "Base Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/spiderman/base_anim.mp4",
+                            "description": "The full animation."
                         }
                     ]
                 },
@@ -461,7 +666,7 @@
                 {
                     "name": "Default Cube",
                     "cover": "../assets/portfolio/art/default_cube/10_final_out.png",
-                    "year": "2020",
+                    "year": "2021",
                     "synopsis": "WRITE ABOUT ME",
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
@@ -501,49 +706,43 @@
                     ]
                 },
                 {
-                    "name": "Earths",
-                    "cover": "../assets/portfolio/art/earths/blue.png",
+                    "name": "Mona Lisa",
+                    "cover": "../assets/portfolio/art/mona_lisa/render.png",
                     "year": "2020",
                     "synopsis": "WRITE ABOUT ME",
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
-                    "client": "Personal Project",
+                    "client": "School Project",
                     "items": [
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/earths/blue.png",
+                            "link": "../assets/portfolio/art/mona_lisa/render.png",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/earths/fluffly.png",
+                            "link": "../assets/portfolio/art/mona_lisa/blocking.png",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/earths/mobile.png",
+                            "link": "../assets/portfolio/art/mona_lisa/object_view.png",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/earths/wide.png",
+                            "link": "../assets/portfolio/art/mona_lisa/eevee.png",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/earths/earth.png",
-                            "description": "WRITE ABOUT ME"
-                        },
-                        {
-                            "name": "FIX",
-                            "type": 0,
-                            "link": "../assets/portfolio/art/earths/big_atmos.png",
+                            "link": "../assets/portfolio/art/mona_lisa/solid_view.png",
                             "description": "WRITE ABOUT ME"
                         }
                     ]
@@ -551,7 +750,7 @@
                 {
                     "name": "Let Me Be",
                     "cover": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
-                    "year": "2020",
+                    "year": "2022",
                     "synopsis": "WRITE ABOUT ME",
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
@@ -886,35 +1085,36 @@
                     "name": "Breeze Render Engine",
                     "cover": "../assets/portfolio/other/breeze/breeze_render_engine.png",
                     "year": "2022",
-                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breezes custom render engine.",
-                    "description": "Lol",
-                    "tools": "Visual Studio, RenderDoc, OpenGL, Qt",
-                    "pipeline": "All Aspects",
+                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breeze's custom render engine.",
+                    "description": "After following the 'Ray Tracing in One Weekend' tutorial series, I became hooked on understanding how digital content creators used maths to display 3d models. This lead me to learn about OpenGL, and I quickly found some lessons on how it worked. After some time, I decided to make a rendering engine. Breeze Render Engine is my first ever C++ and Qt application. I spent around 8 months creating it with multiple rewrites. It was difficult, but I'm proud of how much I was able to learn.",
+                    "tools": "Visual Studio, Qt, OpenGL, RenderDoc",
+                    "role": "",
+                    "pipeline": "",
                     "client": "Personal Project",
                     "items": [
                         {
                             "name": "Scene Example",
                             "type": 0,
                             "link": "../assets/portfolio/other/breeze/breeze_render_engine.png",
-                            "description": "A screenshot of a scene made in Breeze. All the transformations and colors are editable."
+                            "description": "A screenshot of a scene made in Breeze. You can download an try the application from my Github page."
                         },
                         {
                             "name": "Demo Video",
                             "type": 1,
                             "link": "../assets/portfolio/other/breeze/breeze_demo.mp4",
-                            "description": "A demo video of the program in action."
+                            "description": "A demo video of Breeze in action."
                         },
                         {
                             "name": "OBJ Importing",
                             "type": 0,
                             "link": "../assets/portfolio/other/breeze/objs.png",
-                            "description": "The app also allows custom OBJ importing. Getting this working was an absolute pain."
+                            "description": "Breeze also allows custom OBJ importing."
                         },
                         {
                             "name": "Render",
                             "type": 0,
                             "link": "../assets/portfolio/other/breeze/render.png",
-                            "description": "The Render from the demo video."
+                            "description": "The render from the demo video."
                         }
                     ]
                 },
@@ -923,9 +1123,10 @@
                     "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
                     "year": "2021",
                     "synopsis": "Sicle Maps is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
-                    "description": "Lol",
+                    "description": "After seeing some modern app designs on Dribbble, I was inspired to write my own mobile application. Since I'm an avid cyclist, I wanted to make an application that I could use. The solution was a simplified google maps called 'Sicle'. While creating Sicle, I was able to understand how to use Android Studio, and how to build and run Kotlin code.",
                     "tools": "Android Studio, MapBox, Kotlin",
-                    "pipeline": "All Aspects",
+                    "role": "",
+                    "pipeline": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -946,14 +1147,21 @@
                     "name": "School Designs",
                     "cover": "../assets/portfolio/other/school/polaroid.png",
                     "year": "2022",
-                    "synopsis": "Painting and stuff.",
-                    "description": "Lol",
-                    "tools": "Nuke, Wall paint, printing company",
-                    "pipeline": "All Aspects",
+                    "synopsis": "I was given the opportunity at Chiang Mai International School to add my own personal touch to some walls! My designs can now be seen in the high school art classroom and the school gym.",
+                    "description": "After completing my submission for AP 2D Art & Design, my art teacher suggested that I decorate the art room pillars. During that time, I was also approached by the school to make designs for the school gym. I jumped at the chance to leave a legacy at Chiang Mai International School, and by the start of the next school year, both projects were completed. ",
+                    "tools": "Paint, Inkscape, Nuke",
+                    "role": "",
+                    "pipeline": "",
                     "client": "School Project",
                     "items": [
                         {
-                            "name": "Pillar 1",
+                            "name": "Pillars",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/pillars.jpg",
+                            "description": "A photo of both completed pillars. We named the closest one 'Boogle' and the other 'Night Sky'"
+                        },
+                        {
+                            "name": "A photo of me painting 'Boogle'. Although I worked with a couple of other students on the pillars, 'Boogle' was primarily my piece.",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/pillar_1_me.jpg",
                             "description": "A photo of me working on the first pillar."
@@ -962,13 +1170,13 @@
                             "name": "Polaroid",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/polaroid.png",
-                            "description": "A polaroid of me working on the pillars with my art teacher and a couple other students."
+                            "description": "A polaroid of me painting 'Night Sky' with my art teacher and a couple other students. We only had a week before school ended for the summer so it was all hands on deck."
                         },
                         {
                             "name": "Painting Video",
                             "type": 1,
                             "link": "../assets/portfolio/other/school/painting.mp4",
-                            "description": "This video was taken during the time in which I was working on the second pillar."
+                            "description": "A video I took while painting. At the time I was staying an extra 2 hours at school each day to get the project done."
                         },
                         {
                             "name": "Measuring Walls",
@@ -980,7 +1188,7 @@
                             "name": "Full Frame",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/full_frame_edit.jpg",
-                            "description": "A full frame shot of the gym that I composited together inside of Nuke."
+                            "description": "A full frame shot of the gym that I composited together inside of Nuke. I used this image to pitch the idea to the school board."
                         }
                     ]
                 },
@@ -989,9 +1197,10 @@
                     "cover": "../assets/portfolio/other/website/my_website.png",
                     "year": "2022",
                     "synopsis": "I custom built this website! With HTML, CSS, Javascript and a lot of love, everything you see here was programmed by me.",
-                    "description": "Lol",
+                    "description": "I had always wanted to make my own website. I learnt the basics of web design in 2019, but since then I hadn't used them for anything useful. One day I sat down and decided to put that knowledge to good use, and after a year of designing, building, redesigning and rebuilding, I finally built a website that I'm proud of.",
                     "tools": "Visual Studio Code, Github",
-                    "pipeline": "All Aspects",
+                    "role": "",
+                    "pipeline": "",
                     "client": "Personal Project",
                     "items": [
                         {

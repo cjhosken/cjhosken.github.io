@@ -8,7 +8,7 @@
 .portfolio-section > h1 {
     margin: 5vh auto;
     width: fit-content;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     letter-spacing: 0.25vh;
     border-bottom: solid 5px var(--primary);
@@ -69,13 +69,20 @@
 }
 
 .portfolio-section-item-flipped h1 {
-    margin: 1em 2em;
+    margin: 1vh 1vh;
+    font-size: 1.75vw;
+    text-align: center;
+}
+
+.portfolio-section-item-flipped h2 {
+    font-size: 1.25vw;
 }
 
 .portfolio-section-item-flipped p {
     text-align: center;
-    margin: 0em 5em;
+    margin: 0em 2vh;
     color: var(--darkgray);
+    font-size: 0.85vw;
 }
 
 .portfolio-section-item:hover .portfolio-section-item-flipped {
@@ -87,7 +94,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 5vh 0vh;
+    margin: 1vh 0vh;
 }
 
 .portfolio-section-item-learn-hint p {
@@ -192,3 +199,14 @@
     text-align: center;
 }
 
+
+
+.main-container > h1 {
+    margin-top: 5vh;
+    font-size: 3em;
+    text-align: center;
+}
+
+.main-container > p {
+    text-align: center;
+}
