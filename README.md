@@ -8,6 +8,7 @@ TODO:
     - Fix images that have a .PNG file extension (they dont load on Chromebooks)
     - Fix spelling on introduction and style it better.
     - Fix overflow styling
+    - Change "Low Orbit" piece to something else
 
  - About me
    - Get light theme headshot
