@@ -88,6 +88,33 @@ function load_lightbox(category_index, item_index) {
     lightbox.querySelector("#title").innerHTML = item.name;
     lightbox.querySelector("#description").innerHTML = item.synopsis + "<br> </br>" + item.description;
 
+
+    lightbox.querySelector("#tools-container").style.display = "none";
+    lightbox.querySelector("#client-container").style.display = "none";
+        
+    lightbox.querySelector("#pipeline-container").style.display = "none";
+    lightbox.querySelector("#role-container").style.display = "none";
+
+    if (item.tools != "") {
+        lightbox.querySelector("#tools-container").style.display = "block";
+        lightbox.querySelector("#tools").innerHTML = item.tools;
+    }
+
+    if (item.client != "") {
+        lightbox.querySelector("#client-container").style.display = "block";
+        lightbox.querySelector("#client").innerHTML = item.client;
+    }
+    
+    if (item.pipeline != "") {
+        lightbox.querySelector("#pipeline-container").style.display = "block";
+        lightbox.querySelector("#pipeline").innerHTML = item.pipeline;
+    }
+
+    if (item.role != "") {
+        lightbox.querySelector("#role-container").style.display = "block";
+        lightbox.querySelector("#role").innerHTML = item.role;
+    }
+
     
 
     var mediaItemsHTML = "";
