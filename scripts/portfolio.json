@@ -273,7 +273,7 @@
                     "cover": "../assets/portfolio/animations/desert_temple/banner.png",
                     "year": "2022",
                     "synopsis": "After hearing about the full Unreal Engine 5 release, I decided to play around with Megascans and Lumen. I was playing Tomb Raider at the time and wanted to making something that resembled a desert temple.",
-                    "description": "I had used houd",
+                    "description": "I had experimented with Unreal Engine before, but this project was the first time I created a complete project. Putting the enviornment together was the easiest part. Most of my time was spent learning how to import animations and avoid excessive VRAM usage.",
                     "tools": "Unreal Engine 5, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -304,9 +304,9 @@
                     "cover": "../assets/portfolio/animations/dune_ornithopter/cover.png",
                     "year": "2021",
                     "synopsis": "After watching Dune, I loved the animations for the ornithopters and I had to try it for myself.",
-                    "description": "Lol",
+                    "description": "I also used the projection mapping hack as I didnt want to texture the entire ornithopter. The animation was a chance for me to 'cheat' in 3D.",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
-                    "pipeline": "All Aspects",
+                    "pipeline": "Modelling, Animation, Editing",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
@@ -334,10 +334,10 @@
                     "name": "Spiderman Swing",
                     "cover": "../assets/portfolio/animations/spiderman/banner.png",
                     "year": "2022",
-                    "synopsis": "In late 2021 I had taken a break from doing 3D to focus on programming, this piece was made during that time to get me back into the habit of animating. I also had lost my old earth asset and wanted to do a fun test with my newly created one.",
-                    "description": "Lol",
-                    "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
-                    "pipeline": "All Aspects",
+                    "synopsis": "I had seen numerous Spiderman animations floating around on youtube, and I remember saying to myself 'I could do that'. ",
+                    "description": "For this animation, I was able to mess around with Blender's new geometry nodes. I used the system to create and simulate the web. The rest was of the animation was hand animated.",
+                    "tools": "Blender, Quixel Megascans, DaVinci Resolve",
+                    "pipeline": "Animation, Lighting",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
@@ -345,19 +345,19 @@
                             "name": "Full Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/spiderman/final_animation.mp4",
-                            "description": "The full animation."
+                            "description": "The full animation. I ended up shortening it as it was the best shot in the sequence."
                         },
                         {
-                            "name": "Full Animation",
+                            "name": "GL Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/spiderman/gl_anim.mp4",
-                            "description": "The full animation."
+                            "description": "The full animation sequence."
                         },
                         {
                             "name": "Base Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/spiderman/base_anim.mp4",
-                            "description": "The full animation."
+                            "description": "A basic render of the full animation sequence. I disliked the later shots as they didnt feel as polished as the first one."
                         }
                     ]
                 },
