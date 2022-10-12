@@ -181,16 +181,46 @@
                     "cover": "../assets/portfolio/sketches/sketchbook/ldr_sketch.png",
                     "year": "2020-2022",
                     "synopsis": "A collection of my sketchbook pieces.",
-                    "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find.",
+                    "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find. I also seemed to have lost one of my sketchbooks, so excuse the poor quality for some of the photos.",
                     "tools": "Pencil",
                     "role": "",
                     "pipeline": "",
                     "client": "School Project",
                     "items": [
                         {
-                            "name": "Final Animation",
+                            "name": "LDR",
                             "type": 0,
-                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                            "link": "../assets/portfolio/sketches/sketchbook/ldr_sketch.jpg",
+                            "description": ""
+                        },
+                        {
+                            "name": "Remote",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/sketchbook/remote.jpg",
+                            "description": ""
+                        },
+                        {
+                            "name": "Figure",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/sketchbook/figure.jpg",
+                            "description": ""
+                        },
+                        {
+                            "name": "Hallway",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/sketchbook/hallway.jpg",
+                            "description": ""
+                        },
+                        {
+                            "name": "Character Shapes",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/sketchbook/shapes.jpg",
+                            "description": ""
+                        },
+                        {
+                            "name": "Ukulele",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/sketchbook/ukulele.jpg",
                             "description": ""
                         }
                     ]
