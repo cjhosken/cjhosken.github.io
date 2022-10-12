@@ -143,7 +143,7 @@
                     "name": "AP Sketchbook",
                     "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
                     "year": "2022",
-                    "synopsis": "AS part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
+                    "synopsis": "As part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
                     "description": "",
                     "tools": "Pencil, fineliner, watercolor pencils",
                     "role": "",
@@ -151,10 +151,28 @@
                     "client": "School Project",
                     "items": [
                         {
-                            "name": "Final Animation",
+                            "name": "Tree study",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                            "description": "I used this page to undertand how to paint trees, rocks, and grass. From this piece I learnt how easy it is to fake detail with simple brush strokes."
+                        },
+                        {
+                            "name": "Am I good",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/am_i_good.jpg",
+                            "description": "One of my final artworks consisted of a combination of photography and CGI. This page was used to help plan out how I wanted to create the scene."
+                        },
+                        {
+                            "name": "A teaching moment",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/a_teaching_moment.jpg",
+                            "description": "This page consisted of more compositional / color planning. I had already envisioned how I wanted the shot to look, but I wanted to write it down to show other people."
+                        },
+                        {
+                            "name": "A last breath",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/ap_sketchbook/a_last_breath.jpg",
+                            "description": "This page didn't hold as much planning as the other pieces. Instead, I used to to plan out what kind of assets I wanted to place in the scene."
                         }
                     ]
                 },
@@ -173,45 +191,7 @@
                             "name": "Final Animation",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
-                        }
-                    ]
-                },
-                {
-                    "name": "Coloring Concepts",
-                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                    "year": "2022",
-                    "synopsis": "For my drawing & painting class, we were told to create a piece from our imagination and draw it using color.",
-                    "description": "I chose to make...",
-                    "tools": "Pencil, coloring pencils",
-                    "role":"",
-                    "pipeline": "",
-                    "client": "School Project",
-                    "items": [
-                        {
-                            "name": "Final Piece",
-                            "type": 0,
-                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                            "description": "The final piece."
-                        }
-                    ]
-                },
-                {
-                    "name": "Figure drawing",
-                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                    "year": "2022",
-                    "synopsis": "A couple figure drawings that I did during my free time.",
-                    "description": "I generally avoid drawing characters as it a domain that I enjoy doing. However I felt I needed to do a few before heading off to university.",
-                    "tools": "Pencil",
-                    "role": "",
-                    "pipeline": "",
-                    "client": "Personal Project",
-                    "items": [
-                        {
-                            "name": "Final Animation",
-                            "type": 0,
-                            "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                            "description": ""
                         }
                     ]
                 }
@@ -225,9 +205,10 @@
                     "cover": "../assets/portfolio/animations/car_drift/banner.png",
                     "year": "2022",
                     "synopsis": "I had always wanted to do a high energy car chase animation. So one day I sat down and did it!",
-                    "description": "Lol",
+                    "description": "This project was a fun challenge for me as I wanted to make the audience feel as if they're in the shot. I was able to make a custom car rig which helped alot with getting the tilt of the car as it swings round. I did not model the car.",
                     "tools": "Blender, DaVinci Resolve",
-                    "pipeline": "All Aspects",
+                    "pipeline": "Scene Layout, Rigging, Animation, Lighting",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -261,9 +242,10 @@
                     "cover": "../assets/portfolio/animations/creature_breach/banner.png",
                     "year": "2021",
                     "synopsis": "After spending a couple weeks messing around in Houdini. I decided I wanted to attempt a large scale fluid simulation. I had seen a similar creature breach animation online and felt like learning how to do that myself.",
-                    "description": "Lol",
+                    "description": "This was the first time that I had ever messed around with fluids in Houdini. I primarily used the shelf tools with some minor adjustments, but trying to design it from scratch was too difficult with my processing power at the time.",
                     "tools": "Blender, Houdini",
-                    "pipeline": "Animation, Simulation",
+                    "role": "",
+                    "pipeline": "Rigging, Animation, Simulation",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -291,9 +273,10 @@
                     "cover": "../assets/portfolio/animations/desert_temple/banner.png",
                     "year": "2022",
                     "synopsis": "After hearing about the full Unreal Engine 5 release, I decided to play around with Megascans and Lumen. I was playing Tomb Raider at the time and wanted to making something that resembled a desert temple.",
-                    "description": "Lol",
+                    "description": "I had used houd",
                     "tools": "Unreal Engine 5, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -324,6 +307,7 @@
                     "description": "Lol",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -354,6 +338,7 @@
                     "description": "Lol",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -384,6 +369,7 @@
                     "description": "Lol",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -432,6 +418,7 @@
                     "description": "Lol",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -480,6 +467,7 @@
                     "description": "Lol",
                     "tools": "Blender, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -533,6 +521,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -587,6 +576,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -611,6 +601,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -671,6 +662,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -713,6 +705,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "School Project",
                     "items": [
                         {
@@ -753,6 +746,7 @@
                     "year": "2022",
                     "synopsis": "WRITE ABOUT ME",
                     "description": "Lol",
+                    "role": "",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
                     "client": "Personal Project",
@@ -797,6 +791,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -839,6 +834,7 @@
                     "description": "Lol",
                     "tools": "Visual Studio Code, Github",
                     "pipeline": "All Aspects",
+                    "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -868,6 +864,7 @@
                     "description": "Lol",
                     "tools": "Blender, Substance Painter, Nuke, Mocha, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "Director, VFX Artist, Editor",
                     "client": "Team Project",
                     "items": [
                         {
@@ -892,6 +889,7 @@
                     "description": "Lol",
                     "tools": "Blender, Nuke, DaVinci Resolve",
                     "pipeline": "All Aspects",
+                    "role": "Director, CG Artist, VFX Artist, Editor",
                     "client": "Personal Project",
                     "items": [
                         {
@@ -968,8 +966,9 @@
                     "year": "2021",
                     "synopsis": "We've all grown accustomed to the brutality we see in the Pixar intro. But what about those poor Pixar letters everywhere else?",
                     "description": "Lol",
-                    "tools": "Blender, DaVinci Resolve",
+                    "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
+                    "role": "Director, Modeller, Rigger, Animator",
                     "client": "Team Project",
                     "items": [
                         {
@@ -1036,6 +1035,7 @@
                     "description": "Lol",
                     "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
+                    "role": "Writer, Producer, Modeller, Animator",
                     "client": "Team Project",
                     "items": [
                         {
