@@ -8,4 +8,4 @@ TODO:
     - Get 2 more sketchbooks pieces
  
  - Showreel
-    - Refilm the intro (BETTER LIGHTING, BETTER AUDIO, LOOK HAPPIER WHILE DANCING)
+    - Refilm the intro (BETTER LIGHTING (sun backlight, evening golden hour), BETTER AUDIO, LOOK HAPPIER WHILE DANCING)
