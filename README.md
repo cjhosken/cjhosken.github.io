@@ -6,8 +6,6 @@ TODO:
     - Finish TGATR and get photos for Gym 
     - Describe all the pieces
     - Get 2 more sketchbooks pieces
-
- - Validate HTML
- - Validate CSS
  
- - Finish showreel
+ - Showreel
+    - Refilm the intro (BETTER LIGHTING, BETTER AUDIO, LOOK HAPPIER WHILE DANCING)
