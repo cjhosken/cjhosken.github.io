@@ -5,7 +5,7 @@
             "items": [
                 {
                     "name": "Hand Contours",
-                    "cover": "../assets/portfolio/sketches/contour_hands/hand_8.jpg",
+                    "cover": "../assets/portfolio/sketches/contour_hands/cover_low.jpg",
                     "year": "2022",
                     "synopsis": "As a way to avoid drawing from memory. My drawing and painting class made numerous blind, continuous, and modified hand contour drawings.",
                     "description": "These assignemnts were a chance for me to practice my still life skills, something I haven't had much experience in doing. The biggest challenge was learning to pace myself properly and also to avoid doing hairy lines.",
@@ -66,7 +66,7 @@
                 },
                 {
                     "name": "Contour Still Life",
-                    "cover": "../assets/portfolio/sketches/contour_still_life/still_life.jpg",
+                    "cover": "../assets/portfolio/sketches/contour_still_life/still_life_low.jpg",
                     "year": "2022",
                     "synopsis": "As part of an assingment in my drawing & painting class, I decided to make a still life in the style of a 3d wireframe render.",
                     "description": "Although the topology is terrible, It was an interesting challenge trying to imply the curve in the objects.",
@@ -91,7 +91,7 @@
                 },
                 {
                     "name": "Value Head",
-                    "cover": "../assets/portfolio/sketches/value_head/head.jpg",
+                    "cover": "../assets/portfolio/sketches/value_head/head_low.jpg",
                     "year": "2022",
                     "synopsis": "As part of our value unit in drawing & painting, the class had to do value drawings of the head.",
                     "description": "I had never done a proper portrait drawing before so this was a new experience for me. I especially enjoyed the blending technique as It was the easiest for me to add and subtract value.",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "Light Study",
-                    "cover": "../assets/portfolio/sketches/light_study/light_study.png",
+                    "cover": "../assets/portfolio/sketches/light_study/light_study_low.jpg",
                     "year": "2022",
                     "synopsis": "A lighting study I did in the style of rembrant. I wanted to experimenting with painting light on black instead of the traditional technique of painting on white.",
                     "description": "The piece only took an hour, I was bored one evening and felt like doing a painting so I grabbed a canvas and some paints and started playing around.",
@@ -141,7 +141,7 @@
                 },
                 {
                     "name": "AP Sketchbook",
-                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
+                    "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study_low.jpg",
                     "year": "2022",
                     "synopsis": "As part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
                     "description": "",
@@ -178,7 +178,7 @@
                 },
                 {
                     "name": "Sketchbook Pieces",
-                    "cover": "../assets/portfolio/sketches/sketchbook/ldr_sketch.png",
+                    "cover": "../assets/portfolio/sketches/sketchbook/ldr_sketch_low.jpg",
                     "year": "2020-2022",
                     "synopsis": "A collection of my sketchbook pieces.",
                     "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find. I also seemed to have lost one of my sketchbooks, so excuse the poor quality for some of the photos.",
