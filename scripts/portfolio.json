@@ -815,7 +815,7 @@
                 },
                 {
                     "name": "Steamboat Willy",
-                    "cover": "../assets/portfolio/art/steamboat_willy/final.png",
+                    "cover": "../assets/portfolio/art/steamboat_willy/final.PNG",
                     "year": "2020",
                     "synopsis": "WRITE ABOUT ME",
                     "description": "Lol",
@@ -827,31 +827,31 @@
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/steamboat_willy/final.png",
+                            "link": "../assets/portfolio/art/steamboat_willy/final.PNG",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/steamboat_willy/modelling.png",
+                            "link": "../assets/portfolio/art/steamboat_willy/modelling.PNG",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/steamboat_willy/hair.png",
+                            "link": "../assets/portfolio/art/steamboat_willy/hair.PNG",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/steamboat_willy/scene.png",
+                            "link": "../assets/portfolio/art/steamboat_willy/scene.PNG",
                             "description": "WRITE ABOUT ME"
                         },
                         {
                             "name": "FIX",
                             "type": 0,
-                            "link": "../assets/portfolio/art/steamboat_willy/render.png",
+                            "link": "../assets/portfolio/art/steamboat_willy/render.PNG",
                             "description": "WRITE ABOUT ME"
                         }
                     ]
