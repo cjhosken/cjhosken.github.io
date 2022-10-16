@@ -40,12 +40,12 @@
             <div class="lightbox-summary-container">
                 <h1 id="title"> Title </h1>
                 <p id="description"> Bla bla bla</p>
-                <ul id="project_info">
-                    <li id="role-container"> <i class="fa-solid fa-bus"></i> <p> Role: </p> <p id="role"> </p></li>
-                    <li id="tools-container"> <i class="fa-solid fa-bus"></i> <p> Tools: </p> <p id="tools"> </p></li>
-                    <li id="pipeline-container"> <i class="fa-solid fa-bus"></i> <p> Pipeline: </p> <p id="pipeline"> </p></li>
-                    <li id="client-container"> <i class="fa-solid fa-bus"></i> <p> Client: </p> <p id="client"> </p></li>
-                </ul>
+                <div id="project-info">
+                    <div id="role-container" class="project-item-info"> <i class="fa-solid fa-users icon"></i> <p> Role: </p> <em><p id="role"> </p> </em></div>
+                    <div id="tools-container" class="project-item-info"> <i class="fa-solid fa-screwdriver-wrench icon"></i> <p> Tools: </p> <em> <p id="tools"></p>  </em> </div>
+                    <div id="pipeline-container" class="project-item-info"> <i class="fa-solid fa-timeline icon"></i> <p> Pipeline: </p> <em> <p id="pipeline"></p>  </em> </div>
+                    <div id="client-container" class="project-item-info"> <i class="fa-solid fa-user icon"></i> <p> Client: </p> <em> <p id="client"> </p>  </em></div>
+                </div>
             </div>
             <div class="lightbox-media-container">
                 <a onclick="last_slide();">

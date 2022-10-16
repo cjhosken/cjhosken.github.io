@@ -210,3 +210,27 @@
 .main-container > p {
     text-align: center;
 }
+
+#project-info {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.project-item-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.project-item-info p {
+    font-size: 1em;
+}
+
+.project-item-info > * {
+    display: inline-block;
+}
+
+.icon {
+    color: white;
+}

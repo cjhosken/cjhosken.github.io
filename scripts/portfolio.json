@@ -224,6 +224,32 @@
                             "description": ""
                         }
                     ]
+                },
+                {
+                    "name": "Placeholder",
+                    "cover": "../assets/portfolio/placeholder.jpg",
+                    "year": "YYYY",
+                    "synopsis": "This is a placeholder. Content will be added soon!",
+                    "description": "",
+                    "role": "",
+                    "tools": "",
+                    "pipeline": "",
+                    "client": "Placeholder",
+                    "items": [
+                    ]
+                },
+                {
+                    "name": "Placeholder",
+                    "cover": "../assets/portfolio/placeholder.jpg",
+                    "year": "YYYY",
+                    "synopsis": "This is a placeholder. Content will be added soon!",
+                    "description": "",
+                    "role": "",
+                    "tools": "",
+                    "pipeline": "",
+                    "client": "Placeholder",
+                    "items": [
+                    ]
                 }
             ]
         },
@@ -396,7 +422,7 @@
                     "cover": "../assets/portfolio/animations/maui_skit/cover.png",
                     "year": "2022",
                     "synopsis": "Using audio from the Disney film, Moana. I put my own spin on the character Maui.",
-                    "description": "Lol",
+                    "description": "I had done a bit of character animation before, but I wanted to do a shot where the subject moves all around the scene. I really enjoyed the scene from Moana when she meets Maui, so I took the audio and came up with my own version of the scene. The rig came from the Blender Foundation. ",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -445,7 +471,7 @@
                     "cover": "../assets/portfolio/animations/moving_day/cover.png",
                     "year": "2021",
                     "synopsis": "Moving Day was a short animation I made after making random sketches inside of the Blender. It explores the idea of what animals consider home.",
-                    "description": "Lol",
+                    "description": "Moving Day is one of my favourite pieces, and it happened completely by accident. I was messing around with the annotation tool for concepting, and I ended up sketching a mouse looking into a hole in the attic. From there I started adding assets and lights, and it soon became the animation 'Moving Day'. I even ended up writing a short story about it for an english assignment.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -494,7 +520,7 @@
                     "cover": "../assets/portfolio/animations/sci_fi_plains/7_grade.png",
                     "year": "2022",
                     "synopsis": "Following the concept art by Thomas Dubois, I decided to experiment with large scale environments using Quixel's Megascans.",
-                    "description": "Lol",
+                    "description": "I was scrolling through Artstation and came across a painting my Thomas Dubois. I was transfixed by the lighting and wanted to recreate it inside of Blender. The piece was lots of fun to make (especially the clouds). I ended up send the piece to Thomas Dubois and he enjoyed it.",
                     "tools": "Blender, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -504,37 +530,43 @@
                             "name": "Final Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/sci_fi_plains/cliff_final_wide_with_audio.mp4",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The Final Animation."
+                        },
+                        {
+                            "name": "Concept",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sci_fi_plains/concept.jpg",
+                            "description": "The original artwork by Thomas Dubois. I DID NOT MAKE THIS."
                         },
                         {
                             "name": "FIX",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/0_layout.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "A first draft. I wanted to make sure I could ace the highlights on the cliff."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Grading",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/4_grade.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I soon personalized the render by adding a spaceship model from CG trader."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Critiques",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/5_drawover.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "For this piece I spent the time critiquing my own renders. I'd sketch over areas I'd want to improve."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Clouds",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/7_grade.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "Clouds. This was both difficult and fun to do. I enjoyed creating similar forms to the concept, but I hated having to deal with longer render times."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Viewport",
                             "type": 1,
                             "link": "../assets/portfolio/animations/sci_fi_plains/cliff_viewport.mp4",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The viewport animation"
                         }
                     ]
                 }
@@ -547,54 +579,54 @@
                     "name": "A Ghost Story",
                     "cover": "../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg",
                     "year": "2021",
-                    "synopsis": "A piece I made after seeing the movie, A Ghost Story.",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "A piece I made after seeing the movie, 'A Ghost Story'.",
+                    "description": "'A Ghost Story' has to be one of my most favourite films. It's relaxing, simple, and the visual aesthetic of it was breathtaking. Soon after I watched I knew I had to recreate the house. I also made an animation, but it was never completed due to rendering issues.",
+                    "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "FINAL",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The final render. I think it matches the original shot quite well."
                         },
                         {
-                            "name": "FIX",
+                            "name": "HOUSE",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/0_house_rough.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The house. This was one of my only architectual pieces, and I relied alot on booleans to get the windows in place."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Shading",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/3_texturing_and_grass.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "Shading was quite simple, and it wasn't too diffcult finding a nice HDRI."
                         },
                         {
-                            "name": "FIX",
+                            "name": "CRITIQUE",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/4_review.jpg",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I also drew notes over my renders to figure out what things I wanted to add and change."
                         },
                         {
-                            "name": "FIX",
+                            "name": "LIGHTING",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/9_environment_base.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I worked especially hard on getting the soft warm glow inside the house."
                         },
                         {
-                            "name": "FIX",
+                            "name": "TREES",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/11_trees.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I had tried using PNGs for the trees, but you could tell they were too flat when looking at them. So I used real tree models."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Animation",
                             "type": 1,
                             "link": "../assets/portfolio/art/a_ghost_story/15_viewport_final.mp4",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The animation. I wasn't able to render it as the scene was too heavy and I had other projects in the works."
                         }
                     ]
                 },
@@ -603,11 +635,11 @@
                     "cover": "../assets/portfolio/art/blm/1_paint.png",
                     "year": "2021",
                     "synopsis": "Racism has been an issue for the past decades, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint theres a much deeper systemic problem.",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "description": "It was originally meant to be a simple school project during online learning, but I really liked the message I was trying to tell so I put alot more effort into it.",
+                    "tools": "Blender, Substance Painter",
                     "pipeline": "All Aspects",
                     "role": "",
-                    "client": "Personal Project",
+                    "client": "School Project",
                     "items": [
                         {
                             "name": "Final",
@@ -627,9 +659,9 @@
                     "name": "P.66",
                     "cover": "../assets/portfolio/art/p66/11_new_grade.png",
                     "year": "2022",
-                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create my favourite piece, P.66 Probe.",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create P.66 Probe.",
+                    "description": "I saw this concept while scrolling through Arstation and I loved everything about it: The composition, the color, the atmospherics, I knew I had to try and re-create it. The hardest challenge during this project was having to deal with such a large scale scene. The number of buildigns and the volumetrics took a great toll on my rendering speed. ",
+                    "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "Personal Project",
@@ -639,6 +671,12 @@
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/11_new_grade.png",
                             "description": "The final render. I probably would have worked more on it if my computer handled the volumetrics better."
+                        },
+                        {
+                            "name": "Concept",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/p66/concept.jpg",
+                            "description": "The original artwork by Fang Yi. I DID NOT MAKE THIS."
                         },
                         {
                             "name": "Breakdown",
@@ -685,45 +723,45 @@
                     ]
                 },
                 {
-                    "name": "Default Cube",
-                    "cover": "../assets/portfolio/art/default_cube/10_final_out.png",
+                    "name": "Night Driving",
+                    "cover": "../assets/portfolio/art/default_cube/11_regrade.png",
                     "year": "2021",
-                    "synopsis": "WRITE ABOUT ME",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "Night Driving is my submission for the 'Keep The Cube' competition that I helped host for the unofficial Blender Community discord server.",
+                    "description": "Althought I've been told the piece is too dark (lighting wise), I still really like the emphasis I was a ble to create with the lighting. For me, this feels like it could be a shot from out of a movie.",
+                    "tools": "Blender, Krita, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "Final",
                             "type": 0,
-                            "link": "../assets/portfolio/art/default_cube/10_final_out.png",
-                            "description": "WRITE ABOUT ME"
+                            "link": "../assets/portfolio/art/default_cube/11_regrade.png",
+                            "description": "The final piece. I find the glow from the fire extremely satisfying."
                         },
                         {
-                            "name": "FIX",
+                            "name": "First draft",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/0_layout.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "A first draft. I used physical tree models for the foreground, and then 2D planes for the background."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Tree Coloring",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/1_trees.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I initially wanted to have the scene set during the day, so I spent alot of time trying to get the trees looking as good as possible."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Full",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/3_soften.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I was eventually able to add thickness to the forest so all you could see was the cube and the path."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Concept",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/5_concept.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I then drew over the render in Krita to decide how I wanted the lighting to look."
                         }
                     ]
                 },
@@ -731,42 +769,42 @@
                     "name": "Mona Lisa",
                     "cover": "../assets/portfolio/art/mona_lisa/render.png",
                     "year": "2020",
-                    "synopsis": "WRITE ABOUT ME",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "Mona Lisa was part of a school assignment. The class had to re-create a famous piece of art in a medium of their choice.",
+                    "description": "I wanted to have a go at character design so I decided to choose the Mona Lisa. MakeHuman was extremely useful in getting the character looking decent, however I sadly wasn't able to imitate the famous Mona Lisa smile.",
+                    "tools": "Blender, MakeHuman",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "School Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "Final Render",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/render.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The Final Render. I sadly ran out of time before I could properly texture her clothing and do the background."
                         },
                         {
-                            "name": "FIX",
+                            "name": "First draft",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/blocking.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The blocking stage, you can see that I struggled to make a realistic look face."
                         },
                         {
-                            "name": "FIX",
-                            "type": 0,
-                            "link": "../assets/portfolio/art/mona_lisa/object_view.png",
-                            "description": "WRITE ABOUT ME"
-                        },
-                        {
-                            "name": "FIX",
+                            "name": "Eevee",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/eevee.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The clothing was also especially hard to do. As I simulated it, there were numerous glitches throughout."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Small fixes",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/mona_lisa/object_view.png",
+                            "description": "Later I was able to fix the face and the clothing."
+                        },
+                        {
+                            "name": "Hair",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/solid_view.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "Doing hair infuriated me. I remember spending hours try to make it look like something that wasn't a huge mess."
                         }
                     ]
                 },
@@ -774,42 +812,42 @@
                     "name": "Let Me Be",
                     "cover": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
                     "year": "2022",
-                    "synopsis": "WRITE ABOUT ME",
-                    "description": "Lol",
+                    "synopsis": "'Let Me Be' is a piece from my AP 2D Art & Design submission, It was one of my favourites as it was the best mix of digital 2D and 3D.",
+                    "description": "I wanted this render to show the affects of grief on an individual. I seperate the king from his family using color, and gave him more space on screen to ephasize the idea of pushing out his family. ",
                     "role": "",
-                    "tools": "Visual Studio Code, Github",
+                    "tools": "Blender, Krita, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "client": "Personal Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The final piece. I was on a time crunch so I wasn't able to polish the characters as much as I wanted to."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Original Idea",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/0_blocking.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The original idea. At first I wanted to seperate the king from his family by using pillars. Similar to how bars in prison do."
                         },
                         {
-                            "name": "FIX",
+                            "name": "NPR",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/3_better_lighting.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I went through a stage where I wanted to the piece to look similar to the style of kung fu panda's 2d animations, but I soon realized that NPR would take too much time to perfect."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Quixel",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/5_textures.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "I used Quixel Megascans assets to quickly block out the scene. The render looked much better than what I was doing with NPR, so I switched back to a more photoreal style."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Lighting",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/7_final_render.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "This was one of the final 3D renders, I ended up moving the table closer as I felt that the subjects were all too far away. "
                         }
                     ]
                 },
@@ -817,42 +855,42 @@
                     "name": "Steamboat Willy",
                     "cover": "../assets/portfolio/art/steamboat_willy/final.PNG",
                     "year": "2020",
-                    "synopsis": "WRITE ABOUT ME",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "For the #Blender52 theme 'Cartoon'. I wanted to recreate the classic disney steamboat willy shot.",
+                    "description": "I'm especially proud of this piece as it was one of the first times that I was able to create a character without using blueprints. I wish I could have spent more time on the fur, but It was at this point that I started to see how well my renders could turn out.",
+                    "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/final.PNG",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The final render. I threw a bunch of post processing on it to give it the 'vintage' look."
                         },
                         {
-                            "name": "FIX",
+                            "name": "modelling",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/modelling.PNG",
-                            "description": "WRITE ABOUT ME"
+                            "description": "A screenshot of the model. I enjoyed creating a character that wasn't in the typical T-pose."
                         },
                         {
-                            "name": "FIX",
+                            "name": "fur",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/hair.PNG",
-                            "description": "WRITE ABOUT ME"
+                            "description": "Crazy fur. I wanted Mickey to feel like a real mouse, but I couldnt seem to get the fur to behave how I wanted it to."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Scene",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/scene.PNG",
-                            "description": "WRITE ABOUT ME"
+                            "description": "Mickey in the scene. Since the traditional animation didn't have much detail, I didn't have to spend much time on the set."
                         },
                         {
-                            "name": "FIX",
+                            "name": "Render",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/render.PNG",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The pre-comp render. I liked the pop of color, but I wanted the render to match the original so I desaturated it in resolve."
                         }
                     ]
                 },
@@ -860,24 +898,24 @@
                     "name": "Under The Moon",
                     "cover": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
                     "year": "2022",
-                    "synopsis": "WRITE ABOUT ME",
-                    "description": "Lol",
-                    "tools": "Visual Studio Code, Github",
+                    "synopsis": "'Under The Moon' was a quick lighting practice project that I did in an evening.",
+                    "description": "Originally, I wanted to make the piece in Unreal Engine 5, but I was too frustrated with the wave system so I reverted back to Blender. I do plan to make something with Unreal Engine 5's fluids in the future sometime though.",
+                    "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
-                            "name": "FIX",
+                            "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "The final render. The models were all download from PolyHaven and Mixamo."
                         },
                         {
-                            "name": "FIX",
+                            "name": "concept",
                             "type": 0,
                             "link": "../assets/portfolio/art/under_the_moon/sketch.png",
-                            "description": "WRITE ABOUT ME"
+                            "description": "An extremely quick sketch I did to see how I should frame the shot."
                         }
                     ]
                 }
@@ -890,8 +928,8 @@
                     "name": "The Girl and The Robot",
                     "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
                     "year": "2023",
-                    "synopsis": "",
-                    "description": "Lol",
+                    "synopsis": "A girl discovers the importance of friendship through a robot she meets in the forest.",
+                    "description": "The Girl and The Robot (TGATR) was a short film that a friend and I decided to make during our last year of highschool. We were both interested in film and our parents suggested we worked together on our own movie. My one regret is giving myself 35 visual effects shots.",
                     "tools": "Blender, Substance Painter, Nuke, Mocha, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "Director, VFX Artist, Editor",
@@ -916,7 +954,7 @@
                     "cover": "../assets/portfolio/films/fallout_shopping/cover.png",
                     "year": "2022",
                     "synopsis": "With humanity wiped from existance, a retail robot is finally free to enjoy what he loves most; Going shopping!",
-                    "description": "Lol",
+                    "description": "I came up with the idea for fallout shopping while at the Central Festival mall in Chiang Mai. I saw a retail bot wandering around one of the shops, and I thought to myself 'What if that robot could explore the entire mall?'. I then spent my summer in England planning out the story, and then I animated the entire thing the month I got back to Thailand. ",
                     "tools": "Blender, Nuke, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "Director, CG Artist, VFX Artist, Editor",
@@ -995,7 +1033,7 @@
                     "cover": "../assets/portfolio/films/lamp_attack/cover.png",
                     "year": "2021",
                     "synopsis": "We've all grown accustomed to the brutality we see in the Pixar intro. But what about those poor Pixar letters everywhere else?",
-                    "description": "Lol",
+                    "description": "I was sitting at a table eating lunch one day when I thought to myself 'What if the Pixar lamps were like monsters to the pixar letters?'. I had always wanted to make something horror inspired, and within a week I had a storyboard planned out for the animation. ",
                     "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
                     "role": "Director, Modeller, Rigger, Animator",
@@ -1062,7 +1100,7 @@
                     "cover": "../assets/portfolio/films/sparky/cover.jpg",
                     "year": "2020",
                     "synopsis": "In a quest to find a new power source for Glenton, a robot finds himself doing more harm than good. Or so it seems...",
-                    "description": "Lol",
+                    "description": "Sparky was the only short film that was made by BOAP Studios. Although I was given the role of producer, I was heavily involved in writing, modelling, and animating. This was the first time that I got to work with other artists, and although it was an absolute mess, I would certainly do it again.",
                     "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
                     "role": "Writer, Producer, Modeller, Animator",
