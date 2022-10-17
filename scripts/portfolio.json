@@ -936,16 +936,52 @@
                     "client": "Team Project",
                     "items": [
                         {
-                            "name": "App Screenshot",
+                            "name": "Poster",
                             "type": 0,
-                            "link": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
-                            "description": "A screenshot of the app in use."
+                            "link": "",
+                            "description": ""
                         },
                         {
-                            "name": "App Demo Video",
-                            "type": 1,
-                            "link": "../assets/portfolio/other/sicle/sicle_demo.mp4",
-                            "description": "The app runs on Android and uses the MapBox API."
+                            "name": "Storyboard",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Character Concept",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Filming",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Character Model",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Animation",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Full VFX Shot",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
+                        },
+                        {
+                            "name": "Nuke Comp",
+                            "type": 0,
+                            "link": "",
+                            "description": ""
                         }
                     ]
                 },

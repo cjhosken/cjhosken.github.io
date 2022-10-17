@@ -106,7 +106,6 @@
     align-items: center;
     display: flex;
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: 5px;
     border-radius: 15px;
     height: 90%;
     width: 90%;

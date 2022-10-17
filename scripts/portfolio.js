@@ -97,22 +97,22 @@ function load_lightbox(category_index, item_index) {
 
     if (item.tools != "") {
         lightbox.querySelector("#tools-container").style.display = "block";
-        lightbox.querySelector("#tools").innerHTML = item.tools;
+        lightbox.querySelector("#tools").innerHTML = "<em>" + item.tools + "</em>";
     }
 
     if (item.client != "") {
         lightbox.querySelector("#client-container").style.display = "block";
-        lightbox.querySelector("#client").innerHTML = item.client;
+        lightbox.querySelector("#client").innerHTML = "<em>" + item.client + "</em>";
     }
     
     if (item.pipeline != "") {
         lightbox.querySelector("#pipeline-container").style.display = "block";
-        lightbox.querySelector("#pipeline").innerHTML = item.pipeline;
+        lightbox.querySelector("#pipeline").innerHTML = "<em>" + item.pipeline + "</em>";
     }
 
     if (item.role != "") {
         lightbox.querySelector("#role-container").style.display = "block";
-        lightbox.querySelector("#role").innerHTML = item.role;
+        lightbox.querySelector("#role").innerHTML = "<em>" + item.role + "</em>";
     }
 
     
