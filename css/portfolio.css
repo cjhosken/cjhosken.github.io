@@ -135,11 +135,13 @@
 .lightbox-summary-container h1 {
     color: white;
     margin: 5vh;
+    font-size: 6vmin;
 }
 
 .lightbox-summary-container p {
     color: rgb(245, 245, 245);
     margin: 2vh;
+    font-size: 1.75vmin;
 }
 
 .arrow {
@@ -196,6 +198,7 @@
     margin: 2vh;
     color: white;
     text-align: center;
+    font-size: 1.75vmin;
 }
 
 
@@ -223,7 +226,7 @@
 }
 
 .project-item-info p {
-    font-size: 1em;
+    font-size: 1.75vmin;
 }
 
 .project-item-info > * {

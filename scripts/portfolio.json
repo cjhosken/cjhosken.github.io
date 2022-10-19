@@ -7,8 +7,8 @@
                     "name": "Hand Contours",
                     "cover": "../assets/portfolio/sketches/contour_hands/cover_low.jpg",
                     "year": "2022",
-                    "synopsis": "As a way to avoid drawing from memory. My drawing and painting class made numerous blind, continuous, and modified hand contour drawings.",
-                    "description": "These assignemnts were a chance for me to practice my still life skills, something I haven't had much experience in doing. The biggest challenge was learning to pace myself properly and also to avoid doing hairy lines.",
+                    "synopsis": "As a way to avoid practice drawing from life, I made numerous blind, continuous, and modified hand contour drawings.",
+                    "description": "These assignments were a chance for me to practice my still life skills, something I haven't had much experience in doing. The biggest challenge was learning to pace myself properly and also to avoid doing hairy lines.",
                     "tools": "Paper, Pencil",
                     "role":"",
                     "pipeline": "",
@@ -36,25 +36,25 @@
                             "name": "2nd Hand",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/contour_hands/hand_4.jpg",
-                            "description": "Another 3 minute blind contour. I once again spent too much time on the thumb an then rushed the rest of the hand."
+                            "description": "Another 3 minute blind contour. I once again spent too much time on the thumb and then rushed the rest of the hand."
                         },
                         {
                             "name": "Continuous",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/contour_hands/hand_5.jpg",
-                            "description": "After doing blind contour, the class moved onto doing continuous line countour. As I could look at the paper, I was able to join the entire hand together as once cohesive piece."
+                            "description": "After doing blind contours, the class moved onto doing continuous line countours. As I could look at the paper, I was able to join the entire hand together as one cohesive piece."
                         },
                         {
                             "name": "Continuous 2",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/contour_hands/hand_6.jpg",
-                            "description": "Another continuous drawing. I switched up the pose again because I wanted to practice getting the bends in the fingers right."
+                            "description": "Another continuous line drawing. I switched up the pose again because I wanted to practice getting the bends in the fingers right."
                         },
                         {
                             "name": "Modified",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/contour_hands/hand_7.jpg",
-                            "description": "Modified contour drawing. Im especially proud of the wrinkles around the thumb."
+                            "description": "Modified contour drawing. I'm especially proud of the wrinkles around the thumb."
                         },
                         {
                             "name": "Polygon Mesh",
@@ -68,7 +68,7 @@
                     "name": "Contour Still Life",
                     "cover": "../assets/portfolio/sketches/contour_still_life/still_life_low.jpg",
                     "year": "2022",
-                    "synopsis": "As part of an assingment in my drawing & painting class, I decided to make a still life in the style of a 3d wireframe render.",
+                    "synopsis": "As part of an assignment in my art class, I decided to make a still life in the style of a 3D wireframe render.",
                     "description": "Although the topology is terrible, It was an interesting challenge trying to imply the curve in the objects.",
                     "tools": "Pencil",
                     "role": "",
@@ -85,7 +85,7 @@
                             "name": "Reference",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/contour_still_life/reference.jpg",
-                            "description": "The reference image. We weren't able to observe the objects as multiple classes needed to use them, however I did spend time analysing their form when doing the topology lines."
+                            "description": "Since multiple classes needed to use the objects, I had to draw from a reference photo. However, I did spend time analysing their form whilst doing the topology lines."
                         }
                     ]
                 },
@@ -93,7 +93,7 @@
                     "name": "Value Head",
                     "cover": "../assets/portfolio/sketches/value_head/head_low.jpg",
                     "year": "2022",
-                    "synopsis": "As part of our value unit in drawing & painting, the class had to do value drawings of the head.",
+                    "synopsis": "As part of our value unit in my art class, we had to do value drawings of the head.",
                     "description": "I had never done a proper portrait drawing before so this was a new experience for me. I especially enjoyed the blending technique as It was the easiest for me to add and subtract value.",
                     "tools": "Pencil",
                     "role":"",
@@ -104,19 +104,19 @@
                             "name": "Head",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/value_head/head.jpg",
-                            "description": "The final animation. I wasn't able to render it in high quality as it required an insanely high sample count."
+                            "description": "The final piece. I'm especially proud of the blending I was able to achieve in the hair."
                         },
                         {
                             "name": "Reference",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/value_head/reference.jpg",
-                            "description": "The reference image. Taking this took much longer than it should have."
+                            "description": "The reference image. Taking this took much longer than it should have (I couldn't pose)."
                         },
                         {
                             "name": "Progress photo",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/value_head/wip.jpg",
-                            "description": "A photo of me working on my face. I decided to do hair last as I knew it would be the most difficult to shade."
+                            "description": "A photo of me working on my face. I decided to do the hair last as I knew it would be the most difficult to shade."
                         }
                     ]
                 },
@@ -124,7 +124,7 @@
                     "name": "Light Study",
                     "cover": "../assets/portfolio/sketches/light_study/light_study_low.jpg",
                     "year": "2022",
-                    "synopsis": "A lighting study I did in the style of rembrant. I wanted to experimenting with painting light on black instead of the traditional technique of painting on white.",
+                    "synopsis": "A lighting study I did in the style of Rembrant. I wanted to experiment with painting light on black instead of the traditional technique of painting on white.",
                     "description": "The piece only took an hour, I was bored one evening and felt like doing a painting so I grabbed a canvas and some paints and started playing around.",
                     "role": "",
                     "tools": "Acrylic",
@@ -144,7 +144,7 @@
                     "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study_low.jpg",
                     "year": "2022",
                     "synopsis": "As part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
-                    "description": "",
+                    "description": "WRITE ABOUT ME",
                     "tools": "Pencil, fineliner, watercolor pencils",
                     "role": "",
                     "pipeline": "",
@@ -154,7 +154,7 @@
                             "name": "Tree study",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/ap_sketchbook/tree_study.jpg",
-                            "description": "I used this page to undertand how to paint trees, rocks, and grass. From this piece I learnt how easy it is to fake detail with simple brush strokes."
+                            "description": "I used this page to understand how to paint trees, rocks, and grass. From this piece I learnt how easy it is to fake detail with simple brush strokes."
                         },
                         {
                             "name": "Am I good",
@@ -166,13 +166,13 @@
                             "name": "A teaching moment",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/ap_sketchbook/a_teaching_moment.jpg",
-                            "description": "This page consisted of more compositional / color planning. I had already envisioned how I wanted the shot to look, but I wanted to write it down to show other people."
+                            "description": "This page consisted of more compositional and colour planning. I had already envisioned how I wanted the shot to look, but I wanted to write it down to show other people."
                         },
                         {
                             "name": "A last breath",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/ap_sketchbook/a_last_breath.jpg",
-                            "description": "This page didn't hold as much planning as the other pieces. Instead, I used to to plan out what kind of assets I wanted to place in the scene."
+                            "description": "This page didn't hold as much planning as the other pieces. Instead, I used it to plan out what kind of assets I wanted to place in the scene."
                         }
                     ]
                 },
@@ -181,7 +181,7 @@
                     "cover": "../assets/portfolio/sketches/sketchbook/ldr_sketch_low.jpg",
                     "year": "2020-2022",
                     "synopsis": "A collection of my sketchbook pieces.",
-                    "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find. I also seemed to have lost one of my sketchbooks, so excuse the poor quality for some of the photos.",
+                    "description": "As I usually create my digital art straight from my head, I have very few pieces in my sketchbooks. However these were the best ones that I could find.",
                     "tools": "Pencil",
                     "role": "",
                     "pipeline": "",
@@ -190,7 +190,7 @@
                         {
                             "name": "LDR",
                             "type": 0,
-                            "link": "../assets/portfolio/sketches/sketchbook/ldr_sketch.jpg",
+                            "link": "../assets/portfolio/sketches/sketchbook/ldr_sketch.png",
                             "description": ""
                         },
                         {

@@ -6,3 +6,5 @@ TODO:
     - Finish TGATR and get photos for Gym 
     - Get 2 more sketchbooks pieces
     - Fix styling issue
+    - write desc about AP sketchbook
+    - write indiv desc about sketcbook
