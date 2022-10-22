@@ -120,7 +120,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .lightbox-container {
         width: 100%;
         flex-direction: column;
