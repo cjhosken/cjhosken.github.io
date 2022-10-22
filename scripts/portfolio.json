@@ -144,7 +144,7 @@
                     "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study_low.jpg",
                     "year": "2022",
                     "synopsis": "As part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
-                    "description": "WRITE ABOUT ME",
+                    "description": "I didn't do many sketchbook pieces as I prefer to plan things out in my head and inside 3D scenes, but it was a good learning experience. Hopefully I'll do more sketchbook work in the future.",
                     "tools": "Pencil, fineliner, watercolor pencils",
                     "role": "",
                     "pipeline": "",
@@ -191,37 +191,37 @@
                             "name": "LDR",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/ldr_sketch.png",
-                            "description": ""
+                            "description": "A drawing of K-VRC. I really enjoyed watching LOVE DEATH + ROBOTS and wanted to practice my sketching skills with one of the characters."
                         },
                         {
                             "name": "Remote",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/remote.jpg",
-                            "description": ""
+                            "description": "A still life drawing of my air conditioner remote."
                         },
                         {
                             "name": "Figure",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/figure.jpg",
-                            "description": ""
+                            "description": "A still life drawing of a wooden manikin."
                         },
                         {
                             "name": "Hallway",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/hallway.jpg",
-                            "description": ""
+                            "description": "A 1 point perspective drawing I did when exploring an idea for a short animation."
                         },
                         {
                             "name": "Character Shapes",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/shapes.jpg",
-                            "description": ""
+                            "description": "Exploring with how the shape of a character determines their personality."
                         },
                         {
                             "name": "Ukulele",
                             "type": 0,
                             "link": "../assets/portfolio/sketches/sketchbook/ukulele.jpg",
-                            "description": ""
+                            "description": "A still life drawing of my ukulele."
                         }
                     ]
                 },
