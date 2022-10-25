@@ -579,8 +579,8 @@
                     "name": "A Ghost Story",
                     "cover": "../assets/portfolio/art/a_ghost_story/a_ghost_story.jpg",
                     "year": "2021",
-                    "synopsis": "A piece I made after seeing the movie, 'A Ghost Story'.",
-                    "description": "'A Ghost Story' has to be one of my most favourite films. It's relaxing, simple, and the visual aesthetic of it was breathtaking. Soon after I watched I knew I had to recreate the house. I also made an animation, but it was never completed due to rendering issues.",
+                    "synopsis": "A piece I made after seeing the movie, <em> A Ghost Story (2017)</em>.",
+                    "description": "<em> A Ghost Story (2017) </em> has to be one of my most favourite films. It's relaxing, simple, and the visual aesthetic of it is breathtaking. Soon after I watched it I knew I had to recreate the house. I also made an animation, but it was never completed due to rendering issues.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -596,19 +596,19 @@
                             "name": "HOUSE",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/0_house_rough.png",
-                            "description": "The house. This was one of my only architectual pieces, and I relied alot on booleans to get the windows in place."
+                            "description": "The house. This was one of my only architectural pieces, and I relied a lot on booleans to get the windows in place."
                         },
                         {
                             "name": "Shading",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/3_texturing_and_grass.png",
-                            "description": "Shading was quite simple, and it wasn't too diffcult finding a nice HDRI."
+                            "description": "Shading was quite simple and it wasn't too difficult finding a nice HDRI."
                         },
                         {
                             "name": "CRITIQUE",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/4_review.jpg",
-                            "description": "I also drew notes over my renders to figure out what things I wanted to add and change."
+                            "description": "I also drew notes over my renders to figure out what things I wanted to improve."
                         },
                         {
                             "name": "LIGHTING",
@@ -620,7 +620,7 @@
                             "name": "TREES",
                             "type": 0,
                             "link": "../assets/portfolio/art/a_ghost_story/11_trees.png",
-                            "description": "I had tried using PNGs for the trees, but you could tell they were too flat when looking at them. So I used real tree models."
+                            "description": "Originally, I tried using PNGs for the trees, but you could tell they were too flat when looking at them. So I instead used real tree models."
                         },
                         {
                             "name": "Animation",
@@ -634,8 +634,8 @@
                     "name": "As the Paint Wears Away",
                     "cover": "../assets/portfolio/art/blm/1_paint.png",
                     "year": "2021",
-                    "synopsis": "Racism has been an issue for the past decades, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint theres a much deeper systemic problem.",
-                    "description": "It was originally meant to be a simple school project during online learning, but I really liked the message I was trying to tell so I put alot more effort into it.",
+                    "synopsis": "Racism has been an issue for a long time, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint there's a much deeper systemic problem.",
+                    "description": "It was originally meant to be a simple school project during online learning, but I really liked the message I was trying to tell so I put more effort into it.",
                     "tools": "Blender, Substance Painter",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -645,13 +645,13 @@
                             "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/blm/1_paint.png",
-                            "description": "The final piece. The paint represents the American Dream, and the fact it's being worn down is showing all of America's flaws. I chose to remove the eyes and ears from the sculpture to imply that people dont always see and hear the problem"
+                            "description": "The final piece. The paint represents the American Dream, and the fact it's being worn down is showing all of America's flaws. I chose to remove the eyes and ears from the sculpture to imply that people don't always choose to see and hear to the problem."
                         },
                         {
                             "name": "WIP",
                             "type": 0,
                             "link": "../assets/portfolio/art/blm/0_concept.png",
-                            "description": "The piece without the paint. I hadn't figured out what I wanted to tell with the piece yet."
+                            "description": "The piece without the paint. At that time, I hadn't figured out what I wanted to tell with the piece yet."
                         }   
                     ]
                 },
@@ -659,8 +659,8 @@
                     "name": "P.66",
                     "cover": "../assets/portfolio/art/p66/11_new_grade.png",
                     "year": "2022",
-                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create P.66 Probe.",
-                    "description": "I saw this concept while scrolling through Arstation and I loved everything about it: The composition, the color, the atmospherics, I knew I had to try and re-create it. The hardest challenge during this project was having to deal with such a large scale scene. The number of buildigns and the volumetrics took a great toll on my rendering speed. ",
+                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create <em> P.66 Probe </em>.",
+                    "description": "I saw this concept while scrolling through Arstation and I loved everything about it: the composition, the colour, the atmospherics. I knew I had to try and re-create it. The hardest challenge during this project was having to deal with such a large scale scene. The number of buildings and the volumetrics took a great toll on my rendering speed. ",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -670,19 +670,19 @@
                             "name": "Final Render",
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/11_new_grade.png",
-                            "description": "The final render. I probably would have worked more on it if my computer handled the volumetrics better."
+                            "description": "The final render. I probably would have worked more on it if my computer handled volumetrics better."
                         },
                         {
                             "name": "Concept",
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/concept.jpg",
-                            "description": "The original artwork by Fang Yi. I DID NOT MAKE THIS."
+                            "description": "The original artwork by Fang Yi. <em> I did not make this. </em>"
                         },
                         {
                             "name": "Breakdown",
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/1_labelled.png",
-                            "description": "A breakdown of the original piece by Fang Yi. There were a tonn of buildings and I wanted to match the concept as closely as possible."
+                            "description": "A breakdown of the original piece by Fang Yi. There were a lot of buildings and I wanted to match the concept as closely as possible."
                         },
                         {
                             "name": "Buildings",
@@ -700,13 +700,13 @@
                             "name": "New Layout",
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/8_revamp.png",
-                            "description": "I ended up changing the layout of the buildings because the previous setup wasnt working."
+                            "description": "I ended up changing the distrbution of the buildings because the previous layout wasn't working."
                         },
                         {
                             "name": "Personalized",
                             "type": 0,
                             "link": "../assets/portfolio/art/p66/10_new_clouds.png",
-                            "description": "Through giving myself more freedom to create, I was able to make the scene look better."
+                            "description": "By giving myself more creative control and more loosely following the original concept, I was able to improve the scene."
                         },
                         {
                             "name": "Viewport Animation",
@@ -718,7 +718,7 @@
                             "name": "Rendered Animation",
                             "type": 1,
                             "link": "../assets/portfolio/art/p66/P66_low_v01.mp4",
-                            "description": "I tried rendering it out but the sheer number of volumes broke my renders, so I gave up on the idea."
+                            "description": "I tried rendering the project, but the sheer number of volumes broke my renders."
                         }
                     ]
                 },
@@ -726,8 +726,8 @@
                     "name": "Night Driving",
                     "cover": "../assets/portfolio/art/default_cube/11_regrade.png",
                     "year": "2021",
-                    "synopsis": "Night Driving is my submission for the 'Keep The Cube' competition that I helped host for the unofficial Blender Community discord server.",
-                    "description": "Althought I've been told the piece is too dark (lighting wise), I still really like the emphasis I was a ble to create with the lighting. For me, this feels like it could be a shot from out of a movie.",
+                    "synopsis": "<em> Night Driving </em> is my submission for the <em> Keep The Cube </em> competition that I helped host for the unofficial Blender Community discord server.",
+                    "description": "Although I've been told the piece is too dark (lighting wise), I still really like the emphasis I was able to create with the lighting. For me, this feels like it could be a still from a movie.",
                     "tools": "Blender, Krita, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -749,13 +749,13 @@
                             "name": "Tree Coloring",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/1_trees.png",
-                            "description": "I initially wanted to have the scene set during the day, so I spent alot of time trying to get the trees looking as good as possible."
+                            "description": "I initially wanted to have the scene set during the day, so I spent a lot of time trying to get the trees looking as realistic as possible."
                         },
                         {
                             "name": "Full",
                             "type": 0,
                             "link": "../assets/portfolio/art/default_cube/3_soften.png",
-                            "description": "I was eventually able to add thickness to the forest so all you could see was the cube and the path."
+                            "description": "I was eventually able to add thickness to the forest so all that could be seen was the cube and the path."
                         },
                         {
                             "name": "Concept",
@@ -769,7 +769,7 @@
                     "name": "Mona Lisa",
                     "cover": "../assets/portfolio/art/mona_lisa/render.png",
                     "year": "2020",
-                    "synopsis": "Mona Lisa was part of a school assignment. The class had to re-create a famous piece of art in a medium of their choice.",
+                    "synopsis": "<em> Mona Lisa </em> was part of a school assignment. The class had to re-create a famous piece of art in a medium of their choice.",
                     "description": "I wanted to have a go at character design so I decided to choose the Mona Lisa. MakeHuman was extremely useful in getting the character looking decent, however I sadly wasn't able to imitate the famous Mona Lisa smile.",
                     "tools": "Blender, MakeHuman",
                     "pipeline": "All Aspects",
@@ -780,19 +780,19 @@
                             "name": "Final Render",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/render.png",
-                            "description": "The Final Render. I sadly ran out of time before I could properly texture her clothing and do the background."
+                            "description": "The final render. I sadly ran out of time before I could properly texture her clothing and do the background."
                         },
                         {
                             "name": "First draft",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/blocking.png",
-                            "description": "The blocking stage, you can see that I struggled to make a realistic look face."
+                            "description": "The blocking stage. You can see that I struggled to make a realistic looking face."
                         },
                         {
                             "name": "Eevee",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/eevee.png",
-                            "description": "The clothing was also especially hard to do. As I simulated it, there were numerous glitches throughout."
+                            "description": "The clothing was also especially hard to do. When I simulated it, there were numerous glitches between the different layers of cloth."
                         },
                         {
                             "name": "Small fixes",
@@ -804,7 +804,7 @@
                             "name": "Hair",
                             "type": 0,
                             "link": "../assets/portfolio/art/mona_lisa/solid_view.png",
-                            "description": "Doing hair infuriated me. I remember spending hours try to make it look like something that wasn't a huge mess."
+                            "description": "Doing hair infuriated me. I remember spending hours trying to make it look like something that wasn't a huge mess."
                         }
                     ]
                 },
@@ -812,8 +812,8 @@
                     "name": "Let Me Be",
                     "cover": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
                     "year": "2022",
-                    "synopsis": "'Let Me Be' is a piece from my AP 2D Art & Design submission, It was one of my favourites as it was the best mix of digital 2D and 3D.",
-                    "description": "I wanted this render to show the affects of grief on an individual. I seperate the king from his family using color, and gave him more space on screen to ephasize the idea of pushing out his family. ",
+                    "synopsis": "<em> Let Me Be </em> is a piece from my AP 2D Art & Design submission. It was one of my favourites as it was the best mix of digital 2D and 3D.",
+                    "description": "I wanted this render to show the affects of grief on an individual. I separated the king from his family using colour and gave him more space on screen to emphasise the idea of pushing out his family. ",
                     "role": "",
                     "tools": "Blender, Krita, DaVinci Resolve",
                     "pipeline": "All Aspects",
@@ -829,25 +829,25 @@
                             "name": "Original Idea",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/0_blocking.png",
-                            "description": "The original idea. At first I wanted to seperate the king from his family by using pillars. Similar to how bars in prison do."
+                            "description": "The original idea. At first I wanted to separate the king from his family by using pillars, however I liked the idea of using light more."
                         },
                         {
                             "name": "NPR",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/3_better_lighting.png",
-                            "description": "I went through a stage where I wanted to the piece to look similar to the style of kung fu panda's 2d animations, but I soon realized that NPR would take too much time to perfect."
+                            "description": "I went through a stage where I wanted to the piece to look similar to the style of <em> Kung Fu Panda</em>'s 2D animations, but I soon realised that NPR would take too much time to perfect."
                         },
                         {
                             "name": "Quixel",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/5_textures.png",
-                            "description": "I used Quixel Megascans assets to quickly block out the scene. The render looked much better than what I was doing with NPR, so I switched back to a more photoreal style."
+                            "description": "I used Quixel Megascans assets to quickly block out the scene. The render was better than what I was doing with NPR, so I switched back to a more photorealistic style."
                         },
                         {
                             "name": "Lighting",
                             "type": 0,
                             "link": "../assets/portfolio/art/let_me_be/7_final_render.png",
-                            "description": "This was one of the final 3D renders, I ended up moving the table closer as I felt that the subjects were all too far away. "
+                            "description": "This was one of the final 3D renders. Later, I moved the table closer as I felt that the subjects were all too far away. "
                         }
                     ]
                 },
@@ -855,8 +855,8 @@
                     "name": "Steamboat Willy",
                     "cover": "../assets/portfolio/art/steamboat_willy/final.PNG",
                     "year": "2020",
-                    "synopsis": "For the #Blender52 theme 'Cartoon'. I wanted to recreate the classic disney steamboat willy shot.",
-                    "description": "I'm especially proud of this piece as it was one of the first times that I was able to create a character without using blueprints. I wish I could have spent more time on the fur, but It was at this point that I started to see how well my renders could turn out.",
+                    "synopsis": "For the #Blender52 theme, <em>Cartoon</em>, I wanted to recreate part of Disney's classic <em> Steamboat Willy (1928) </em>.",
+                    "description": "I'm especially proud of this piece as it was one of the first times that I was able to create a character without using blueprints. If I could remake the project, I likely would spend more time on the fur.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -866,19 +866,19 @@
                             "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/final.PNG",
-                            "description": "The final render. I threw a bunch of post processing on it to give it the 'vintage' look."
+                            "description": "The final render. I threw a bunch of post processing on it to give it a vintage look."
                         },
                         {
                             "name": "modelling",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/modelling.PNG",
-                            "description": "A screenshot of the model. I enjoyed creating a character that wasn't in the typical T-pose."
+                            "description": "A screenshot of the model. I enjoyed creating a character that wasn't in the typical t-pose."
                         },
                         {
                             "name": "fur",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/hair.PNG",
-                            "description": "Crazy fur. I wanted Mickey to feel like a real mouse, but I couldnt seem to get the fur to behave how I wanted it to."
+                            "description": "Crazy hair. I wanted Mickey to feel like a real mouse, but I couldn't seem to get the fur to behave."
                         },
                         {
                             "name": "Scene",
@@ -890,7 +890,7 @@
                             "name": "Render",
                             "type": 0,
                             "link": "../assets/portfolio/art/steamboat_willy/render.PNG",
-                            "description": "The pre-comp render. I liked the pop of color, but I wanted the render to match the original so I desaturated it in resolve."
+                            "description": "The pre-comp render. I liked the pop of colour, but I wanted the render to match the original so I desaturated it in Resolve."
                         }
                     ]
                 },
@@ -898,8 +898,8 @@
                     "name": "Under The Moon",
                     "cover": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
                     "year": "2022",
-                    "synopsis": "'Under The Moon' was a quick lighting practice project that I did in an evening.",
-                    "description": "Originally, I wanted to make the piece in Unreal Engine 5, but I was too frustrated with the wave system so I reverted back to Blender. I do plan to make something with Unreal Engine 5's fluids in the future sometime though.",
+                    "synopsis": "<em> Under The Moon </em> was a quick lighting practice project that I did in an evening.",
+                    "description": "Originally, I wanted to make the piece in Unreal Engine 5, but I was too frustrated with the wave system so I reverted back to Blender. However, I do plan to make something with Unreal Engine 5's fluids in the future.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -909,7 +909,7 @@
                             "name": "Final",
                             "type": 0,
                             "link": "../assets/portfolio/art/under_the_moon/under_the_moon.png",
-                            "description": "The final render. The models were all download from PolyHaven and Mixamo."
+                            "description": "The final render. The models were all downloaded from PolyHaven and Mixamo."
                         },
                         {
                             "name": "concept",
@@ -926,9 +926,9 @@
             "items": [
                 {
                     "name": "The Girl and The Robot",
-                    "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                    "cover": "../assets/portfolio/films/tgatr/poster.png",
                     "year": "2023",
-                    "synopsis": "A girl discovers the importance of friendship through a robot she meets in the forest.",
+                    "synopsis": "A girl discovers the importance of friendship through a robot she meets in the forest.  <br> <br> (THIS FILM IS CURRENTLY IN PRODUCTION)",
                     "description": "The Girl and The Robot (TGATR) was a short film that a friend and I decided to make during our last year of highschool. We were both interested in film and our parents suggested we worked together on our own movie. My one regret is giving myself 35 visual effects shots.",
                     "tools": "Blender, Substance Painter, Nuke, Mocha, DaVinci Resolve",
                     "pipeline": "All Aspects",
@@ -938,50 +938,56 @@
                         {
                             "name": "Poster",
                             "type": 0,
-                            "link": "",
-                            "description": ""
+                            "link": "../assets/portfolio/films/tgatr/poster.png",
+                            "description": "The current poster for the short film."
                         },
                         {
                             "name": "Storyboard",
                             "type": 0,
-                            "link": "",
-                            "description": ""
+                            "link": "../assets/portfolio/films/tgatr/story.png",
+                            "description": "A sheet from the 70 page storyboard."
                         },
                         {
                             "name": "Character Concept",
                             "type": 0,
-                            "link": "",
-                            "description": ""
+                            "link": "../assets/portfolio/films/tgatr/concept.png",
+                            "description": "An early character concept Chipp. I wanted to base him off the robot from 'Tales From The Loop'."
                         },
                         {
                             "name": "Filming",
                             "type": 0,
-                            "link": "",
-                            "description": ""
+                            "link": "../assets/portfolio/films/tgatr/bts_lighting.jpg",
+                            "description": "A set photo from one the dinner scenes. This was the first time that I had ever used lights in a shoot."
                         },
                         {
-                            "name": "Character Model",
-                            "type": 0,
-                            "link": "",
-                            "description": ""
+                            "name": "Chipp Turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/films/tgatr/chipp_turntable.mp4",
+                            "description": "A set photo from one the dinner scenes. This was the first time that I had ever used lights in a shoot."
+                        },
+                        {
+                            "name": "Chipp Sketchfab",
+                            "type": 3,
+                            "link": "https://sketchfab.com/models/385598060a0b451087fae8b765fbb180/embed",
+                            "description" : "An interactive model of Chipp."
                         },
                         {
                             "name": "Animation",
-                            "type": 0,
-                            "link": "",
-                            "description": ""
+                            "type": 1,
+                            "link": "../assets/portfolio/films/tgatr/anim.mp4",
+                            "description": "An pre-rendered shot in the film."
                         },
                         {
                             "name": "Full VFX Shot",
-                            "type": 0,
-                            "link": "",
-                            "description": ""
+                            "type": 1,
+                            "link": "../assets/portfolio/films/tgatr/comped_shot.mp4",
+                            "description": "The same shot, but rendered and comped."
                         },
                         {
                             "name": "Nuke Comp",
                             "type": 0,
-                            "link": "",
-                            "description": ""
+                            "link": "../assets/portfolio/films/tgatr/nuke.png",
+                            "description": "The compositing workflow for one of the more advanced scenes in Nuke. There is probably a much more efficient way to get it done, but it worked."
                         }
                     ]
                 },

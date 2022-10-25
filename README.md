@@ -6,6 +6,14 @@ This is the code repository for my personalized website. To view the website, go
 
 ## TODOs
  - Portfolio Page
-    - Finish TGATR and get photos for Gym 
+
+    - Better poster for TGATR
+
+    - get school gym photos
+
     - Get 2 more sketchbooks pieces
+
     - Review descriptions
+
+
+   CHECK HTML, CSS
