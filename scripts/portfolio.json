@@ -634,7 +634,7 @@
                     "name": "As the Paint Wears Away",
                     "cover": "../assets/portfolio/art/blm/1_paint.png",
                     "year": "2021",
-                    "synopsis": "Racism has been an issue for a long time, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint there's a much deeper systemic problem.",
+                    "synopsis": "Racism has been an issue for a very long time, especially in America. This piece was a commentary on the American Dream and how behind all the shiny patriotic paint there's a much deeper systemic problem.",
                     "description": "It was originally meant to be a simple school project during online learning, but I really liked the message I was trying to tell so I put more effort into it.",
                     "tools": "Blender, Substance Painter",
                     "pipeline": "All Aspects",
@@ -652,6 +652,12 @@
                             "type": 0,
                             "link": "../assets/portfolio/art/blm/0_concept.png",
                             "description": "The piece without the paint. At that time, I hadn't figured out what I wanted to tell with the piece yet."
+                        },
+                        {
+                            "name": "BTS",
+                            "type": 0,
+                            "link": "../assets/portfolio/art/blm/bts.png",
+                            "description": "A screenshot of the layout."
                         }   
                     ]
                 },
