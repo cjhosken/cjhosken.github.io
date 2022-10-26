@@ -1305,6 +1305,18 @@
                             "type": 0,
                             "link": "../assets/portfolio/other/school/full_frame_edit.jpg",
                             "description": "A full frame shot of the gym that I composited together inside of Nuke. I used this image to pitch the idea to the school board."
+                        },
+                        {
+                            "name": "Real Full",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/gym_real_1.jpg",
+                            "description": "A real photo of the designs in the school gym. I was pleasantly suprised to see them there on my first day back to school."
+                        },
+                        {
+                            "name": "Real Full 2",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/school/gym_real_2.jpg",
+                            "description": "Another angle of the real designs."
                         }
                     ]
                 },

@@ -9,8 +9,6 @@ This is the code repository for my personalized website. To view the website, go
 
     - Better poster for TGATR
 
-    - get school gym photos
-
     - Get 2 more sketchbooks pieces
 
     - Review descriptions

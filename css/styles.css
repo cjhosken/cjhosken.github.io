@@ -430,7 +430,8 @@ a:hover {
 }
 
 #companies-list-container img {
-    width: 25vh;
+    height: 25vh;
+    aspect-ratio: 1;
     filter: saturate(5%) contrast(10%) brightness(110%);
     transition: filter 0.35s;
 }
