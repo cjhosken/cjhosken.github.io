@@ -134,8 +134,14 @@
 
 .lightbox-summary-container h1 {
     color: white;
-    margin: 5vh;
+    margin-top: 5vh;
     font-size: 6vmin;
+}
+
+.lightbox-summary-container h2 {
+    color: white;
+    margin: 3vh;
+    font-size: 2vmin;
 }
 
 .lightbox-summary-container p {
@@ -220,19 +226,38 @@
 }
 .project-item-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .project-item-info p {
+    text-align: center;
+    margin: 1vh;
     font-size: 1.75vmin;
 }
 
-.project-item-info > * {
-    display: inline-block;
+.project-item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: bold;
+    border-bottom: solid 1px var(--primary);
+}
+
+.project-item-title p {
+    color: var(--primary);
+}
+
+
+.project-item-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .icon {
-    color: white;
+    color: var(--primary);
 }

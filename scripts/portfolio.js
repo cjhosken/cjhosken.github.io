@@ -86,6 +86,7 @@ function load_lightbox(category_index, item_index) {
     var lightbox = document.getElementById("portfolio-lightbox");
 
     lightbox.querySelector("#title").innerHTML = item.name;
+    lightbox.querySelector("#year").innerHTML = item.year;
     lightbox.querySelector("#description").innerHTML = item.synopsis + "<br> </br>" + item.description;
 
 
