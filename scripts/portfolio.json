@@ -143,7 +143,7 @@
                     "name": "AP Sketchbook",
                     "cover": "../assets/portfolio/sketches/ap_sketchbook/tree_study_low.jpg",
                     "year": "2022",
-                    "synopsis": "As part of my AP 2D Art & Design submission, I had to create sketchbook pieces that show my train of thought.",
+                    "synopsis": "As part of my <em> AP 2D Art & Design </em> submission, I had to create sketchbook pieces that show my train of thought.",
                     "description": "I didn't do many sketchbook pieces as I prefer to plan things out in my head and inside 3D scenes, but it was a good learning experience. Hopefully I'll do more sketchbook work in the future.",
                     "tools": "Pencil, fineliner, watercolor pencils",
                     "role": "",
@@ -261,7 +261,7 @@
                     "cover": "../assets/portfolio/animations/car_drift/banner.png",
                     "year": "2022",
                     "synopsis": "I had always wanted to do a high energy car chase animation. So one day I sat down and did it!",
-                    "description": "This project was a fun challenge for me as I wanted to make the audience feel as if they're in the shot. I was able to make a custom car rig which helped alot with getting the tilt of the car as it swings round. I did not model the car.",
+                    "description": "This project was a fun challenge for me as I wanted to make the audience feel as if they're in the shot. I was able to make a custom car rig which helped a lot with getting the tilt of the car as it swings round. I did not model the car.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "Scene Layout, Rigging, Animation, Lighting",
                     "role": "",
@@ -277,19 +277,19 @@
                             "name": "Concept",
                             "type": 0,
                             "link": "../assets/portfolio/animations/car_drift/0_concept.png",
-                            "description": "The first concept. I ended changing things because I wasn't getting the up close action packed feeling."
+                            "description": "The first concept. I ended changing the layout because I wasn't getting the up close action-packed feeling."
                         },
                         {
                             "name": "Layout",
                             "type": 0,
                             "link": "../assets/portfolio/animations/car_drift/scene_layout.png",
-                            "description": "The scene layout. I remember basing it off a street in tokyo."
+                            "description": "The scene layout. I based it off a street in Tokyo."
                         },
                         {
                             "name": "Viewport",
                             "type": 1,
                             "link": "../assets/portfolio/animations/car_drift/6_person.mp4",
-                            "description": "I was very proud of the motion of the car. The sharp swing and the levelling out, all while the wheels kept spinning was very satisfying."
+                            "description": "I'm very proud of the motion of the car. The sharp swing and the levelling out, all while the wheels kept spinning, was very satisfying."
                         }
                     ]
                 },
@@ -298,7 +298,7 @@
                     "cover": "../assets/portfolio/animations/creature_breach/banner.png",
                     "year": "2021",
                     "synopsis": "After spending a couple weeks messing around in Houdini. I decided I wanted to attempt a large scale fluid simulation. I had seen a similar creature breach animation online and felt like learning how to do that myself.",
-                    "description": "This was the first time that I had ever messed around with fluids in Houdini. I primarily used the shelf tools with some minor adjustments, but trying to design it from scratch was too difficult with my processing power at the time.",
+                    "description": "I primarily used the shelf tools with some minor adjustments, but trying to design it from scratch was too difficult with my processing power at the time.",
                     "tools": "Blender, Houdini",
                     "role": "",
                     "pipeline": "Rigging, Animation, Simulation",
@@ -329,7 +329,7 @@
                     "cover": "../assets/portfolio/animations/desert_temple/banner.png",
                     "year": "2022",
                     "synopsis": "After hearing about the full Unreal Engine 5 release, I decided to play around with Megascans and Lumen. I was playing Tomb Raider at the time and wanted to making something that resembled a desert temple.",
-                    "description": "I had experimented with Unreal Engine before, but this project was the first time I created a complete project. Putting the enviornment together was the easiest part. Most of my time was spent learning how to import animations and avoid excessive VRAM usage.",
+                    "description": "Putting the environment together was the easiest part. Most of my time was spent learning how to import animations and avoid excessive VRAM usage.",
                     "tools": "Unreal Engine 5, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -345,7 +345,7 @@
                             "name": "Light",
                             "type": 0,
                             "link": "../assets/portfolio/animations/desert_temple/light.png",
-                            "description": "A quick lighting test. The fact that this software is free amazes me."
+                            "description": "A quick lighting test."
                         },
                         {
                             "name": "Wide",
@@ -359,8 +359,8 @@
                     "name": "Ornithopter",
                     "cover": "../assets/portfolio/animations/dune_ornithopter/cover.png",
                     "year": "2021",
-                    "synopsis": "After watching Dune, I loved the animations for the ornithopters and I had to try it for myself.",
-                    "description": "I also used the projection mapping hack as I didnt want to texture the entire ornithopter. The animation was a chance for me to 'cheat' in 3D.",
+                    "synopsis": "After watching <em> Dune (2021) </em>, I loved the animations for the ornithopters and I had to try it for myself.",
+                    "description": "I used the projection mapping hack as I didn't want to texture the entire ornithopter. The animation was a chance for me to 'cheat' in 3D.",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "Modelling, Animation, Editing",
                     "role": "",
@@ -370,13 +370,13 @@
                             "name": "Full Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/dune_ornithopter/dune_animation_clean.mp4",
-                            "description": "The full animation. This was done all over a single weekend."
+                            "description": "The full animation. This was done over a single weekend."
                         },
                         {
                             "name": "Hack",
                             "type": 0,
                             "link": "../assets/portfolio/animations/dune_ornithopter/screenshot.png",
-                            "description": "The ornithopter itself was a basic projection mapping hack."
+                            "description": "The ornithopter using a basic projection mapping hack."
                         },
                         {
                             "name": "Wide",
@@ -390,7 +390,7 @@
                     "name": "Spiderman Swing",
                     "cover": "../assets/portfolio/animations/spiderman/banner.png",
                     "year": "2022",
-                    "synopsis": "I had seen numerous Spiderman animations floating around on youtube, and I remember saying to myself 'I could do that'. ",
+                    "synopsis": "I had seen numerous Spiderman animations floating around on YouTube, and I remember saying to myself 'I could do that'. ",
                     "description": "For this animation, I was able to mess around with Blender's new geometry nodes. I used the system to create and simulate the web. The rest was of the animation was hand animated.",
                     "tools": "Blender, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "Animation, Lighting",
@@ -401,7 +401,7 @@
                             "name": "Full Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/spiderman/final_animation.mp4",
-                            "description": "The full animation. I ended up shortening it as it was the best shot in the sequence."
+                            "description": "The first shot of the animation. I ended up only finishing this one as it was the best in the sequence."
                         },
                         {
                             "name": "GL Animation",
@@ -413,7 +413,7 @@
                             "name": "Base Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/spiderman/base_anim.mp4",
-                            "description": "A basic render of the full animation sequence. I disliked the later shots as they didnt feel as polished as the first one."
+                            "description": "A basic render of the full animation sequence. I disliked the later shots as they didn't feel as polished as the first one."
                         }
                     ]
                 },
@@ -421,8 +421,8 @@
                     "name": "Maui Skit",
                     "cover": "../assets/portfolio/animations/maui_skit/cover.png",
                     "year": "2022",
-                    "synopsis": "Using audio from the Disney film, Moana. I put my own spin on the character Maui.",
-                    "description": "I had done a bit of character animation before, but I wanted to do a shot where the subject moves all around the scene. I really enjoyed the scene from Moana when she meets Maui, so I took the audio and came up with my own version of the scene. The rig came from the Blender Foundation. ",
+                    "synopsis": "Using audio from the Disney film, <em> Moana (2016)</em>. I put my own spin on the character Maui.",
+                    "description": "I had done a bit of character animation before, but I wanted to do a shot where the subject moves all around the scene. I really enjoyed the scene where Moana meets Maui, so I took the audio and came up with my own version of the scene. The rig came from the Blender Foundation. ",
                     "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -432,7 +432,7 @@
                             "name": "Full Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/maui_skit/16_rendered.mp4",
-                            "description": "The finished animation. This was the first time that I had ever properly aniamted a dynamic character to audio."
+                            "description": "The finished animation. This was the first time that I had ever properly animated a dynamic character to audio."
                         },
                         {
                             "name": "Storyboard",
@@ -450,19 +450,19 @@
                             "name": "Refining",
                             "type": 1,
                             "link": "../assets/portfolio/animations/maui_skit/7_more_blocking.mp4",
-                            "description": "I then realized that a good animation technique is to then animate the frame between two blocking poses and to keep doing that until the animation is smooth."
+                            "description": "I learnt to animate by continuously interpolating keyframes between poses. The more you interpolate, the smoother the animation."
                         },
                         {
                             "name": "Final Viewport Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/maui_skit/15_final_animation.mp4",
-                            "description": "The final viewport animation. I wasn't too happy with Maui's speed due to the timing and size of the set, but it was a good animation excercise."
+                            "description": "The final viewport animation. I wasn't too happy with Maui's speed due to the timing and size of the set, but it was a good animation exercise."
                         },
                         {
                             "name": "Lighting",
                             "type": 0,
                             "link": "../assets/portfolio/animations/maui_skit/14_retexture.png",
-                            "description": "A basic lighting test. I wanted to light the scene similar to how shots look in early 3D Disney animations."
+                            "description": "A basic lighting test. I wanted to light the scene similar to early 3D Disney animations."
                         }
                     ]
                 },
@@ -470,8 +470,8 @@
                     "name": "Moving Day",
                     "cover": "../assets/portfolio/animations/moving_day/cover.png",
                     "year": "2021",
-                    "synopsis": "Moving Day was a short animation I made after making random sketches inside of the Blender. It explores the idea of what animals consider home.",
-                    "description": "Moving Day is one of my favourite pieces, and it happened completely by accident. I was messing around with the annotation tool for concepting, and I ended up sketching a mouse looking into a hole in the attic. From there I started adding assets and lights, and it soon became the animation 'Moving Day'. I even ended up writing a short story about it for an english assignment.",
+                    "synopsis": "Moving Day was a short animation I made after making random sketches inside of Blender. It explores the idea of what animals consider home.",
+                    "description": "Moving Day is one of my favourite pieces, and it happened completely by accident. I was messing around with the annotation tool for concepting, and I ended up sketching a mouse looking into a hole in the attic. From there I started adding assets and lights, and it soon became the animation <em> Moving Day</em>. I even ended up writing a short story about it for an English assignment.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -505,7 +505,7 @@
                             "name": "Storyboard",
                             "type": 1,
                             "link": "../assets/portfolio/animations/moving_day/0-concept.mp4",
-                            "description": "A simple 3d storyboard. This let me figure out timing and framing."
+                            "description": "A simple 3D storyboard. This let me figure out timing and framing."
                         },
                         {
                             "name": "Lighting",
@@ -520,7 +520,7 @@
                     "cover": "../assets/portfolio/animations/sci_fi_plains/7_grade.png",
                     "year": "2022",
                     "synopsis": "Following the concept art by Thomas Dubois, I decided to experiment with large scale environments using Quixel's Megascans.",
-                    "description": "I was scrolling through Artstation and came across a painting my Thomas Dubois. I was transfixed by the lighting and wanted to recreate it inside of Blender. The piece was lots of fun to make (especially the clouds). I ended up send the piece to Thomas Dubois and he enjoyed it.",
+                    "description": "I was scrolling through Artstation and came across a painting by Thomas Dubois. I was transfixed by the lighting and wanted to recreate it inside of Blender. The piece was lots of fun to make (especially the clouds). I ended up sending the piece to Thomas Dubois and he enjoyed it.",
                     "tools": "Blender, Quixel Megascans, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "",
@@ -530,13 +530,13 @@
                             "name": "Final Animation",
                             "type": 1,
                             "link": "../assets/portfolio/animations/sci_fi_plains/cliff_final_wide_with_audio.mp4",
-                            "description": "The Final Animation."
+                            "description": "The final animation."
                         },
                         {
                             "name": "Concept",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/concept.jpg",
-                            "description": "The original artwork by Thomas Dubois. I DID NOT MAKE THIS."
+                            "description": "The original artwork by Thomas Dubois. <em> I did not make this. </em>"
                         },
                         {
                             "name": "FIX",
@@ -548,13 +548,13 @@
                             "name": "Grading",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/4_grade.png",
-                            "description": "I soon personalized the render by adding a spaceship model from CG trader."
+                            "description": "I soon personalised the render by adding a spaceship model from CGTrader."
                         },
                         {
                             "name": "Critiques",
                             "type": 0,
                             "link": "../assets/portfolio/animations/sci_fi_plains/5_drawover.png",
-                            "description": "For this piece I spent the time critiquing my own renders. I'd sketch over areas I'd want to improve."
+                            "description": "For this piece I spent time critiquing my own renders. I sketched over areas I wanted to improve."
                         },
                         {
                             "name": "Clouds",
@@ -566,7 +566,7 @@
                             "name": "Viewport",
                             "type": 1,
                             "link": "../assets/portfolio/animations/sci_fi_plains/cliff_viewport.mp4",
-                            "description": "The viewport animation"
+                            "description": "The viewport animation."
                         }
                     ]
                 }
@@ -665,7 +665,7 @@
                     "name": "P.66",
                     "cover": "../assets/portfolio/art/p66/11_new_grade.png",
                     "year": "2022",
-                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create <em> P.66 Probe </em>.",
+                    "synopsis": "Inspired by the concept art of Fang Yi, I decided to try and re-create <em> P.66 Probe</em>.",
                     "description": "I saw this concept while scrolling through Arstation and I loved everything about it: the composition, the colour, the atmospherics. I knew I had to try and re-create it. The hardest challenge during this project was having to deal with such a large scale scene. The number of buildings and the volumetrics took a great toll on my rendering speed. ",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
@@ -732,7 +732,7 @@
                     "name": "Night Driving",
                     "cover": "../assets/portfolio/art/default_cube/11_regrade.png",
                     "year": "2021",
-                    "synopsis": "<em> Night Driving </em> is my submission for the <em> Keep The Cube </em> competition that I helped host for the unofficial Blender Community discord server.",
+                    "synopsis": "<em> Night Driving </em> is my submission for the <em> Keep The Cube </em> competition that I helped host for the unofficial <em> Blender Community </em> Discord server.",
                     "description": "Although I've been told the piece is too dark (lighting wise), I still really like the emphasis I was able to create with the lighting. For me, this feels like it could be a still from a movie.",
                     "tools": "Blender, Krita, DaVinci Resolve",
                     "pipeline": "All Aspects",
@@ -818,7 +818,7 @@
                     "name": "Let Me Be",
                     "cover": "../assets/portfolio/art/let_me_be/letMeBe_JPG.jpg",
                     "year": "2022",
-                    "synopsis": "<em> Let Me Be </em> is a piece from my AP 2D Art & Design submission. It was one of my favourites as it was the best mix of digital 2D and 3D.",
+                    "synopsis": "<em> Let Me Be </em> is a piece from my <em> AP 2D Art & Design </em> submission. It was one of my favourites as it was the best mix of digital 2D and 3D.",
                     "description": "I wanted this render to show the affects of grief on an individual. I separated the king from his family using colour and gave him more space on screen to emphasise the idea of pushing out his family. ",
                     "role": "",
                     "tools": "Blender, Krita, DaVinci Resolve",
@@ -861,7 +861,7 @@
                     "name": "Steamboat Willy",
                     "cover": "../assets/portfolio/art/steamboat_willy/final.PNG",
                     "year": "2020",
-                    "synopsis": "For the #Blender52 theme, <em>Cartoon</em>, I wanted to recreate part of Disney's classic <em> Steamboat Willy (1928) </em>.",
+                    "synopsis": "For the #Blender52 theme, <em>Cartoon</em>, I wanted to recreate part of Disney's classic <em> Steamboat Willy (1928)</em>.",
                     "description": "I'm especially proud of this piece as it was one of the first times that I was able to create a character without using blueprints. If I could remake the project, I likely would spend more time on the fur.",
                     "tools": "Blender, DaVinci Resolve",
                     "pipeline": "All Aspects",
@@ -931,11 +931,11 @@
             "name": "films",
             "items": [
                 {
-                    "name": "The Girl and The Robot",
+                    "name": "The Girl and the Robot",
                     "cover": "../assets/portfolio/films/tgatr/poster.png",
                     "year": "2023",
-                    "synopsis": "A girl discovers the importance of friendship through a robot she meets in the forest.  <br> <br> (THIS FILM IS CURRENTLY IN PRODUCTION)",
-                    "description": "The Girl and The Robot (TGATR) was a short film that a friend and I decided to make during our last year of highschool. We were both interested in film and our parents suggested we worked together on our own movie. My one regret is giving myself 35 visual effects shots.",
+                    "synopsis": "A girl discovers the importance of friendship through a robot she meets in the forest.  <br> <br> <em> (THIS FILM IS CURRENTLY IN PRODUCTION) </em>",
+                    "description": "<em> The Girl and the Robot (TGATR) </em> is a short film that a friend and I are making during our final year of high school. We are both interested in film and our parents suggested we work together on our own movie. My one regret is giving myself 35 visual effects shots.",
                     "tools": "Blender, Substance Painter, Nuke, Mocha, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "Director, VFX Artist, Editor",
@@ -957,19 +957,19 @@
                             "name": "Character Concept",
                             "type": 0,
                             "link": "../assets/portfolio/films/tgatr/concept.png",
-                            "description": "An early character concept Chipp. I wanted to base him off the robot from 'Tales From The Loop'."
+                            "description": "An early character concept of Chipp. I wanted to base him off the robot from <em> Tales from the Loop (2020)</em>."
                         },
                         {
                             "name": "Filming",
                             "type": 0,
                             "link": "../assets/portfolio/films/tgatr/bts_lighting.jpg",
-                            "description": "A set photo from one the dinner scenes. This was the first time that I had ever used lights in a shoot."
+                            "description": "An on-set photo from one the dinner scenes. This was the first time that I had ever used lights in a shoot."
                         },
                         {
                             "name": "Chipp Turntable",
                             "type": 1,
                             "link": "../assets/portfolio/films/tgatr/chipp_turntable.mp4",
-                            "description": "A set photo from one the dinner scenes. This was the first time that I had ever used lights in a shoot."
+                            "description": "A turntable animation of Chipp."
                         },
                         {
                             "name": "Chipp Sketchfab",
@@ -981,7 +981,7 @@
                             "name": "Animation",
                             "type": 1,
                             "link": "../assets/portfolio/films/tgatr/anim.mp4",
-                            "description": "An pre-rendered shot in the film."
+                            "description": "A pre-rendered shot in the film."
                         },
                         {
                             "name": "Full VFX Shot",
@@ -993,7 +993,7 @@
                             "name": "Nuke Comp",
                             "type": 0,
                             "link": "../assets/portfolio/films/tgatr/nuke.png",
-                            "description": "The compositing workflow for one of the more advanced scenes in Nuke. There is probably a much more efficient way to get it done, but it worked."
+                            "description": "The compositing workflow for one of the more advanced scenes using Nuke. There is probably a much more efficient way to comp the shot, but it worked."
                         }
                     ]
                 },
@@ -1001,8 +1001,8 @@
                     "name": "Fallout Shopping",
                     "cover": "../assets/portfolio/films/fallout_shopping/cover.png",
                     "year": "2022",
-                    "synopsis": "With humanity wiped from existance, a retail robot is finally free to enjoy what he loves most; Going shopping!",
-                    "description": "I came up with the idea for fallout shopping while at the Central Festival mall in Chiang Mai. I saw a retail bot wandering around one of the shops, and I thought to myself 'What if that robot could explore the entire mall?'. I then spent my summer in England planning out the story, and then I animated the entire thing the month I got back to Thailand. ",
+                    "synopsis": "With humanity wiped from existence, a retail robot is finally free to enjoy what he loves most; going shopping!",
+                    "description": "I came up with the idea for <em> Fallout Shopping </em> while at Central Festival in Chiang Mai. I saw a retail bot wandering around one of the shops, and I thought to myself <em> 'What if that robot could explore the entire mall?'</em>. I then spent my summer in England planning out the story, and then animated the entire thing the following month. <br> <br> <em> Fallout Shopping </em> was showcased at the 2022 Beyond Animation Festival in Bangkok.",
                     "tools": "Blender, Nuke, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "Director, CG Artist, VFX Artist, Editor",
@@ -1018,7 +1018,7 @@
                             "name": "Synopsis",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/synop.jpg",
-                            "description": "A synposis page that I threw together. This helped me determine whether or not I wanted to make Fallout Shopping."
+                            "description": "A synposis page that I threw together. This helped me determine whether or not I wanted to make <em> Fallout Shopping</em>."
                         },
                         {
                             "name": "Storyboard",
@@ -1030,19 +1030,19 @@
                             "name": "Concept 1",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/concept_pg1.jpg",
-                            "description": "A concept page of how I wanted the scenes to look like."
+                            "description": "A concept page of how I wanted the scenes to look."
                         },
                         {
                             "name": "Concept 2",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/concept_pg2.png",
-                            "description": "Another page of concepts. I based most of the scenes off the Central Festival shopping mall in Chiang Mai."
+                            "description": "Another page of concepts. I based most of the scenes off Central Festival in Chiang Mai."
                         },
                         {
                             "name": "Concept 3",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/concept_pg3.png",
-                            "description": "Another page of concepts. I never completed outdoor environment because I thought I could wing it. It ended up being the worst shot in the entire animation."
+                            "description": "Another page of concepts. I never completed outdoor the environment because I thought I could wing it. It ended up being the worst shot in the entire animation."
                         },
                         {
                             "name": "Turntable",
@@ -1060,19 +1060,19 @@
                             "name": "Lighting Test 1",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/test.png",
-                            "description": "An early lighting test of the opening shot. I struggled alot on trying to create a damaged apocalyptic floor."
+                            "description": "An early lighting test of the opening shot. I struggled with trying to create a damaged apocalyptic floor."
                         },
                         {
                             "name": "Lighting Test 2",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/sc_2_test.png",
-                            "description": "Another early lighting test. This shot gave me good experience on how to light a hallway when the main light source is from the back."
+                            "description": "Another early lighting test. This shot gave experience on how to light a hallway with a strong backlight."
                         },
                         {
                             "name": "Lighting Test 3",
                             "type": 0,
                             "link": "../assets/portfolio/films/fallout_shopping/02_render.png",
-                            "description": "This shot is what inspired me to make Fallout Shopping. I had imagined it weeks before I considered making it an animation."
+                            "description": "This shot is what inspired me to make <em> Fallout Shopping</em>. I had imagined it weeks before I considered making it an animation."
                         }
                     ]
                 },
@@ -1081,7 +1081,7 @@
                     "cover": "../assets/portfolio/films/lamp_attack/cover.png",
                     "year": "2021",
                     "synopsis": "We've all grown accustomed to the brutality we see in the Pixar intro. But what about those poor Pixar letters everywhere else?",
-                    "description": "I was sitting at a table eating lunch one day when I thought to myself 'What if the Pixar lamps were like monsters to the pixar letters?'. I had always wanted to make something horror inspired, and within a week I had a storyboard planned out for the animation. ",
+                    "description": "I was eating lunch one day when I thought to myself <em> 'What if the Pixar lamps were like monsters to the Pixar letters?'</em>. I had always wanted to make something horror inspired, and within a week I had a storyboard planned out for the animation. ",
                     "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
                     "role": "Director, Modeller, Rigger, Animator",
@@ -1091,7 +1091,7 @@
                             "name": "Lamp Attack!",
                             "type": 2,
                             "link": "https://www.youtube.com/embed/w5oKCQUjC4A",
-                            "description": "The Entire short film. I was amazed that a dumb idea I had while eating lunch ended up becoming a full short animaton."
+                            "description": "The entire short film. I was amazed that a dumb idea I had while eating lunch ended up becoming a full short animation."
                         },
                         {
                             "name": "Sketch",
@@ -1103,7 +1103,7 @@
                             "name": "Storyboard",
                             "type": 1,
                             "link": "../assets/portfolio/films/lamp_attack/storyboard.mp4",
-                            "description": "This was the first time that I had made a storyboard for the entire short. As I was working in a team I wanted to show them what we were aiming for."
+                            "description": "This was the first time I made a storyboard for an entire short. As I was working in a team I wanted to show them what we were aiming for."
                         },
                         {
                             "name": "Rig",
@@ -1115,7 +1115,7 @@
                             "name": "Rig Demo",
                             "type": 1,
                             "link": "../assets/portfolio/films/lamp_attack/luxo_rig_demo.mp4",
-                            "description": "Rigging Luxo Jr. wasnt as difficult as there were numerous tutorials on how to do it."
+                            "description": "Rigging Luxo Jr. wasnt' as difficult to rig as there were numerous tutorials."
                         },
                         {
                             "name": "Early Animation Test",
@@ -1133,7 +1133,7 @@
                             "name": "Crowd Test",
                             "type": 1,
                             "link": "../assets/portfolio/films/lamp_attack/failed_crowd_test.mp4",
-                            "description": "Finding a way to animate large crowds was a huge challenge. Here's one of my failed crowd tests."
+                            "description": "Finding a way to animate large crowds was a huge challenge. Here's one of the failed crowd tests."
                         },
                         {
                             "name": "Pixar Intro",
@@ -1148,7 +1148,7 @@
                     "cover": "../assets/portfolio/films/sparky/cover.jpg",
                     "year": "2020",
                     "synopsis": "In a quest to find a new power source for Glenton, a robot finds himself doing more harm than good. Or so it seems...",
-                    "description": "Sparky was the only short film that was made by BOAP Studios. Although I was given the role of producer, I was heavily involved in writing, modelling, and animating. This was the first time that I got to work with other artists, and although it was an absolute mess, I would certainly do it again.",
+                    "description": "<em> Sparky </em> was the only short film that was made by BOAP Studios. Although I was given the role of producer, I was heavily involved in writing, modelling, and animating. This was the first time that I got to work with other artists.",
                     "tools": "Blender, Premiere Pro",
                     "pipeline": "All Aspects",
                     "role": "Writer, Producer, Modeller, Animator",
@@ -1164,31 +1164,31 @@
                             "name": "Early Concept",
                             "type": 0,
                             "link": "../assets/portfolio/films/sparky/old_sparky.png",
-                            "description": "An early concept of Sparky. I thew this together as a test to see how his limbs would interect with surroundings."
+                            "description": "An early concept of Sparky. I thew this together as a test to see how his limbs would interact with the surroundings."
                         },
                         {
                             "name": "Street",
                             "type": 0,
                             "link": "../assets/portfolio/films/sparky/street.png",
-                            "description": "A screenshot of the road scene. Alot of duplication and moving was done for this."
+                            "description": "A screenshot of the road scene. A lot of duplication and moving of houses was done for this."
                         },
                         {
                             "name": "Animation",
                             "type": 0,
                             "link": "../assets/portfolio/films/sparky/anim.png",
-                            "description": "A screenshot of Sparky during the animation phase. You can see we went for more tube based limbs so we could stretch Sparky as much as we needed to.."
+                            "description": "A screenshot of Sparky during the animation phase. We went for more tube based limbs so we could stretch Sparky as much as we needed."
                         },
                         {
                             "name": "Turbines",
                             "type": 0,
                             "link": "../assets/portfolio/films/sparky/turbines.png",
-                            "description": "An early shot of the turbines. The mountain was everntually removed from the shot but you can see the rest is relatively similar to the final."
+                            "description": "An early shot of the turbines. The mountain was everntually removed from the shot but the rest of the scene is relatively similar to the final."
                         },
                         {
                             "name": "Warehouse",
                             "type": 0,
                             "link": "../assets/portfolio/films/sparky/warehouse.png",
-                            "description": "An interior of the warehouse. Making sure that the render settings for this scene was extremely difficult due to the amount of noise that was generated."
+                            "description": "An interior image of the warehouse. Getting optimized render settings for this scene was extremely difficult due to the amount of render noise."
                         }
                     ]
                 }
@@ -1201,8 +1201,8 @@
                     "name": "Breeze Render Engine",
                     "cover": "../assets/portfolio/other/breeze/breeze_render_engine.png",
                     "year": "2022",
-                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breeze's custom render engine.",
-                    "description": "After following the 'Ray Tracing in One Weekend' tutorial series, I became hooked on understanding how digital content creators used maths to display 3d models. This lead me to learn about OpenGL, and I quickly found some lessons on how it worked. After some time, I decided to make a rendering engine. Breeze Render Engine is my first ever C++ and Qt application. I spent around 8 months creating it with multiple rewrites. It was difficult, but I'm proud of how much I was able to learn.",
+                    "synopsis": "<em> Breeze Render Engine </em> is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breeze's custom render engine.",
+                    "description": "After following the <em> Ray Tracing in One Weekend </em> tutorial series, I became hooked on understanding how digital content creators used maths to display 3D models. This led me to learn about OpenGL, and I quickly found some lessons on how it worked. After some time, I decided to make a rendering engine. <em> Breeze Render Engine </em> is my first ever C++ and Qt application. I spent around 8 months creating the engine with multiple rewrites. It was difficult, but I'm proud of how much I was able to learn.",
                     "tools": "Visual Studio, Qt, OpenGL, RenderDoc",
                     "role": "",
                     "pipeline": "",
@@ -1212,7 +1212,7 @@
                             "name": "Scene Example",
                             "type": 0,
                             "link": "../assets/portfolio/other/breeze/breeze_render_engine.png",
-                            "description": "A screenshot of a scene made in Breeze. You can download an try the application from my Github page."
+                            "description": "A screenshot of a scene made in Breeze. You can download and try the application from my Github page."
                         },
                         {
                             "name": "Demo Video",
@@ -1238,8 +1238,8 @@
                     "name": "Sicle Maps App",
                     "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
                     "year": "2021",
-                    "synopsis": "Sicle Maps is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
-                    "description": "After seeing some modern app designs on Dribbble, I was inspired to write my own mobile application. Since I'm an avid cyclist, I wanted to make an application that I could use. The solution was a simplified google maps called 'Sicle'. While creating Sicle, I was able to understand how to use Android Studio, and how to build and run Kotlin code.",
+                    "synopsis": "<em>Sicle</em> is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
+                    "description": "After seeing some modern app designs on Dribbble, I was inspired to write my own mobile application. Since I'm an avid cyclist, I wanted to make an application that I could use. The solution was a simplified Google Maps application called <em> Sicle</em>. While creating <em> Sicle </em>, I was able to understand how to use Android Studio, and how to build and run Kotlin code.",
                     "tools": "Android Studio, MapBox, Kotlin",
                     "role": "",
                     "pipeline": "",
@@ -1263,8 +1263,8 @@
                     "name": "School Designs",
                     "cover": "../assets/portfolio/other/school/polaroid.png",
                     "year": "2022",
-                    "synopsis": "I was given the opportunity at Chiang Mai International School to add my own personal touch to some walls! My designs can now be seen in the high school art classroom and the school gym.",
-                    "description": "After completing my submission for AP 2D Art & Design, my art teacher suggested that I decorate the art room pillars. During that time, I was also approached by the school to make designs for the school gym. I jumped at the chance to leave a legacy at Chiang Mai International School, and by the start of the next school year, both projects were completed. ",
+                    "synopsis": "I was given the opportunity at <em> Chiang Mai International School </em> to add my own personal touch to some walls! My designs can now be seen in the high school art classroom and the school gym.",
+                    "description": "After completing my submission for <em> AP 2D Art & Design </em>, my art teacher suggested that I decorate the art room pillars. During that time, I was also approached by the school to make designs for the school gym. I jumped at the chance to leave a legacy at <em> Chiang Mai International School </em>, and by the start of the next school year, both projects were completed. ",
                     "tools": "Paint, Inkscape, Nuke",
                     "role": "",
                     "pipeline": "",
@@ -1274,43 +1274,43 @@
                             "name": "Pillars",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/pillars.jpg",
-                            "description": "A photo of both completed pillars. We named the closest one 'Boogle' and the other 'Night Sky'"
+                            "description": "A photo of both completed pillars. We named the closest one <em> 'Boogle' </em> and the other <em>'Night Sky'</em>."
                         },
                         {
-                            "name": "A photo of me painting 'Boogle'. Although I worked with a couple of other students on the pillars, 'Boogle' was primarily my piece.",
+                            "name": "First Pillar",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/pillar_1_me.jpg",
-                            "description": "A photo of me working on the first pillar."
+                            "description": "A photo of me painting <em>'Boogle'</em>. Although I worked with a couple of other students on the pillars, <em>'Boogle'</em> was primarily my piece."
                         },
                         {
                             "name": "Polaroid",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/polaroid.png",
-                            "description": "A polaroid of me painting 'Night Sky' with my art teacher and a couple other students. We only had a week before school ended for the summer so it was all hands on deck."
+                            "description": "A polaroid of me painting <em>'Night Sky'</em> with my art teacher and a couple of other students. We only had a week before school ended for the summer so it was all hands on deck."
                         },
                         {
                             "name": "Painting Video",
                             "type": 1,
                             "link": "../assets/portfolio/other/school/painting.mp4",
-                            "description": "A video I took while painting. At the time I was staying an extra 2 hours at school each day to get the project done."
+                            "description": "A video I took while painting. At the time I was staying an extra 2 hours after school each day to get the project done."
                         },
                         {
                             "name": "Measuring Walls",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/measuring_edit.png",
-                            "description": "A photo taken of me when I was estimating how large the designs should be on the wall."
+                            "description": "A photo taken of me when I was estimating how large the designs should be on the gym wall."
                         },
                         {
                             "name": "Full Frame",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/full_frame_edit.jpg",
-                            "description": "A full frame shot of the gym that I composited together inside of Nuke. I used this image to pitch the idea to the school board."
+                            "description": "A full frame shot of the gym that I composited together inside of Nuke. I used this image to pitch the idea to the School Board."
                         },
                         {
                             "name": "Real Full",
                             "type": 0,
                             "link": "../assets/portfolio/other/school/gym_real_1.jpg",
-                            "description": "A real photo of the designs in the school gym. I was pleasantly suprised to see them there on my first day back to school."
+                            "description": "A real photo of the designs in the school gym. I was pleasantly surprised to see them there on my first day back to school."
                         },
                         {
                             "name": "Real Full 2",
