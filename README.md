@@ -10,3 +10,5 @@ This is the code repository for my personalized website. To view the website, go
     - Better poster for TGATR
 
     - Get 2 more sketchbooks pieces
+
+    - Fix portfolio item properties 
