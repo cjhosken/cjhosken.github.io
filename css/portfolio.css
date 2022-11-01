@@ -5,12 +5,24 @@
     background-position-y: 7%;
 }
 
+#portfolio-intro-header {
+    margin: 2vh auto;
+    text-align: center;
+    font-size: 4ex;
+}
+
+#portfolio-intro-content {
+    font-size: 2ex;
+    margin-bottom: 10vh;
+}
+
 .portfolio-section > h1 {
     margin: 5vh auto;
     width: fit-content;
+    max-width: 80vw;
     font-size: 2em;
     text-align: center;
-    letter-spacing: 0.25vh;
+    letter-spacing: 0.25ex;
     border-bottom: solid 5px var(--primary);
 }
 
@@ -24,7 +36,8 @@
 
 .portfolio-section-item {
     position: relative;
-    height: 24.5vw;
+    width: calc(30vh);
+    min-width: calc(25% - 2vh);
     aspect-ratio: 1/1;
     margin-bottom: 0.5vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -38,7 +51,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1vh;
+    border-radius: 1ex;
     opacity: 1.0;
     transition: opacity 0.5s;
 }
@@ -70,19 +83,23 @@
 
 .portfolio-section-item-flipped h1 {
     margin: 1vh 1vh;
-    font-size: 1.75vw;
+    font-size: 3.5ex;
     text-align: center;
+    user-select: none;
 }
 
 .portfolio-section-item-flipped h2 {
-    font-size: 1.25vw;
+    font-size: 2.25ex;
+    user-select: none;
 }
 
 .portfolio-section-item-flipped p {
     text-align: center;
-    margin: 0em 2vh;
+    margin: 0vh 2vh;
     color: var(--darkgray);
-    font-size: 0.85vw;
+    padding: 0.3ex;
+    user-select: none;
+    font-size: 1.7ex;
 }
 
 .portfolio-section-item:hover .portfolio-section-item-flipped {
@@ -107,9 +124,11 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     flex-direction: row-reverse;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .lightbox-summary-container {
@@ -117,13 +136,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
+
 
 @media screen and (max-width: 1024px) {
     .lightbox-container {
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     .lightbox-summary-container {
@@ -134,25 +156,25 @@
 
 .lightbox-summary-container h1 {
     color: white;
-    margin-top: 5vh;
-    font-size: 6vmin;
+    margin-top: 4ex;
+    font-size: 4ex;
 }
 
 .lightbox-summary-container h2 {
     color: white;
-    margin: 3vh;
-    font-size: 2vmin;
+    margin: 1ex;
+    font-size: 3ex;
 }
 
 .lightbox-summary-container p {
     color: rgb(245, 245, 245);
-    margin: 2vh;
-    font-size: 1.75vmin;
+    margin: 1ex;
+    font-size: 1.75ex;
 }
 
 .arrow {
     color: white;
-    font-size: 2em;
+    font-size: 4ex;
     cursor: pointer;
     transition: color 0.35s;
 }
@@ -163,7 +185,7 @@
 
 
 .lightbox-media-container {
-    padding: 0vh 5vh;
+    padding: 0vh 2ex;
     width: 75%;
     height: 100%;
     display: flex;
@@ -195,16 +217,15 @@
 .lightbox-media {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit:contain;
     border: none;
-    user-select: none;
 }
 
 .lightbox-media-item p {
-    margin: 2vh;
+    padding: 3ex;
     color: white;
     text-align: center;
-    font-size: 1.75vmin;
+    font-size: 2ex;
 }
 
 
@@ -223,7 +244,9 @@
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
+    display: none;
 }
+
 .project-item-info {
     display: flex;
     flex-direction: column;

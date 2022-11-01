@@ -40,6 +40,17 @@ a, a:visited {
     color: var(--titlemain);
     transition: color 0.25s;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a:focus {
+    outline: none !important;
 }
 
 a:hover {
@@ -430,7 +441,7 @@ a:hover {
 }
 
 #companies-list-container img {
-    height: 25vh;
+    height: 27ex;
     aspect-ratio: 1;
     filter: saturate(5%) contrast(10%) brightness(110%);
     transition: filter 0.35s;
@@ -475,10 +486,10 @@ a:hover {
 
 .flip-button {
     position: relative;
-    margin: 2%;
-    width: 35%;
+    margin: 2ex;
+    width: 30ex;
     aspect-ratio: 4/1;
-    max-height: 8%;
+    max-height: 6ex;
     overflow-y: hidden;
     background-color: transparent;
     border: solid var(--black) 2px;
@@ -487,6 +498,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: border 0.35s;
 }
 
@@ -504,7 +516,7 @@ a:hover {
     top: 0%;
     transform: translateY(0%);
     height: 200%;
-    width: 100%;
+    width: 80%;
     transition: transform 0.5s;
 }
 
