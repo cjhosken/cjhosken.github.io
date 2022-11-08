@@ -185,7 +185,7 @@
                     "tools": "Pencil",
                     "role": "",
                     "pipeline": "",
-                    "client": "School Project",
+                    "client": "Personal Project",
                     "items": [
                         {
                             "name": "LDR",
@@ -226,28 +226,46 @@
                     ]
                 },
                 {
-                    "name": "Placeholder",
-                    "cover": "../assets/portfolio/placeholder.jpg",
-                    "year": "YYYY",
-                    "synopsis": "This is a placeholder. Content will be added soon!",
-                    "description": "",
+                    "name": "Trip to the Beach",
+                    "cover": "../assets/portfolio/sketches/trip_to_the_beach/sketch.jpg",
+                    "year": "2022",
+                    "synopsis": "Using watercolors, I wanted to create a foggy beach environment. This piece was a chance for me to play around with composition, emphasis, and a new medium.",
+                    "description": "I have always loved atmospheric environments, and I wanted try to and give dull, cold environment a sort of beauty.",
                     "role": "",
-                    "tools": "",
+                    "tools": "Pencil, watercolor pencils",
                     "pipeline": "",
-                    "client": "Placeholder",
+                    "client": "School Project",
                     "items": [
+                        {
+                            "name": "Thumbnail Sketch",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/sketch.jpg",
+                            "description": "A thumbnail sketch of the piece. I wanted to mimic the style of old photos by contrasting the vibrant color of the car with a flat environment."
+                        },
+                        {
+                            "name": "Foreground rocks",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/foreground_rocks.jpg",
+                            "description": "I then started sketching out the environment on larger paper. To draw the rocks, I imagined that I was joining a bunch of cubes together like I would in Blender."
+                        },
+                        {
+                            "name": "Sketch",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/finished_sketch.jpg",
+                            "description": "After finishing the rocks, I added the car to the scene. I chose a VW Beetle because it helped solidify the 'old photo' style."
+                        }
                     ]
                 },
                 {
-                    "name": "Placeholder",
+                    "name": "Figure Drawings",
                     "cover": "../assets/portfolio/placeholder.jpg",
-                    "year": "YYYY",
-                    "synopsis": "This is a placeholder. Content will be added soon!",
+                    "year": "2022",
+                    "synopsis": "<em> Coming Soon! </em>",
                     "description": "",
                     "role": "",
                     "tools": "",
                     "pipeline": "",
-                    "client": "Placeholder",
+                    "client": "Personal Project",
                     "items": [
                     ]
                 }

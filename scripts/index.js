@@ -65,13 +65,16 @@ function load_splash() {
     }
 }
 
-
-
+function open_splash() {
+    sessionStorage.setItem("splash", "false");
+}
 
 $(document).ready(function() {
     load_skills();
     load_companies();
     load_splash();
+
+    ScrollReveal().reveal("#description", "#headshot");
 });
 
 
