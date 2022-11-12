@@ -253,6 +253,12 @@
                             "type": 0,
                             "link": "../assets/portfolio/sketches/trip_to_the_beach/finished_sketch.jpg",
                             "description": "After finishing the rocks, I added the car to the scene. I chose a VW Beetle because it helped solidify the 'old photo' style."
+                        },
+                        {
+                            "name": "Animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/a_trip_to_the_beach.mp4",
+                            "description": "I decided to create the artwork in Unreal Engine 5 as well to see how it would look 'realisticly'. I was able to put alot more emphasis on the red than in the watercolor piece."
                         }
                     ]
                 },
