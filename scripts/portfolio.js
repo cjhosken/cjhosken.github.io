@@ -42,7 +42,7 @@ function load_portfolio_items() {
             for (var j = 0; j < category.items.length; j++) {
                 var item = category.items[j];
                 
-                html += '<div data-aos="fade-up" data-aos-duration="500" class="portfolio-section-item" onclick="load_lightbox(' + i + ", " + j + ');">';
+                html += '<div data-aos="fade-up" data-aos-duration="500" data-aos-once="true" class="portfolio-section-item" onclick="load_lightbox(' + i + ", " + j + ');">';
                 html += '<img src="' + item.cover + '" alt="' + item.name + '">';
                 html += '<div class="portfolio-section-item-flipped">' ;
                 html += '<h1>' + item.name + '</h1>';

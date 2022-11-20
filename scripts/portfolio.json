@@ -227,7 +227,7 @@
                 },
                 {
                     "name": "Trip to the Beach",
-                    "cover": "../assets/portfolio/sketches/trip_to_the_beach/sketch.jpg",
+                    "cover": "../assets/portfolio/sketches/trip_to_the_beach/final.jpg",
                     "year": "2022",
                     "synopsis": "Using watercolors, I wanted to create a foggy beach environment. This piece was a chance for me to play around with composition, emphasis, and a new medium.",
                     "description": "I have always loved atmospheric environments, and I wanted try to and give dull, cold environment a sort of beauty.",
@@ -236,6 +236,12 @@
                     "pipeline": "",
                     "client": "School Project",
                     "items": [
+                        {
+                            "name": "Final Image",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/final.jpg",
+                            "description": "The final watercolor artwork. Not my best piece, but it was definitely a good learning experience."
+                        },
                         {
                             "name": "Thumbnail Sketch",
                             "type": 0,
@@ -255,6 +261,12 @@
                             "description": "After finishing the rocks, I added the car to the scene. I chose a VW Beetle because it helped solidify the 'old photo' style."
                         },
                         {
+                            "name": "Watercolor",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/trip_to_the_beach/watercolor.jpg",
+                            "description": "First watercolor pass. I accidentally made the clouds too dark. But since its watercolor I wasn't able to 'undo', and had to find a way to make it look cohesive with the rest of the piece."
+                        },
+                        {
                             "name": "Animation",
                             "type": 1,
                             "link": "../assets/portfolio/sketches/trip_to_the_beach/a_trip_to_the_beach.mp4",
@@ -264,15 +276,45 @@
                 },
                 {
                     "name": "Figure Drawings",
-                    "cover": "../assets/portfolio/placeholder.jpg",
+                    "cover": "../assets/portfolio/sketches/figure_drawings/1_hour.jpg",
                     "year": "2022",
-                    "synopsis": "<em> Coming Soon! </em>",
-                    "description": "",
+                    "synopsis": "In order to gauge my skills in figure drawing, I spent a couple hours doing figure drawing excercises.",
+                    "description": "I approached most of the pieces as I would with still life. This was better for the longer pieces, but I struggled alot in the shorter ones.",
                     "role": "",
-                    "tools": "",
+                    "tools": "Pencil",
                     "pipeline": "",
                     "client": "Personal Project",
                     "items": [
+                        {
+                            "name": "30 Seconds",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/figure_drawings/30_seconds.jpg",
+                            "description": "The 30 second sketches were a huge challenge for me. This was the first time I had tried drawing something serious in under a minute."
+                        },
+                        {
+                            "name": "10 Minute Females",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/figure_drawings/10_minute_females.jpg",
+                            "description": "I struggled alot with getting proportions correct for these two pieces. Especially on the left."
+                        },
+                        {
+                            "name": "10 Minute Male",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/figure_drawings/10_minute_single_male.jpg",
+                            "description": "I felt better about proportions in this piece, however I spent too much time on the arms instead of trying to complete the character."
+                        },
+                        {
+                            "name": "5 Minute Animals",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/figure_drawings/5_minute_animals.jpg",
+                            "description": "I also took a shot at sketching animals. Somehow, I was more comfortable with drawing animals than people."
+                        },
+                        {
+                            "name": "1 Hour",
+                            "type": 0,
+                            "link": "../assets/portfolio/sketches/figure_drawings/1_hour.jpg",
+                            "description": "My final 1 hour sketch. I'm satistfied with most of the piece except for the hands and feet. I plan to work on drawing those better in the future."
+                        }
                     ]
                 }
             ]
