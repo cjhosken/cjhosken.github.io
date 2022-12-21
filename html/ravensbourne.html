@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="EN" id="portfolio">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+
+    <script src="https://kit.fontawesome.com/412e60a948.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/portfolio.css" rel="stylesheet">
+    <title> Christopher Hosken | Ravensbourne Portfolio </title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav>
+        <script>
+            $(function () {
+                $("nav").load("nav.html");
+            });
+        </script>
+    </nav>
+    <div class="lightbox" id="portfolio-lightbox">
+        <div class="lightbox-container">
+            <button id="portfolio-close-button" class="lightbox-close-button"> <i class="fa-solid fa-xmark"></i>
+            </button>
+            <script>
+                $("#portfolio-close-button").click(function (event) {
+                    $("#portfolio-lightbox").fadeOut(250);
+                    document.querySelector("html").style.overflowY = "overlay";
+                });
+            </script>
+            <div class="lightbox-summary-container">
+                <h1 id="title"> Title </h1>
+                <h2 id="year"> 2000 </h2>
+                <div id="summary-info-container">
+                    <p id="description"> Bla bla bla</p>
+                    <div id="project-info">
+                        <div id="role-container" class="project-item-info"> <div class="project-item-title"> <i class="fa-solid fa-users icon"></i> <p> Role: </p> </div> <p id="role"> </p> </div>
+                        <div id="tools-container" class="project-item-info"> <div class="project-item-title"> <i class="fa-solid fa-screwdriver-wrench icon"></i> <p> Tools: </p> </div> <p id="tools"></p> </div>
+                        <div id="pipeline-container" class="project-item-info"> <div class="project-item-title"> <i class="fa-solid fa-timeline icon"></i> <p> Pipeline: </p> </div> <p id="pipeline"></p> </div>
+                        <div id="client-container" class="project-item-info"> <div class="project-item-title"> <i class="fa-solid fa-user icon"></i> <p> Client: </p> </div> <p id="client"> </p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbox-media-container">
+                <a onclick="last_slide();">
+                    <i class="fa-solid fa-arrow-left arrow"></i>
+                </a>
+
+                <div class="lightbox-media-carousel" id="carousel">
+
+                </div>
+                <a onclick="next_slide();">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="banner-container">
+        <span class="banner"> </span>
+        <h1 class="banner-title"> PORTFOLIO </h1>
+    </div>
+    <div class="main-container">
+        <h1 id="portfolio-intro-header"> INTRODUCTION - CHRISTOPHER HOSKEN </h1>
+        <p  id="portfolio-intro-content">
+            Welcome to my portfolio! This is a collection of my 10 best works leading up to university. Click on a panel to learn more about a piece!
+            <br> <br>
+            <em> Please give time for the page to load properly. </em>
+        </p>
+        <div id="portfolio-container">
+            <div class="portfolio-section">
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> SKETCHBOOK / DRAWINGS </h1>
+                <div class="portfolio-section-item-list" id="sketches">
+
+                </div>
+            </div>
+            <div class="portfolio-section">
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> DIGITAL ARTWORKS </h1>
+                <div class="portfolio-section-item-list" id="digitals">
+
+                </div>
+            </div >
+            <div class="portfolio-section">
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> ANIMATIONS </h1>
+                <div class="portfolio-section-item-list" id="animations">
+
+                </div>
+            </div>
+            <div class="portfolio-section">
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> FILMS </h1>
+                <div class="portfolio-section-item-list" id="films">
+
+                </div>
+            </div>
+            <div class="portfolio-section">
+                <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> PROGRAMMING / OTHERS </h1>
+                <div class="portfolio-section-item-list" id="others">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="../scripts/ravensbourne_portfolio.js"></script>
+    <footer>
+        <script>
+            $(function () {
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
