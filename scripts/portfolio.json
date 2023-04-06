@@ -1008,10 +1008,10 @@
                     "client": "Team Project",
                     "items": [
                         {
-                            "name": "Poster",
-                            "type": 0,
-                            "link": "../assets/portfolio/films/tgatr/poster.png",
-                            "description": "The current poster for the short film."
+                            "name": "The Girl and the Robot",
+                            "type": 2,
+                            "link": "https://www.youtube.com/watch?v=0kuMhU09hZY",
+                            "description": "The complete short film. We spent around 1 month planning, 1 month filming, and then 10 months editing. The entire production took about a year."
                         },
                         {
                             "name": "Storyboard",
