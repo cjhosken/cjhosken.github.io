@@ -422,36 +422,55 @@
                     ]
                 },
                 {
-                    "name": "Ornithopter",
-                    "cover": "../assets/portfolio/animations/dune_ornithopter/cover.png",
-                    "year": "2021",
-                    "synopsis": "After watching <em> Dune (2021) </em>, I loved the animations for the ornithopters and I had to try it for myself.",
-                    "description": "I used the projection mapping hack as I didn't want to texture the entire ornithopter. The animation was a chance for me to 'cheat' in 3D.",
-                    "tools": "Blender, Quixel Megascans, After Effects, DaVinci Resolve",
-                    "pipeline": "Modelling, Animation, Editing",
+                    "name": "Sputnik Case Study",
+                    "cover": "../assets/portfolio/animations/sputnik_casestudy/cover.png",
+                    "year": "2023",
+                    "synopsis": "For one of my university applications, I was given the task to create a 10 minute presentation about anything VFX related. I decided to focus on Sputnik, and how realistic muscle/tissue based creatures are made.",
+                    "description": "This project was a new experience for me as I had to dive heavily into the Houdini documentation and learn how to properly research and experiment.",
+                    "tools": "Blender, Houdini, Nuke, DaVinci Resolve",
+                    "pipeline": "All Aspects (except for background assets)",
                     "role": "",
                     "client": "Personal Project",
                     "items": [
                         {
                             "name": "Full Animation",
                             "type": 1,
-                            "link": "../assets/portfolio/animations/dune_ornithopter/dune_animation_clean.mp4",
-                            "description": "The full animation. This was done over a single weekend."
+                            "link": "../assets/portfolio/animations/sputnik_casestudy/final_render.mov",
+                            "description": "The full project took about a month to create."
                         },
                         {
-                            "name": "Hack",
+                            "name": "Presentation",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/j-NHHUyZN-g",
+                            "description": "This is a full recording of one my practice presentations."
+                        },
+                        {
+                            "name": "Sputnik Skin Model",
+                            "type": 3,
+                            "link": "https://sketchfab.com/models/86d0f53cc6094d2da615947af39fcd99/embed",
+                            "description": "I'm especially proud of how well I was able to the match references of the original character."
+                        },
+                        {
+                            "name": "Houdini Character",
                             "type": 0,
-                            "link": "../assets/portfolio/animations/dune_ornithopter/screenshot.png",
-                            "description": "The ornithopter using a basic projection mapping hack."
+                            "link": "../assets/portfolio/animations/sputnik_casestudy/houdini_file.png",
+                            "description": "The Houdini nodes for the muscle-tissue system of the character."
                         },
                         {
-                            "name": "Wide",
-                            "type": 1,
-                            "link": "../assets/portfolio/animations/dune_ornithopter/viewport.mp4",
-                            "description": "The hardest part of the animation was getting the wings to flutter properly. I also wanted to have the sand react to the ornithopter, but that was too difficult."
+                            "name": "Houdini FX",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sputnik_casestudy/houdini_fx_file.png",
+                            "description": "The Houdini nodes for the fx systems of the character."
+                        },
+                        {
+                            "name": "Nuke Composite",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/sputnik_casestudy/nuke_script.png",
+                            "description": "The Nuke nodes for compositing the final project. This was one of the first projects where I began to experiment with render passes."
                         }
                     ]
                 },
+                
                 {
                     "name": "Spiderman Swing",
                     "cover": "../assets/portfolio/animations/spiderman/banner.png",
