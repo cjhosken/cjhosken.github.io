@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="EN" id="contact">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("head").load("../components/head.html");
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <script>
+            $(function () {
+                $("nav").load("../components/navbar.html");
+            });
+        </script>
+    </nav>
+    <div id="banner-container">
+        <img class="banner" src="../assets/images/banner_contact.png" alt="Banner">
+        <h1 class="banner-title"> CONTACT </h1>
+    </div>
+    <div class="main-container">
+        <div id="horizontal-container">
+            <div id="contact-container">
+                <div id="general-info-container">
+                    <div>
+                        <a href="https://maps.app.goo.gl/qLtqd9SxGLSfizkAA" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Bournemouth, United Kingdom </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:hoskenchristopher@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p> hoskenchristopher@gmail.com </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.discordapp.com/users/363326394987708417" target="_blank">
+                            <i class="fa-brands fa-discord"></i>
+                            <p> cjhosken#2924 </p>
+                        </a>
+                    </div>
+                </div>
+                <a href="../assets/christopher_hosken_curriculum_vitae_2022.pdf" target="_blank" class="flip-button">
+                    <div>
+                        <p> Curriculum Vitae </p> <i class="fa-solid fa-download"></i>
+                    </div>
+                </a>
+            </div>
+            <div id="map"></div>
+            <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+            <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+            <script>
+                mapboxgl.accessToken = "pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY2wwbmpsd2llMWY4cDNkbnNudXlxd3N5biJ9.wBJjdtYQDyXNbtqujSwLDA";
+                const map = new mapboxgl.Map({
+                    container: "map",
+                    style: 'mapbox://styles/cjhosken/cl76cg0za001914m6ia43ct42',
+                    center: [-1.8703276576920809, 50.72445923565461],
+                    zoom: 14,
+                    projection: "globe",
+                });
+
+                const pin = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" }).setLngLat([-1.8646626941248987, 50.72413863522772]).addTo(map);
+            </script>
+        </div>
+    </div>
+    <footer>
+        <script>
+            $(function () {
+                $("footer").load("../components/footer.html");
+            });
+        </script>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>

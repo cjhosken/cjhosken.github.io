@@ -1,0 +1,90 @@
+{
+    "skills" : [
+        {
+            "name" : "Houdini",
+            "logo" : "assets/images/logos/houdini.png",
+            "link" : "https://www.sidefx.com/",
+            "score" : 3
+        },
+        {
+            "name" : "Blender",
+            "logo" : "assets/images/logos/blender.png",
+            "link" : "https://www.blender.org/",
+            "score" : 5
+        },
+        {
+            "name" : "Maya",
+            "logo" : "assets/images/logos/maya.png",
+            "link" : "https://www.autodesk.co.uk/products/maya/overview",
+            "score" : 3
+        },
+        {
+            "name" : "Substance Painter",
+            "logo" : "assets/images/logos/painter.svg",
+            "link" : "https://www.adobe.com/uk/products/substance3d-painter.html",
+            "score" : 3
+        },
+        {
+            "name" : "Unreal Engine 5",
+            "logo" : "assets/images/logos/unreal.png",
+            "link" : "https://www.unrealengine.com/en-UK/",
+            "score" : 3
+        },
+        {
+            "name" : "Nuke",
+            "logo" : "assets/images/logos/nuke.png",
+            "link" : "https://www.foundry.com/products/nuke-family/nuke",
+            "score" : 3
+        },
+        {
+            "name" : "DaVinci Resolve",
+            "logo" : "assets/images/logos/resolve.png",
+            "link" : "https://www.blackmagicdesign.com/products/davinciresolve",
+            "score" : 4
+        },
+        {
+            "name" : "Krita",
+            "logo" : "assets/images/logos/krita.png",
+            "link" : "https://krita.org/en/",
+            "score" : 3
+        },
+        {
+            "name" : "Python",
+            "logo" : "assets/images/logos/python.png",
+            "link" : "https://www.python.org/",
+            "score" : 4
+        },
+        {
+            "name" : "Java",
+            "logo" : "assets/images/logos/java.png",
+            "link" : "https://www.oracle.com/java/",
+            "score" : 4
+        },
+        {
+            "name" : "C++",
+            "logo" : "assets/images/logos/cpp.png",
+            "link" : "https://learn.microsoft.com/en-us/cpp/?view=msvc-170",
+            "score" : 4
+        },
+        {
+            "name" : "Qt",
+            "logo" : "assets/images/logos/qt.png",
+            "link" : "https://www.qt.io/",
+            "score" : 3
+        },
+        {
+            "name" : "HTML, CSS, JS",
+            "logo" : "assets/images/logos/web.png",
+            "link" : "https://www.w3schools.com/html/default.asp",
+            "score" : 4
+        }
+    ],
+
+    "companies" : [
+        {
+            "name": "BOAP Studios",
+            "logo": "assets/images/companies/boap_minimal.png",
+            "link": "https://sites.google.com/view/boap-studio/"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="EN" id="portfolio">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("head").load("../components/head.html");
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <script>
+            $(function () {
+                $("nav").load("../components/navbar.html");
+            });
+        </script>
+    </nav>
+    <div id="banner-container">
+        <span class="banner"> </span>
+        <h1 class="banner-title"> PORTFOLIO </h1>
+    </div>
+    <div class="main-container">
+        <h1 id="portfolio-intro-header"> INTRODUCTION - CHRISTOPHER HOSKEN </h1>
+        <p  id="portfolio-intro-content">
+            Welcome to my portfolio! This is a collection of my best works over the past 7 years. Click on a panel to learn more about a piece!
+        </p>
+        <div id="portfolio-container">
+        </div>
+    </div>
+    <br>
+    <footer>
+        <script>
+            $(function () {
+                $("footer").load("../components/footer.html");
+            });
+        </script>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
