@@ -1,4 +1,4 @@
-# Christopher Hosken - Technical Artist
+# Christopher Hosken - Portfolio Website
 
 ## Introduction
 
