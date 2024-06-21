@@ -16,6 +16,13 @@
     margin-bottom: 10vh;
 }
 
+#see-more-container {
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .portfolio-section > h1 {
     margin: 5vh auto;
     width: fit-content;

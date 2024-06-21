@@ -12,7 +12,7 @@
                     "tools": "Blender, Houdini, Nuke, DaVinci Resolve",
                     "pipeline": "All Aspects (except for background assets)",
                     "role": "",
-                    "client": "Personal Project",
+                    "client": "Solo Project",
                     "items": [
                         {
                             "name": "Full Animation",
@@ -49,6 +49,92 @@
                             "type": 0,
                             "link": "../assets/portfolio/animations/sputnik_casestudy/nuke_script.png",
                             "description": "The Nuke nodes for compositing the final project. This was one of the first projects where I began to experiment with render passes."
+                        }
+                    ]
+                },
+                {
+                    "name": "An Elf blowing Bubbles",
+                    "cover": "../assets/portfolio/animations/elfbubbles/thumbnail.png",
+                    "year": "2023",
+                    "synopsis": "An elf enjoying his Christmas Eve by opening other children's presents. A submission for the BFX Animation Jam.",
+                    "description": "The project was done by a team of 4 for the BFX Animation Jam. We wanted to experiment with stylzed rendering and seamlessly blending 2d animation into 3d environments.",
+                    "tools": "Blender, Toon Boom Harmony, Nuke, DaVinci Resolve",
+                    "pipeline": "Shading, Lighting, Rendering, Comp",
+                    "role": "",
+                    "client": "Competition Team Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/QjdusCdVMfo?si=FPJJpxL0eW7NDZQC",
+                            "description": "We completed the entire project in 2 weeks."
+                        },
+                        {
+                            "name": "viewport",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/viewport.png",
+                            "description": "An alternate angle of the render. We were able to view the project in realtime using Blender's EEVEE Engine."
+                        },
+                        {
+                            "name": "solid view",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/messy.png",
+                            "description": "A screenshot of the solid viewport. We instanced planes to create the painterly effect."
+                        },
+                        {
+                            "name": "style_test",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/style_test.png",
+                            "description": "An isolated test of the painterly effect. This was done early on."
+                        },
+                        {
+                            "name": "Nuke Composite",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/comp.png",
+                            "description": "The Nuke nodes for compositing the animation."
+                        }
+                    ]
+                },
+                {
+                    "name": "The Creator Case Study",
+                    "cover": "../assets/portfolio/animations/creator/cover.PNG",
+                    "year": "2023",
+                    "synopsis": "A case study on CG head replacements, inspired by an ILM talk on The Creator.",
+                    "description": "",
+                    "tools": "Blender, Substance Painter, Nuke, DaVinci Resolve",
+                    "pipeline": "All Aspects (except for background assets)",
+                    "role": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "The finished shot",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/TheCreatorStudy_mp4.mp4",
+                            "description": "The finished shot."
+                        },
+                        {
+                            "name": "A breakdown video",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/BRdFg-8wEYE?si=bgnBXkb9Z3Yqs6bg",
+                            "description": "A breakdown of the full vfx shot."
+                        },
+                        {
+                            "name": "head turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/head_turntable_v01.mp4",
+                            "description": "A turntable render of the head"
+                        },
+                        {
+                            "name": "hand turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/hand_turntable_v01.mp4",
+                            "description": "A turntable render of the hand"
+                        },
+                        {
+                            "name": "Nuke Composite",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/creator/nuke_script.PNG",
+                            "description": "The Nuke nodes for compositing the shot."
                         }
                     ]
                 }
@@ -133,7 +219,7 @@
                     "tools": "Blender, Nuke, DaVinci Resolve",
                     "pipeline": "All Aspects",
                     "role": "Director, CG Artist, VFX Artist, Editor",
-                    "client": "Personal Project",
+                    "client": "Solo Project",
                     "items": [
                         {
                             "name": "Fallout Shopping",
@@ -333,7 +419,7 @@
                     "tools": "Visual Studio, Qt, OpenGL, RenderDoc",
                     "role": "",
                     "pipeline": "",
-                    "client": "Personal Project",
+                    "client": "Solo Project",
                     "items": [
                         {
                             "name": "Scene Example",
@@ -370,7 +456,7 @@
                     "tools": "Android Studio, MapBox, Kotlin",
                     "role": "",
                     "pipeline": "",
-                    "client": "Personal Project",
+                    "client": "Solo Project",
                     "items": [
                         {
                             "name": "App Screenshot",
@@ -387,6 +473,86 @@
                     ]
                 },
                 {
+                    "name": "PAINter",
+                    "cover": "../assets/portfolio/other/painter/desert_wip.png",
+                    "year": "2024",
+                    "synopsis": "An MSPaint-like application written in C++ and SDL2.",
+                    "description": "For my Programming Principles class at Bournemouth University, we had to write a C++/SDL2 application. I chose to make an MSPaint-like program. You can see the manual and report below. <br></br> <a href='../assets/portfolio/other/painter/painter_manual.pdf' target='_blank'> Click Here for the Manual </a> <br> <a href='../assets/portfolio/other/painter/painter_report.pdf' target='_blank'> Click Here for the Project Report </a>",
+                    "tools": "Visual Studio Code, Github",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "University Assignment",
+                    "items": [
+                        {
+                            "name": "A Screenshot of the tool in use.",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/painter/desert_wip.png",
+                            "description": "A screenshot of PAINter in use."
+                        },
+                        {
+                            "name": "The finished saved image.",
+                            "type":0 ,
+                            "link": "../assets/portfolio/other/painter/desert.png",
+                            "description": "The finished saved image."
+                        },
+                        {
+                            "name": "Video showing the tool in use.",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/painter/demo.mp4",
+                            "description": "Video showing PAINter in use."
+                        }
+                    ]
+                },
+                {
+                    "name": "Maya Fluid Simulator",
+                    "cover": "../assets/portfolio/other/mfs/MayaFluidSimulator.PNG",
+                    "year": "2024",
+                    "synopsis": "A PIC/FLIP simulator tool for Maya written in Python.",
+                    "description": "Part of my Technical Arts Production unit at Bournemouth University required us to make a maya tool with python. I decided to challenge myself by looking into fluid simulators. You can see the full project report below. <br></br> <a href='../assets/portfolio/other/mfs/mfs_report.pdf' target='_blank'> Click Here</a>",
+                    "tools": "Visual Studio Code, Github, Maya",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "University Assignment",
+                    "items": [
+                        {
+                            "name": "A Screenshot of the tool in use.",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/mfs/MayaFluidSimulator.PNG",
+                            "description": "A screenshot of the tool in use."
+                        },
+                        {
+                            "name": "A Simulation of a donut.",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/mfs/MFS_DefaultDonut.mp4",
+                            "description": "A simulation of a donut."
+                        },
+                        {
+                            "name": "A Dam Break",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/mfs/MFS_DamBreak.mp4",
+                            "description": "Dam Break"
+                        },
+                        {
+                            "name": "Honey",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/mfs/MFS_Honey.mp4",
+                            "description": "Honey"
+                        },
+                        {
+                            "name": "A still frame of a scene containing 1 million particles.",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/mfs/MFS_1Million.PNG",
+                            "description": "A still frame of a scene containing 1 million particles."
+                        },
+                        {
+                            "name": "A demo of Maya Fluid Simulator",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/mfs/MFS_tutorial.mp4",
+                            "description": "A demo of Maya Fluid Simulator."
+                        }
+                    ]
+                },
+                {
                     "name": "Website",
                     "cover": "../assets/portfolio/other/website/my_website.png",
                     "year": "2024",
@@ -395,7 +561,7 @@
                     "tools": "Visual Studio Code, Github",
                     "role": "",
                     "pipeline": "",
-                    "client": "Personal Project",
+                    "client": "Solo Project",
                     "items": [
                         {
                             "name": "Home Page",
