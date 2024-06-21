@@ -55,17 +55,11 @@ function load_portfolio_items() {
                 html += "</div></div>"
             }
             switch (category.name) {
-                case "sketches":
-                    $("#sketches").html(html);
+                case "projects":
+                    $("#projects").html(html);
                     break;
                 case "films":
                     $("#films").html(html);
-                    break;
-                case "digitals":
-                    $("#digitals").html(html);
-                    break;
-                case "animations":
-                    $("#animations").html(html);
                     break;
                 case "others":
                     $("#others").html(html);
