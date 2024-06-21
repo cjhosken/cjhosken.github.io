@@ -4,7 +4,7 @@
             "name" : "Houdini",
             "logo" : "./images/software/houdini.png",
             "link" : "https://www.sidefx.com/",
-            "score" : 3
+            "score" : 4
         },
         {
             "name" : "Blender",
@@ -16,7 +16,7 @@
             "name" : "Maya",
             "logo" : "./images/software/maya.png",
             "link" : "https://www.autodesk.co.uk/products/maya/overview",
-            "score" : 3
+            "score" : 4
         },
         {
             "name" : "Substance Painter",
@@ -34,7 +34,7 @@
             "name" : "Nuke",
             "logo" : "./images/software/nuke.png",
             "link" : "https://www.foundry.com/products/nuke-family/nuke",
-            "score" : 3
+            "score" : 4
         },
         {
             "name" : "DaVinci Resolve",
@@ -52,7 +52,7 @@
             "name" : "Python",
             "logo" : "./images/software/python.png",
             "link" : "https://www.python.org/",
-            "score" : 4
+            "score" : 5
         },
         {
             "name" : "Java",
@@ -61,8 +61,8 @@
             "score" : 4
         },
         {
-            "name" : "C++",
-            "logo" : "./images/software/cpp.png",
+            "name" : "C, C++, C#",
+            "logo" : "./images/software/cs.png",
             "link" : "https://learn.microsoft.com/en-us/cpp/?view=msvc-170",
             "score" : 4
         },
@@ -70,7 +70,7 @@
             "name" : "Qt",
             "logo" : "./images/software/qt.png",
             "link" : "https://www.qt.io/",
-            "score" : 3
+            "score" : 4
         },
         {
             "name" : "HTML, CSS, JS",
