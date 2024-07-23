@@ -4,6 +4,118 @@
             "name": "projects",
             "items": [
                 {
+                    "name": "Fruits in the Fridge",
+                    "cover": "../assets/portfolio/animations/fif/Cover.png",
+                    "year": "2024",
+                    "synopsis": "Some fruits are caught doing what they love most, dancing!",
+                    "description": "It was an absolute blast working on this project with Gwendoline Eftimakis. We were both new to creating animations in Maya, and this project was a healthy challenge for the both us.",
+                    "tools": "Maya, Substance Painter, Premiere Pro",
+                    "pipeline": "All Aspects (except for rigging)",
+                    "role": "",
+                    "client": "Team Project",
+                    "items": [
+                        {
+                            "name": "The video",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/L4Xab8dQxDw?si=SKmznEmWdfp27y6T",
+                            "description": "The full animation."
+                        },
+                        {
+                            "name": "Viewport animation",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/fif/viewport.mp4",
+                            "description": "Viewport Playblast"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "The Creator Case Study",
+                    "cover": "../assets/portfolio/animations/creator/cover.PNG",
+                    "year": "2023",
+                    "synopsis": "A case study on CG head replacements, inspired by an ILM talk on The Creator.",
+                    "description": "I was able to learn alot about constructing backplates, using KeenTools, and how to go about creating a realistic comp shot. There are plenty of issues that I would definitely go back and fix, but I'm proud of what I was able to achieve.",
+                    "tools": "Blender, Substance Painter, Nuke, DaVinci Resolve",
+                    "pipeline": "All Aspects (except for background assets)",
+                    "role": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "The finished shot",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/TheCreatorStudy_mp4.mp4",
+                            "description": "The finished shot."
+                        },
+                        {
+                            "name": "A breakdown video",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/BRdFg-8wEYE?si=bgnBXkb9Z3Yqs6bg",
+                            "description": "A breakdown of the full vfx shot."
+                        },
+                        {
+                            "name": "head turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/head_turntable_v01.mp4",
+                            "description": "A turntable render of the head"
+                        },
+                        {
+                            "name": "hand turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/creator/hand_turntable_v01.mp4",
+                            "description": "A turntable render of the hand"
+                        },
+                        {
+                            "name": "Nuke Composite",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/creator/nuke_script.PNG",
+                            "description": "The Nuke nodes for compositing the shot."
+                        }
+                    ]
+                },
+                {
+                    "name": "An Elf blowing Bubbles",
+                    "cover": "../assets/portfolio/animations/elfbubbles/thumbnail.png",
+                    "year": "2023",
+                    "synopsis": "An elf enjoying his Christmas Eve by opening other children's presents. A submission for the BFX Animation Jam.",
+                    "description": "The project was done alongside Felix Wright, Timothy Courtice, and Harvey Hamilton for the BFX Animation Jam. We wanted to experiment with stylzed rendering and seamlessly blending 2d animation into 3d environments.",
+                    "tools": "Blender, Toon Boom Harmony, Nuke, DaVinci Resolve",
+                    "pipeline": "Shading, Lighting, Rendering, Comp",
+                    "role": "",
+                    "client": "Competition Team Project",
+                    "items": [
+                        {
+                            "name": "Full Animation",
+                            "type": 2,
+                            "link": "https://www.youtube.com/embed/QjdusCdVMfo?si=FPJJpxL0eW7NDZQC",
+                            "description": "We completed the entire project in 2 weeks."
+                        },
+                        {
+                            "name": "viewport",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/viewport.png",
+                            "description": "An alternate angle of the render. We were able to view the project in realtime using Blender's EEVEE Engine."
+                        },
+                        {
+                            "name": "solid view",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/messy.png",
+                            "description": "A screenshot of the solid viewport. We instanced planes to create the painterly effect."
+                        },
+                        {
+                            "name": "style_test",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/style_test.png",
+                            "description": "An isolated test of the painterly effect. This was done early on."
+                        },
+                        {
+                            "name": "Nuke Composite",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/elfbubbles/comp.png",
+                            "description": "The Nuke nodes for compositing the animation."
+                        }
+                    ]
+                },
+                {
                     "name": "Sputnik Case Study",
                     "cover": "../assets/portfolio/animations/sputnik_casestudy/cover.png",
                     "year": "2023",
@@ -49,92 +161,6 @@
                             "type": 0,
                             "link": "../assets/portfolio/animations/sputnik_casestudy/nuke_script.png",
                             "description": "The Nuke nodes for compositing the final project. This was one of the first projects where I began to experiment with render passes."
-                        }
-                    ]
-                },
-                {
-                    "name": "An Elf blowing Bubbles",
-                    "cover": "../assets/portfolio/animations/elfbubbles/thumbnail.png",
-                    "year": "2023",
-                    "synopsis": "An elf enjoying his Christmas Eve by opening other children's presents. A submission for the BFX Animation Jam.",
-                    "description": "The project was done by a team of 4 for the BFX Animation Jam. We wanted to experiment with stylzed rendering and seamlessly blending 2d animation into 3d environments.",
-                    "tools": "Blender, Toon Boom Harmony, Nuke, DaVinci Resolve",
-                    "pipeline": "Shading, Lighting, Rendering, Comp",
-                    "role": "",
-                    "client": "Competition Team Project",
-                    "items": [
-                        {
-                            "name": "Full Animation",
-                            "type": 2,
-                            "link": "https://www.youtube.com/embed/QjdusCdVMfo?si=FPJJpxL0eW7NDZQC",
-                            "description": "We completed the entire project in 2 weeks."
-                        },
-                        {
-                            "name": "viewport",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/viewport.png",
-                            "description": "An alternate angle of the render. We were able to view the project in realtime using Blender's EEVEE Engine."
-                        },
-                        {
-                            "name": "solid view",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/messy.png",
-                            "description": "A screenshot of the solid viewport. We instanced planes to create the painterly effect."
-                        },
-                        {
-                            "name": "style_test",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/style_test.png",
-                            "description": "An isolated test of the painterly effect. This was done early on."
-                        },
-                        {
-                            "name": "Nuke Composite",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/comp.png",
-                            "description": "The Nuke nodes for compositing the animation."
-                        }
-                    ]
-                },
-                {
-                    "name": "The Creator Case Study",
-                    "cover": "../assets/portfolio/animations/creator/cover.PNG",
-                    "year": "2023",
-                    "synopsis": "A case study on CG head replacements, inspired by an ILM talk on The Creator.",
-                    "description": "",
-                    "tools": "Blender, Substance Painter, Nuke, DaVinci Resolve",
-                    "pipeline": "All Aspects (except for background assets)",
-                    "role": "",
-                    "client": "Solo Project",
-                    "items": [
-                        {
-                            "name": "The finished shot",
-                            "type": 1,
-                            "link": "../assets/portfolio/animations/creator/TheCreatorStudy_mp4.mp4",
-                            "description": "The finished shot."
-                        },
-                        {
-                            "name": "A breakdown video",
-                            "type": 2,
-                            "link": "https://www.youtube.com/embed/BRdFg-8wEYE?si=bgnBXkb9Z3Yqs6bg",
-                            "description": "A breakdown of the full vfx shot."
-                        },
-                        {
-                            "name": "head turntable",
-                            "type": 1,
-                            "link": "../assets/portfolio/animations/creator/head_turntable_v01.mp4",
-                            "description": "A turntable render of the head"
-                        },
-                        {
-                            "name": "hand turntable",
-                            "type": 1,
-                            "link": "../assets/portfolio/animations/creator/hand_turntable_v01.mp4",
-                            "description": "A turntable render of the hand"
-                        },
-                        {
-                            "name": "Nuke Composite",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/creator/nuke_script.PNG",
-                            "description": "The Nuke nodes for compositing the shot."
                         }
                     ]
                 }
