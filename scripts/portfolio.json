@@ -4,6 +4,26 @@
             "name": "projects",
             "items": [
                 {
+                    "name": "Jupiter",
+                    "cover": "../assets/portfolio/animations/jupiter/cover.jpg",
+                    "year": "2024",
+                    "synopsis": "An asset created whilst experimenting with USD",
+                    "description": "Jupiter is a late 1800s steam train developed in Utah. Modelling was done majority in Blender, UVs and lookdev in Maya and texturing in Substance Painter. The asset works across USD supporting DCCs and uses MaterialX for its shading. It also contains 2 look variants; vibrant worn and dull new.",
+                    "tools": "Blender, Maya, Substance Painter, USD",
+                    "pipeline": "Modelling, Texturing, Lookdev",
+                    "role": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "The Jupiter Steam Train",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/cover.jpg",
+                            "description": "The Jupiter Steam Train"
+                        }
+                    ]
+                    
+                },
+                {
                     "name": "Fruits in the Fridge",
                     "cover": "../assets/portfolio/animations/fif/Cover.png",
                     "year": "2024",
