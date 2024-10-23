@@ -48,7 +48,7 @@
     aspect-ratio: 1/1;
     margin-bottom: 0.5vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 1vh;
+    border-radius: 1ex;
     transition: transform 0.35s, box-shadow 0.35s;
     cursor: pointer;
 }
@@ -81,10 +81,12 @@
 .portfolio-section-item:hover {
     transform: scale(105%);
     z-index: 1;
+    border-radius: 1ex;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
 }
 
 .portfolio-section-item:hover img {
+    border-radius: 1ex;
     opacity: 0.0;
 }
 
@@ -259,6 +261,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 1ex;
 }
 
 .project-item-info p {

@@ -19,6 +19,42 @@
                             "type": 0,
                             "link": "../assets/portfolio/animations/jupiter/cover.jpg",
                             "description": "The Jupiter Steam Train"
+                        },
+                        {
+                            "name": "References",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/references.png",
+                            "description": "Before creating the asset, I found references of the Jupiter steam train online."
+                        },
+                        {
+                            "name": "Modelling",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/modelling.png",
+                            "description": "Modelling was done inside of Blender. Because of USD, I was able to swap between softwares without too much difficulty."
+                        },
+                        {
+                            "name": "Modelling Turntable",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/wireframe_turn_for_web.mp4",
+                            "description": "A turntable of the completed model."
+                        },
+                        {
+                            "name": "UVs",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/uvs.png",
+                            "description": "After modelling in Blender, I opened the asset in Maya and being UV unwrapping."
+                        },
+                        {
+                            "name": "Shading & Lookdev",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/vibrant_turntable.mp4",
+                            "description": "Textures were made in Substance Painter, and lookdev was done in Maya Arnold. As this is a USD asset, I was able to render out of the box in Houdini Karma as well."
+                        },
+                        {
+                            "name": "Variants",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/dull_turntable.mp4",
+                            "description": "The asset contains a 'dull' shader variant."
                         }
                     ]
                     
