@@ -4,6 +4,80 @@
             "name": "projects",
             "items": [
                 {
+                    "name": "Heman",
+                    "cover": "../assets/portfolio/animations/heman/cover.png",
+                    "year": "2025",
+                    "synopsis": "A stylzed hero asset made in ZBrush, Maya, and Houdini.",
+                    "description": "Heman was part of my Modelling and Texturing class. We were given a concept image and had to create our character accordingly. Heman was modelled in ZBrush and Maya, rigged in Maya, textured in Substance Painter, and groomed, lookdeved, and renderered in Houdini. <br></br> Heman was used to test a USD/Alembic pipeline for Maya and Houdini.",
+                    "tools": "ZBrush, Maya, Substance Painter, Houdini, USD",
+                    "pipeline": "Modelling, Texturing, Groom, Lookdev",
+                    "role": "",
+                    "client": "University Assignment",
+                    "items": [
+                        {
+                            "name": "Heman",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/heman/cover.png",
+                            "description": "Heman"
+                        },
+                        {
+                            "name": "Heman Lookdev",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/heman/heman_turntable.mp4",
+                            "description": "Heman Lookdev Shading"
+                        },
+                        {
+                            "name": "Heman Wire",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/heman/heman_wireframe_turntable.mp4",
+                            "description": "Heman Wireframe"
+                        },
+                        {
+                            "name": "Rig",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/heman/heman_rig.png",
+                            "description": "Heman Rig"
+                        },
+                        {
+                            "name": "UVs",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/heman/heman_uvs.png",
+                            "description": "UVs"
+                        },
+                        {
+                            "name": "ZBrush Sculpt",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/heman/heman_zbrush.png",
+                            "description": "ZBrush Sculpt"
+                        }
+                    ]
+                },
+                {
+                    "name": "Rhino FX",
+                    "cover": "../assets/portfolio/animations/rhino/cover.png",
+                    "year": "2024",
+                    "synopsis": "Experimenting with MPM and environments in Solaris.",
+                    "description": "Rhino FX was an exploriation into the MPM tools in Houdini, as well as how to build environments using Houdini Solaris. I used Quixel assets for the envionment, and found an animation of a Rhino online. The FX was done by me in Houdini.",
+                    "tools": "Houdini, Nuke",
+                    "pipeline": "FX, Layout, Lighting, Rendering, Compositing",
+                    "role": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "Rhino FX",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/rhino/rhino_comp.mov",
+                            "description": "The Completed Shot. FX, Layout, Lighting, Rendering and Compositing done by me."
+                        },
+                        {
+                            "name": "Rhino FX",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/rhino/viewport_v001.mp4",
+                            "description": "Viewport Playblast"
+                        }
+                    ]
+                },
+                {
                     "name": "Jupiter",
                     "cover": "../assets/portfolio/animations/jupiter/cover.jpg",
                     "year": "2024",
@@ -19,9 +93,38 @@
                             "type": 0,
                             "link": "../assets/portfolio/animations/jupiter/cover.jpg",
                             "description": "The Jupiter Steam Train"
+                        },
+                        {
+                            "name": "Vibrant",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/vibrant_turntable.mp4",
+                            "description": "A vibrant shader variant"
+                        },
+                        {
+                            "name": "Dull",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/dull_turntable.mp4",
+                            "description": "A dull shader variant"
+                        },
+                        {
+                            "name": "Wire",
+                            "type": 1,
+                            "link": "../assets/portfolio/animations/jupiter/wireframe_turn_for_web.mp4",
+                            "description": "Wireframe turntable"
+                        },
+                        {
+                            "name": "UVs",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/uvs.png",
+                            "description": "UVs for the steam train"
+                        },
+                        {
+                            "name": "Refs",
+                            "type": 0,
+                            "link": "../assets/portfolio/animations/jupiter/references.png",
+                            "description": "References of the Jupiter Steam Train"
                         }
                     ]
-                    
                 },
                 {
                     "name": "Fruits in the Fridge",
@@ -47,7 +150,6 @@
                             "description": "Viewport Playblast"
                         }
                     ]
-                    
                 },
                 {
                     "name": "The Creator Case Study",
@@ -89,98 +191,6 @@
                             "type": 0,
                             "link": "../assets/portfolio/animations/creator/nuke_script.PNG",
                             "description": "The Nuke nodes for compositing the shot."
-                        }
-                    ]
-                },
-                {
-                    "name": "An Elf blowing Bubbles",
-                    "cover": "../assets/portfolio/animations/elfbubbles/thumbnail.png",
-                    "year": "2023",
-                    "synopsis": "An elf enjoying his Christmas Eve by opening other children's presents. A submission for the BFX Animation Jam.",
-                    "description": "The project was done alongside Felix Wright, Timothy Courtice, and Harvey Hamilton for the BFX Animation Jam. We wanted to experiment with stylzed rendering and seamlessly blending 2d animation into 3d environments.",
-                    "tools": "Blender, Toon Boom Harmony, Nuke, DaVinci Resolve",
-                    "pipeline": "Shading, Lighting, Rendering, Comp",
-                    "role": "",
-                    "client": "Competition Team Project",
-                    "items": [
-                        {
-                            "name": "Full Animation",
-                            "type": 2,
-                            "link": "https://www.youtube.com/embed/QjdusCdVMfo?si=FPJJpxL0eW7NDZQC",
-                            "description": "We completed the entire project in 2 weeks."
-                        },
-                        {
-                            "name": "viewport",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/viewport.png",
-                            "description": "An alternate angle of the render. We were able to view the project in realtime using Blender's EEVEE Engine."
-                        },
-                        {
-                            "name": "solid view",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/messy.png",
-                            "description": "A screenshot of the solid viewport. We instanced planes to create the painterly effect."
-                        },
-                        {
-                            "name": "style_test",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/style_test.png",
-                            "description": "An isolated test of the painterly effect. This was done early on."
-                        },
-                        {
-                            "name": "Nuke Composite",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/elfbubbles/comp.png",
-                            "description": "The Nuke nodes for compositing the animation."
-                        }
-                    ]
-                },
-                {
-                    "name": "Sputnik Case Study",
-                    "cover": "../assets/portfolio/animations/sputnik_casestudy/cover.png",
-                    "year": "2023",
-                    "synopsis": "For one of my university applications, I was given the task to create a 10 minute presentation about anything VFX related. I decided to focus on Sputnik, and how realistic muscle/tissue based creatures are made.",
-                    "description": "This project was a new experience for me as I had to dive heavily into the Houdini documentation and learn how to properly research and experiment.",
-                    "tools": "Blender, Houdini, Nuke, DaVinci Resolve",
-                    "pipeline": "All Aspects (except for background assets)",
-                    "role": "",
-                    "client": "Solo Project",
-                    "items": [
-                        {
-                            "name": "Full Animation",
-                            "type": 1,
-                            "link": "../assets/portfolio/animations/sputnik_casestudy/final_render.mov",
-                            "description": "The full project took about a month to create."
-                        },
-                        {
-                            "name": "Presentation",
-                            "type": 2,
-                            "link": "https://www.youtube.com/embed/j-NHHUyZN-g",
-                            "description": "This is a full recording of one my practice presentations."
-                        },
-                        {
-                            "name": "Sputnik Skin Model",
-                            "type": 3,
-                            "link": "https://sketchfab.com/models/86d0f53cc6094d2da615947af39fcd99/embed",
-                            "description": "I'm especially proud of how well I was able to the match references of the original character."
-                        },
-                        {
-                            "name": "Houdini Character",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/sputnik_casestudy/houdini_file.png",
-                            "description": "The Houdini nodes for the muscle-tissue system of the character."
-                        },
-                        {
-                            "name": "Houdini FX",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/sputnik_casestudy/houdini_fx_file.png",
-                            "description": "The Houdini nodes for the fx systems of the character."
-                        },
-                        {
-                            "name": "Nuke Composite",
-                            "type": 0,
-                            "link": "../assets/portfolio/animations/sputnik_casestudy/nuke_script.png",
-                            "description": "The Nuke nodes for compositing the final project. This was one of the first projects where I began to experiment with render passes."
                         }
                     ]
                 }
@@ -234,7 +244,7 @@
                             "name": "Chipp Sketchfab",
                             "type": 3,
                             "link": "https://sketchfab.com/models/385598060a0b451087fae8b765fbb180/embed",
-                            "description" : "An interactive model of Chipp."
+                            "description": "An interactive model of Chipp."
                         },
                         {
                             "name": "Animation",
@@ -313,7 +323,7 @@
                             "name": "Retail Bot Sketchfab",
                             "type": 3,
                             "link": "https://sketchfab.com/models/13f7d57b05d04327bcd5fd532e68c430/embed",
-                            "description" : "An interactive model of the retail bot."
+                            "description": "An interactive model of the retail bot."
                         },
                         {
                             "name": "Lighting Test 1",
@@ -457,68 +467,6 @@
             "name": "others",
             "items": [
                 {
-                    "name": "Breeze Render Engine",
-                    "cover": "../assets/portfolio/other/breeze/breeze_render_engine.png",
-                    "year": "2022",
-                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breeze's custom render engine.",
-                    "description": "Built off the Ray Tracing in One Weekend tutorial series, Breeze Render Engine is my first ever C++, OpenGL, and Qt application. The project took around 8 months and there were numerous rewrites.",
-                    "tools": "Visual Studio, Qt, OpenGL, RenderDoc",
-                    "role": "",
-                    "pipeline": "",
-                    "client": "Solo Project",
-                    "items": [
-                        {
-                            "name": "Scene Example",
-                            "type": 0,
-                            "link": "../assets/portfolio/other/breeze/breeze_render_engine.png",
-                            "description": "A screenshot of a scene made in Breeze. You can download and try the application from my Github page."
-                        },
-                        {
-                            "name": "Demo Video",
-                            "type": 1,
-                            "link": "../assets/portfolio/other/breeze/breeze_demo.mp4",
-                            "description": "A demo video of Breeze in action."
-                        },
-                        {
-                            "name": "OBJ Importing",
-                            "type": 0,
-                            "link": "../assets/portfolio/other/breeze/objs.png",
-                            "description": "Breeze also allows custom OBJ importing."
-                        },
-                        {
-                            "name": "Render",
-                            "type": 0,
-                            "link": "../assets/portfolio/other/breeze/render.png",
-                            "description": "The render from the demo video."
-                        }
-                    ]
-                },
-                {
-                    "name": "Sicle Maps App",
-                    "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
-                    "year": "2021",
-                    "synopsis": "Sicle is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
-                    "description": "After seeing some modern app designs on Dribbble, I was inspired to write my own mobile application. Since I'm an avid cyclist, I wanted to make an application that I could use. The solution was a simplified Google Maps application called Sicle. <br></br> The app was written in Kotlin using Android Studio, and relies on the Mapbox API.",
-                    "tools": "Android Studio, MapBox, Kotlin",
-                    "role": "",
-                    "pipeline": "",
-                    "client": "Solo Project",
-                    "items": [
-                        {
-                            "name": "App Screenshot",
-                            "type": 0,
-                            "link": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
-                            "description": "A screenshot of the app in use."
-                        },
-                        {
-                            "name": "App Demo Video",
-                            "type": 1,
-                            "link": "../assets/portfolio/other/sicle/sicle_demo.mp4",
-                            "description": "The app runs on Android and uses the MapBox API."
-                        }
-                    ]
-                },
-                {
                     "name": "PAINter",
                     "cover": "../assets/portfolio/other/painter/desert_wip.png",
                     "year": "2024",
@@ -537,7 +485,7 @@
                         },
                         {
                             "name": "The finished saved image.",
-                            "type":0 ,
+                            "type": 0,
                             "link": "../assets/portfolio/other/painter/desert.png",
                             "description": "The finished saved image."
                         },
@@ -614,6 +562,68 @@
                             "type": 0,
                             "link": "../assets/portfolio/other/website/my_website.png",
                             "description": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Breeze Render Engine",
+                    "cover": "../assets/portfolio/other/breeze/breeze_render_engine.png",
+                    "year": "2022",
+                    "synopsis": "Breeze Render Engine is a C++ application that allows artists to create scenes in OpenGL and then render them out with Breeze's custom render engine.",
+                    "description": "Built off the Ray Tracing in One Weekend tutorial series, Breeze Render Engine is my first ever C++, OpenGL, and Qt application. The project took around 8 months and there were numerous rewrites.",
+                    "tools": "Visual Studio, Qt, OpenGL, RenderDoc",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "Scene Example",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/breeze_render_engine.png",
+                            "description": "A screenshot of a scene made in Breeze. You can download and try the application from my Github page."
+                        },
+                        {
+                            "name": "Demo Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/breeze/breeze_demo.mp4",
+                            "description": "A demo video of Breeze in action."
+                        },
+                        {
+                            "name": "OBJ Importing",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/objs.png",
+                            "description": "Breeze also allows custom OBJ importing."
+                        },
+                        {
+                            "name": "Render",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/breeze/render.png",
+                            "description": "The render from the demo video."
+                        }
+                    ]
+                },
+                {
+                    "name": "Sicle Maps App",
+                    "cover": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                    "year": "2021",
+                    "synopsis": "Sicle is a simplified alternative to Google Maps. Users can track their location and follow routes to their desired destination.",
+                    "description": "After seeing some modern app designs on Dribbble, I was inspired to write my own mobile application. Since I'm an avid cyclist, I wanted to make an application that I could use. The solution was a simplified Google Maps application called Sicle. <br></br> The app was written in Kotlin using Android Studio, and relies on the Mapbox API.",
+                    "tools": "Android Studio, MapBox, Kotlin",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "App Screenshot",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/sicle/sicle_maps_app.jpg",
+                            "description": "A screenshot of the app in use."
+                        },
+                        {
+                            "name": "App Demo Video",
+                            "type": 1,
+                            "link": "../assets/portfolio/other/sicle/sicle_demo.mp4",
+                            "description": "The app runs on Android and uses the MapBox API."
                         }
                     ]
                 }

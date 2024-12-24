@@ -7,12 +7,6 @@
             "score" : 4
         },
         {
-            "name" : "Blender",
-            "logo" : "./images/software/blender.png",
-            "link" : "https://www.blender.org/",
-            "score" : 5
-        },
-        {
             "name" : "Maya",
             "logo" : "./images/software/maya.png",
             "link" : "https://www.autodesk.co.uk/products/maya/overview",
@@ -25,16 +19,22 @@
             "score" : 3
         },
         {
+            "name" : "Nuke",
+            "logo" : "./images/software/nuke.png",
+            "link" : "https://www.foundry.com/products/nuke-family/nuke",
+            "score" : 4
+        },
+        {
             "name" : "Unreal Engine 5",
             "logo" : "./images/software/unreal.png",
             "link" : "https://www.unrealengine.com/en-UK/",
             "score" : 3
         },
         {
-            "name" : "Nuke",
-            "logo" : "./images/software/nuke.png",
-            "link" : "https://www.foundry.com/products/nuke-family/nuke",
-            "score" : 4
+            "name" : "Blender",
+            "logo" : "./images/software/blender.png",
+            "link" : "https://www.blender.org/",
+            "score" : 5
         },
         {
             "name" : "DaVinci Resolve",
@@ -43,9 +43,9 @@
             "score" : 4
         },
         {
-            "name" : "Krita",
-            "logo" : "./images/software/krita.png",
-            "link" : "https://krita.org/en/",
+            "name" : "USD",
+            "logo" : "./images/software/usd.png",
+            "link" : "https://www.pixar.com/openusd",
             "score" : 3
         },
         {

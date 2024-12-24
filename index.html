@@ -6,11 +6,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCZWCDNSHM"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-BCZWCDNSHM');
+        gtag('config', 'G-BCZWCDNSHM');
     </script>
 
     <meta charset="UTF-8">
@@ -26,23 +26,36 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link href="css/styles.css" rel="stylesheet">
-    <title> Christopher Hosken | FX & Pipeline TD </title>
+    <title> Christopher Hosken | Generalist TD </title>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
     <div id="showreel-lightbox" class="lightbox">
-        <iframe id="showreel-video" src="https://www.youtube.com/embed/WjKCm6WXgXs?enablejsapi=1"
+        <iframe id="showreel-video" src="https://player.vimeo.com/video/1041742649?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
         <button id="showreel-close-button" class="lightbox-close-button"> <i class="fa-solid fa-xmark"></i> </button>
+        <script src="https://player.vimeo.com/api/player.js"></script>
         <script>
-            $("#showreel-close-button").click(function (event) {
+            // Initialize the Vimeo player
+            const iframe = document.querySelector("#showreel-video");
+            const player = new Vimeo.Player(iframe);
+        
+            // Attach click event listener to the close button
+            $("#showreel-close-button").click(function () {
+                // Fade out the lightbox
                 $("#showreel-lightbox").fadeOut(250);
+        
+                // Restore scrolling on the page
                 document.querySelector("html").style.overflowY = "overlay";
-                $("#showreel-video")[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        
+                // Pause the Vimeo video
+                player.pause().catch(function (error) {
+                    console.error('Error pausing the video:', error);
+                });
             });
         </script>
     </div>
@@ -61,7 +74,7 @@
         </div>
         <div id="hero-text">
             <h1> Christopher Hosken </h1>
-            <h2> Computer Animation Technical Arts student at Bournemouth University. <br/> Aspiring to be an FX & Pipeline TD. </h2>
+            <h2> Computer Animation Technical Arts student at Bournemouth University. <br /> Aspiring to be a Generalist TD. </h2>
             <button id="showreel-open-button" class="wire-button"> Showreel </button>
             <script>
                 $("#showreel-open-button").click(function (event) {
@@ -72,8 +85,10 @@
             </script>
         </div>
         <div id="hero-icons">
-            <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.artstation.com/christopherhosken" target="_blank"> <i class="fa-brands fa-artstation"></i></a>
+            <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank"> <i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.artstation.com/christopherhosken" target="_blank"> <i
+                    class="fa-brands fa-artstation"></i></a>
             <a href="https://github.com/cjhosken" target="_blank"> <i class="fa-brands fa-github"></i></a>
         </div>
     </div>
@@ -81,9 +96,16 @@
         <div id="info-container">
             <div id="description" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                 <h1> About Me </h1>
-                <p> 
-                    I am a Computer Animation Technical Arts student at Bournemouth University with extensive knowledge in programming and the CG pipeline. I can adapt to various roles as needed. My primary tools are Blender and Houdini, and I am also experienced with Maya, Substance Painter, Nuke, and DaVinci Resolve.
+                <br>
+                <p>
+                    I am a Computer Animation Technical Arts student at Bournemouth University with extensive knowledge
+                    in programming and the CG/VFX pipeline. With experience in Modelling, Texturing, Rigging, Animation,
+                    FX, Lighting, Rendering, and Compositing, I can adapt to varias roles as needed. My primary tools
+                    are
+                    Houdini, Maya, Substance Painter and Nuke. I am also experienced with Blender and DaVinci
+                    Resolve.
                 </p>
+                </br>
 
                 <a href="/html/portfolio.html" class="flip-button">
                     <div>
@@ -93,23 +115,39 @@
             </div>
         </div>
         <div>
-            <h1 class="container-header" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> Experience </h1>
+            <h1 class="container-header" data-aos="fade-up" data-aos-duration="500" data-aos-once="true"> Experience
+            </h1>
             <div id="history-list-container">
                 <div class="history-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <i class="fa-solid fa-graduation-cap"></i>
                     <h1> Bournemouth University </h1>
                     <h2> SEP 2023 - PRESENT | BOURNEMOUTH </h2>
                     <h2> BA COMPUTER ANIMATION TECHNICAL ARTS </h2>
-                    <p> Bournemouth University has given me a strong understanding of fundamentals that I wouldn't have gained elsewhere. In my first year I've been able to explore the underlying mathematics in most DCC applications. I've also been able to grow in my knowledge of Maya, Houdini, Nuke, and how to manage a small CG Pipeline. </p>
+                    <p> Bournemouth University has given me a strong understanding of CG fundamentals that I wouldn't
+                        have
+                        gained elsewhere. In my first year I've been able to explore the underlying mathematics in most
+                        DCC applications. I was also been able to grow in my knowledge of Maya, Houdini and Nuke.
+                    </p>
+
+                    <p>
+                        My second year has allowed me to focus in on my skills and learn to create production ready
+                        assets.
+                        I have also begun developing my own USD Pipeline to use for short animations.
+                    </p>
                 </div>
                 <div class="history-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <i class="fa-solid fa-briefcase"></i>
                     <h1> BOAP Studios </h1>
                     <h2> MAR 2019 - APR 2021 | REMOTE </h2>
                     <p>
-                        During my first year at BOAP Studios, I contributed to writing, modeling, and animation while managing a small team of artists. I gained valuable insights into studio operations and conflict resolution.
-
-                        In my second year, I directed the short film Proxima, co-wrote and envisioned the story, and collaborated with the R&D team to develop a facial motion capture plugin for Blender. I also did some modeling and animation work.
+                        During my first year at BOAP Studios, I contributed to writing, modeling, and animation while
+                        managing a small team of artists. I gained valuable insights into studio operations and conflict
+                        resolution.
+                    </p>
+                    <p>
+                        In my second year, I directed the short film Proxima, co-wrote and envisioned the story, and
+                        collaborated with the R&D team to develop a facial motion capture plugin for Blender. I also did
+                        some modeling and animation work.
                     </p>
                 </div>
             </div>
@@ -120,20 +158,22 @@
                 <div class="general-skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <i class="fa-solid fa-cube"></i>
                     <h1>
-                        CG / VFX
+                        PIPELINE
                     </h1>
                     <p>
-                        I've worked in every part of the CG and VFX pipeline, on numerous solo and group projects, in mulitple softwares. My broad range of knowledge makes it possible for me to fit in wherever is needed in a studio pipeline.
+                        I've worked in every part of the CG and VFX pipeline, on numerous solo and group projects, in
+                        mulitple softwares. My broad range of knowledge makes it possible for me to fit in wherever is
+                        needed in a studio pipeline. I've also developed pipeline tools for Houdini, Maya, and Blender.
                     </p>
                 </div>
                 <div class="general-skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <i class="fa-solid fa-fire"></i>
                     <h1>
-                        FX
+                        FX & TECH
                     </h1>
                     <p>
-                        Primarily working in Houdini, I have experience in fluids, pyro, vellum, and other destruction
-                        tools. Alongside working with CFX tools such as muscles and feathers.
+                        I primarily work in Houdini with fluids, pyro, vellum, RBD, muscles, and groom.
+                        Alongside this, I have experience in rigging assets in both Maya and Blender.
                     </p>
                 </div>
                 <div class="general-skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
@@ -142,18 +182,19 @@
                         RND
                     </h1>
                     <p>
-                        With profiency in Python, Java, C, C++, C#, Kotlin, and VEX, as well as working knowledge in Qt and OpenGL,
-                        I'm able to write custom plugins, tools, and standalone software applications. I'm also aware of USD, The mathematics for render engines and FLIP, and pipeline tools like Qube.
+                        I am proficient in Python, Java, C, C++, C#, Kotlin, and VEX, with working knowledge of Qt and
+                        OpenGL.
+                        I have also developed multiple render engines and simulation tools from base mathematical
+                        concepts.
                     </p>
-
                 </div>
             </div>
             <div id="specific-skills-container">
-                
+
             </div>
         </div>
         <div id="companies-list-container">
-                
+
         </div>
     </div>
     <footer>
@@ -166,7 +207,7 @@
     <script src="scripts/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 
