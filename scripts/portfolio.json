@@ -467,6 +467,49 @@
             "name": "others",
             "items": [
                 {
+                    "name": "HdTemplateRenderer",
+                    "cover": "../assets/portfolio/other/hdtemplate/cover.png",
+                    "year": "2025",
+                    "synopsis": "A simple USD Hydra Delegate raytracer built in C++.",
+                    "description": "In order to understand how USD is making moves in the world of software development. I decided to experiment with making a Hydra Delegate raytracer in C++. The delegate (in theory) should work in multiple DCCs. You can download and build the rendererer at <a href='https://github.com/cjhosken/hdTemplateRenderer' target='_blank'> https://github.com/cjhosken/hdTemplateRenderer </a>",
+                    "tools": "Visual Studio Code, Github, USD, Houdini",
+                    "role": "",
+                    "pipeline": "",
+                    "client": "Solo Project",
+                    "items": [
+                        {
+                            "name": "usdview",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/hdtemplate/cover.png",
+                            "description": "A render of the USD Kitchen Scene in Usdview using HdTemplateRenderer after ~ 10 minutes."
+                        },
+                        {
+                            "name": "usdviewsimple",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/hdtemplate/simple.png",
+                            "description": "A render of a basic scene in Usdview using HdTemplateRenderer after ~ 30 seconds."
+                        },
+                        {
+                            "name": "houdini",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/hdtemplate/hou_beauty.png",
+                            "description": "A screenshot of the delegate in use in Houdini Solaris. The delegate has 3 AOVs, Beauty, Normal, Depth."
+                        },
+                        {
+                            "name": "houdini",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/hdtemplate/hou_normal.png",
+                            "description": "The normal pass in Houdini."
+                        },
+                        {
+                            "name": "houdini",
+                            "type": 0,
+                            "link": "../assets/portfolio/other/hdtemplate/hou_depth.png",
+                            "description": "The depth pass in Houdini."
+                        }
+                    ]
+                },
+                {
                     "name": "PAINter",
                     "cover": "../assets/portfolio/other/painter/desert_wip.png",
                     "year": "2024",
@@ -502,7 +545,7 @@
                     "cover": "../assets/portfolio/other/mfs/MayaFluidSimulator.PNG",
                     "year": "2024",
                     "synopsis": "A PIC/FLIP simulator tool for Maya written in Python.",
-                    "description": "Part of my Technical Arts Production unit at Bournemouth University required us to make a maya tool with python. I decided to challenge myself by looking into fluid simulators. You can see the full project report below. <br></br> <a href='../assets/portfolio/other/mfs/mfs_report.pdf' target='_blank'> Click Here</a>",
+                    "description": "Part of my Technical Arts Production unit at Bournemouth University required us to make a maya tool with python. I decided to challenge myself by looking into fluid simulators. You can see the full project report below. <br></br> <a href='../assets/portfolio/other/mfs/mfs_report.pdf' target='_blank'> Click Here for the Project Report </a>",
                     "tools": "Visual Studio Code, Github, Maya",
                     "role": "",
                     "pipeline": "",
