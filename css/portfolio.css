@@ -129,26 +129,27 @@
 
 .lightbox-container {
     justify-content: center;
-    align-items: center;
+    align-items:center;
     display: flex;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    height: 100%;
-    width: 100%;
-    flex-direction: row-reverse;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .lightbox-summary-container {
-    width: 25%;
-    height: 100%;
+    margin-top: 25em;
+    width: 100vw;
+    align-self: baseline;
+    text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
-
 
 @media screen and (max-width: 1024px) {
     .lightbox-container {
@@ -158,7 +159,7 @@
     }
 
     .lightbox-summary-container {
-        width: 80%;
+        width: 100vw;
         text-align: center;
     }
 }
@@ -166,7 +167,7 @@
 .lightbox-summary-container h1 {
     color: white;
     margin-top: 4ex;
-    font-size: 4ex;
+    font-size: 6ex;
 }
 
 .lightbox-summary-container h2 {
@@ -178,7 +179,8 @@
 .lightbox-summary-container p {
     color: rgb(245, 245, 245);
     margin: 1ex;
-    font-size: 1.75ex;
+    font-size: 2ex;
+    width: 100%;
 }
 
 .arrow {
@@ -192,31 +194,27 @@
     color: var(--primary);
 }
 
-
 .lightbox-media-container {
-    padding: 0vh 2ex;
-    width: 75%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100vw;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .lightbox-media-carousel {
-    width: 90%;
-    height: 80%;
+    height: 100vh;
+    margin-top: 5em;
     display: flex;
-    overflow-x: scroll;
-    justify-content: center;
-    flex-direction: row;
     align-items: center;
-    overflow: visible;
+    flex-direction: column;
+    justify-content: top;
 }
 
 .lightbox-media-item {
-    width: 95%;
-    height: 90%;
+    padding: 1em;
+    width: 80%;
+    align-items: center;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -237,7 +235,10 @@
     font-size: 2ex;
 }
 
-
+.lightbox-media-item iframe {
+    width: 100%;
+    aspect-ratio: 1.66666;
+}
 
 .main-container > h1 {
     margin-top: 5vh;
@@ -284,7 +285,6 @@
 .project-item-title p {
     color: var(--primary);
 }
-
 
 .project-item-info {
     display: flex;

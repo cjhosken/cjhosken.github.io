@@ -16,10 +16,10 @@ function item_to_html(item) {
             html += "<video controls class='lightbox-media'> <source src='" + item.link + "' type='video/mp4'> </video>";
             break;
         case 2:
-            html += "<iframe width='480' height='320' src='" + item.link + "' class='lightbox-media' title='" + item.name + "' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+            html += "<iframe src='" + item.link + "' class='lightbox-media' title='" + item.name + "' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
             break;
         case 3:
-            html += '<iframe title="' + item.name + '" src="' + item.link + '" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="lightbox-media" width="480" height="320"> </iframe>'
+            html += '<iframe title="' + item.name + '" src="' + item.link + '" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share class="lightbox-media" width="1920" height="1080"> </iframe>'
             break;
     }
 
@@ -83,7 +83,6 @@ function load_lightbox(category_index, item_index) {
     lightbox.querySelector("#year").innerHTML = item.year;
     lightbox.querySelector("#description").innerHTML = item.synopsis + "<br> </br>" + item.description;
 
-
     lightbox.querySelector("#tools-container").style.display = "none";
     lightbox.querySelector("#client-container").style.display = "none";
         
@@ -110,55 +109,19 @@ function load_lightbox(category_index, item_index) {
         lightbox.querySelector("#role").innerHTML = "<em>" + item.role + "</em>";
     }
 
-    
-
     var mediaItemsHTML = "";
 
     for (let idx = 0; idx < item.items.length; idx++) {
         mediaItemsHTML += item_to_html(item.items[idx]);
     }
 
-
     lightbox.querySelector("#carousel").innerHTML = mediaItemsHTML;
-
-    slideIndex = 0;
 
     $("#portfolio-lightbox").fadeIn(250);
     lightbox.style.display = "flex";
     document.querySelector("html").style.overflowY = "hidden";
-
-    next_slide();
 });
 }
-
-let slideIndex = 0;
-
-function next_slide() {
-    let i;
-    let slides = document.getElementsByClassName("lightbox-media-item");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        slides[i].style
-    }
-    slideIndex++;
-
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "flex";
-}
-
-
-function last_slide() {
-    let i;
-    let slides = document.getElementsByClassName("lightbox-media-item");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex--;
-
-    if (slideIndex < 1) {slideIndex = slides.length}
-    slides[slideIndex-1].style.display = "flex";
-}
-
 
 $(document).ready(function() {
     load_portfolio_items();

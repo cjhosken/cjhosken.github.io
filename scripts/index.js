@@ -11,17 +11,7 @@ function load_skills() {
             html += '<img src="' + skill.logo + '" alt="' + skill.name + '">';
             html += '<div class="info">'
             html += '<p>' + skill.name + '</p>';
-            html += '<div>';
-
-            for (cdx = 1; cdx <= 5; cdx++) {
-                if (cdx <= skill.score) {
-                    html += '<span class="fa fa-star checked"></span>';
-                } else {
-                    html += '<span class="fa fa-star"></span>';
-                }
-            }
-
-            html += '</div></div></a>';
+            html += '</div></a>';
         }
 
         document.getElementById("specific-skills-container").innerHTML = html;
@@ -29,7 +19,7 @@ function load_skills() {
 }
 
 function load_companies() {
-    fetch("../scripts/index.json")
+    fetch("/scripts/index.json")
     .then(response => response.json())
     .then(result => {
         html = "";
@@ -48,31 +38,9 @@ function load_companies() {
     });
 }
 
-function load_splash() {
-    if (sessionStorage.getItem("splash") !== "true") {
-        $("#splash").show();
-        document.getElementById("splash").style.display = "flex";
-
-        document.querySelector("html").style.overflowY = "hidden";
-
-        sessionStorage.setItem("splash", "true");
-
-
-        setTimeout(function() {
-            document.querySelector("html").style.overflowY = "overlay";
-            $("#splash").fadeOut(350);
-        }, 3000);
-    }
-}
-
-function open_splash() {
-    sessionStorage.setItem("splash", "false");
-}
-
 $(document).ready(function() {
     load_skills();
     load_companies();
-    load_splash();
 
     ScrollReveal().reveal("#description", "#headshot");
 });
