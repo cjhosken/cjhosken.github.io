@@ -1,0 +1,51 @@
+---
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro'
+
+
+// Define the getStaticPaths function to generate paths for dynamic pages
+export async function getStaticPaths() {
+  // Load all Markdown posts inside /content/posts directory
+  const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
+
+  console.log(posts)
+
+  // Return the paths and fallback option as an object
+  const paths = Object.values(posts).map((post) => {
+    return {
+      params: {slug: post.frontmatter.title.replaceAll(" ", "_").toLowerCase()},
+    }
+  })
+  return paths
+}
+
+const { slug } = Astro.params
+
+const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
+const post = Object.values(posts).find((p) => p.frontmatter.title.replaceAll(" ", "_").toLowerCase() === slug)
+
+if (!post) {
+  throw new Error('Post not found')
+}
+
+const { frontmatter, content } = post
+---
+
+<MarkdownLayout
+  title={frontmatter.title}
+  description={frontmatter.excerpt}
+>
+  <section class="my-12">
+    <div class="container">
+      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.year} | {frontmatter.role}</h2>
+      <p>{frontmatter.excerpt}</p>
+      <div>
+        {content}
+      </div>
+    </div>
+  </section>
+</MarkdownLayout>
+
+<style lang="scss">
+  /* Additional styling for the individual post page */
+</style>

@@ -1,0 +1,72 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import Card from '../../components/Card.astro'
+
+// Get the collection of posts from the content directory
+export async function getStaticPaths({ paginate }) {
+  // Load all Markdown posts from the /content/posts directory
+  const posts = import.meta.glob('../../content/posts/***/*.md', {
+    eager: true, // This will load the content of the markdown files immediately
+  })
+
+  // Convert the imported posts into an array for pagination
+  const postsArray = Object.values(posts)
+
+  // Paginate the posts
+  return paginate(postsArray, { pageSize: 5 })
+}
+
+const { page } = Astro.props
+---
+
+<DefaultLayout
+  title="Blog"
+  description="An example of a blog with dynamic content fetched from markdown files."
+>
+  <section class="my-12">
+    <div class="space-content container">
+      <h1>Blog</h1>
+      <p class="text-2xl">
+        An example of a blog with dynamic content fetched from markdown files. The Accessible Astro Card Component is used here to display all the posts.
+      </p>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="container">
+      <p class="text-sm"><em>Post {page.start + 1} through {page.end + 1} of {page.total} total posts</em></p>
+      <ul class="my-3">
+        {
+          page.data.map((post) => (
+            <li>
+              <Card url={'/portfolio/' + post.frontmatter.title.replaceAll(" ", "_").toLowerCase()}
+              title={post.frontmatter.title}
+              year={post.frontmatter.year}
+              role={post.frontmatter.role}
+              img={post.frontmatter.img}
+              >
+                {post.frontmatter.excerpt}
+              </Card>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+
+    @media (min-width: 550px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

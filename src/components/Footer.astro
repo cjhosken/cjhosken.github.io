@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components'
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+    <div id="upper-footer">
+        <img src="">
+        <div>
+            <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank"><Icon name="mdi:linkedin"/></a>
+            <a href="https://github.com/cjhosken" target="_blank"><Icon name="mdi:github"/></a>
+            <a href="https://www.artstation.com/cjhosken" target="_blank"><Icon name="mdi:artstation"/></a>
+            <a href="https://www.youtube.com/@cjhosken" target="_blank"><Icon name="mdi:youtube"/></a>
+        </div>
+    </div>
+        <div>
+            <p>&copy; {currentYear} Christopher Hosken | Generalist TD </p>
+        </div>
+</footer>

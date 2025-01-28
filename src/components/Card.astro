@@ -1,0 +1,27 @@
+---
+interface Props {
+    url?: string
+    img?: string
+    title?: string
+    year?: string
+    role?: string
+    excerpt?: string
+}
+
+const { url = '#', img = 'https://fakeimg.pl/640x360', title = 'Default title', excerpt = 'Your name', year="2024", role="Solo Project" } = Astro.props
+---
+
+<a href={url}>
+    <img src={img} alt={title}/>
+    <div>
+        <h1>
+            {title}
+        </h1>
+        <h2>
+            {year} | {role}
+        </h2>
+        <p>
+            {excerpt}
+        </p>
+    </div>
+</a>

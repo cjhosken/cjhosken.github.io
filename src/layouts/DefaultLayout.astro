@@ -1,0 +1,66 @@
+---
+import SiteMeta from "../components/SiteMeta.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+
+const {
+    title="Christopher Hosken | Generalist TD",
+    description="The portfolio website for Christopher Hosken.",
+    url,
+    image="",
+    author="Christopher Hosken"
+} = Astro.props
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatable" content="ie=edge"/>
+
+
+        <SiteMeta
+            title={title}
+            description={description.substring(0, 100)}
+            url={Astro.site 
+            ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
+            : `https://cjhosken.github.io/${title.toLowerCase().replaceAll(' ', '-')}`}
+            image={image}
+            author={author}    
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.png">
+    </head>
+    <body>
+        <Header/>
+        <main id="main-content" transition:animate="fade">
+            <slot/>
+        </main>
+        <Footer/>
+    </body>
+    <style lang="scss" is:global>
+        // theme settings
+
+        :root {
+            --primary: rgb(235, 40, 90);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+
+            main {
+                flex: 1 0 auto;
+            }
+
+            footer {
+                flex-shrink: 0;
+            }
+        }
+
+    </style>
+</html>
