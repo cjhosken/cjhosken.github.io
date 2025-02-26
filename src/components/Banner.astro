@@ -1,0 +1,34 @@
+---
+const { title="Banner", img="https://fakeimg.pl/640x360" } = Astro.props;
+---
+
+<div id="banner" >
+    <img src={img}/>
+    <h1>{title}</h1>
+</div>
+<style>
+    #banner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        z-index: -100;
+        height: 10vh;
+        background-size: cover;
+    }
+
+    #banner img {
+        position: absolute;
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+    }
+    
+    #banner h1 {
+        position: absolute;
+        margin-top: 14vh;
+        color: var(--light-900);
+        font-size: 3em;
+    }
+</style>

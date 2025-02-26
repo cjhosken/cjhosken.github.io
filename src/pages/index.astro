@@ -1,7 +1,326 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import Hero from "../components/Hero.astro";
+import CompanyCard from "../components/CompanyCard.astro";
+import SoftwareCard from "../components/SoftwareCard.astro";
+import Button from "../components/Button.astro";
+import { Icon } from "astro-icon/components";
 ---
 
-<DefaultLayout title="Christopher Hosken"> 
+<DefaultLayout title="Christopher Hosken">
+    <Hero
+        title="Christopher Hosken"
+        subtitle="Computer Animation Technical Arts student at Bournemouth University and aspiring Generalist TD."
+    />
+    <section id="about">
+        <h1>About Me</h1>
+        <p>
+                I am a Computer Animation Technical Arts student at Bournemouth
+            University with extensive knowledge in the CG/VFX
+            pipeline. With experience in Modelling, Surfacing, Rigging, Scripting,
+            Animation, FX, Lighting, Rendering, and Compositing, I can adapt to
+            various roles as needed. My primary tools are Houdini, Maya,
+            Substance Painter and Nuke. I am also experienced with Blender and
+            DaVinci Resolve.
+        </p>
 
+        <Button
+            text="View Portfolio"
+            icon="mdi:folder-multiple-image"
+            url="portfolio/"
+        />
+    </section>
+    <section id="history">
+        <h1>Experience</h1>
+        <div id="history-list-container">
+            <div
+                class="history-item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+            >
+                <Icon name="mdi:school" id="icon" />
+                <h1>Bournemouth University</h1>
+                <h2>SEP 2023 - PRESENT | BOURNEMOUTH</h2>
+                <h2>BA COMPUTER ANIMATION TECHNICAL ARTS</h2>
+                <p>
+                    Bournemouth University has given me a strong understanding
+                    of CG fundamentals that I wouldn't have gained elsewhere. In
+                    my first year I've been able to explore the underlying
+                    mathematics in most DCC applications. I was also been able
+                    to grow in my knowledge of Maya, Houdini and Nuke.
+                </p>
+
+                <p>
+                    My second year has allowed me to focus in on my skills and
+                    learn to create production ready assets. I have also begun
+                    developing my own USD Pipeline to use for short animations.
+                </p>
+            </div>
+            <div
+                class="history-item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+            >
+                <Icon name="mdi:briefcase" id="icon" />
+                <h1>BOAP Studios</h1>
+                <h2>MAR 2019 - APR 2021 | REMOTE</h2>
+                <p>
+                    During my first year at BOAP Studios, I contributed to
+                    writing, modeling, and animation while managing a small team
+                    of artists. I gained valuable insights into studio
+                    operations and conflict resolution.
+                </p>
+                <p>
+                    In my second year, I directed the short film Proxima,
+                    co-wrote and envisioned the story, and collaborated with the
+                    R&D team to develop a facial motion capture plugin for
+                    Blender. I also did some modeling and animation work.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div id="general-skills-container">
+            <div
+                class="general-skill-item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+            >
+                <Icon name="mdi:pipe" id="icon" />
+                <h1>PIPELINE</h1>
+                <p>
+                    I've worked in every part of the CG and VFX pipeline, on
+                    numerous solo and group projects, in mulitple softwares. My
+                    broad range of knowledge makes it possible for me to fit in
+                    wherever is needed in a studio pipeline. I've also developed
+                    pipeline tools for Houdini, Maya, and Blender.
+                </p>
+            </div>
+            <div
+                class="general-skill-item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+            >
+                <Icon name="mdi:fire" id="icon" />
+                <h1>FX & TECH</h1>
+                <p>
+                    I primarily work in Houdini with fluids, pyro, vellum, RBD,
+                    muscles, and groom. Alongside this, I have experience in
+                    rigging assets in both Maya and Blender.
+                </p>
+            </div>
+            <div
+                class="general-skill-item"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-once="true"
+            >
+                <Icon name="mdi:code" id="icon" />
+                <h1>RND</h1>
+                <p>
+                    I am proficient in Python, Java, C, C++, C#, Kotlin, and
+                    VEX, with working knowledge of Qt and OpenGL. I have also
+                    developed multiple render engines and simulation tools from
+                    base mathematical concepts.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="software">
+        <SoftwareCard
+            title="Houdini"
+            img="/images/software/houdini.png"
+            url=""
+        />
+        <SoftwareCard title="Maya" img="/images/software/maya.png" url="" />
+        <SoftwareCard
+            title="Blender"
+            img="/images/software/blender.png"
+            url=""
+        />
+        <SoftwareCard
+            title="Substance Painter"
+            img="/images/software/painter.svg"
+            url=""
+        />
+        <SoftwareCard title="Mari" img="/images/software/mari.png" url="" />
+        <SoftwareCard title="Katana" img="/images/software/katana.png" url="" />
+        <SoftwareCard title="Nuke" img="/images/software/nuke.png" url="" />
+        <SoftwareCard
+            title="Unreal Engine"
+            img="/images/software/unreal.png"
+            url=""
+        />
+        <SoftwareCard title="USD" img="/images/software/usd.png" url="" />
+        <SoftwareCard title="Python" img="/images/software/python.png" url="" />
+        <SoftwareCard title="Java" img="/images/software/java.png" url="" />
+        <SoftwareCard title="C,C++,C#" img="/images/software/cpp.png" url="" />
+        <SoftwareCard
+            title="HTML, CSS, JS"
+            img="/images/software/web.png"
+            url=""
+        />
+    </section>
+    <section id="companies">
+        <CompanyCard
+            title="NCCA"
+            img="/images/companies/ncca.png"
+            url="https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation"
+        />
+        <CompanyCard
+            title="BOAP Studios"
+            img="/images/companies/boap.png"
+            url="https://sites.google.com/view/boap-studio/"
+        />
+    </section>
 </DefaultLayout>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script client:load>
+    // Wait for DOM to load
+    document.addEventListener("DOMContentLoaded", () => {
+        const showreelButton = document.getElementById("open-lightbox");
+        const closeButton = document.getElementById("close-lightbox");
+        const lightbox = document.getElementById("lightbox");
+        const iframe = document.getElementById("vimeo-player");
+        const html = document.getElementById("html");
+
+        // Ensure the Vimeo Player SDK is loaded
+        const player = new Vimeo.Player(iframe);
+
+        // Event listener to close the lightbox
+        closeButton?.addEventListener("click", () => {
+            lightbox?.classList.add("hidden");
+            html.classList.remove("no-scroll");
+            player.pause(); // Pause the video
+        });
+
+        // Event listener to open the lightbox
+        showreelButton?.addEventListener("click", () => {
+            lightbox?.classList.remove("hidden");
+            html.classList.add("no-scroll");
+        });
+    });
+</script>
+<style>
+    #about {
+        align-self: center;
+        justify-self: center;
+        margin: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 35vw;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    #about p {
+        text-align: center;
+        width: 70%;
+        margin: 2ex;
+    }
+
+    #history {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #history-list-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .history-item {
+        text-align: center;
+        margin: 2vh 7vh;
+        width: 42vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #icon {
+        font-size: 5ex;
+        margin: 1vh;
+        color: var(--primary-100);
+    }
+
+    .history-item h1 {
+        font-size: 1.5em;
+    }
+
+    .history-item h2 {
+        font-size: 1em;
+    }
+
+    .history-item p {
+        margin: 1em;
+        font-size: 1.2em;
+    }
+
+    #general-skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .container-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .general-skill-item {
+        margin: 5vh 7vh;
+        width: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .general-skill-item h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .general-skill-item p {
+        font-size: 1.2em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    #software {
+        margin: 0 auto;
+        max-width: 70vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5ex;
+    }
+
+    #companies {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 245, 245);
+    }
+</style>

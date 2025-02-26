@@ -1,7 +1,107 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import Banner from "../components/Banner.astro";
+import Map from "../components/Map.astro";
+import Button from "../components/Button.astro";
+
+import { Icon } from 'astro-icon/components'
 ---
 
 <DefaultLayout title="Christopher Hosken | Contact"> 
-    <p> this is the contact page</p>
+    <Banner title="Contact" img="/images/common/banner_contact.png"/>
+    <div id="content">
+        <div id="splitter">
+            <div id="contact-div">
+                <a href="" class="linked-text-icon">
+                    <Icon name="mdi:location" class="icon"/>
+                    <p> Bournemouth, United Kingdom </p>
+                </a>
+                <a href="" class="linked-text-icon">
+                    <Icon name="mdi:linkedin" class="icon"/>
+                    <p> Christopher Hosken </p>
+                </a>
+                <a href="" class="linked-text-icon">
+                    <Icon name="mdi:email" class="icon"/>
+                    <p> hoskenchristopher@gmail.com </p>
+                </a>
+                <Button text="Curriculum Vitae" icon="mdi:download" url="/resume/Christopher_Hosken_Curriculum_Vitae_2025.pdf"/>
+            </div>
+            <div id="map-div">
+                <Map/>
+            </div>
+        </div>
+    </div>
 </DefaultLayout>
+<style is:global>
+    #content {
+        z-index: 1;
+        margin-top: 15vh;
+        height: calc(100vh - 25vh);
+    }
+
+    #splitter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
+        width: 100vw;
+        height: calc(100vh - 25vh);
+    }
+
+    #splitter div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50vw;
+    }
+
+    .linked-text-icon {
+        margin: 2ex;
+        color: rgb(15, 15, 15);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.5s ease;
+    }
+
+    .linked-text-icon:hover {
+        color: var(--primary-100);
+    }
+
+    .linked-text-icon .icon {
+        margin: 1vh;
+        font-size: 3ex;
+    }
+
+    .linked-text-icon p {
+        font-weight: 400;
+        font-size: 2ex;
+    }
+
+    #map-div {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #map-div a {
+        display: hidden;
+    }
+
+    @media screen and (max-width: 767px) {
+        #splitter {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #splitter div {
+            width: 100vw;
+            margin-top: 3ex;
+        }
+}
+    
+</style>

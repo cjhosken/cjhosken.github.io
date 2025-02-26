@@ -1,0 +1,25 @@
+---
+
+
+const {title="Logo", img="/images/common/placeholder.jpg", url = '#'} = Astro.props
+---
+
+<a href={url} class="company-card">
+    <img src={img} alt={title}>
+</a>
+<style>
+    .company-card {
+
+    }
+
+    .company-card img {
+        height: 27ex;
+        aspect-ratio: 1;
+        filter: saturate(5%) contrast(10%) brightness(110%);
+        transition: filter 0.35s;
+    }
+
+    .company-card:hover img {
+        filter: saturate(5%) contrast(10%) brightness(70%);
+    }
+</style>

@@ -1,72 +1,133 @@
 ---
-import DefaultLayout from '../../layouts/DefaultLayout.astro'
-import Card from '../../components/Card.astro'
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import Header from "../../components/Header.astro";
+import Card from "../../components/Card.astro";
+import Button from "../../components/Button.astro";
+import Banner from "../../components/Banner.astro";
+import { getCollection } from 'astro:content';
 
-// Get the collection of posts from the content directory
+// Paginate the posts
 export async function getStaticPaths({ paginate }) {
-  // Load all Markdown posts from the /content/posts directory
-  const posts = import.meta.glob('../../content/posts/***/*.md', {
-    eager: true, // This will load the content of the markdown files immediately
-  })
+  const posts = await getCollection('posts');
 
-  // Convert the imported posts into an array for pagination
-  const postsArray = Object.values(posts)
+const sortedPosts = posts.sort((a, b) =>
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
 
-  // Paginate the posts
-  return paginate(postsArray, { pageSize: 5 })
+  return paginate(sortedPosts, { pageSize: 1000 });
 }
 
-const { page } = Astro.props
+const { page } = Astro.props;
+
+const projects = page.data.filter((post) => post.data.type === 'project');
+const films = page.data.filter((post) => post.data.type === 'film');
+const other = page.data.filter((post) => post.data.type === 'other');
 ---
 
 <DefaultLayout
-  title="Blog"
-  description="An example of a blog with dynamic content fetched from markdown files."
+  title="Portfolio"
+  description="A collection of my best works."
 >
-  <section class="my-12">
-    <div class="space-content container">
-      <h1>Blog</h1>
-      <p class="text-2xl">
-        An example of a blog with dynamic content fetched from markdown files. The Accessible Astro Card Component is used here to display all the posts.
-      </p>
-    </div>
-  </section>
-  <section class="my-12">
-    <div class="container">
-      <p class="text-sm"><em>Post {page.start + 1} through {page.end + 1} of {page.total} total posts</em></p>
-      <ul class="my-3">
-        {
-          page.data.map((post) => (
-            <li>
-              <Card url={'/portfolio/' + post.frontmatter.title.replaceAll(" ", "_").toLowerCase()}
-              title={post.frontmatter.title}
-              year={post.frontmatter.year}
-              role={post.frontmatter.role}
-              img={post.frontmatter.img}
-              >
-                {post.frontmatter.excerpt}
-              </Card>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
+  <Header/>
+  <Banner title="Portfolio" img="/images/common/banner_portfolio.jpg"/>
+  <div id="content">
+    <section class="my-12">
+      <h1> PROJECTS </h1>
+      <div class="container">
+          {
+            projects.map((post) => (
+                <Card
+                  file={post.id}
+                  url={
+                    post.data.title.replaceAll(" ", "_").toLowerCase()
+                  }
+                  title={post.data.title}
+                  date={post.data.date}
+                  role={post.data.role}
+                  img={post.data.img}
+                  excerpt={post.data.excerpt}
+                >
+
+                </Card>
+            ))
+          }
+      </div>
+    </section>
+    <!--<section class="my-12">
+      <h1> FILMS </h1>
+      <div class="container">
+          {
+            films.map((post) => (
+                <Card
+                  file={post.id}
+                  url={
+                    post.data.title.replaceAll(" ", "_").toLowerCase()
+                  }
+                  title={post.data.title}
+                  date={post.data.date}
+                  role={post.data.role}
+                  img={post.data.img}
+                  excerpt={post.data.excerpt}
+                >
+                </Card>
+            ))
+          } 
+      </div>
+    </section> -->
+    <section class="my-12">
+      <h1> OTHER </h1>
+      <div class="container">
+          {
+            other.map((post) => (
+                <Card
+                  file={post.id}
+                  url={
+                    post.data.title.replaceAll(" ", "_").toLowerCase()
+                  }
+                  title={post.data.title}
+                  date={post.data.date}
+                  role={post.data.role}
+                  img={post.data.img}
+                  excerpt={post.data.excerpt}
+                >
+                </Card>
+            ))
+          }
+      </div>
+    </section>
+    <Button text="See More" icon="mdi:artstation" url="https://www.artstation.com/cjhosken"/>
+  </div>
 </DefaultLayout>
-
-<style lang="scss">
-  ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 4rem;
-
-    @media (min-width: 550px) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
+<style>
+    #content {
+        position: relative;
+        z-index: 1;
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
     }
 
-    @media (min-width: 950px) {
-      grid-template-columns: repeat(3, 1fr);
+    .my-12 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .my-12 h1 {
+      margin: 2ex;
+      font-size: 3em;
+    }
+
+  .container {
+    position: relative;
+    margin: 1ex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
 </style>

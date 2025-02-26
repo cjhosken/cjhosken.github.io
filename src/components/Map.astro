@@ -1,0 +1,34 @@
+---
+// Import Mapbox GL JS and its CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
+---
+
+<div id="map"></div>
+
+<script>
+    import mapboxgl from 'mapbox-gl';
+    // Set your Mapbox access token
+    mapboxgl.accessToken = "pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY2wwbmpsd2llMWY4cDNkbnNudXlxd3N5biJ9.wBJjdtYQDyXNbtqujSwLDA";
+
+    // Initialize the map
+    const map = new mapboxgl.Map({
+        container: "map", // Container ID
+        style: 'mapbox://styles/cjhosken/cl76cg0za001914m6ia43ct42', // Map style
+        center: [-1.865000, 50.735036], // Initial map center
+        zoom: 14, // Initial zoom level
+        projection: "globe", // Use globe projection
+    });
+
+    // Add a marker
+    const pin = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" })
+        .setLngLat([-1.865000, 50.735036])
+        .addTo(map);
+</script>
+
+<style>
+    /* Ensure the map container has explicit dimensions */
+    #map {
+        height: 100%; /* Set a fixed height */
+        width: 100%;   /* Set width to 100% of its parent container */
+    }
+</style>

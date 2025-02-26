@@ -1,6 +1,8 @@
 ---
+import "../assets/scss/globals.scss"
 import SiteMeta from "../components/SiteMeta.astro"
 import Header from "../components/Header.astro"
+import LightBox from "../components/LightBox.astro"
 import Footer from "../components/Footer.astro"
 
 const {
@@ -12,7 +14,7 @@ const {
 } = Astro.props
 ---
 
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -25,42 +27,26 @@ const {
             url={Astro.site 
             ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
             : `https://cjhosken.github.io/${title.toLowerCase().replaceAll(' ', '-')}`}
-            image={image}
+            image=/favicon.png
             author={author}    
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon.png">
+        <link rel="icon" type="image/svg+xml" href="/images/common/favicon.png">
     </head>
     <body>
-        <Header/>
         <main id="main-content" transition:animate="fade">
+            <LightBox/>
+            <Header/>
             <slot/>
+            <Footer/>
         </main>
-        <Footer/>
     </body>
     <style lang="scss" is:global>
-        // theme settings
-
-        :root {
-            --primary: rgb(235, 40, 90);
+        #html.no-scroll {
+            overflow-y: hidden;
         }
 
-        html, body {
-            height: 100%;
+        #html {
+            overflow-y: scroll;
         }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-
-            main {
-                flex: 1 0 auto;
-            }
-
-            footer {
-                flex-shrink: 0;
-            }
-        }
-
     </style>
 </html>
