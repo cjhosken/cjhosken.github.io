@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
 
   // Return the paths and fallback option as an object
-  const paths = Object.values(posts).map((post) => {
+  const paths = Object.values(posts).map((post: any) => {
     return {
       params: {slug: post.frontmatter.title.replaceAll(" ", "_").toLowerCase()},
     }
@@ -18,18 +18,18 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params
 
-const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
-const post = Object.values(posts).find((p) => p.frontmatter.title.replaceAll(" ", "_").toLowerCase() === slug)
+const posts = import.meta.glob<{ frontmatter: any; Content: any; file: string }>('../../content/posts/**/*.md', { eager: true });
+const post = Object.values(posts).find((p: any) => p.frontmatter.title.replaceAll(" ", "_").toLowerCase() === slug)
 
-if (!post) {
+if (!post || !post.file) {
   throw new Error('Post not found')
 }
 
-const post_banner = "/images/content/" + post.file.match(/\/([^\/]+)\.md$/)[1] + "/" + post.frontmatter.img
+const post_banner = "/images/content/" + post.file.match(/\/([^\/]+)\.md$/) + "/" + post.frontmatter.img
 
 console.log(post_banner)
 
-const { frontmatter, content } = post
+const {frontmatter, Content, file} = post
 
 ---
 
@@ -46,7 +46,7 @@ const { frontmatter, content } = post
       </div>
       <div id="content">
         <!-- Render the Markdown content with proper formatting -->
-        <post.Content />
+        {Content}
       </div>
   </section>
 </MarkdownLayout>
