@@ -25,7 +25,9 @@ if (!post || !post.file) {
   throw new Error('Post not found')
 }
 
-const post_banner = "/images/content/" + post.file.match(/\/([^\/]+)\.md$/) + "/" + post.frontmatter.img
+const post_filename = post.file?.match(/\/([^\/]+)\.md$/)?.[1] || "default";
+const post_banner = `/images/content/${post_filename}/${post.frontmatter?.img || "default.png"}`;
+
 
 console.log(post_banner)
 
@@ -46,7 +48,7 @@ const {frontmatter, Content, file} = post
       </div>
       <div id="content">
         <!-- Render the Markdown content with proper formatting -->
-        {Content}
+        <Content/>
       </div>
   </section>
 </MarkdownLayout>
