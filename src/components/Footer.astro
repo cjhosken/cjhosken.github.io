@@ -1,0 +1,76 @@
+---
+import { Icon } from 'astro-icon/components'
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+    <div id="upper">
+        <img src="/images/common/ch_banner.png" alt="Banner"/>
+        <div id="icon-div">
+            <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank"><Icon name="mdi:linkedin"/></a>
+            <a href="https://github.com/cjhosken" target="_blank"><Icon name="mdi:github"/></a>
+            <a href="https://www.artstation.com/cjhosken" target="_blank"><Icon name="mdi:artstation"/></a>
+            <a href="https://www.youtube.com/@cjhosken" target="_blank"><Icon name="mdi:youtube"/></a>
+        </div>
+    </div>
+    <div id="lower">
+        <p>&copy; {currentYear} Christopher Hosken | Generalist TD </p>
+    </div>
+</footer>
+<style lang="scss">
+    footer {
+        bottom: 0;
+        position: relative;
+        background-color: var(--dark-100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 30vh;
+    }
+
+    footer #upper {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer #upper #icon-div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        width: 40vh;
+    }
+
+    footer #upper a {
+        margin: 1.5vh;
+        user-select: none;
+        color: var(--light-900);
+        font-size: 1.25em;
+        transition: color 0.5s ease;
+    }
+
+    footer #upper a:hover {
+        color: var(--primary-100);
+    }
+
+    footer #lower {
+        width: 80%;
+        text-align: center;
+        border-top: solid var(--light-900) 2px;
+        color: var(--light-900);
+        font-size: 0.9em;
+    }
+
+    footer #lower p {
+        margin: 2vh;
+    }
+
+</style>

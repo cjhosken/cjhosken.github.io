@@ -1,0 +1,141 @@
+---
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro'
+
+
+// Define the getStaticPaths function to generate paths for dynamic pages
+export async function getStaticPaths() {
+  // Load all Markdown posts inside /content/posts directory
+  const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
+
+  // Return the paths and fallback option as an object
+  const paths = Object.values(posts).map((post) => {
+    return {
+      params: {slug: post.frontmatter.title.replaceAll(" ", "_").toLowerCase()},
+    }
+  })
+  return paths
+}
+
+const { slug } = Astro.params
+
+const posts = import.meta.glob('../../content/posts/**/*.md', { eager: true })
+const post = Object.values(posts).find((p) => p.frontmatter.title.replaceAll(" ", "_").toLowerCase() === slug)
+
+if (!post) {
+  throw new Error('Post not found')
+}
+
+const post_banner = "/images/content/" + post.file.match(/\/([^\/]+)\.md$/)[1] + "/" + post.frontmatter.img
+
+console.log(post_banner)
+
+const { frontmatter, content } = post
+
+---
+
+<MarkdownLayout
+  title=""
+  img={post_banner}
+  description={frontmatter.excerpt}
+>
+  <section class="my-12">
+      <div id="info">
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.date} | {frontmatter.role}</h2>
+        <p>{frontmatter.excerpt}</p>
+      </div>
+      <div id="content">
+        <!-- Render the Markdown content with proper formatting -->
+        <post.Content />
+      </div>
+  </section>
+</MarkdownLayout>
+
+<style lang="scss" is:global>
+
+  .my-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    color: black;
+  }
+
+  #info h1 {
+    font-size: 4em;
+  }
+
+  #info h2 {
+    font-weight: 100;
+    margin: 1em;
+    font-size: 1em;
+  }
+
+  #info p {
+    font-size: 1.25em;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    padding: 0em 3em;
+    max-width: 80vw;
+  }
+
+  #content h1 {
+    font-size: 3em;
+  }
+  
+
+  #content h2 {
+    margin-top: 2em;
+    text-align: left;
+    font-size: 2em;
+  }
+
+  #content small {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #content p {
+    margin: 1em 0em;
+    text-align: left;
+    width: 60vw;
+  }
+  
+  #content img {
+    align-self: center;
+    margin: 0 auto;
+    width: 60vw;
+    max-height: 30vw;
+    object-fit: contain;
+  }
+
+  video {
+    width: 50vw;
+    margin: 1em auto;
+  }
+
+  iframe {
+    height: 25vw;
+    width: 50vw;
+    margin: 1em auto;
+  }
+
+  /* Additional styling for the individual post page */
+</style>

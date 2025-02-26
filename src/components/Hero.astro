@@ -1,0 +1,116 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { title="Christopher Hosken", subtitle="Generalist TD" } = Astro.props;
+---
+
+<div id="hero">
+    <video id="cover-video" autoplay muted loop>
+        <source src="/videos/cover.mov"/>
+    </video>
+    <div id="cover-info">
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+        <button id="open-lightbox">Showreel</button>
+    </div>
+    <div id="cover-icons">
+        <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank"><Icon name="mdi:linkedin"/></a>
+        <a href="https://www.artstation.com/cjhosken" target="_blank"><Icon name="mdi:artstation"/></a>
+        <a href="https://github.com/cjhosken" target="_blank"><Icon name="mdi:github"/></a>
+    </div>
+</div>
+<style>
+    #hero {
+        left: 0;
+        width: 100vw;
+        position: relative;
+        height: 100vh;
+    }
+
+    #hero div {
+        position: absolute;
+    }
+
+    #hero #cover-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        
+    }
+
+    #hero #cover-info {
+        left: 8vw;
+        top: 18vh;
+        color: var(--light-900);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #hero #cover-info h1 {
+        margin: 0;
+        font-size: 6em;
+    }
+
+    #hero #cover-info h2 {
+        margin-top: 1ex;
+        color: var(--light-500);
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    #hero #cover-icons {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        right: 3vw;
+        bottom: 2vw;
+    }
+
+    #hero #cover-icons a {
+        color: var(--light-900);
+        text-decoration: none;
+        margin: 0vw 0.5vw;
+        font-size: 1.5em;
+        transition: 0.5s ease color;
+    }
+
+    #hero #cover-icons a:hover {
+        color: var(--primary-100);
+    }
+
+    #hero button {
+        margin-top: 4ex;
+        font-size: 1em;
+        padding: 1em 5em;
+        border-radius: 100px;
+        background-color: transparent;
+        color: var(--light-900);
+        border: solid var(--light-900) 2px;
+        transition: 0.5s ease all;
+    }
+
+    #hero button:hover {
+        cursor: pointer;
+        color: var(--primary-100);
+        border-color: var(--primary-100);
+    }
+
+    @media screen and (max-width: 767px) {
+        #hero #cover-info h1 {
+            color: var(--titlemain);
+            font-size: 4em;
+            user-select: none;
+            text-wrap: wrap;
+        }
+
+        #hero #cover-info h2 {
+            font-size: 1em;
+            user-select: none;
+            text-wrap: wrap;
+        }
+    }
+
+
+</style>

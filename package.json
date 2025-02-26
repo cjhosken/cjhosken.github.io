@@ -1,0 +1,37 @@
+{
+  "name": "cjhosken.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjhosken/cjhosken.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjhosken/cjhosken.github.io/issues"
+  },
+  "homepage": "https://github.com/cjhosken/cjhosken.github.io#readme",
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.7",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/tailwind": "^5.1.5",
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^5.1.10",
+    "astro-icon": "^1.1.5",
+    "mapbox-gl": "^3.9.4",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.83.4",
+    "vite-plugin-copy": "^0.1.6"
+  }
+}

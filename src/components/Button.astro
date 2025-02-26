@@ -1,0 +1,50 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { text="Button", icon="mid:information-outline", url="#" } = Astro.props;
+---
+<a href={url} target="_blank" id="flip-button">
+    <p> {text} </p>
+    <Icon name={icon} id="icon"/>
+</a>
+<style is:global>
+    #flip-button {
+        margin: 4ex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        width: 20em;
+        height: 4em;
+        border-radius: 50px;
+        border: solid var(--dark-900) 2px;
+        color: var(--dark-900);
+        text-decoration: none;
+        transition: all 0.5s ease;
+    }
+
+    #flip-button:hover {
+        border-color: var(--primary-100);
+        color: var(--primary-100);
+    }
+
+    #flip-button p {
+        transform: translateY(0.7em);
+        transition: transform 0.5s ease;
+    }
+
+    #flip-button #icon {
+        font-size: 1.5em;
+        transform: translateY(-5em);
+        transition: transform 0.5s ease;
+    }
+
+    #flip-button:hover p {
+        transform: translateY(5em);
+    }
+
+    #flip-button:hover #icon {
+        transform: translateY(-0.3em);
+    }
+</style>
