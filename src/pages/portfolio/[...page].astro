@@ -17,11 +17,14 @@ const sortedPosts = posts.sort((a, b) =>
   return paginate(sortedPosts, { pageSize: 1000 });
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as {page: {data: any[]}};
 
-const projects = page.data.filter((post) => post.data.type === 'project');
-const films = page.data.filter((post) => post.data.type === 'film');
-const other = page.data.filter((post) => post.data.type === 'other');
+if (!page || !Array.isArray(page.data)) {
+  throw new Error("Page data is missing or not an array.");
+}
+
+const projects = page.data.filter((post: any) => post.data.type === 'project');
+const other = page.data.filter((post: any) => post.data.type === 'other');
 ---
 
 <DefaultLayout

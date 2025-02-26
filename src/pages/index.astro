@@ -179,7 +179,7 @@ import { Icon } from "astro-icon/components";
     </section>
 </DefaultLayout>
 <script src="https://player.vimeo.com/api/player.js"></script>
-<script client:load>
+<script is:inline>
     // Wait for DOM to load
     document.addEventListener("DOMContentLoaded", () => {
         const showreelButton = document.getElementById("open-lightbox");
