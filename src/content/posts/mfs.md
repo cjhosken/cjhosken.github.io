@@ -4,7 +4,7 @@ date: "2024-05-10"
 role: "University Assignment"
 excerpt: "An PIC/FLIP particle simulator in Maya."
 img: "MayaFluidSimulator.PNG"
-this.type: "other"
+type: "other"
 ---
 
 ![Cover](/images/content/mfs/MayaFluidSimulator.PNG)
