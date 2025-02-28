@@ -207,15 +207,11 @@ import { Icon } from "astro-icon/components";
 </script>
 <style>
     #about {
-        align-self: center;
-        justify-self: center;
-        margin: 5vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        text-align: center;
         align-items: center;
-        flex-wrap: wrap;
-        max-width: 35vw;
+
     }
 
     h1 {
@@ -226,11 +222,17 @@ import { Icon } from "astro-icon/components";
         font-size: 1.2em;
     }
 
-    #about p {
-        text-align: center;
-        width: 70%;
-        margin: 2ex;
+    #about h1 {
+        padding: 0.5em;
     }
+
+    #about p {
+
+        text-align: center;
+        max-width: 35vh;
+        margin: 2ex auto;
+    }
+
 
     #history {
         display: flex;
