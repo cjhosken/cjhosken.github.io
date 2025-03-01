@@ -176,17 +176,17 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
 
 
 <div width="100%" style="display: flex; flex-direction: column;">
-<button id="resetButton" style="width:10em;height:2em;font-size:1em;margin:1em auto;justify-self:center;"> Restart </button>
-<canvas id="particleCanvas" width="500" height="500" style="margin: 0 auto; justify-self: center;"></canvas>
+<button id="resetButton" style="width:5em;height:2em;font-size:1em;margin:1em auto;justify-self:center;"> Restart </button>
+<canvas id="particleCanvas" style="margin: 0 auto; justify-self: center;"></canvas>
 </div>
 
 <script>
         var CELL_COUNT = 15;
-        var BOUNDS = [500, 500]
+        var BOUNDS = [100, 100]
         var CELL_SIZE = [BOUNDS[0] / CELL_COUNT, BOUNDS[1] / CELL_COUNT]
-        var GRID_SIZE = 25;
+        var GRID_SIZE = 50;
         var OFFSET = [50, -100]
-        var PSCALE = 5;
+        var PSCALE = 1;
         var EXTERNAL = [0, 98];
         var AVERAGE = -1
 
