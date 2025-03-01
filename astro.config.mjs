@@ -7,4 +7,3 @@ export default defineConfig({
     site: "https://cjhosken.github.io",
     integrations: [icon(), mdx()],
 });
-
