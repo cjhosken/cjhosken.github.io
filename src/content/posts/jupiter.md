@@ -27,9 +27,7 @@ To explore the benefits of USD's cross DCC abilities, I decided to model inside 
 
 ![UVs](/images/content/jupiter/uvs.png)
 
-<video controls muted>
-  <source src="/images/content/jupiter/wireframe_turn_for_web.mp4" type="video/mp4">
-</video>
+<iframe src="https://www.fab.com/dope/5bf19a46-e3ad-4489-add9-fe32ffcdf76e" title="Model preview file (5bf19a46-e3ad-4489-add9-fe32ffcdf76e)" class="_g148NR_ AKPfHZv1" allowfullscreen=""></iframe>
 
 Above is the final model of Jupiter. The hardest part of the asset was getting all the intricate details inside the train, as there weren't many references images of those areas.
 
