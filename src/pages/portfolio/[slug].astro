@@ -59,8 +59,8 @@ const {frontmatter, Content, file} = post
 
 <style lang="scss" is:global>
   html {
-      background-color: var(--light-900);
-      color: var(--dark-100);
+    background-color: var(--light-900);
+    color: var(--dark-100);
   }
 
   .my-12 {
@@ -79,6 +79,7 @@ const {frontmatter, Content, file} = post
     align-items: center;
     margin: 2em;
     color: black;
+    word-wrap: break-word;
   }
 
   #info h1 {
@@ -103,6 +104,7 @@ const {frontmatter, Content, file} = post
     font-size: 1.5em;
     padding: 0em 3em;
     max-width: 80vw;
+    word-wrap: break-word;
   }
 
   #content h1 {
@@ -128,10 +130,16 @@ const {frontmatter, Content, file} = post
   }
   
   #content img {
-
     width: 100%;
-
     object-fit: contain;
+  }
+  
+  #content code {
+    font-size: 0.7em;
+  }
+
+  #content code .line {
+    margin-left: 1em;
   }
 
   video {

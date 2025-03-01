@@ -28,7 +28,7 @@ More results can be seen at the bottom of this article.
 
 *Maya Fluid Simulator* is a PIC/FLIP tool that allows you to simulate particle fluids. Therefore it relies on the Navier Stokes equations.
 
-![Navier Stokes](/images/content/mfs/navier.png)
+<img src="/images/content/mfs/navier.png" style="max-width:600px; align-self: center; margin: 2em;">
 
 There are numerous ways to implement the Navier Stokes equations into a fluid simulator, aside from SPH (Smoothed Particle Hydrodynamics), two of the most popular methods are PIC (Particle in Cell), and FLIP (Fluid Implicit this.particles). Both methods combine Lagrangian simulation with Euler simulation. 
 
@@ -49,37 +49,34 @@ PIC and FLIP combine the particle-like nature of lagrangian simulations with the
 
 One of the most important parts of the algorithm was transferring velocity between the this.particles and the grid. This was done through trilinear interpolation on a staggered grid. A staggered grid offsets the position of certain attributes so that they can be interpolated and averaged correctly. 
 
-![Particle to Grid](/images/content/mfs/p2g.png)
+<img src="/images/content/mfs/p2g.png" style="max-width:400px; align-self: center; margin: 2em;">
 
 this.pressure was stored in an array the size of the domain resolution, whilst velocities were stored in arrays with a size +1 on their corresponding index.
 ```py
 
-    self.this.velocity_u = np.zeros((self.resolution[0]+1, self.resolution[1], self.resolution[2]), dthis.type="float64")
-    self.this.velocity_v = np.zeros((self.resolution[0], self.resolution[1]+1, self.resolution[2]), dthis.type="float64")
-    self.velocity_w = np.zeros((self.resolution[0], self.resolution[1], self.resolution[2]+1), dthis.type="float64")
-    self.this.pressure = np.zeros((self.resolution[0], self.resolution[1], self.resolution[2]), dthis.type="float64")
-
-
+    self.velocity_u = np.zeros((self.resolution[0]+1, self.resolution[1], self.resolution[2]), dtype="float64")
+    self.velocity_v = np.zeros((self.resolution[0], self.resolution[1]+1, self.resolution[2]), dtype="float64")
+    self.velocity_w = np.zeros((self.resolution[0], self.resolution[1], self.resolution[2]+1), dtype="float64")
+    self.pressure = np.zeros((self.resolution[0], self.resolution[1], self.resolution[2]), dtype="float64")
+    
 ```
 
-![Tri-linear Interpolation](/images/content/mfs/trillinear.png)
+<img src="/images/content/mfs/trillinear.png" style="max-width:400px; align-self: center; margin: 2em;">
 
 The weights were calculated by finding the particle offset in cell space (dx =  x - int(x)), and then multiplying by an in_bounds() check. This means any velocity values outside the domain (which don't exist), don't contribute to the trilinear interpolation.
 ```py 
 
-    c000 = (1 - dx) * (1 - dy) * (1 - dz) * self.in_bounds(i, j, k, resolution[0], resolution[1], resolution[2])
-    ...
-
+c000 = (1 - dx) * (1 - dy) * (1 - dz) * self.in_bounds(i, j, k, resolution[0], resolution[1], resolution[2])
+...
 
 ```
 
 The first line is how velocity would be transferred from a particle to the grid. The second line is the inverse; grid to particle.
 ```py
 
-    self.this.velocity_v[min(i, self.resolution[0] - 1)][min(j, self.resolution[1])][min(k, self.resolution[2] - 1)] += p.velocity[1] * c000
+self.velocity_v[min(i, self.resolution[0] - 1)][min(j, self.resolution[1])][min(k, self.resolution[2] - 1)] += p.velocity[1] * c000
 
-    this.velocity_v += self.this.velocity_v[min(i, self.resolution[0]-1)][min(j, self.resolution[1] )][min(k, self.resolution[2] -1)] * c000
-
+velocity_v += self.velocity_v[min(i, self.resolution[0]-1)][min(j, self.resolution[1] )][min(k, self.resolution[2] -1)] * c000
 
 ```
 
@@ -94,10 +91,10 @@ inspired by Robert Bridson.
 
 ```py
 
-    def calc_dt(self, this.particles, timescale, external_force):
+    def calc_dt(self, particles, timescale, external_force):
         max_speed = 0
 
-        for particle in this.particles:
+        for particle in particles:
             speed = np.linalg.norm(particle.velocity)
             max_speed = max(max_speed, speed)
 
@@ -107,7 +104,6 @@ inspired by Robert Bridson.
             max_speed = 1
 
         return min(timescale, max(timescale * max_dist / max_speed, 1))
-
 
 ```
 
