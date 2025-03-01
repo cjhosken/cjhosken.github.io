@@ -177,16 +177,19 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
 
 <div width="100%" style="display: flex; flex-direction: column;">
 <button id="resetButton" style="width:5em;height:2em;font-size:1em;margin:1em auto;justify-self:center;"> Restart </button>
-<canvas id="particleCanvas" style="margin: 0 auto; justify-self: center;"></canvas>
+<canvas id="particleCanvas" width="300" height="300" style="margin: 0 auto; justify-self: center;"></canvas>
 </div>
 
 <script>
-        var CELL_COUNT = 15;
-        var BOUNDS = [100, 100]
+        const canvas = document.getElementById('particleCanvas');
+        const canvasWidth = canvas.width;  // Get canvas width
+        const canvasHeight = canvas.height; // Get canvas height
+        var CELL_COUNT = canvas.width/20;
+        var BOUNDS = [canvas.width, canvas.height]
         var CELL_SIZE = [BOUNDS[0] / CELL_COUNT, BOUNDS[1] / CELL_COUNT]
-        var GRID_SIZE = 50;
-        var OFFSET = [50, -100]
-        var PSCALE = 1;
+        var GRID_SIZE = canvas.width/10;
+        var OFFSET = [canvas.width/2, -canvas.height/2]
+        var PSCALE = canvas.width/100;
         var EXTERNAL = [0, 98];
         var AVERAGE = -1
 
@@ -247,6 +250,12 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
             this.canvas = document.getElementById('particleCanvas');
             this.ctx = this.canvas.getContext('2d');
 
+            this.reset();
+
+            this.animate = this.animate.bind(this);
+          }
+
+          reset() {
             this.particles = new Array(GRID_SIZE * GRID_SIZE).fill(null)
             this.velocity_u = new Array(CELL_COUNT + 1).fill(0).map(() => new Array(CELL_COUNT).fill(0));
             this.velocity_v = new Array(CELL_COUNT).fill(0).map(() => new Array(CELL_COUNT + 1).fill(0));
@@ -269,8 +278,6 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
                     );
                 }
             }
-
-            this.animate = this.animate.bind(this);
           }
 
 
@@ -763,7 +770,7 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
 
                     if (total_weight > 0) last_vel_v /= total_weight
 
-                    let flipFac = 0.7
+                    let flipFac = 0.93
 
                     particle.velocity[0] = (vel_u) * (1 - flipFac) + (particle.velocity[0] + vel_u - last_vel_u) * flipFac
                     particle.velocity[1] = (vel_v) * (1 - flipFac) + (particle.velocity[1] + vel_v - last_vel_v) * flipFac
@@ -896,7 +903,7 @@ This a simple 2D version of the simulator that was used for debugging the Maya p
 
         lock = new Game();
 
-        document.getElementById('resetButton').addEventListener("click", function(){delete lock; lock = new Game(); lock.animate();})
+        document.getElementById('resetButton').addEventListener("click", function(){lock.reset();})
 
         document.addEventListener('DOMContentLoaded', function(){delete lock; lock = new Game(); lock.animate()});
 
