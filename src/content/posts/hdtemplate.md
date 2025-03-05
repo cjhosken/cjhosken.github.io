@@ -5,6 +5,7 @@ role: "Solo Project"
 excerpt: "A simple Hydra Delegate raytracer written for UsdView and Houdini Solaris."
 img: "cover.png"
 type: "other"
+keywords: "USD, Render, Delegate, Hydra, raytracer, UsdView, Houdini, Solaris, Christopher Hosken, hdTemplate, hdDelegate, hdRender, CGI, VFX"
 ---
 
 ![UsdView](/images/content/hdtemplate/cover.png)

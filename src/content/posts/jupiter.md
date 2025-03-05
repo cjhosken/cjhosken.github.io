@@ -5,6 +5,7 @@ role: "Solo Project"
 excerpt: "A case study on USD asset creation."
 img: "cover.jpg"
 type: "project"
+keywords: "Jupiter, Steam, Train, USD, Asset, Maya, Blender, Houdini, Christopher Hosken, CGI, VFX, Animation, Pipeline"
 ---
 
 ![References](/images/content/jupiter/cover.jpg)

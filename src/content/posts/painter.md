@@ -5,6 +5,7 @@ role: "University Assignment"
 excerpt: "An MSPaint-like application written in C++ and SDL2."
 img: "desert_wip.png"
 type: "other"
+keywords: "C++, Paint, Application, Tool, Christopher Hosken, Bournemouth University, VFX, CGI, Animation, Programming, SDL2, MSPaint, PAINter"
 ---
 
 ![PAINter](/images/content/painter/desert_wip.png)

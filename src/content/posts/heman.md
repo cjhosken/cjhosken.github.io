@@ -5,6 +5,7 @@ role: "University Assignment"
 excerpt: "A stylzed hero asset made in ZBrush, Maya, and Houdini."
 img: "cover.png"
 type: "project"
+keywords: "Heman, Concept, Sculpt, Modelling, Texturing, Bournemouth University, Christopher Hosken, USD, Pipeline, Rigging, ZBrush, Maya, Houdini, Groom, Hero, Asset, VFX, CGI, Animation, Superhero, 3D Model, 3D Character"
 ---
 
 ![Cover](/images/content/heman/cover.png)

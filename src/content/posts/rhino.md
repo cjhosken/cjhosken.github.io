@@ -5,12 +5,12 @@ role: "Solo Project"
 excerpt: "Experimenting with MPM and Solaris environment layouts."
 img: "cover.png"
 type: "project"
+keywords: "Houdini, Rhino, MPM, Solaris, Environment, Christopher Hosken, VFX, Animation, Simulation. Mud, Fluid, FLIP, USD, Alembic, Creature Station"
 ---
 
 ![Cover](/images/content/rhino/cover.png)
 
 ## Introduction
-
 Rhino FX was an exploriation into the MPM tools in Houdini, as well as how to build environments using Houdini Solaris. I used Quixel assets for the envionment, and found an animation of a Rhino online. The FX was done by me in Houdini.
 
 <video controls muted>
@@ -18,8 +18,6 @@ Rhino FX was an exploriation into the MPM tools in Houdini, as well as how to bu
 </video>
 
 ## Breakdown
-
-
 A viewport animation of the environment. Mostly made up of Quixel Megascans, I re-purposed an old USD Quixel asset generator to quickly make instancable USD assets. The trees were made using Houdini's tree generation tools. I had enough variants to populate the scene without repetition.
 
 <video controls muted>

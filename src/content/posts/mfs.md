@@ -5,6 +5,7 @@ role: "University Assignment"
 excerpt: "An PIC/FLIP particle simulator in Maya."
 img: "MayaFluidSimulator.PNG"
 type: "other"
+keywords: "Maya, Fluid, Simulator, Tool, Maya, Python, PIC, FLIP, Christopher Hosken, Bournemouth University, VFX, CGI, Animation, Programming"
 ---
 
 ![Cover](/images/content/mfs/MayaFluidSimulator.PNG)

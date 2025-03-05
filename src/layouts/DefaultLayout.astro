@@ -8,6 +8,7 @@ import Footer from "../components/Footer.astro"
 const {
     title="Christopher Hosken | Generalist TD",
     description="The portfolio website for Christopher Hosken.",
+    keywords="",
     author="Christopher Hosken"
 } = Astro.props
 ---
@@ -22,10 +23,7 @@ const {
         <SiteMeta
             title={title}
             description={description.substring(0, 100)}
-            url={Astro.site 
-            ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-            : `https://cjhosken.github.io/${title.toLowerCase().replaceAll(' ', '-')}`}
-            image=/favicon.png
+            keywords={keywords}
             author={author}    
         />
         <link rel="icon" type="image/svg+xml" href="/images/common/favicon.png">

@@ -5,6 +5,7 @@ role: "Solo Project"
 excerpt: "A case study on CG head replacements, inspired by an Industrial Light and Magic talk on The Creator."
 img: "cover.jpg"
 type: "project"
+keywords: "The Creator, ILM, VFX, CG Head Replacement, Keen Tools, Blender, Nuke, Christopher Hosken, Industrial Light and Magic, CGI"
 ---
 
 # Exploring VFX: CG Head Replacement

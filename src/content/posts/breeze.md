@@ -5,6 +5,7 @@ date: "2022-08-13"
 role: "Solo Project"
 excerpt: "A 3D application with a simple built-in raytracer written in C++ with Qt and OpenGL."
 img: "breeze_render_engine.png"
+keywords: "Breeze, Render Engine, 3D, Application, Raytracer, C++, Christopher Hosken, Qt, OpenGL, CGI, VFX, Animation"
 ---
 
 ![Cover](/images/content/breeze/breeze_render_engine.png)

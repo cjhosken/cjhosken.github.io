@@ -37,9 +37,10 @@ const {frontmatter, Content, file} = post
 ---
 
 <MarkdownLayout
-  title=""
+  title={frontmatter.title}
   img={post_banner}
   description={frontmatter.excerpt}
+  keywords={frontmatter.keywords}
 >
   <section class="my-12">
       <div>
