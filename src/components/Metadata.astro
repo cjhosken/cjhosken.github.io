@@ -1,0 +1,106 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  keywords?: string[];
+  favicon?: string;
+  image?: string;
+  canonicalUrl?: string;
+  type?: 'website' | 'article' | 'blog';
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  tags?: string[];
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  keywords = [],
+  favicon = '/favicon.svg',
+  image = '/default-social.jpg',
+  canonicalUrl = Astro.url.href,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  author,
+  tags = [],
+  noindex = false,
+} = Astro.props;
+
+// Combine automatic and manual keywords
+const allKeywords = [
+  ...new Set([
+    ...keywords,
+    ...tags,
+    'astro', 
+    'web development',
+    // Add other relevant default keywords
+  ])
+].join(', ');
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="keywords" content={allKeywords} />
+<link rel="icon" type="image/svg+xml" href={favicon} />
+{author && <meta name="author" content={author} />}
+
+<!-- Search Engine Verification -->
+<meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.site).href} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content="My Site Name" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(image, Astro.site).href} />
+<meta name="twitter:creator" content={author || '@yourhandle'} />
+
+<!-- Article-specific tags -->
+{type === 'article' && publishedTime && (
+  <meta property="article:published_time" content={publishedTime} />
+)}
+{type === 'article' && modifiedTime && (
+  <meta property="article:modified_time" content={modifiedTime} />
+)}
+{type === 'article' && tags.length > 0 && tags.map(tag => (
+  <meta property="article:tag" content={tag} />
+))}
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{type === 'article' ? 'Article' : 'WebSite'}",
+  "headline": "{title}",
+  "description": "{description}",
+  {author && `"author": {
+    "@type": "Person",
+    "name": "${author}"
+  },`}
+  "datePublished": "{publishedTime || new Date().toISOString()}",
+  {modifiedTime && `"dateModified": "${modifiedTime}",`}
+  "image": "{new URL(image, Astro.site).href}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Your Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{new URL('/logo.png', Astro.site).href}"
+    }
+  }
+}
+</script>

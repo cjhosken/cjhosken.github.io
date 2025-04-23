@@ -7,22 +7,22 @@ const primaryKeywords = [
   'Technical Director', '3D Technical Director', "FX Technical Director", "Pipeline Technical Director",
   'Bournemouth University', 'Computer Animation Technical Arts', "Chiang Mai International School",
   "Bournemouth", "UK", "Thailand", "Chiang Mai",
-  'Christopher Hosken Portfolio', 'Chris Hosken TD', 'Chris Hosken VFX', "Christopher Hosken Generalist",
+  'Christopher Hosken Portfolio', 'Chris Hosken TD', 'Chris Hosken VFX', "Christopher Hosken Generalist"
 ];
 
 const secondaryKeywords = [
-  "Contact", "CV", "Job", "Resume", "Hire", "Work"
+  "Portfolio", "Works", "Projects", "Showreel", "Demo Reel", "Reel"
 ];
 
 const pageMetadata = {
   keywords: [...primaryKeywords, ...secondaryKeywords],
-  title:"Contact",
-  description: "Get in contact with me.",
+  title: "Projects",
+  description: "A collection of my projects and works.",
   image: '/images/seo-homepage.jpg'
 };
 ---
 
 <Layout metadata={pageMetadata}>
   <h1>Welcome to Astro</h1>
-  <p>This is your contact with Material Design navbar!</p>
+  <p>This is your projects with Material Design navbar!</p>
 </Layout>

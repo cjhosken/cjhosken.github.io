@@ -1,0 +1,154 @@
+---
+// Navbar.astro
+import '@material/web/button/text-button.js';
+import '@material/web/button/filled-button.js';
+import '@material/web/iconbutton/icon-button.js';
+import { Icon } from 'astro-icon/components'
+---
+
+<header class="navbar">
+  <div class="navbar-container">
+    <!-- Logo/Brand -->
+    <a href="/" class="brand">
+      <img src="/favicon.svg" alt="Logo" width="32" height="32" />
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a class="md-button" href="/">Home</a>
+      <a class="md-button" href="/projects/">Projects</a>
+      <a class="md-button" href="/contact/">Contact</a>
+    </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-button md-button" aria-label="Open menu">
+      <Icon name="mdi:menu" size="32" />
+    </button>
+  </div>
+  
+  <!-- Fullscreen Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <div class="mobile-overlay-content">
+      <a href="/" class="mobile-nav-item md-button">Home</a>
+      <a href="/projects/" class="mobile-nav-item md-button">Projects</a>
+      <a href="/contact/" class="mobile-nav-item md-button">Contact</a>
+    </div>
+    <button class="close-button md-button" aria-label="Close menu">
+      <Icon name="mdi:close" size="32" />
+    </button>
+  </div>
+</header>
+
+<style is:global>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--md-sys-color-on-surface);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .desktop-nav {
+    display: flex;
+    gap: 5em;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+  }
+  
+  /* Fullscreen overlay styles */
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--md-sys-color-surface);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .mobile-overlay.open {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .mobile-overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .mobile-nav-item {
+    width: 100%;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1.5rem;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    margin-right: 1em;
+    color: var(--md-sys-color-on-surface);
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+    
+    .mobile-menu-button {
+      display: block;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.querySelector('.mobile-menu-button').addEventListener('click', () => {
+    const overlay = document.getElementById('mobileOverlay');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when overlay is open
+  });
+  
+  document.querySelector('.close-button').addEventListener('click', () => {
+    const overlay = document.getElementById('mobileOverlay');
+    overlay.classList.remove('open');
+    document.body.style.overflow = ''; // Restore scrolling
+  });
+</script>

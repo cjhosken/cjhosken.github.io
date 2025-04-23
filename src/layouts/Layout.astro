@@ -1,0 +1,37 @@
+---
+// src/layouts/Layout.astro
+import Navbar from '../components/Navbar.astro';
+import Metadata from '../components/Metadata.astro';
+import '../styles/theme.css';
+
+// Default metadata values
+const defaultTitle = 'Christopher Hosken | Generalist TD';
+const defaultDescription = 'Bournemouth, UK based Generalist TD with experience across the full CG/VFX pipeline with a focus on tools and pipeline development. Currently studying at Bournemouth University.';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- Include Metadata component with default values -->
+    <Metadata 
+      title={Astro.props.title || defaultTitle}
+      description={Astro.props.description || defaultDescription}
+      {...Astro.props.metadata}
+    />
+    
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Navbar>
+      <span slot="brand">{Astro.props.title || defaultTitle}</span>
+    </Navbar>
+    
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

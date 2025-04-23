@@ -2,5 +2,6 @@
 # Full syntax: https://developers.google.com/search/docs/advanced/robots/create-robots-txt
 User-agent: *
 Allow: /
+Disallow: /contact
 
-Sitemap: https://cjhosken.github.io/sitemap-index.xml
+Sitemap: https://cjhosken.github.io/sitemap.xml
