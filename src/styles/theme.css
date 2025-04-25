@@ -7,10 +7,10 @@
     --md-sys-color-on-primary-container: #21005D;
     
     /* Surface colors */
-    --md-sys-color-surface: #FFFBFE;
-    --md-sys-color-on-surface: #1C1B1F;
-    --md-sys-color-surface-variant: #E7E0EC;
-    --md-sys-color-on-surface-variant: #49454F;
+    --md-sys-color-surface: #1C1B1F;
+    --md-sys-color-on-surface: #FFFBFE;
+    --md-sys-color-surface-variant: #49454F;
+    --md-sys-color-on-surface-variant: #E7E0EC;
     
     /* Other colors */
     --md-sys-color-error: #B3261E;
