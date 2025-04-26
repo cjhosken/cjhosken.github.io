@@ -1,0 +1,126 @@
+---
+// Footer.astro
+import { Icon } from 'astro-icon/components'
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3 class="footer-heading">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="/" class="md-button">Home</a></li>
+        <li><a href="/projects/" class="md-button">Projects</a></li>
+        <li><a href="/contact/" class="md-button">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3 class="footer-heading">Socials</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/christopher-hosken" target="_blank" aria-label="LinkedIn" class="md-button">
+            <Icon name="mdi:linkedin" size="24" />
+          </a>
+        <a href="https://github.com/cjhosken" target="_blank" aria-label="GitHub" class="md-button">
+          <Icon name="mdi:github" size="24" />
+        </a>
+        <a href="https://www.artstation.com/cjhosken" target="_blank" aria-label="ArtStation" class="md-button">
+            <Icon name="mdi:artstation" size="24" />
+        </a>
+        <a href="https://www.youtube.com/@cjhosken" target="_blank" aria-label="Youtube" class="md-button">
+            <Icon name="mdi:youtube" size="24" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3 class="footer-heading">Contact</h3>
+      <ul class="footer-links">
+        <li><a href="mailto:hoskenchristopher@gmail.com" class="md-button">hoskenchristopher@gmail.com</a></li>
+        <li><a href="tel:+447393979912" class="md-button">(+44) 7393979912</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} Christopher Hosken. </p>
+  </div>
+</footer>
+
+<style is:global>
+  .footer {
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--md-sys-color-outline-variant);
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--md-sys-color-primary);
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-links li a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--md-sys-color-outline-variant);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--md-sys-color-on-surface-variant);
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .footer-section {
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footer-links {
+      align-items: center;
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+  }
+</style>

@@ -10,7 +10,7 @@ import { Icon } from 'astro-icon/components'
   <div class="navbar-container">
     <!-- Logo/Brand -->
     <a href="/" class="brand">
-      <img src="/favicon.svg" alt="Logo" width="32" height="32" />
+      <img src="/favicon_white.svg" alt="Logo" width="100%" height="48" />
     </a>
     
     <!-- Desktop Navigation -->
@@ -89,17 +89,18 @@ import { Icon } from 'astro-icon/components'
     width: 100%;
     height: 100%;
     background-color: var(--md-sys-color-surface);
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 999;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
   .mobile-overlay.open {
-    display: flex;
+    visibility: visible;
     opacity: 1;
   }
   

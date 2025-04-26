@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import '@material/web/button/filled-button.js';
+import { Icon } from 'astro-icon/components';
 
 const primaryKeywords = [
   'Christopher Hosken', 'Chris Hosken',
@@ -23,6 +26,140 @@ const pageMetadata = {
 ---
 
 <Layout metadata={pageMetadata}>
-  <h1>Welcome to Astro</h1>
-  <p>This is your contact with Material Design navbar!</p>
+  <main class="contact-container">
+    <h1 class="contact-title">Contact</h1>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <Icon name="mdi:email" size="24" />
+          <div>
+            <h2>Email</h2>
+            <a href="mailto:hoskenchristopher@gmail.com" class="md-button">hoskenchristopher@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <Icon name="mdi:map-marker" size="24" />
+          <div>
+            <h2>Location</h2>
+            <a href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9" target="_blank" class="md-button">Bournemouth, UK</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <Icon name="mdi:file-download" size="24" />
+          <div>
+            <h2>Download CV</h2>
+            <md-filled-button>
+              <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button">Curriculum Vitae</a>
+            </md-filled-button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.963371315704!2d-1.8787287234375!3d50.72135197159348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a1d4f1a4a5a5%3A0x1f70e5a1b5d0f0f0!2sBournemouth!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"
+          aria-label="Map of Bournemouth, UK"
+          title="My Location in Bournemouth, UK">
+        </iframe>
+      </div>
+    </div>
+    <ContactForm />
+  </main>
+
+  <style is:global>
+    .contact-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    .contact-title {
+      color: var(--md-sys-color-primary);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background: var(--md-sys-color-surface-container-low);
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    
+    .contact-item h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: var(--md-sys-color-on-surface);
+    }
+    
+    .contact-item p {
+      margin: 0;
+      color: var(--md-sys-color-on-surface-variant);
+    }
+    
+    .contact-map {
+      height: 400px;
+      background: var(--md-sys-color-surface-container-high);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    md-filled-button a {
+      color: var(--md-sys-color-on-primary);
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  
+  .contact-map {
+    height: 300px;
+    order: -1;
+  }
+  
+  /* Add these new rules */
+  .contact-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
 </Layout>

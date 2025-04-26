@@ -1,0 +1,178 @@
+---
+// src/components/Web3ContactForm.astro
+import { Icon } from 'astro-icon/components'
+---
+
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="d26e944b-e198-429e-9d3e-f191f2589f9b">
+  <input type="hidden" name="subject" value="New Message!">
+  <input type="hidden" name="from_name" value="cjhosken.github.io">
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+  <input type="checkbox" name="botcheck" style="display: none;">
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <div class="input-wrapper">
+      <Icon name="mdi:email" class="input-icon" />
+      <input 
+        type="email" 
+        id="email" 
+        name="Email" 
+        placeholder="your.email@example.com" 
+        required 
+        class="md-text-field"
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <div class="input-wrapper">
+      <Icon name="mdi:format-title" class="input-icon" />
+      <input 
+        type="text" 
+        id="subject" 
+        name="Subject" 
+        placeholder="Regarding..." 
+        required 
+        class="md-text-field"
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <div class="input-wrapper">
+      <Icon name="mdi:message-text" class="input-icon textarea-icon" />
+      <textarea 
+        id="message" 
+        name="message" 
+        placeholder="Your message here..." 
+        rows="5" 
+        required 
+        class="md-text-field"
+      ></textarea>
+    </div>
+  </div>
+
+  <button type="submit" class="submit-button md-box-button"> Send Message </button>
+
+</form>
+
+<style is:global>
+  .contact-form {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--md-sys-color-on-surface);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--md-sys-color-on-surface-variant);
+  }
+
+  .textarea-icon {
+    top: 18px;
+    transform: none;
+  }
+
+  .md-text-field {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 40px;
+    border: 2px solid var(--md-sys-color-outline);
+    border-radius: 4px;
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    resize: none;
+  }
+
+  textarea.md-text-field {
+    padding-top: 1rem;
+    min-height: 150px;
+  }
+
+  .md-text-field:focus {
+    outline: none;
+    border-color: var(--md-sys-color-primary);
+    box-shadow: 0 0 0 2px var(--md-sys-color-primary-container);
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .form-status {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+  }
+
+  .form-status.success {
+    display: block;
+    background: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    border: 1px solid var(--md-sys-color-primary);
+  }
+
+  .form-status.error {
+    display: block;
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+  }
+
+  @media (max-width: 600px) {
+    .contact-form {
+      padding: 1.5rem;
+    }
+  }
+</style>
+<script is:inline>
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  // Get form values
+  const email = document.getElementById('email').value;
+  const subjectInput = document.getElementById('subject');
+  
+  // Set hidden fields
+  document.querySelector('[name="from_name"]').value = email;
+  document.querySelector('[name="subject"]').value = subjectInput.value;
+  
+  // Optional: Add loading state
+  const button = document.querySelector('.submit-button');
+  button.disabled = true;
+  button.innerHTML = 'Sending...';
+  
+  // If you want to keep using the fetch API instead of form submission:
+  // e.preventDefault();
+  // const formData = new FormData(e.target);
+  // fetch(e.target.action, {
+  //   method: 'POST',
+  //   body: formData
+  // }).then(...);
+});
+</script>

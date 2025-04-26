@@ -6,4 +6,5 @@ import icon from "astro-icon";
 export default defineConfig({
     site: 'https://cjhosken.github.io',
     integrations: [icon()],
+    output: 'server'
 });

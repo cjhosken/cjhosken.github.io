@@ -19,6 +19,9 @@
     /* Elevation shadows */
     --md-sys-elevation-level-0: none;
     --md-sys-elevation-level-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+
+    --md-sys-color-outline: #505158;
 }
   
 body {
@@ -45,3 +48,20 @@ button {
     color: var(--md-sys-color-primary)
 }
 
+
+.md-box-button {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color ease 0.25s;
+}
+
+.md-box-button:hover {
+    background-color: transparent;
+    border: solid 2px var(--md-sys-color-on-primary);
+}
+
+.md-box-button:hover {
+    cursor: pointer;
+}

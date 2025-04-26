@@ -2,6 +2,7 @@
 // src/layouts/Layout.astro
 import Navbar from '../components/Navbar.astro';
 import Metadata from '../components/Metadata.astro';
+import Footer from '../components/Footer.astro'
 import '../styles/theme.css';
 
 // Default metadata values
@@ -29,9 +30,9 @@ const defaultDescription = 'Bournemouth, UK based Generalist TD with experience 
     <Navbar>
       <span slot="brand">{Astro.props.title || defaultTitle}</span>
     </Navbar>
-    
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
