@@ -1,0 +1,169 @@
+---
+// src/components/Lightbox.astro
+const { triggerId = "open-video-lightbox" } = Astro.props;
+
+const defaultVideos = [
+    { id: "1041742649", title: "Generalist TD Reel" },
+    { id: "1068440679", title: "CFX Artist Reel" },
+];
+---
+
+<div id="video-lightbox" class="lightbox">
+    <div class="lightbox-card">
+        <div class="lightbox-topbar">
+            <select class="video-select">
+                {defaultVideos.map((video) => (
+                    <option value={video.id}>{video.title}</option>
+                ))}
+            </select>
+        </div>
+        <div class="video-container">
+            <iframe
+                class="video-iframe"
+                src={`https://player.vimeo.com/video/${defaultVideos[0].id}`}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+<style>
+    .lightbox {
+        position: fixed; /* Changed from absolute to fixed */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .lightbox.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lightbox-card {
+        width: 90vw;
+        max-width: 1200px;
+        background: var(--md-sys-color-surface);
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: var(--md-sys-elevation-level-3);
+        transform: scale(0.95);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media (min-width: 768px) {
+        .lightbox-card {
+            width: 80vw;
+            padding: 24px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .lightbox-card {
+            width: 70vw;
+        }
+    }
+
+    .lightbox.active .lightbox-card {
+        transform: scale(1);
+    }
+
+    .lightbox-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        gap: 16px;
+    }
+
+    .video-select {
+        padding: 8px 16px;
+        flex-grow: 1;
+        background: var(--md-sys-color-surface-variant);
+        color: var(--md-sys-color-on-surface-variant);
+        border: 1px solid var(--md-sys-color-outline);
+        border-radius: 20px;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s ease;
+    }
+
+    .material-symbols-outlined {
+        font-size: 24px;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        background: var(--md-sys-color-surface-variant);
+        border-radius: 8px;
+    }
+
+    .video-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+        const lightbox = document.querySelector(".lightbox");
+        const videoPlayer = document.querySelector(".video-iframe");
+        const closeBtn = document.querySelector(".close-button");
+        const videoSelect = document.querySelector(".video-select");
+        const triggerButton = document.getElementById("open-video-lightbox");
+
+        // Open lightbox
+        if (triggerButton) {
+            triggerButton.addEventListener("click", () => {
+                lightbox.classList.add("active");
+                document.body.style.overflow = "hidden";
+            });
+        }
+
+        // Change video when selection changes
+        videoSelect.addEventListener("change", () => {
+            const selectedVideoId = videoSelect.value;
+            videoPlayer.src = `https://player.vimeo.com/video/${selectedVideoId}`;
+        });
+
+        // Close lightbox
+        closeBtn.addEventListener("click", () => {
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+        });
+
+        // Close when clicking backdrop
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove("active");
+                document.body.style.overflow = "";
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove("active");
+                document.body.style.overflow = "";
+            }
+        });
+    });
+</script>

@@ -5,17 +5,17 @@
     --md-sys-color-on-primary: #FFFFFF;
     --md-sys-color-primary-container: #EADDFF;
     --md-sys-color-on-primary-container: #21005D;
-    
+
     /* Surface colors */
     --md-sys-color-surface: #1C1B1F;
     --md-sys-color-on-surface: #FFFBFE;
     --md-sys-color-surface-variant: #0c0c0e;
     --md-sys-color-on-surface-variant: #b2b0b4;
-    
+
     /* Other colors */
     --md-sys-color-error: #B3261E;
     --md-sys-color-on-error: #FFFFFF;
-    
+
     /* Elevation shadows */
     --md-sys-elevation-level-0: none;
     --md-sys-elevation-level-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -23,7 +23,7 @@
 
     --md-sys-color-outline: #505158;
 }
-  
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -41,6 +41,7 @@ button {
     text-decoration: none;
     color: var(--md-sys-color-on-surface);
     transition: color ease 0.25s;
+    font-size: 1em;
 }
 
 .md-button:hover {
@@ -52,7 +53,7 @@ button {
     background-color: var(--md-sys-color-primary);
     color: var(--md-sys-color-on-primary);
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 2em;
     border: solid 2px transparent;
     transition: background-color ease 0.25s;
 }
@@ -84,4 +85,49 @@ button {
 ::-webkit-scrollbar-thumb {
     background: var(--md-sys-color-primary);
     border-radius: 5px;
+}
+
+
+
+.container {
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    padding-top: 64px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    /* Needed for absolute positioning of pseudo-element */
+    z-index: 1;
+    /* Ensure content stays above blurred background */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: blur(10px) brightness(50%);
+    z-index: -1;
+    /* Send the background behind the content */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
 }
