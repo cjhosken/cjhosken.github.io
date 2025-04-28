@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 Disallow: /contact
 
-Sitemap: https://cjhosken.github.io/sitemap.xml
+Sitemap: https://cjhosken.github.io/sitemap-index.xml

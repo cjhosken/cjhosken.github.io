@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Map from '../components/Map.astro';
+import '@material/web/button/filled-button.js';
+import { Icon } from 'astro-icon/components';
+
+
+
+const pageMetadata = {
+  keywords: [],
+  title:"Error | 404",
+  description: "You shouldn't be here...",
+  image: '/images/seo-homepage.jpg'
+};
+---
+
+<Layout metadata={pageMetadata}>
+  <main class="fof-container">
+    <h1> Uh Oh! This page doesn't exist!</h1>
+    <a id="back-button" class="md-button md-box-button" href="/">Take me home!</a>
+  </main>
+
+  <style is:global> 
+    .fof-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #back-button {
+      width: 50%;
+    }
+
+  </style>
+</Layout>

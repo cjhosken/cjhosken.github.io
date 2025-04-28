@@ -13,7 +13,6 @@ import { Icon } from 'astro-icon/components'
   <div class="form-group">
     <label for="email">Email Address</label>
     <div class="input-wrapper">
-      <Icon name="mdi:email" class="input-icon" />
       <input 
         type="email" 
         id="email" 
@@ -28,7 +27,6 @@ import { Icon } from 'astro-icon/components'
   <div class="form-group">
     <label for="subject">Subject</label>
     <div class="input-wrapper">
-      <Icon name="mdi:format-title" class="input-icon" />
       <input 
         type="text" 
         id="subject" 
@@ -43,7 +41,6 @@ import { Icon } from 'astro-icon/components'
   <div class="form-group">
     <label for="message">Message</label>
     <div class="input-wrapper">
-      <Icon name="mdi:message-text" class="input-icon textarea-icon" />
       <textarea 
         id="message" 
         name="message" 
@@ -61,9 +58,11 @@ import { Icon } from 'astro-icon/components'
 
 <style is:global>
   .contact-form {
+    display: flex;
+    flex-direction: column;
     max-width: 900px;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 3rem;
     background: var(--md-sys-color-surface-container-low);
     border-radius: 12px;
   }
@@ -81,25 +80,13 @@ import { Icon } from 'astro-icon/components'
   }
 
   .input-wrapper {
-    position: relative;
-  }
-
-  .input-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--md-sys-color-on-surface-variant);
-  }
-
-  .textarea-icon {
-    top: 18px;
-    transform: none;
+    width: 100%;
   }
 
   .md-text-field {
+    box-sizing: border-box;
     width: 100%;
-    padding: 0.75rem 1rem 0.75rem 40px;
+    padding: 0.75rem 1rem;
     border: 2px solid var(--md-sys-color-outline);
     border-radius: 4px;
     background: var(--md-sys-color-surface);
@@ -110,7 +97,6 @@ import { Icon } from 'astro-icon/components'
   }
 
   textarea.md-text-field {
-    padding-top: 1rem;
     min-height: 150px;
   }
 

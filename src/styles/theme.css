@@ -48,12 +48,12 @@ button {
     color: var(--md-sys-color-primary)
 }
 
-
 .md-box-button {
     background-color: var(--md-sys-color-primary);
     color: var(--md-sys-color-on-primary);
     padding: 10px 20px;
     border-radius: 4px;
+    border: solid 2px transparent;
     transition: background-color ease 0.25s;
 }
 

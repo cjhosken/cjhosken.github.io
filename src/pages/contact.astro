@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/ContactForm.astro';
+import Map from '../components/Map.astro';
 import '@material/web/button/filled-button.js';
 import { Icon } from 'astro-icon/components';
 
@@ -59,16 +60,7 @@ const pageMetadata = {
       </div>
       
       <div class="contact-map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.963371315704!2d-1.8787287234375!3d50.72135197159348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a1d4f1a4a5a5%3A0x1f70e5a1b5d0f0f0!2sBournemouth!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
-          width="100%" 
-          height="100%" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy"
-          aria-label="Map of Bournemouth, UK"
-          title="My Location in Bournemouth, UK">
-        </iframe>
+        <Map></Map>
       </div>
     </div>
     <ContactForm />
@@ -126,11 +118,7 @@ const pageMetadata = {
       border-radius: 12px;
       overflow: hidden;
     }
-    
-    md-filled-button a {
-      color: var(--md-sys-color-on-primary);
-      text-decoration: none;
-    }
+
     
     @media (max-width: 768px) {
   .contact-content {
@@ -139,7 +127,6 @@ const pageMetadata = {
   }
   
   .contact-map {
-    height: 300px;
     order: -1;
   }
   
