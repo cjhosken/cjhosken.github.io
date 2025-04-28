@@ -92,6 +92,7 @@ button {
 .container {
     align-items: center;
     padding: 2rem 0rem;
+    width: 100%;
 }
 
 .header {
@@ -128,6 +129,8 @@ button {
 }
 
 .header p {
+    text-align: center;
+    margin: 0em 2rem;
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }

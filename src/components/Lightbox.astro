@@ -126,9 +126,21 @@ const defaultVideos = [
     document.addEventListener("DOMContentLoaded", () => {
         const lightbox = document.querySelector(".lightbox");
         const videoPlayer = document.querySelector(".video-iframe");
-        const closeBtn = document.querySelector(".close-button");
         const videoSelect = document.querySelector(".video-select");
         const triggerButton = document.getElementById("open-video-lightbox");
+        
+        // Store the player instance
+        let player = null;
+        
+        // Load Vimeo Player API script
+        const script = document.createElement('script');
+        script.src = 'https://player.vimeo.com/api/player.js';
+        document.body.appendChild(script);
+        
+        // Initialize player when API is loaded
+        script.onload = () => {
+            player = new Vimeo.Player(videoPlayer);
+        };
 
         // Open lightbox
         if (triggerButton) {
@@ -141,26 +153,34 @@ const defaultVideos = [
         // Change video when selection changes
         videoSelect.addEventListener("change", () => {
             const selectedVideoId = videoSelect.value;
-            videoPlayer.src = `https://player.vimeo.com/video/${selectedVideoId}`;
-        });
-
-        // Close lightbox
-        closeBtn.addEventListener("click", () => {
-            lightbox.classList.remove("active");
-            document.body.style.overflow = "";
+            player.loadVideo(selectedVideoId).then(() => {
+                // Video loaded
+            }).catch(error => {
+                console.error('Error loading video:', error);
+            });
         });
 
         // Close when clicking backdrop
-        lightbox.addEventListener("click", (e) => {
+        lightbox.addEventListener("click", async (e) => {
             if (e.target === lightbox) {
+                try {
+                    await player.pause();
+                } catch (error) {
+                    console.error('Error pausing video:', error);
+                }
                 lightbox.classList.remove("active");
                 document.body.style.overflow = "";
             }
         });
 
         // Close with Escape key
-        document.addEventListener('keydown', (e) => {
+        document.addEventListener('keydown', async (e) => {
             if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                try {
+                    await player.pause();
+                } catch (error) {
+                    console.error('Error pausing video:', error);
+                }
                 lightbox.classList.remove("active");
                 document.body.style.overflow = "";
             }

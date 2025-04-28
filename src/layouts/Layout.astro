@@ -39,7 +39,19 @@ const defaultDescription = 'Bournemouth, UK based Generalist TD with experience 
   </body>
 </html>
 <style>
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
   main {
+    flex: 1 0 auto;
     margin-top: -64px;
+  }
+
+  Footer {
+    flex-shrink: 0;
   }
 </style>

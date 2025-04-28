@@ -43,21 +43,50 @@ const pageMetadata = {
     <div class="contact-header header">
       <h1>Contact</h1>
       <p>
-        Feel free to get in touch using the form below or reach out to me at
+        Feel free to get in touch using the form below or reach out to me directly via 
         hoskenchristopher@gmail.com or LinkedIn.
       </p>
     </div>
-    <div class="contact-map">
-      <Map />
+    <div class="contact-info">
+
+
+      <div class="contact-item">
+        <Icon name="mdi:map-marker" size="24" />
+        <div>
+          <h2>Location</h2>
+          <a href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9" target="_blank" class="md-button">Bournemouth, UK</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <Icon name="mdi:email" size="24" />
+        <div>
+          <h2>Email</h2>
+          <a href="mailto:hoskenchristopher@gmail.com" class="md-button">hoskenchristopher@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <Icon name="mdi:file-download" size="24" />
+        <div>
+          <h2>Download CV</h2>
+          <md-filled-button>
+            <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button">Curriculum Vitae</a>
+          </md-filled-button>
+        </div>
+      </div>
     </div>
     <ContactForm />
   </div>
 </Layout>
 
 <style is:global>
+
   .contact-header::before {
     background: url("/images/contact-background.png") no-repeat center center;
+    background-size: cover;
   }
+  
 
   .contact-title {
     color: var(--md-sys-color-primary);
@@ -65,28 +94,23 @@ const pageMetadata = {
     text-align: center;
   }
 
-  .contact-content {
-    margin: 0 auto;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-  }
-
   .contact-info {
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background: var(--md-sys-color-surface-container-low);
-    padding: 2rem;
-    border-radius: 12px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 4em;
   }
 
   .contact-item {
+    margin: 0em 2em;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    align-items: flex-start;
   }
 
   .contact-item h2 {
@@ -99,14 +123,6 @@ const pageMetadata = {
     margin: 0;
     color: var(--md-sys-color-on-surface-variant);
   }
-
-  .contact-map {
-    height: 400px;
-    background: var(--md-sys-color-surface-container-high);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-
   @media (max-width: 768px) {
     .contact-content {
       grid-template-columns: 1fr;
@@ -119,13 +135,14 @@ const pageMetadata = {
 
     /* Add these new rules */
     .contact-info {
+      flex-direction: column;
+      gap: 2em;
       align-items: center;
       text-align: center;
     }
 
     .contact-item {
       flex-direction: column;
-      align-items: center;
       gap: 0.5rem;
     }
 

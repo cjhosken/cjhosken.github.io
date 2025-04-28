@@ -14,19 +14,28 @@ import 'mapbox-gl/dist/mapbox-gl.css';
         center: [-1.865000, 50.735036], // Initial map center
         zoom: 1, // Initial zoom level
         projection: 'globe',
-        minZoom: 0,
-        maxZoom: 8,
+        minZoom: 1,
+        maxZoom: 1,
+        interactive: false, // Disables all map interactions (pan, zoom, rotate, etc.)
+        dragPan: false,    // Explicitly disable panning
+        scrollZoom: false, // Disable zooming with scroll
+        boxZoom: false,    // Disable box zoom
+        dragRotate: false, // Disable rotation
+        keyboard: false,   // Disable keyboard controls
+        doubleClickZoom: false, // Disable double-click zoom
+        touchZoomRotate: false, // Disable touch interactions
     });
     // Add a marker
-    new mapboxgl.Marker({ color: "rgb(235, 40, 90)" })
+    const marker = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" })
         .setLngLat([-1.865000, 50.735036])
         .addTo(map);
 
-    map.scrollZoom.disable();
+    const popup = new mapboxgl.Popup({ offset: 25, className: 'custom-popup' }) // Adjust offset as needed
+    .setHTML("<div style='color: black;'> Bournemouth, UK <div>") // Set the text for the popup
 
-    map.on('style.load', () => {
-        map.setFog({}); // Set the default atmosphere style
-    });
+
+    marker.setPopup(popup); // Associate popup with marker
+    marker.togglePopup();
 
     // At low zooms, complete a revolution every two minutes.
     const secondsPerRevolution = 24;
@@ -56,14 +65,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
         }
     }
 
-    // Pause spinning on interaction
-    map.on('mousedown', () => {
-        userInteracting = true;
-    });
-    map.on('dragstart', () => {
-        userInteracting = true;
-    });
-
     // When animation is complete, start spinning if there is no ongoing interaction
     map.on('moveend', () => {
         spinGlobe();
@@ -76,4 +77,5 @@ import 'mapbox-gl/dist/mapbox-gl.css';
         width: 100%;
         height: 100%;
     }
+
 </style>
