@@ -1,0 +1,70 @@
+---
+
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  
+  return posts.map((post) => {
+    // Keep the full slug as a string
+    return {
+      params: { slug: post.slug }, // Just pass the string
+      props: { post },
+    };
+  });
+}
+
+export const prerender = true
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BlogLayout title={post.data.title} description={post.data.description}>
+  <article class="blog-post">
+    <header>
+      <h1>{post.data.title}</h1>
+      <p>{post.data.description}</p>
+      <time datetime={post.data.date}>{new Date(post.data.date).toLocaleDateString()}</time>
+    </header>
+    <img src={`/blog/${post.slug}/../${post.data.image}`} alt={post.data.title} loading="lazy" width="100%" height="200" />
+  <Content />
+  </article>
+</BlogLayout>
+<style>
+  .blog-post {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .blog-post header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post time {
+    font-size: 0.9rem;
+    color: gray;
+  }
+
+  .blog-post img {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height); /* Uses image's natural ratio */
+    object-fit: cover; /* Ensures no distortion */
+  }
+
+</style>

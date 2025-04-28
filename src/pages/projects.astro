@@ -1,5 +1,5 @@
 ---
-import ContentBrowser from '../components/ContentBrowser.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
 import Layout from '../layouts/Layout.astro';
 
 const primaryKeywords = [
@@ -30,8 +30,12 @@ const pageMetadata = {
     <p>This is a collection of my projects and works. Click on an item to read more about it!</p>
     <button class="md-button md-box-button" id="open-video-lightbox"> Watch My Showreel </button>
   </div>
-  <ContentBrowser></ContentBrowser>
-  <a href="https://www.artstation.com/cjhosken" target="_blank" id="artstation-link" class="md-button md-box-button"> View My ArtStation </a>
+  <div class="projects-content">
+    <ProjectGrid/>
+  </div>
+  <div class="projects-footer">
+    <p>For more of my work, check out my ArtStation.</p>
+    <a href="https://www.artstation.com/cjhosken" target="_blank" id="artstation-link" class="md-button md-box-button"> View My ArtStation </a>
   </div>  
 </Layout>
 <style>
@@ -45,5 +49,20 @@ const pageMetadata = {
 .projects-header::before {
     background: url("/images/projects-background.png") no-repeat center center;
     background-size: cover;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0em;
+}
+
+.projects-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
