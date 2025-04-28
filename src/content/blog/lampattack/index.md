@@ -1,8 +1,8 @@
 ---
 title: "Lamp Attack"
-date: 2023-07-20
+date: 2021-10-02
 description: "A short film made in Blender that explores the conflict between Pixar lamps and letters."
-tags: ["team", 'animated', "film"]
+tags: ["team", 'animation', "film"]
 ---
 
 # Project Description

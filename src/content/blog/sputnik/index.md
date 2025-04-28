@@ -2,7 +2,7 @@
 title: "Sputnik"
 date: 2023-07-20
 description: "A case study on the CFX of the alien from 'Sputnik' (2020)."
-tags: ['solo', 'cfx', 'study']
+tags: ['solo', 'fx', 'study']
 ---
 
 # Project Description

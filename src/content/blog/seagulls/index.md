@@ -2,7 +2,7 @@
 title: "Seagulls"
 date: 2025-05-01
 description: "Two seagulls go fishing and find themselves in dangerous waters."
-tags: ["university", "team", 'animated', "film"]
+tags: ["university", "team", 'animation', "film"]
 ---
 
 # Project Description
