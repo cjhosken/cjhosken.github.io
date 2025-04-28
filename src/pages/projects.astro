@@ -1,4 +1,5 @@
 ---
+import ContentBrowser from '../components/ContentBrowser.astro';
 import Layout from '../layouts/Layout.astro';
 
 const primaryKeywords = [
@@ -23,6 +24,46 @@ const pageMetadata = {
 ---
 
 <Layout metadata={pageMetadata}>
-  <h1>Welcome to Astro</h1>
-  <p>This is your projects with Material Design navbar!</p>
+  <div class="projects-container">
+    <h1>Projects</h1>
+    <p>This is a collection of my projects and works. Click on an item to read more about it!</p>
+    <a class="md-button md-box-button" href=""> Watch My Showreel </a>
+  </div>
+  <ContentBrowser></ContentBrowser>
 </Layout>
+<style>
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    margin: 0 auto;
+    width: 100%;
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    z-index: 1; /* Ensure content stays above blurred background */
+}
+
+.projects-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/images/projects-background.png") no-repeat center center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1; /* Send the background behind the content */
+}
+
+  .projects-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-container p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+</style>

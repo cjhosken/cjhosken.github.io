@@ -1,0 +1,71 @@
+---
+// src/components/ContentBrowser.astro
+import BlogCard from './BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  limit?: number;
+  tagFilter?: string;
+}
+
+const { limit, tagFilter } = Astro.props;
+
+// Get all blog posts
+let posts = (await getCollection('blog')).map(post => ({
+  ...post.data,
+  slug: post.slug,
+  body: post.body
+}));
+
+// Apply filters if provided
+if (tagFilter) {
+  posts = posts.filter(post => post.tags?.includes(tagFilter));
+}
+
+// Apply limit if provided
+if (limit) {
+  posts = posts.slice(0, limit);
+}
+
+// Sort by date (newest first)
+posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+---
+
+<div class="content-browser">
+  {posts.length > 0 ? (
+    <div class="blog-grid">
+      {posts.map(post => (
+        <BlogCard post={post} />
+      ))}
+    </div>
+  ) : (
+    <div class="no-results">
+      <p>No posts found{tagFilter ? ` with tag "${tagFilter}"` : ''}.</p>
+    </div>
+  )}
+</div>
+
+<style>
+  .content-browser {
+    width: 100%;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -9,8 +9,8 @@
     /* Surface colors */
     --md-sys-color-surface: #1C1B1F;
     --md-sys-color-on-surface: #FFFBFE;
-    --md-sys-color-surface-variant: #49454F;
-    --md-sys-color-on-surface-variant: #E7E0EC;
+    --md-sys-color-surface-variant: #0c0c0e;
+    --md-sys-color-on-surface-variant: #b2b0b4;
     
     /* Other colors */
     --md-sys-color-error: #B3261E;
@@ -64,4 +64,24 @@ button {
 
 .md-box-button:hover {
     cursor: pointer;
+    color: white;
+}
+
+
+/* Add this to your existing theme.css */
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--md-sys-color-surface-variant);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-sys-color-primary);
+    border-radius: 5px;
 }
