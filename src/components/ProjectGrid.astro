@@ -14,11 +14,20 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
 
 const url = new URL(Astro.request.url);
 const activeTag = url.searchParams.get('tag');
+const currentPage = Number(url.searchParams.get('page')) || 1;
 
-console.log('Active Tag:', activeTag);
-const projects = activeTag
+// Filter by tag if active
+const filteredProjects = activeTag
   ? allProjects.filter(p => p.data.tags?.some(tag => tag.toLowerCase() === activeTag))
   : allProjects;
+
+const itemsPerPage = 12; // Adjust this number as needed
+
+// Calculate pagination values
+const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
+const startIndex = (currentPage - 1) * itemsPerPage;
+const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage);
+
 ---
 
 <div class="portfolio-container">
@@ -42,7 +51,7 @@ const projects = activeTag
 
   <!-- Project Grid -->
   <div class="project-grid">
-    {projects.map((project) => (
+    {paginatedProjects.map((project) => (
       <a href={`/blog/${project.slug}/`} class="project-card">
         <div class="card-image-container">
             <img 
@@ -70,6 +79,31 @@ const projects = activeTag
       </a>
     ))}
   </div>
+  {totalPages > 1 && (
+    <div class="pagination">
+      {currentPage > 1 && (
+        <a 
+          href={`?${activeTag ? `tag=${activeTag}&` : ''}page=${currentPage - 1}`} 
+          class="pagination-button"
+        >
+          Previous
+        </a>
+      )}
+      
+      <span class="page-info">
+        Page {currentPage} of {totalPages}
+      </span>
+      
+      {currentPage < totalPages && (
+        <a 
+          href={`?${activeTag ? `tag=${activeTag}&` : ''}page=${currentPage + 1}`} 
+          class="pagination-button"
+        >
+          Next
+        </a>
+      )}
+    </div>
+  )}
 </div>
 
 <style>
@@ -200,6 +234,34 @@ const projects = activeTag
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .pagination-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .pagination-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .page-info {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+
   @media (max-width: 768px) {
     .project-grid {
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -218,6 +280,19 @@ const projects = activeTag
 
     .tag {
       padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .pagination {
+      gap: 0.5rem;
+    }
+    
+    .pagination-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+    
+    .page-info {
       font-size: 0.8rem;
     }
   }

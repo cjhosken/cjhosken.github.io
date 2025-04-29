@@ -28,7 +28,7 @@ const { Content } = await post.render();
       <p>{post.data.description}</p>
       <time datetime={post.data.date}>{new Date(post.data.date).toLocaleDateString()}</time>
     </header>
-    <img src={`/blog/${post.slug}/../${post.data.image}`} alt={post.data.title} loading="lazy" width="100%" height="200" />
+    <img src={`/blog/${post.slug}/cover.jpg`} alt={post.data.title} loading="lazy" width="100%" height="200" />
   <Content />
   </article>
 </BlogLayout>
