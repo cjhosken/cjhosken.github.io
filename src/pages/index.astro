@@ -35,28 +35,73 @@ const pageMetadata = {
     </video>
     <div id="cover-info">
         <h1>Christopher Hosken</h1>
-        <h2>Generalist TD</h2>
+        <h2>CG Generalist | Generalist TD</h2>
         <button class="md-button md-box-button" id="open-video-lightbox"> Watch My Showreel </button>
     </div>
     <div id="cover-icons">
         <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank" class="md-button"><Icon name="mdi:linkedin"/></a>
-        <a href="https://www.artstation.com/cjhosken" target="_blank" class="md-button"><Icon name="mdi:artstation"/></a>
         <a href="https://github.com/cjhosken" target="_blank" class="md-button"><Icon name="mdi:github"/></a>
+        <a href="https://www.youtube.com/@cjhosken" target="_blank" aria-label="Youtube" class="md-button"><Icon name="mdi:youtube" /></a>
+        <a href="https://www.artstation.com/cjhosken" target="_blank" class="md-button"><Icon name="mdi:artstation"/></a>
     </div>
   </section>
   <section id="about">
     <h1>About Me</h1>
+    <img src="/profile.jpg" id="profile">
     <p>
-            I am a Computer Animation Technical Arts student at Bournemouth
-        University with extensive knowledge in the CG/VFX
-        pipeline. With experience in Modelling, Surfacing, Rigging, Scripting,
-        Animation, FX, Lighting, Rendering, and Compositing, I can adapt to
-        various roles as needed. My primary tools are Houdini, Maya,
-        Substance Painter and Nuke. I am also experienced with Blender and
-        DaVinci Resolve.
-    </p>
+      I am a Computer Animation Technical Arts student at Bournemouth University, aspiring to become a Generalist Technical Director (TD) in the animation and VFX industry. 
+      With practicalCG/VFX pipeline, encompassing modeling, surfacing, rigging, scripting, animation, FX, lighting, rendering, compositing, and editing. 
+      I have practical experience with industry-standard tools such as Houdini, Maya, Blender, Substance Painter, and Nuke. 
+      Additionally, I have developed pipeline tools for Houdini, Maya, and Blender, and possess proficiency in programming languages including Python, Java, C, C++, C#, Kotlin, and VEX. 
+      My versatility allows me to adapt to various roles within a studio environment. I am eager to engage with new opportunities and collaborations in the field.
+    <div id="general-skills-container">
+      <div
+          class="general-skill-item"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+      >
+          <Icon name="mdi:movie" id="icon" />
+          <h1>CG / VFX</h1>
+          <p>
+              I've worked in every part of the CG and VFX pipeline, on
+              numerous solo and group projects, in mulitple softwares. My
+              broad range of knowledge makes it possible for me to fit in
+              wherever is needed in a studio pipeline.
+          </p>
+      </div>
+      <div
+          class="general-skill-item"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+      >
+          <Icon name="mdi:pipe" id="icon" />
+          <h1>IT & PIPELINE</h1>
+          <p>
+              My vast experience in multiple softwares makes me a troubleshooting expert! 
+              My core understanding of 3d applications allows me to pick apart complex problems, which I can then develop pipeline tools for.
+              Whether Houdini, Maya, or Nuke in RHEL, Fedora, Debian or Windows, I can help troubleshoot and optimize both machines and softwares.
+          </p>
+      </div>
+      <div
+          class="general-skill-item"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+      >
+          <Icon name="mdi:code" id="icon" />
+          <h1>RND</h1>
+          <p>
+            I have a strong Mathematics and programming background. 
+            Profficient in languages such as Python, C++, VEX and MEL and with working knowledge of Qt, OpenGL, USD and Generative AI,
+            I have developed numerous efficient render engines and simulation tools.
+          </p>
+      </div>
+  </div>
 
-    <button class="md-button md-box-button"> View Portfolio </button>
+    <a class="md-button md-box-button" href="/projects"> View My Portfolio </a>
+
   </section>
   <section id="history">
     <h1>Experience</h1>
@@ -73,17 +118,11 @@ const pageMetadata = {
             <h2>BA COMPUTER ANIMATION TECHNICAL ARTS</h2>
             <p>
                 Bournemouth University has given me a strong understanding
-                of CG fundamentals that I wouldn't have gained elsewhere. In
-                my first year I've been able to explore the underlying
-                mathematics in most DCC applications. I was also been able
-                to grow in my knowledge of Maya, Houdini and Nuke.
-            </p>
+                of CG fundamentals and professional practices. 
+                I was given chances to explore new technologies and ideas, as well as collaborate with others to create short animations.
 
-            <p>
-                My second year has allowed me to focus in on my skills and
-                learn to create production ready assets. I have also begun
-                developing my own USD Pipeline to use for short animations.
-            </p>
+                This Houdini Accredited course taught me how to think procedurally and launched me into developing Houdini-centric pipelines and projects. 
+              </p>
         </div>
         <div
             class="history-item"
@@ -94,71 +133,18 @@ const pageMetadata = {
             <Icon name="mdi:briefcase" id="icon" />
             <h1>BOAP Studios</h1>
             <h2>MAR 2019 - APR 2021 | REMOTE</h2>
+            <h2>CG SUPERVISOR | DIRECTOR</h2>
             <p>
-                During my first year at BOAP Studios, I contributed to
-                writing, modeling, and animation while managing a small team
-                of artists. I gained valuable insights into studio
-                operations and conflict resolution.
-            </p>
-            <p>
-                In my second year, I directed the short film Proxima,
-                co-wrote and envisioned the story, and collaborated with the
-                R&D team to develop a facial motion capture plugin for
-                Blender. I also did some modeling and animation work.
+                BOAP (Blender Open Animation Project) was an online volunteer based animation studio. During my time as CG supervisor and director, 
+                I contributed to writing, modelling, animation, lighting, and R&D. I lead a small team of artists and was
+                responsible for overseeing that deadlines were met. I also led development for a facial motion capture tool for Blender.
             </p>
         </div>
     </div>
-  </section>
-  <section id="skills">
-    <div id="general-skills-container">
-        <div
-            class="general-skill-item"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-once="true"
-        >
-            <Icon name="mdi:pipe" id="icon" />
-            <h1>PIPELINE</h1>
-            <p>
-                I've worked in every part of the CG and VFX pipeline, on
-                numerous solo and group projects, in mulitple softwares. My
-                broad range of knowledge makes it possible for me to fit in
-                wherever is needed in a studio pipeline. I've also developed
-                pipeline tools for Houdini, Maya, and Blender.
-            </p>
-        </div>
-        <div
-            class="general-skill-item"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-once="true"
-        >
-            <Icon name="mdi:fire" id="icon" />
-            <h1>FX & TECH</h1>
-            <p>
-                I primarily work in Houdini with fluids, pyro, vellum, RBD,
-                muscles, and groom. Alongside this, I have experience in
-                rigging assets in both Maya and Blender.
-            </p>
-        </div>
-        <div
-            class="general-skill-item"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-once="true"
-        >
-            <Icon name="mdi:code" id="icon" />
-            <h1>RND</h1>
-            <p>
-                I am proficient in Python, Java, C, C++, C#, Kotlin, and
-                VEX, with working knowledge of Qt and OpenGL. I have also
-                developed multiple render engines and simulation tools from
-                base mathematical concepts.
-            </p>
-        </div>
-    </div>
+    <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button md-box-button">Download Curriculum Vitae</a>
   </section>
   <section id="software">
+    <div class="container">
     <SoftwareCard title="Houdini" img="/images/software/houdini.png" url="https://www.sidefx.com/products/houdini/"/>
     <SoftwareCard title="Maya" img="/images/software/maya.png" url="https://www.autodesk.com/uk/products/maya/overview" />
     <SoftwareCard title="Blender" img="/images/software/blender.png" url="https://www.blender.org/"/>
@@ -173,6 +159,7 @@ const pageMetadata = {
     <SoftwareCard title="Java" img="/images/software/java.png" url="https://www.java.com/en/" />
     <SoftwareCard title="C,C++,C#" img="/images/software/cpp.png" url="https://www.w3schools.com/cpp/cpp_intro.asp" />
     <SoftwareCard title="HTML, CSS, JS" img="/images/software/web.png" url="https://www.w3schools.com/html/default.asp"/>
+  </div>
   </section>
   <section id="companies">
     <CompanyCard title="NCCA"
@@ -188,16 +175,25 @@ const pageMetadata = {
 </Layout>
 <style>
   section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    width: 80vw;
+    width: 100vw;
     overflow: hidden;
+    margin: 0 auto;
+  }
+
+  section>h1 {
+    font-size: 3.5em;
   }
   #hero{
     margin: 0;
     padding: 0;
-    width: 100vw;
     height: 100vh;
+    align-items: start;
   }
 
   #hero #cover-video {
@@ -208,33 +204,75 @@ const pageMetadata = {
   }
 
   #hero #cover-info {
-    top: 10%;
+    top: 15%;
+    left: 10%;
     position: absolute;
   }
 
   #hero #cover-info h1 {
-    font-size: 6em;
+    font-size: 7em;
+    margin-bottom: 0em;
   }
 
   #hero #cover-info h2 {
-    font-size: 4em;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  #hero #open-video-lightbox {
+    width: 300px;
+    height: 50px;
   }
 
   #hero #cover-icons {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     bottom: 0%;
     right: 0%;
-    margin: 1em;
-    font-size: 1.5em;
+    margin: 2em;
+    font-size: 2em;
+  }
+
+  @media (max-width: 768px) {
+    #hero #cover-icons {
+      font-size: 1.5em;
+    }
+
+    #hero #cover-info h1 {
+      font-size: 4em;
+    }
+
+
+    #hero #cover-info h2 {
+      font-size: 2em;
+    }
+
   }
 
   #about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60vw;
+    width: 80vw;
+    height: 100%;
     margin: 3em auto;
     justify-content: center;
+  }
+
+  #profile {
+    margin: 1em;
+    width: 250px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.1) 2px;
+  }
+
+  #about>p {
+    width: 50vw;
+    text-align: center;
   }
 
   #history {
@@ -242,7 +280,7 @@ const pageMetadata = {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    background-color: rgb(22, 22, 25);
   }
   
   #history-list-container {
@@ -256,18 +294,12 @@ const pageMetadata = {
 
   .history-item {
     text-align: center;
+    align-self: baseline;
     margin: 2em;
     width: 500px;
-    height: 400px;
+    height: 100%;
   }
 
-  #skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-  }
 
   #general-skills-container {
     display: flex;
@@ -280,15 +312,22 @@ const pageMetadata = {
 
   .general-skill-item {
     text-align: center;
+    justify-self: start;
+    align-self: baseline;
     margin: 2em;
     width: 300px;
-    height: 400px;
+    height: 100%
+  }
+
+  #icon {
+    font-size: 2.5em;
+    color: var(--md-sys-color-primary);
   }
 
 
   #software {
     margin: 0 auto;
-    width: 80vw;
+    background-color: rgb(22, 22, 25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,7 +335,18 @@ const pageMetadata = {
     flex-wrap: wrap;
   }
 
+  #software .container {
+    padding: 5em 0em;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
   #companies {
+    background-color: rgb(16, 16, 18);
     width: 100vw;
     display: flex;
     align-items: center;

@@ -12,10 +12,15 @@ const defaultVideos = [
     <div class="lightbox-card">
         <div class="lightbox-topbar">
             <select class="video-select">
-                {defaultVideos.map((video) => (
-                    <option value={video.id}>{video.title}</option>
-                ))}
+                {
+                    defaultVideos.map((video) => (
+                        <option value={video.id}>{video.title}</option>
+                    ))
+                }
             </select>
+            <button class="close-button md-button" aria-label="Close lightbox">
+                <span class="material-symbols-outlined">close</span>
+            </button>
         </div>
         <div class="video-container">
             <iframe
@@ -23,8 +28,7 @@ const defaultVideos = [
                 src={`https://player.vimeo.com/video/${defaultVideos[0].id}`}
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowfullscreen
-                loading="lazy"
-            ></iframe>
+                loading="lazy"></iframe>
         </div>
     </div>
 </div>
@@ -80,16 +84,18 @@ const defaultVideos = [
     }
 
     .lightbox-topbar {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
-        gap: 16px;
+        width: 100%; /* Ensure full width */
     }
 
     .video-select {
         padding: 8px 16px;
-        flex-grow: 1;
+        padding-right: 32px; /* Add space for dropdown arrow */
+        width: calc(100% - 40px);
         background: var(--md-sys-color-surface-variant);
         color: var(--md-sys-color-on-surface-variant);
         border: 1px solid var(--md-sys-color-outline);
@@ -97,6 +103,29 @@ const defaultVideos = [
         font-size: 1rem;
         outline: none;
         transition: border 0.2s ease;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.7rem top 50%;
+        background-size: 0.65rem auto;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 0;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--md-sys-color-on-surface);
+        transition: background-color 0.2s ease;
+    }
+
+    .close-button:hover {
+        color: var(--md-sys-color-primary);
     }
 
     .material-symbols-outlined {
@@ -128,15 +157,15 @@ const defaultVideos = [
         const videoPlayer = document.querySelector(".video-iframe");
         const videoSelect = document.querySelector(".video-select");
         const triggerButton = document.getElementById("open-video-lightbox");
-        
+
         // Store the player instance
         let player = null;
-        
+
         // Load Vimeo Player API script
-        const script = document.createElement('script');
-        script.src = 'https://player.vimeo.com/api/player.js';
+        const script = document.createElement("script");
+        script.src = "https://player.vimeo.com/api/player.js";
         document.body.appendChild(script);
-        
+
         // Initialize player when API is loaded
         script.onload = () => {
             player = new Vimeo.Player(videoPlayer);
@@ -153,11 +182,14 @@ const defaultVideos = [
         // Change video when selection changes
         videoSelect.addEventListener("change", () => {
             const selectedVideoId = videoSelect.value;
-            player.loadVideo(selectedVideoId).then(() => {
-                // Video loaded
-            }).catch(error => {
-                console.error('Error loading video:', error);
-            });
+            player
+                .loadVideo(selectedVideoId)
+                .then(() => {
+                    // Video loaded
+                })
+                .catch((error) => {
+                    console.error("Error loading video:", error);
+                });
         });
 
         // Close when clicking backdrop
@@ -166,7 +198,7 @@ const defaultVideos = [
                 try {
                     await player.pause();
                 } catch (error) {
-                    console.error('Error pausing video:', error);
+                    console.error("Error pausing video:", error);
                 }
                 lightbox.classList.remove("active");
                 document.body.style.overflow = "";
@@ -174,16 +206,29 @@ const defaultVideos = [
         });
 
         // Close with Escape key
-        document.addEventListener('keydown', async (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        document.addEventListener("keydown", async (e) => {
+            if (e.key === "Escape" && lightbox.classList.contains("active")) {
                 try {
                     await player.pause();
                 } catch (error) {
-                    console.error('Error pausing video:', error);
+                    console.error("Error pausing video:", error);
                 }
                 lightbox.classList.remove("active");
                 document.body.style.overflow = "";
             }
         });
+
+        const closeButton = document.querySelector(".close-button");
+        if (closeButton) {
+            closeButton.addEventListener("click", async () => {
+                try {
+                    await player.pause();
+                } catch (error) {
+                    console.error("Error pausing video:", error);
+                }
+                lightbox.classList.remove("active");
+                document.body.style.overflow = "";
+            });
+        }
     });
 </script>

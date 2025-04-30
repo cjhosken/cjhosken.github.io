@@ -33,6 +33,10 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-size: 1.25em;
+}
+
 button {
     background-color: transparent;
     border: none;

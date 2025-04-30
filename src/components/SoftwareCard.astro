@@ -10,7 +10,7 @@ const {title="Logo", img="/images/common/placeholder.jpg", url = '#'} = Astro.pr
 </a>
 <style>
     .software-card {
-        width: 15vh;
+        width: 120px;
         max-width: 30%;
         aspect-ratio: 1;
         margin: 15px;
@@ -22,6 +22,8 @@ const {title="Logo", img="/images/common/placeholder.jpg", url = '#'} = Astro.pr
         align-items: center;
         transition: box-shadow 0.35s, transform 0.35s;
         color: white;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .software-card:hover {
@@ -31,9 +33,10 @@ const {title="Logo", img="/images/common/placeholder.jpg", url = '#'} = Astro.pr
 
     .software-card p {
         opacity: 0.0;
-        width: 15vh;
+        font-size: 90%;
         aspect-ratio: 1;
         border-radius: 10%;
+        text-align: center;
         background-color: var(--light-100);
         position: absolute;
         display: flex;
@@ -55,5 +58,11 @@ const {title="Logo", img="/images/common/placeholder.jpg", url = '#'} = Astro.pr
 
     .software-card:hover img {
         opacity: 0.0;
+    }
+
+    @media (max-width: 768px) {
+        .software-card {
+            width: 80px;
+        }
     }
 </style>
