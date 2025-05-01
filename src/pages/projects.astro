@@ -1,0 +1,67 @@
+---
+import ProjectGrid from '../components/ProjectGrid.astro';
+import Layout from '../layouts/Layout.astro';
+
+const primaryKeywords = [
+  'Christopher Hosken', 'Chris Hosken',
+  'Generalist TD', "CG Generalist", "VFX Generalist",
+  'Technical Director', '3D Technical Director', "FX Technical Director", "Pipeline Technical Director",
+  'Bournemouth University', 'Computer Animation Technical Arts', "Chiang Mai International School",
+  "Bournemouth", "UK", "Thailand", "Chiang Mai",
+  'Christopher Hosken Portfolio', 'Chris Hosken TD', 'Chris Hosken VFX', "Christopher Hosken Generalist"
+];
+
+const secondaryKeywords = [
+  "Portfolio", "Works", "Projects", "Showreel", "Demo Reel", "Reel", "Blog", "Stories", "Posts", "Articles"
+];
+
+const pageMetadata = {
+  keywords: [...primaryKeywords, ...secondaryKeywords],
+  title: "Projects",
+  description: "A collection of my projects and works.",
+  image: '/images/seo-homepage.jpg'
+};
+---
+
+<Layout metadata={pageMetadata}>
+  <div class="projects-container container">
+  <div class="projects-header header">
+    <h1>Projects</h1>
+    <p>This is a collection of my projects and works. Click on an item to read more about it!</p>
+    <button class="md-button md-box-button" id="open-video-lightbox"> Watch My Showreel </button>
+  </div>
+  <div class="projects-content">
+    <ProjectGrid/>
+  </div>
+  <div class="projects-footer">
+    <a href="https://www.youtube.com/@cjhosken" target="_blank" class="md-button md-box-button"> See More on YouTube </a>
+  </div>  
+</Layout>
+<style>
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects-header::before {
+    background: url("/images/projects-background.png") no-repeat center center;
+    background-size: cover;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0em;
+}
+
+.projects-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+</style>

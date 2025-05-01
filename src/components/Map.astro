@@ -1,38 +1,80 @@
 ---
-// Import Mapbox GL JS and its CSS
 import 'mapbox-gl/dist/mapbox-gl.css';
 ---
 
 <div class="mapbox-map" id="map"></div>
-
 <script>
-    import mapboxgl from 'mapbox-gl';
-    // Set your Mapbox access token
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY202cGxoaDhjMDh5YzJyc2ZoaWZqOGZxaSJ9.1tmjIKyLkMGSbChJ2I8m5Q';
+    import mapboxgl from 'mapbox-gl/dist/mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 
-    // Initialize the map
+	mapboxgl.accessToken = 'pk.eyJ1IjoiY2pob3NrZW4iLCJhIjoiY202cGxoaDhjMDh5YzJyc2ZoaWZqOGZxaSJ9.1tmjIKyLkMGSbChJ2I8m5Q';
+
     const map = new mapboxgl.Map({
         container: "map", // Container ID
-        style: 'mapbox://styles/cjhosken/cl76cg0za001914m6ia43ct42',
+        style: 'mapbox://styles/cjhosken/cma1bapb800gh01si3sheb9jb',
         center: [-1.865000, 50.735036], // Initial map center
-        zoom: 6, // Initial zoom level
-        projection: "globe", // Use globe projection
-        attributionControl: false,
-        minZoom: 2,
-        maxZoom: 6,
+        zoom: 1, // Initial zoom level
+        projection: 'globe',
+        minZoom: 1,
+        maxZoom: 1,
+        interactive: false, // Disables all map interactions (pan, zoom, rotate, etc.)
+        dragPan: false,    // Explicitly disable panning
+        scrollZoom: false, // Disable zooming with scroll
+        boxZoom: false,    // Disable box zoom
+        dragRotate: false, // Disable rotation
+        keyboard: false,   // Disable keyboard controls
+        doubleClickZoom: false, // Disable double-click zoom
+        touchZoomRotate: false, // Disable touch interactions
     });
-
     // Add a marker
-    new mapboxgl.Marker({ color: "rgb(235, 40, 90)" })
+    const marker = new mapboxgl.Marker({ color: "rgb(235, 40, 90)" })
         .setLngLat([-1.865000, 50.735036])
         .addTo(map);
-</script>
 
+    const popup = new mapboxgl.Popup({ offset: 25, className: 'custom-popup' }) // Adjust offset as needed
+    .setHTML("<div style='color: black;'> Bournemouth, UK <div>") // Set the text for the popup
+
+
+    marker.setPopup(popup); // Associate popup with marker
+    marker.togglePopup();
+
+    // At low zooms, complete a revolution every two minutes.
+    const secondsPerRevolution = 24;
+    // Above zoom level 5, do not rotate.
+    const maxSpinZoom = 5;
+    // Rotate at intermediate speeds between zoom levels 3 and 5.
+    const slowSpinZoom = 3;
+
+    let userInteracting = false;
+    const spinEnabled = true;
+
+    function spinGlobe() {
+        const zoom = map.getZoom();
+        if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
+            let distancePerSecond = 360 / secondsPerRevolution;
+            if (zoom > slowSpinZoom) {
+                // Slow spinning at higher zooms
+                const zoomDif =
+                    (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
+                distancePerSecond *= zoomDif;
+            }
+            const center = map.getCenter();
+            center.lng -= distancePerSecond;
+            // Smoothly animate the map over one second.
+            // When this animation is complete, it calls a 'moveend' event.
+            map.easeTo({ center, duration: 1000, easing: (n) => n });
+        }
+    }
+
+    // When animation is complete, start spinning if there is no ongoing interaction
+    map.on('moveend', () => {
+        spinGlobe();
+    });
+
+    spinGlobe();
+</script>
 <style>
-    /* Ensure the map container has explicit dimensions */
     .mapbox-map {
         width: 100%;
-        min-width: 640px;
         height: 100%;
     }
 

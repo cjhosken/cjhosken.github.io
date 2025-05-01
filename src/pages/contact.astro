@@ -1,115 +1,155 @@
 ---
-import DefaultLayout from "../layouts/DefaultLayout.astro";
-import Banner from "../components/Banner.astro";
+import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.astro";
 import Map from "../components/Map.astro";
-import Button from "../components/Button.astro";
+import "@material/web/button/filled-button.js";
+import { Icon } from "astro-icon/components";
 
-import { Icon } from 'astro-icon/components'
+const primaryKeywords = [
+  "Christopher Hosken",
+  "Chris Hosken",
+  "Generalist TD",
+  "CG Generalist",
+  "VFX Generalist",
+  "Technical Director",
+  "3D Technical Director",
+  "FX Technical Director",
+  "Pipeline Technical Director",
+  "Bournemouth University",
+  "Computer Animation Technical Arts",
+  "Chiang Mai International School",
+  "Bournemouth",
+  "UK",
+  "Thailand",
+  "Chiang Mai",
+  "Christopher Hosken Portfolio",
+  "Chris Hosken TD",
+  "Chris Hosken VFX",
+  "Christopher Hosken Generalist",
+];
+
+const secondaryKeywords = ["Contact", "CV", "Job", "Resume", "Hire", "Work"];
+
+const pageMetadata = {
+  keywords: [...primaryKeywords, ...secondaryKeywords],
+  title: "Contact",
+  description: "Get in contact with me.",
+  image: "/images/seo-homepage.jpg",
+};
 ---
 
-<DefaultLayout title="Contact | Christopher Hosken"
-    description="Contact Christopher Hosken for Animation and VFX Jobs"
-    keywords="Contact, FX, Christopher Hosken, Bournemouth University, Job, TD, VFX, Generalist, CG, CGI, Pipeline, R&D"
-> 
-    <Banner title="Contact" img="/images/common/banner_contact.png"/>
-    <div id="content">
-        <div id="splitter">
-            <div id="contact-div">
-                <a href="https://maps.app.goo.gl/4cKAG11hk4gMgeyf8" class="linked-text-icon">
-                    <Icon name="mdi:location" class="icon"/>
-                    <p> Bournemouth, United Kingdom </p>
-                </a>
-                <a href="https://www.linkedin.com/in/christopher-hosken/" class="linked-text-icon">
-                    <Icon name="mdi:linkedin" class="icon"/>
-                    <p> Christopher Hosken </p>
-                </a>
-                <a href="mailto:hoskenchristopher@gmail.com" class="linked-text-icon">
-                    <Icon name="mdi:email" class="icon"/>
-                    <p> hoskenchristopher@gmail.com </p>
-                </a>
-                <Button text="Curriculum Vitae" icon="mdi:download" url="/resume/Christopher_Hosken_Curriculum_Vitae_2025.pdf"/>
-            </div>
-            <div id="map-div">
-                <Map/>
-            </div>
-        </div>
+<Layout metadata={pageMetadata}>
+  <div class="contact-container container">
+    <div class="contact-header header">
+      <h1>Contact</h1>
+      <p>
+        Feel free to get in touch using the form below or reach out to me directly via 
+        hoskenchristopher@gmail.com or LinkedIn.
+      </p>
     </div>
-</DefaultLayout>
+    <div class="contact-info">
+
+
+      <div class="contact-item">
+        <Icon name="mdi:map-marker" size="24" />
+        <div>
+          <h2>Location</h2>
+          <a href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9" target="_blank" class="md-button">Bournemouth, UK</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <Icon name="mdi:email" size="24" />
+        <div>
+          <h2>Email</h2>
+          <a href="mailto:hoskenchristopher@gmail.com" class="md-button">hoskenchristopher@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <Icon name="mdi:file-download" size="24" />
+        <div>
+          <h2>Download CV</h2>
+          <md-filled-button>
+            <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button">Curriculum Vitae</a>
+          </md-filled-button>
+        </div>
+      </div>
+    </div>
+    <ContactForm />
+  </div>
+</Layout>
+
 <style is:global>
-    html {
-        background-color: var(--light-900);
-        color: var(--dark-100);
-    }
-    
-    #content {
-        z-index: 1;
-        margin-top: 15vh;
-        height: calc(100vh - 25vh);
-    }
 
-    #splitter {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: top;
-        width: 100vw;
-        height: calc(100vh - 25vh);
-    }
+  .contact-header::before {
+    background: url("/images/contact-background.png") no-repeat center center;
+    background-size: cover;
+  }
+  
 
-    #splitter div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 50vw;
-    }
+  .contact-title {
+    color: var(--md-sys-color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 
-    .linked-text-icon {
-        margin: 2ex;
-        color: rgb(15, 15, 15);
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: color 0.5s ease;
-    }
+  .contact-info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 4em;
+  }
 
-    .linked-text-icon:hover {
-        color: var(--primary-100);
-    }
+  .contact-item {
+    margin: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    .linked-text-icon .icon {
-        margin: 1vh;
-        font-size: 3ex;
-    }
+  .contact-item h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--md-sys-color-on-surface);
+  }
 
-    .linked-text-icon p {
-        font-weight: 400;
-        font-size: 2ex;
+  .contact-item p {
+    margin: 0;
+    color: var(--md-sys-color-on-surface-variant);
+  }
+  @media (max-width: 768px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+      justify-content: center;
     }
 
-    #map-div {
-        height: 100%;
-        overflow-x: hidden;
-        overflow-y: hidden;
+    .contact-map {
+      order: -1;
     }
 
-    #map-div a {
-        display: hidden;
+    /* Add these new rules */
+    .contact-info {
+      flex-direction: column;
+      gap: 2em;
+      align-items: center;
+      text-align: center;
     }
 
-    @media screen and (max-width: 767px) {
-        #splitter {
-            flex-direction: column;
-            width: 100%;
-        }
+    .contact-item {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
 
-        #splitter div {
-            width: 100vw;
-            margin-top: 3ex;
-        }
-}
-    
+    .contact-item > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 </style>

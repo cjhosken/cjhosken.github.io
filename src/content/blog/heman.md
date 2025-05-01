@@ -1,0 +1,72 @@
+---
+title: Heman
+date: 2025-01-17
+description: "A stylized hero asset made in ZBrush, Maya, and Houdini."
+tags: ["solo", "university", "project"]
+---
+
+## Modelling
+
+As part of our Modelling and Texturing Assignment at Bournemouth University, we were tasked with making a stylized hero asset based on a given concept. I decided to choose the Heman concept by Michael McCabe.
+
+![Original Reference](/blog/heman/heman_doodle.jpg)
+
+We began by blocking out our character in ZBrush; starting the basic shapes, then the muscles, then the finer details. The hardsurface assets were then modeled in Maya.
+
+![ZBrush](/blog/heman/heman_zbrush.png)
+
+## Rigging
+
+The rig was created from scratch in Maya. I hadn't done FK/IK switching before and wanted to give that a go.
+
+![Rigging](/blog/heman/heman_rig.png)
+
+## Houdini & Lookdev
+The asset was then textured in Substance Painter and brought into Houdini for groom. Heman was rendered in a custom Houdini Lookdev environment that I designed.
+<div class="video-container">
+<video controls muted >
+  <source src="/blog/heman/heman_wireframe_turntable.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+<div class="video-container">
+<video controls muted >
+  <source src="/blog/heman/heman_turntable.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
+## USD Pipeline
+
+Continuing on from the [Jupiter Steam Train](/blog/jupiter) I built Heman as a USD asset. This is following a new USD Pipeline workflow that I have developed for future projects.
+
+![USD Pipe](/blog/heman/usd_pipe.png)
+
+The pipeline worked extremely well for completing a full rounded-character.
+
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+      color: var(--sys-color-primary)
+    }
+</style>
+
+*Written Jan 17, 2025 by Christopher Hosken*
