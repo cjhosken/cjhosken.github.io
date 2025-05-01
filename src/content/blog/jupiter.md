@@ -24,8 +24,9 @@ To explore the benefits of USD's cross DCC abilities, I decided to model inside 
 ![Modelling](/blog/jupiter/modelling.png)
 
 ![UVs](/blog/jupiter/uvs.png)
-
+<div class="video-container">
 <iframe src="https://www.fab.com/dope/5bf19a46-e3ad-4489-add9-fe32ffcdf76e" title="Model preview file (5bf19a46-e3ad-4489-add9-fe32ffcdf76e)" class="_g148NR_ AKPfHZv1" allowfullscreen=""></iframe>
+</div>
 
 Above is the final model of Jupiter. The hardest part of the asset was getting all the intricate details inside the train, as there weren't many references images of those areas.
 
@@ -33,17 +34,19 @@ Above is the final model of Jupiter. The hardest part of the asset was getting a
 ## Lookdev
 
 Once the payload was finished, I began working on shading and lookdev. I was able to convert Albin Merle's free Blender lookdev environment into USD, which I could open and use inside of Maya and Houdini.
-
+<div class="video-container">
 <video controls muted>
   <source src="/blog/jupiter/vibrant_turntable.mp4" type="video/mp4">
 </video>
-
+</div>
 
 With Substance painter, I working on getting the nice wear and tear of an old train. I was also able to make a shading variant look called "dull", which looks cleaner and more toy-like.
 
+<div class="video-container">
 <video controls muted>
   <source src="/blog/jupiter/dull_turntable.mp4" type="video/mp4">
 </video>
+</div>
 
 I did my rendering inside of Maya using Arnold, however the asset also works with Houdini's Karma.
 
@@ -52,3 +55,25 @@ I did my rendering inside of Maya using Arnold, however the asset also works wit
 Overall, I'm very happy with this asset. If I had more time to work on it, I would look into rigging and animating it, as well as combining it with FX in Houdini. This project has helped me gain better understanding of USD, and how it works in the animation and VFX pipeline, and I can't wait to use it in more of my projects. 
 
 *Written Oct 21, 2024 by Christopher Hosken*
+
+
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>

@@ -23,16 +23,18 @@ The rig was created from scratch in Maya. I hadn't done FK/IK switching before a
 
 ## Houdini & Lookdev
 The asset was then textured in Substance Painter and brought into Houdini for groom. Heman was rendered in a custom Houdini Lookdev environment that I designed.
-
-<video controls muted class="project-video">
+<div class="video-container">
+<video controls muted >
   <source src="/blog/heman/heman_wireframe_turntable.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-<video controls muted class="project-video">
+</div>
+<div class="video-container">
+<video controls muted >
   <source src="/blog/heman/heman_turntable.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</div>
 
 ## USD Pipeline
 
@@ -43,14 +45,28 @@ Continuing on from the [Jupiter Steam Train](/blog/jupiter) I built Heman as a U
 The pipeline worked extremely well for completing a full rounded-character.
 
 <style>
-  .project-video {
-    width: 100%;
-    max-width: 800px;
-    margin: 2rem auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+      color: var(--sys-color-primary)
+    }
 </style>
 
 *Written Jan 17, 2025 by Christopher Hosken*

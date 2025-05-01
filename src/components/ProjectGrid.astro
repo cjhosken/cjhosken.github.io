@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 
 // Get all projects and sort by date (newest first)
 const allProjects = (await getCollection('blog'))
+  .filter(project => !project.data.tags?.includes('hidden'))
   .sort((a, b) => {
     const dateA = new Date(a.data.date).getTime();
     const dateB = new Date(b.data.date).getTime();
@@ -10,7 +11,8 @@ const allProjects = (await getCollection('blog'))
   });
 
 // Get all unique tags from all projects
-const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))];
+const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))]
+  .filter(tag => tag !== 'hidden');
 
 const url = new URL(Astro.request.url);
 const activeTag = url.searchParams.get('tag');

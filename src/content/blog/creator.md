@@ -1,17 +1,18 @@
 ---
-title: "The Creator Case Study"
+title: "Exploring VFX: CG Head Replacement"
 date: 2023-12-14
 description: "A case study on CG head replacements inspired by ILM's work on 'The Creator' (2024)."
 tags: ["solo", "vfx", "study"]
 ---
 
-# Exploring VFX: CG Head Replacement
-
+# Introduction
 Inspired by ILM's latest work on The Creator, The National Centre for Computer Animation – Bournemouth University student, Christopher Hosken, embarked on the challenge of exdcuting a CG head replacement, driven by the creative spark ignited by their cutting-edge techniques. In this article, Christopher takes a deeper dive into his processes, challenges and successes with this project.
 
+<div class="video-container">
 <video controls muted>
   <source src="/blog/creator/TheCreatorStudy_mp4.mp4" type="video/mp4">
 </video>
+</div>
 
 ## About The Project
 Every year, Bournemouth University hosts the [BFX Festival]() in which artists and studios come to give talks and connect with students. One of the talks was from [*Industrial Light and Magic*]() on [*The Creator*](), and as I had recently seen *The Creator* and was blown away by the visuals, I decided to attend.
@@ -79,8 +80,9 @@ Overall I’m quite happy with the final shot. I was able to learn a lot about c
 If I was to continue working on the shot, I would probably focus more on my lighting as well as refine my roto-masks. There a couple area's of the shot in which shadows aren't realistic and parts of the backplate morph and disappear. However, I feel that for a quick study on The Creator, it looks great.
 
 You can watch the full breakdown below:
-
+<div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BRdFg-8wEYE?si=AB6Ppzpw4KFl1f03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Lessons Learned
 
@@ -91,3 +93,25 @@ In terms of actual technical knowledge, I've found that doing everything step-by
 I'm definitely going to use KeenTools in my future projects, I found that not only does it do heads, but anything! It's a very cool tool and I'm excited to use it more.
 
 *Written Feb 6, 2024 by Christopher Hosken*
+
+
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+</style>
