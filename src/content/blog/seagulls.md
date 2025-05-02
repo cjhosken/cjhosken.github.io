@@ -115,7 +115,7 @@ def create_text_curve(name="", text="", font='Arial', size=1):
     return curve_group
 ```
 
-# Animation
+## Animation
 
 <div style="color: red;">
 
@@ -123,7 +123,7 @@ def create_text_curve(name="", text="", font='Arial', size=1):
 
 </div>
 
-# FX
+## FX
 
 The FX for this project was done in Houdini. Using our USD workflow, I was able to override any of the animations to make changes as well as utilise Houdini Procedurals for faster and more efficient rendering. 
 

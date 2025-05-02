@@ -169,10 +169,12 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
     text-decoration: none;
     transition: all 0.2s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    
   }
 
   .pagination-button:hover {
     background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .page-info {
@@ -209,7 +211,7 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
       padding: 0.4rem 0.8rem;
       font-size: 0.8rem;
     }
-    
+
     .page-info {
       font-size: 0.8rem;
     }
