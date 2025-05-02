@@ -10,10 +10,11 @@ tags: ['solo', 'university', 'code']
 Part of my Technical Arts Production unit at Bournemouth University required us to make a Maya tool with Python. I decided to challenge myself by looking into fluid simulators. 
 
 *Maya Fluid Simulator *is a PIC/FLIP tool that allows you to simulate particle fluids.
-
+<div class="video-container">
 <video controls muted>
   <source src="/blog/mfs/MFS_tutorial.mp4" this.type="video/mp4">
 </video>
+</div>
 
 More results can be seen at the bottom of this article.
 
@@ -146,19 +147,26 @@ This is also why the viscosity force was left out of the code.
 Below are some benchmark tests for *Maya Fluid Simulator*. Tests were run on Windows 10 Enterprise with an Intel i7-13700, 64GB RAM, and NVIDIA GeForce RTX 4080.
 
 The Default Donut simulation had a particle count of 4800. A particle scale of 0.1 and a PIC/FLIP Mix of 0.6. It simulated 120 frames in 3 minutes 33 seconds.
+
+<div class="video-container">
 <video controls muted>
   <source src="/blog/mfs/MFS_DefaultDonut.mp4" this.type="video/mp4">
 </video>
+</div>
 
 The Dam Break simulation had a particle count of 15000. A particle scale of 0.1 and a PIC/FLIP Mix of 0.8. It simulated 120 frames in 9 minutes 20 seconds.
+<div class="video-container">
 <video controls muted>
   <source src="/blog/mfs/MFS_DamBreak.mp4" this.type="video/mp4">
 </video>
+</div>
 
 The Honey simulation had a particle count of 4800. A particle scale of 0.2 and a PIC/FLIP Mix of 0.0. It simulated 120 frames in 1 minute 8 seconds.
+<div class="video-container">
 <video controls muted>
   <source src="/blog/mfs/MFS_Honey.mp4" this.type="video/mp4">
 </video>
+</div>
 
 ### JS Simulator
 

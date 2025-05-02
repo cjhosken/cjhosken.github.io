@@ -9,24 +9,57 @@ tags: ["university", "team", 'animation', "film"]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l4VV4fxrYNg?si=OwyiVuMLqlzokter" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-# Introduction
+## Introduction
 "Two Seagulls go fishing and find themselves in dangerous waters."
+
+<div class="container" style="display: flex; flex-direction: row; .container img {height: 200px;}">
+
+![Seagulls](/blog/seagulls/concept.jpg)
+
+<div style="margin: 1em; justify-self: baseline; align-self:baseline;">
 
 Seagulls is the result of my second-year group project at Bournemouth University, which I directed. I was in charge of ensuring the team got their work done, and I was also responsible for the project pipeline and all the FX. 
 
-*THIS ARTICLE IS STILL UNDER DEVELOPMENT*
+For our assignment, we had to work in randomly selected teams of 4-6 people to create a 30 second animation over the course of 3 months.
+
+I had the idea for Seagulls fishing over the Summer. I wanted to do a project that would focus on *good* visuals (animation quality, fx quality, etc.), and I also wanted something that was funny and cute.
+
+I had begun developing a Houdini-centric USD pipeline at the time and wanted to use it in a full animation project.
+
+</div>
+</div>
+
+## Pre-Production
+I began pre-production by doing some intial concepts and a basic animatic. I used these for my initial pitch to the rest of the class.
 
 
-# Directing & Producing
+My idea was then approved and I was given 4 team members to work with. We had:
 
-As the director, I was responsible for completing my original idea. Before pitching, I developed a basic animatic and references to establish the timing and mood of the short, which became a good reference for the team, especially in Animation. This technique of getting most of the pre-visualisation out of the way ensured more time to focus on refining models, movement, and overall polish for a stronger final piece.
+- Christopher Hosken (me), Director & FX Artist
 
-I also took the producing role as it allowed me full creative freedom and the ability to adjust the schedule for any creative changes I or the team wanted to make. My producing responsibilities included scheduling meetings, preparing presentations, tracking progress, and ensuring the team’s workload remained balanced.
+- [Eva Desmoutier](https://www.linkedin.com/in/eva-desmoutier-03351229a/), Character Artist & Clouds
 
-| ![][image1] |
-| :---: |
-| ![][image2] |
-| *The Gantt Chart that was used for production, alongside how things really went.* |
+- [Lewis Williamson](https://www.linkedin.com/in/lewis-williamson-30a689311/), Prop Artist & Island
+
+- [Yilin Luan](), Concept Art & Animation
+
+- [Haopu Chen](), Titles & Animation
+
+Our project supervisor was [Eike Anderson](https://www.linkedin.com/in/eike-falk-anderson-00a19862/).
+
+## Directing & Producing
+
+As the Director & Producer, I was responsible for the direction of our idea and also making sure that it would be completed. My animatic and concepts that I had made before-hand ensured more time to focus on refining models, movement, and overall polish for a stronger final piece. My producing responsibilities included scheduling meetings, preparing presentations, tracking progress, and ensuring the team’s workload remained balanced.
+
+Below you can see the original Gantt chart (left), verses how production really went (right).
+
+<div class="container" style="display: flex; justify-content: center;">
+
+![Gantt Chart](/blog/seagulls/gantt_og.png)
+
+![Real Production](/blog/seagulls/gantt_real.png)
+
+</div>
 
 One drawback to being Director and Producer is that it often leaves the rest of the team feeling beaten down. To combat this, I encouraged input from everybody and went for a more democratic approach to decision-making than dictatorship. Doing this allowed my team to come up with some great ideas that I would never have.
 
@@ -34,11 +67,15 @@ One drawback to being Director and Producer is that it often leaves the rest of 
 
 One unique aspect about Seagulls is that it’s one of the first group projects to utilise a USD Pipeline. Before beginning production, I read extensively about USD and how it works in a VFX and Animation Studio. Using what I had learnt, we could heavily parallelise numerous parts of our pipeline, in different softwares.
 
-| ![][image3]![][image4] |
-| :---: |
-| *My USD pipeline proposal (left), Seagulls shot pipeline (right)* |
-
 I was in charge of maintaining the pipeline and teaching my team how to use it. We came across a few hiccups with model updates breaking rigs, however, overall it was a huge success\!
+
+# Modelling & Texturing
+
+<div style="color: red;">
+
+***This Section is Under Development***
+
+</div>
 
 # Rigging
 
@@ -48,9 +85,6 @@ My workflow followed a structured approach:
 
 1. **Base Deformation**: First, I built a skeleton that would deform the mesh  
 2. **Controls**: Instead of manually setting up the constraints and controls. I wrote Python scripts to generate them. This allowed for rapid iteration. Any adjustments could be reapplied to the rig instantly.
-
-| ![][image5] *All the rigs used in Seagulls\!* |
-| :---: |
 
 For simpler props, I did manual rigging. My favourite prop was the fishing rod as I loved implementing the bend deformer, which shows very well in the final animation.	
 
@@ -81,6 +115,14 @@ def create_text_curve(name="", text="", font='Arial', size=1):
     return curve_group
 ```
 
+# Animation
+
+<div style="color: red;">
+
+***This Section is Under Development***
+
+</div>
+
 # FX
 
 The FX for this project was done in Houdini. Using our USD workflow, I was able to override any of the animations to make changes as well as utilise Houdini Procedurals for faster and more efficient rendering. 
@@ -88,25 +130,17 @@ The FX for this project was done in Houdini. Using our USD workflow, I was able 
 ## Feathers & Fur
 
 Whilst animation was underway, I worked on the feathers for Gulliver and Jeff (the seagulls). I used a Houdini Fur Procedural for the base “fluff” on the body, and a Houdini Feather Procedural with seagull feathers (that I made) to scatter on the wings and tail. The feathers were then deformed using the feather mesh from the animation.  
-![][image6]![][image7]  
-*The feathers and “fluff”*
+
 
 ## Oceans & Water
 
 For the ocean, I used the Houdini Ocean Procedural in combination with a FLIP simulation to merge the splashy water with a large ocean surface. I then did a white water simulation to add more splashy and foamy detail to the scene.
-
-| ![][image8]![][image9] |
-| :---- |
-
-*Screenshots of the fluid simulation at 0.1 particle separation*
 
 The biggest challenge with simulating the ocean was the time it took to cache. From FLIP sim to final mesh, it took about 30 hours. This made trying to iterate over the sim extremely difficult. Given more time, I would have liked to refine the fluid simulation so that it interacts with the oars and so that the shark is more visible when it chases after the boat.
 
 ## Extra
 
 The newspaper was a quick vellum simulation that I did over the animation. The ocean’s spectrum was used to help make the newspaper float in the water.  
-![][image10]![][image11]  
-*The original animation (left) replaced by the vellum simulation (right)*
 
 Once I had completed all the FX, I cached out into the FX layer, which I could then disable and enable whilst doing lighting tests.
 
@@ -118,27 +152,15 @@ For rendering, I decided to render directly into OneDrive. This made getting ren
 
 I had to solve a few issues in rendering, such as enabling Legacy EXR Mode in Karma so that Cryptomattes worked. I also created primvar AOVs, which meant I could render out specific mesh attributes (such as my “whitewater emission” mask).
 
-| ![][image12]![][image13] *Whitewater mask* |
-| :---: |
-
 Using these custom AOVs, I could refine my renders in compositing. For example, I could use my whitewater emission AOV to add whiteness to my fluid. I also split the scene into 4 layers (Sky, Island, Foreground, Whitewater), which I then combined in compositing. This dramatically sped up rendering.
 
 When compositing, I had to manually do some rotopaint and masks to hide glitches in the water, and intersecting geometry.
 
-| ![][image14]![][image15] *An example of some of the rotopaint* |
-| :---: |
-
 As we had extra time during the animation stage, I also rendered all the assets in their lookdev turntables. 
-
-![][image16]  
-*All the asset turntables*
 
 # Final Edit
 
 Since *Seagulls\!* has only one shot. The final edit was extremely simple to do. I went online to find sounds for the animation and placed them into the edit (see */3rd-party.txt*). I was also able to get in contact with an external music producer, [Hamza Aydın](https://www.youtube.com/channel/UCryMx7RshwDKNHQ-amgEm0A), who created the score. 
-
-| ![][image17] *The complete editing timeline* |
-| ----- |
 
 # Conclusion
 
@@ -149,6 +171,5 @@ Being a director has also been fulfilling in learning how to communicate my idea
 Although we had a few miscommunication mishaps throughout production, we were able to quickly overcome them and nobody felt hard-done by. This helped me see that taking a positive approach to work (even when you’re annoyed at having to redo things), helps improve team morale dramatically. I hope to take this attitude with me into the VFX and Animation industry.
 
 I have been extremely blessed to have been given a team that was willing to cooperate and wanted to do the best it could. Without them, Seagulls would have never been as successful as they have been. Being able to trust my team members with their work gave me time to refine my USD pipeline as well as learn new FX techniques. I have learned how to lean into other people's strengths and not solely rely on myself for doing the work.
-
 
 *Written by Christopher Hosken on May 2nd, 2025*
