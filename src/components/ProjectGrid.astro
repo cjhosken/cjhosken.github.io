@@ -1,114 +1,30 @@
 ---
 import { getCollection } from 'astro:content';
 
-// Get all projects and sort by date (newest first)
 const allProjects = (await getCollection('blog'))
   .filter(project => !project.data.tags?.includes('hidden'))
-  .sort((a, b) => {
-    const dateA = new Date(a.data.date).getTime();
-    const dateB = new Date(b.data.date).getTime();
-    return dateB - dateA;
-  });
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
-// Get all unique tags from all projects
 const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))]
   .filter(tag => tag !== 'hidden');
-
-const url = new URL(Astro.request.url);
-const activeTag = url.searchParams.get('tag');
-const currentPage = Number(url.searchParams.get('page')) || 1;
-
-// Filter by tag if active
-const filteredProjects = activeTag
-  ? allProjects.filter(p => p.data.tags?.some(tag => tag.toLowerCase() === activeTag))
-  : allProjects;
-
-const itemsPerPage = 12; // Adjust this number as needed
-
-// Calculate pagination values
-const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
-const startIndex = (currentPage - 1) * itemsPerPage;
-const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsPerPage);
-
 ---
 
-<div class="portfolio-container">
+<div id="project-app" class="portfolio-container" data-projects={JSON.stringify(allProjects)}>
   <!-- Tag Filter -->
-  <div class="tag-filter">
-    <a 
-      href="?" 
-      class={`tag ${!activeTag ? 'active' : ''}`}
-    >
-      All
-    </a>
+  <div id="tag-filter" class="tag-filter">
+    <button class="tag active" data-tag="">All</button>
     {allTags.map(tag => (
-      <a
-        href={`?tag=${tag}`}
-        class={`tag ${activeTag === tag ? 'active' : ''}`}
-      >
-        {tag}
-      </a>
+      <button class="tag" data-tag={tag}>{tag}</button>
     ))}
   </div>
 
-  <!-- Project Grid -->
-  <div class="project-grid">
-    {paginatedProjects.map((project) => (
-      <a href={`/blog/${project.slug}/`} class="project-card">
-        <div class="card-image-container">
-            <img 
-              src={`/blog/${project.slug}/cover.jpg`}
-              alt={project.data.title}
-              loading="lazy"
-              width="100%"
-              height="auto"
-            />
-        </div>
-        <div class="card-content">
-          <h2>{project.data.title}</h2>
-          <h3>{project.data.date.getUTCFullYear()}</h3>
-          <p class="description">{project.data.description}</p>
-          {project.data.tags && (
-            <div class="project-tags">
-              {project.data.tags
-                .map(tag => (
-                  <span class="tag-badge">{tag}</span>
-                ))
-              }
-            </div>
-          )}
-        </div>
-      </a>
-    ))}
-  </div>
-  {totalPages > 1 && (
-    <div class="pagination">
-      {currentPage > 1 && (
-        <a 
-          href={`?${activeTag ? `tag=${activeTag}&` : ''}page=${currentPage - 1}`} 
-          class="pagination-button"
-        >
-          Previous
-        </a>
-      )}
-      
-      <span class="page-info">
-        Page {currentPage} of {totalPages}
-      </span>
-      
-      {currentPage < totalPages && (
-        <a 
-          href={`?${activeTag ? `tag=${activeTag}&` : ''}page=${currentPage + 1}`} 
-          class="pagination-button"
-        >
-          Next
-        </a>
-      )}
-    </div>
-  )}
+  <!-- Project Grid (populated by JS) -->
+  <div id="project-grid" class="project-grid"></div>
+
+  <!-- Pagination Controls -->
+  <div id="pagination" class="pagination"></div>
 </div>
-
-<style>
+<style is:global>
   .portfolio-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -136,13 +52,13 @@ const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsP
   }
 
   .tag:hover {
+    cursor: pointer;
     background: rgba(255, 255, 255, 0.2);
   }
 
   .tag.active {
     background: white;
     color: black;
-    font-weight: 600;
   }
 
   .project-grid {
@@ -299,3 +215,86 @@ const paginatedProjects = filteredProjects.slice(startIndex, startIndex + itemsP
     }
   }
 </style>
+
+<!-- Client Script -->
+<script>
+
+const state = {
+  projects: [],
+  filtered: [],
+  activeTag: '',
+  currentPage: 1,
+  itemsPerPage: 12
+};
+
+const app = document.getElementById('project-app');
+state.projects = JSON.parse(app.dataset.projects);
+state.filtered = [...state.projects];
+
+const grid = document.getElementById('project-grid');
+const pagination = document.getElementById('pagination');
+const tagFilter = document.getElementById('tag-filter');
+
+function renderProjects() {
+  const start = (state.currentPage - 1) * state.itemsPerPage;
+  const paginated = state.filtered.slice(start, start + state.itemsPerPage);
+  grid.innerHTML = paginated.map(project => `
+    <a href="/blog/${project.slug}/" class="project-card">
+      <div class="card-image-container">
+        <img src="/blog/${project.slug}/cover.jpg" alt="${project.data.title}" loading="lazy" />
+      </div>
+      <div class="card-content">
+        <h2>${project.data.title}</h2>
+        <h3>${new Date(project.data.date).getFullYear()}</h3>
+        <p class="description">${project.data.description}</p>
+        <div class="project-tags">
+          ${(project.data.tags || []).map(tag => `<span class="tag-badge">${tag}</span>`).join('')}
+        </div>
+      </div>
+    </a>
+  `).join('');
+}
+
+function renderPagination() {
+  const totalPages = Math.ceil(state.filtered.length / state.itemsPerPage);
+  pagination.innerHTML = `
+    ${state.currentPage > 1 ? `<a href="#" class="pagination-button" data-page="${state.currentPage - 1}">Previous</a>` : ''}
+    <span class="page-info">Page ${state.currentPage} of ${totalPages}</span>
+    ${state.currentPage < totalPages ? `<a href="#" class="pagination-button" data-page="${state.currentPage + 1}">Next</a>` : ''}
+  `;
+}
+
+function filterByTag(tag) {
+  state.activeTag = tag;
+  state.currentPage = 1;
+  state.filtered = tag
+    ? state.projects.filter(p => (p.data.tags || []).includes(tag))
+    : [...state.projects];
+
+  document.querySelectorAll('.tag').forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.tag[data-tag="${tag}"]`)?.classList.add('active');
+  renderProjects();
+  renderPagination();
+}
+
+// Initial render
+filterByTag('');
+
+// Tag button click handling
+tagFilter.addEventListener('click', e => {
+  if (e.target.matches('.tag')) {
+    e.preventDefault();
+    filterByTag(e.target.dataset.tag);
+  }
+});
+
+// Pagination click handling
+pagination.addEventListener('click', e => {
+  if (e.target.matches('.pagination-button')) {
+    e.preventDefault();
+    state.currentPage = Number(e.target.dataset.page);
+    renderProjects();
+    renderPagination();
+  }
+});
+</script>

@@ -35,7 +35,7 @@ const { Content } = await post.render();
   <Content />
   </article>
 </BlogLayout>
-<style>
+<style is:global>
   .blog-post {
     max-width: 800px;
     margin: auto;
@@ -86,6 +86,10 @@ const { Content } = await post.render();
 
     img {
         width: 100%;
+    }
+
+    .container img {
+      width: 200px;
     }
 
 </style>

@@ -93,25 +93,3 @@ In terms of actual technical knowledge, I've found that doing everything step-by
 I'm definitely going to use KeenTools in my future projects, I found that not only does it do heads, but anything! It's a very cool tool and I'm excited to use it more.
 
 *Written Feb 6, 2024 by Christopher Hosken*
-
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-</style>

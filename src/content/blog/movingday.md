@@ -39,24 +39,3 @@ I then began animating the mouse.
 Once I was happy with animation, I rendered out the project and edited it with sound. I found the project extremely fufilling and it gave me a better sense of why concepting your shots is an effective way of creating animations.
 
 *This article was written by Christopher Hosken on May 1st, 2025*
-
-<style>
-img {
-    width: 100%;
-}
-
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>

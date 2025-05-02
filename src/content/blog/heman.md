@@ -44,29 +44,4 @@ Continuing on from the [Jupiter Steam Train](/blog/jupiter) I built Heman as a U
 
 The pipeline worked extremely well for completing a full rounded-character.
 
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    a {
-      color: var(--sys-color-primary)
-    }
-</style>
-
 *Written Jan 17, 2025 by Christopher Hosken*

@@ -55,25 +55,3 @@ I did my rendering inside of Maya using Arnold, however the asset also works wit
 Overall, I'm very happy with this asset. If I had more time to work on it, I would look into rigging and animating it, as well as combining it with FX in Houdini. This project has helped me gain better understanding of USD, and how it works in the animation and VFX pipeline, and I can't wait to use it in more of my projects. 
 
 *Written Oct 21, 2024 by Christopher Hosken*
-
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-</style>

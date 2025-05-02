@@ -71,27 +71,3 @@ Sparky was released on September 27, 2020 to Youtube.
 
 
 *This article was written by Christopher Hosken on May 1, 2025*
-
-
-
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .container img {
-        width: 100%;
-    }
-</style>

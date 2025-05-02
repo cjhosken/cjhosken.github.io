@@ -24,23 +24,3 @@ A viewport animation of the environment. Mostly made up of Quixel Megascans, I r
 The mud simulation was done using Houdini's new MPM simulation tool. I combined it with a particle fluid surface to create a mud look. The wetmap on the Rhino is a simple SOP solver that uses attribute transfers to remember collisions with the fluid.
 
 *Written December 12, 2024 by Christopher Hosken*
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-</style>

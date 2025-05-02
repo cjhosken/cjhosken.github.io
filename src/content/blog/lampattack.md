@@ -59,7 +59,7 @@ After the animation was complete, I worked on getting the crown simulation to wo
 </div>
 
 ## Rendering
-It took us about 2 months to render the entire shot. I used SheepIT renderfarm for rendering and had to get in contact with the developers as the project broke the renderfarm. The team were extremely helpful and were able to get the shot to finish rendering. After rendering, we edited the short and then premiered it on Youtube.
+It took us about 2 months to render the entire shot. I used [SheepIT Renderfarm](https://www.sheepit-renderfarm.com/home) for rendering and had to get in contact with the developers as the project broke the renderfarm. The team were extremely helpful and were able to get the shot to finish rendering. After rendering, we edited the short and then premiered it on Youtube.
 
 
 ### Alternative Pixar Intro
@@ -72,24 +72,3 @@ In my spare time I was able to through together an alternative Pixar intro.
 </div>
 
 *This article was written by Christopher Hosken on May 1st, 2025*
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-</style>

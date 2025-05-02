@@ -37,6 +37,17 @@ p {
     font-size: 1.25em;
 }
 
+a {
+    text-decoration: none;
+    color: var(--md-sys-color-primary);
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.35s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--md-sys-color-primary);
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -51,7 +62,8 @@ button {
 
 .md-button:hover {
     cursor: pointer;
-    color: var(--md-sys-color-primary)
+    color: var(--md-sys-color-primary);
+    border-bottom: none;
 }
 
 .md-box-button {

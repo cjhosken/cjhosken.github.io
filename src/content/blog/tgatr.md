@@ -10,7 +10,7 @@ tags: ['team', 'vfx', 'film']
 
 # Introduction
 
-*The Girl and the Robot* was a live action short film that I made with Bethany Prince in our last year of High School. I was in charge of directing and visual effects, and she was responsible for producing.
+*The Girl and the Robot* was a live action short film that I made with [Bethany Prince](https://www.linkedin.com/in/bethany-prince-a68429342/?trk=blended-typeahead) in our last year of High School. I was in charge of directing and visual effects, and she was responsible for producing.
 
 ## Pre-Production
 
@@ -55,32 +55,4 @@ Once filming was complete, I began tracking the footage and integrating the Robo
 
 We then edited the film and released it on April 4th, 2023; just over a year after the start of production.
 
-
-
-
 *This article was written by Christopher Hosken on May 1st, 2025*
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .container img {
-        height: 400px;
-    }
-</style>

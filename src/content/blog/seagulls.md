@@ -2,13 +2,19 @@
 title: "Seagulls!"
 date: 2025-05-01
 description: "Two seagulls go fishing and find themselves in dangerous waters."
-tags: ["university", "team", 'animation', "film", "hidden"]
+tags: ["university", "team", 'animation', "film"]
 ---
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l4VV4fxrYNg?si=OwyiVuMLqlzokter" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-# Project Description
+# Introduction
+"Two Seagulls go fishing and find themselves in dangerous waters."
 
-Seagulls Visual Breakdown Report   
-Christopher Hosken
+Seagulls is the result of my second-year group project at Bournemouth University, which I directed. I was in charge of ensuring the team got their work done, and I was also responsible for the project pipeline and all the FX. 
+
+*THIS ARTICLE IS STILL UNDER DEVELOPMENT*
+
 
 # Directing & Producing
 
@@ -142,3 +148,6 @@ Being a director has also been fulfilling in learning how to communicate my idea
 Although we had a few miscommunication mishaps throughout production, we were able to quickly overcome them and nobody felt hard-done by. This helped me see that taking a positive approach to work (even when you’re annoyed at having to redo things), helps improve team morale dramatically. I hope to take this attitude with me into the VFX and Animation industry.
 
 I have been extremely blessed to have been given a team that was willing to cooperate and wanted to do the best it could. Without them, Seagulls would have never been as successful as they have been. Being able to trust my team members with their work gave me time to refine my USD pipeline as well as learn new FX techniques. I have learned how to lean into other people's strengths and not solely rely on myself for doing the work.
+
+
+*Written by Christopher Hosken on May 2nd, 2025*

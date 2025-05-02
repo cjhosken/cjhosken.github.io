@@ -73,25 +73,3 @@ About a month after I finished *Fallout Shopping*, I heard there was an Animatio
 </div>
 
 *This article was written by Christopher Hosken on May 1st, 2025*
-
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%; 
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .video-container * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-
-    .container img {
-        width: 100%;
-    }
-</style>
