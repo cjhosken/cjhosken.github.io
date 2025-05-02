@@ -9,6 +9,4 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   site: 'https://cjhosken.github.io',
   integrations: [icon(), sitemap()],
-
-  adapter: netlify()
 });
