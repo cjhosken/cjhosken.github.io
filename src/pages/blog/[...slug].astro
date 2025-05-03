@@ -2,6 +2,7 @@
 
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import USDViewer from '../../components/USDViewer.astro';
 
 
 export async function getStaticPaths() {
@@ -32,7 +33,11 @@ const { Content } = await post.render();
         year: 'numeric'
       })}</time>
     </header>
-  <Content />
+    <!-- Pass both Astro and interactive components -->
+    <Content components={{ 
+      USDViewer,
+      // USDViewer: USDViewerInteractive // If using a framework component
+    }} />
   </article>
 </BlogLayout>
 <style is:global>
