@@ -2,7 +2,6 @@
 
 import { getCollection } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
-import USDViewer from '../../components/USDViewer.astro';
 
 
 export async function getStaticPaths() {
@@ -35,8 +34,7 @@ const { Content } = await post.render();
     </header>
     <!-- Pass both Astro and interactive components -->
     <Content components={{ 
-      USDViewer,
-      // USDViewer: USDViewerInteractive // If using a framework component
+
     }} />
   </article>
 </BlogLayout>
