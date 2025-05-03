@@ -82,7 +82,9 @@ For actually *bending* the light rays, I apply a gravitation force using
 
 <div style="display: flex; justify-content:center">
 
-$Fg = |f|/d^2$ 
+```math
+Fg = |f|/d^2
+```
 
 </div>
 
@@ -106,11 +108,13 @@ It's a known fact that you are *never* out of range from the gravitational pull 
 
 <div style="display: flex; justify-content:center">
 
-$d = \sqrt{|f|}/\alpha$
+```math
+d = \sqrt{|f|}/\alpha
+```
 
 </div>
 
-In which $\alpha$ is the gravitational cuttoff threshold. This calculated distance, $d$ was then used to create an "Influence Sphere" around each of my Gravity Wells.
+In which alpha is the gravitational cuttoff threshold. This calculated distance, d was then used to create an "Influence Sphere" around each of my Gravity Wells.
 
 Now, when raytracing I first check if the particle is inside an influence sphere. If it is, it undergoes an adaptive particle step.
 
@@ -121,7 +125,7 @@ If it isnt, then it does a normal ray intersection test (no segmentation). If th
     <img src="doc/influence2d.png" style="margin: 1em; width: 35%; height: auto;"/>
 </div>
 
-*Left: A diagram showing Influence Switching with adaptive particle stepping. Right: A chart showing the gravitational cutoff at $\alpha=0.1$.*
+*Left: A diagram showing Influence Switching with adaptive particle stepping. Right: A chart showing the gravitational cutoff at alpha=0.1.*
 
 These two techniques (while resulting in a loss of accuracy), help speed up rendering dramatically.
 
