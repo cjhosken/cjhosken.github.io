@@ -2,9 +2,11 @@
 title: "Large Scale Multi-Layer FX in USD"
 date: 2025-05-08
 description: "A study on combining large scale simulations with USD in Houdini."
-tags: ["university", "solo", 'usd', "fx", "study", "hidden"]
+tags: ["university", "solo", 'usd', "fx", "study"]
 ---
 
-# Project Description
+<div style="color: red;">
 
-This is the content of my README that will become the blog post.
+***THIS ARTICLE IS UNDER DEVELOPMENT***
+
+</div>

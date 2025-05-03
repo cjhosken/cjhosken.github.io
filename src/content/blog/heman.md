@@ -2,7 +2,7 @@
 title: Heman
 date: 2025-01-17
 description: "A stylized hero asset made in ZBrush, Maya, and Houdini."
-tags: ["solo", "university", "project"]
+tags: ["solo", "university", "usd"]
 ---
 
 ## Modelling

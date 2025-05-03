@@ -2,7 +2,7 @@
 title: Rhino FX
 date: 2024-12-24
 description: "Experimenting with MPM and Solaris environment layouts."
-tags: ["solo", "mpm", "fx", "project"]
+tags: ["solo", "mpm", "fx"]
 ---
 
 ## Introduction
