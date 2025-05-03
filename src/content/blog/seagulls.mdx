@@ -79,15 +79,16 @@ I was in charge of maintaining the pipeline and teaching my team how to use it. 
 
 Yilin Luan was responsible for creating the character concepts off the references I gave her. I wanted to go for an Illumination style animation so we took heavy influence from Discpicable Me (2010) and Migration (2023).
 
-<div>
+<div class="container" style="display: flex;">
+![Jeff](/blog/seagulls/jeff_concept.png)
 
-![Jeff]()
+![Gulliver](/blog/seagulls/gulliver_concept.png)
+</div>
 
-![Gulliver]()
+<div class="container" style="display: flex;">
+![Shark](/blog/seagulls/shark_concept.png)
 
-![Shark]()
-
-![Boat]()
+![Boat](/blog/seagulls/boat_concept.png)
 
 </div>
 
@@ -95,9 +96,21 @@ Haopu was responsible for the titles and credits. She did a wonderful job captur
 
 <div>
 
-![Titles]()
+<div class="contaier" style="display: flex; gap: 1em; justify-content: center;">
 
-![Credits]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/TITLES.MP4" type="video/mp4"/>
+</video>
+</div>
+
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/CREDITS.MP4" type="video/mp4"/>
+</video>
+</div>
+
+</div>
 
 </div>
 
@@ -105,19 +118,51 @@ Haopu was responsible for the titles and credits. She did a wonderful job captur
 
 Once the concepts were finished, Eva Desmoutier and Lewis Williamson began creating the assets in ZBrush, Maya and Substance Painter. All our assets were saved out as USD files and used MaterialX for Cross-DCC rendering compatibility. 
 
-![Jeff]()
+<div class="container" style="display: flex; gap: 1em; justify-content: center; flex-direction: row; flex-wrap: wrap;">
 
-![Guliver]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Jeff_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Shark]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Gulliver_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Fish]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Shark_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Boat]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Fish_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Newspaper]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Boat_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Fishing Rod]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Rod_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
+
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/SGL_Newspaper_lookdev_mixed.mov" type="video/mp4"/>
+</video>
+</div>
+
+</div>
 
 # Rigging
 
@@ -132,8 +177,6 @@ My workflow followed a structured approach:
 For simpler props, I did manual rigging. My favourite prop was the fishing rod as I loved implementing the bend deformer, which showed very well in the final animation.	
 
 ![Rigged](/blog/seagulls/rigging.png)
-
-![Seagull Rigging Demo]()
 
 One important script snippet which I want to highlight is a text curve. Usually, text controllers split into each character and using them can be very frustrating. This Python script is how you would generate a single text curve to use as a controller.
 
@@ -168,29 +211,45 @@ I then handed over the rigs for Yilin and Haopu to begin animating. As the entir
 
 As everything was referenced (through USD as well as Maya), we were able to quickly make changes to textures, rigs, geometry that would feed straight into the animation.
 
-![Rigging Breakdown]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/playblast.mov" type="video/mp4"/>
+</video>
+</div>
 
-![Final Animation]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/playblast_rigged.mov" type="video/mp4"/>
+</video>
+</div>
 
 ## FX
 
 I did all the FX for this project inside of Houdini. Utilizing our USD pipeline, I was able to override any of the animations using layers to make changes as well as utilise Houdini Procedurals for faster and more efficient rendering. 
 
-![Houdini FX Layer]()
+![Houdini FX Layer](/blog/seagulls/fx_script.png)
 
 ## Feathers & Fur
 
 Whilst animation was underway, I worked on the feathers for Gulliver and Jeff (the seagulls). I used a Houdini Fur Procedural for the base “fluff” on the body, and a Houdini Feather Procedural with seagull feathers (that I made) to scatter on the wings and tail. The feathers were then deformed with a point deform by using the feather mesh from the animation.  
 
-![Feathers Workflow]()
+<div class="contaier" style="display: flex; gap: 1em; justify-content: center;">
 
-![Feathers Workflow]()
+![Fur](/blog/seagulls/seagull_fur.png)
+
+![Feathers](/blog/seagulls/seagull_feathers.png)
+
+</div>
 
 ## Oceans & Water
 
 For the ocean, I used the Houdini Ocean Procedural in combination with a FLIP simulation to merge the splashy water with a large ocean surface. I then did a white water simulation to add more splashy and foamy detail to the scene.
 
-![Water Splash WIP]()
+<div class="video-container">
+<video autoplay loop muted>
+  <source src="/blog/seagulls/water_fx_v003_NC.mp4" type="video/mp4"/>
+</video>
+</div>
 
 The biggest challenge with simulating the ocean was the time it took to cache. From FLIP sim to final mesh, it took about 30 hours. This made trying to iterate over the sim extremely difficult. Given more time, I would have liked to refine the fluid simulation so that it interacts with the oars and so that the shark is more visible when it chases after the boat.
 
@@ -198,9 +257,13 @@ The biggest challenge with simulating the ocean was the time it took to cache. F
 
 The newspaper was a quick vellum simulation that I did over the animation. The ocean’s spectrum was used to help make the newspaper float in the water.  
 
-![Newspaper Anim]()
+<div class="contaier" style="display: flex; gap: 1em; justify-content: center;">
 
-![Newsspaper FX]()
+![Newspaper Anim](/blog/seagulls/paper_anim.png)
+
+![Newsspaper FX](/blog/seagulls/paper_fx.png)
+
+</div>
 
 Once I had completed all the FX, I cached out into the FX layer, which I could then disable and enable whilst doing lighting tests.
 
@@ -212,19 +275,21 @@ For rendering, I decided to render directly into OneDrive. This made getting ren
 
 I had to solve a few issues in rendering, such as enabling Legacy EXR Mode in Karma so that Cryptomattes worked. I also created primvar AOVs, which meant I could render out specific mesh attributes (such as my “whitewater emission” mask).
 
-![Primvar AOV Beauty]()
+![Primvar AOV Beauty](/blog/seagulls/beauty_aov.png)
 
-![Primvar AOV Whitewater]()
+![Primvar AOV Whitewater](/blog/seagulls/emission_aov.png)
 
 Using these custom AOVs, I could refine my renders in compositing. For example, I could use my whitewater emission AOV to add whiteness to my fluid. I also split the scene into 4 layers (Sky, Island, Foreground, Whitewater), which I then combined in compositing. This dramatically sped up rendering.
 
 When compositing, I had to manually do some rotopaint and masks to hide glitches in the water, and intersecting geometry.
 
-![Roto Original]()
+<div class="contaier" style="display: flex; gap: 1em; justify-content: center;">
 
-![Roto Fixed]()
+![Roto Original](/blog/seagulls/roto_original.png)
 
-As we had extra time during the animation stage, I also rendered all the assets in their lookdev turntables. 
+![Roto Fixed](/blog/seagulls/roto_fix.png)
+
+</div>
 
 # Final Edit
 
