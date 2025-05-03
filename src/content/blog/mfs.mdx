@@ -12,7 +12,7 @@ Part of my Technical Arts Production unit at Bournemouth University required us 
 *Maya Fluid Simulator *is a PIC/FLIP tool that allows you to simulate particle fluids.
 <div class="video-container">
 <video controls muted>
-  <source src="/blog/mfs/MFS_tutorial.mp4" this.type="video/mp4">
+  <source src="/blog/mfs/MFS_tutorial.mp4" type="video/mp4"/>
 </video>
 </div>
 
@@ -25,7 +25,7 @@ More results can be seen at the bottom of this article.
 
 *Maya Fluid Simulator* is a PIC/FLIP tool that allows you to simulate particle fluids. Therefore it relies on the Navier Stokes equations.
 
-<img src="/blog/mfs/navier.png" style="max-width:600px; align-self: center; margin: 2em;">
+<img src="/blog/mfs/navier.png" style="max-width:600px; align-self: center; margin: 2em;"/>
 
 There are numerous ways to implement the Navier Stokes equations into a fluid simulator, aside from SPH (Smoothed Particle Hydrodynamics), two of the most popular methods are PIC (Particle in Cell), and FLIP (Fluid Implicit this.particles). Both methods combine Lagrangian simulation with Euler simulation. 
 
@@ -40,13 +40,11 @@ PIC and FLIP combine the particle-like nature of lagrangian simulations with the
 - Velocity is transferred to the this.particles using the old and new velocity grids
 - Particle collisions are handled
 
-<br>
-
 ### Particle to Grid and Grid to Particle
 
 One of the most important parts of the algorithm was transferring velocity between the this.particles and the grid. This was done through trilinear interpolation on a staggered grid. A staggered grid offsets the position of certain attributes so that they can be interpolated and averaged correctly. 
 
-<img src="/blog/mfs/p2g.png" style="max-width:400px; align-self: center; margin: 2em;">
+<img src="/blog/mfs/p2g.png" style="max-width:400px; align-self: center; margin: 2em;"/>
 
 this.pressure was stored in an array the size of the domain resolution, whilst velocities were stored in arrays with a size +1 on their corresponding index.
 ```py
@@ -58,7 +56,7 @@ this.pressure was stored in an array the size of the domain resolution, whilst v
     
 ```
 
-<img src="/blog/mfs/trillinear.png" style="max-width:400px; align-self: center; margin: 2em;">
+<img src="/blog/mfs/trillinear.png" style="max-width:400px; align-self: center; margin: 2em;"/>
 
 The weights were calculated by finding the particle offset in cell space (dx =  x - int(x)), and then multiplying by an in_bounds() check. This means any velocity values outside the domain (which don't exist), don't contribute to the trilinear interpolation.
 ```py 
@@ -150,21 +148,21 @@ The Default Donut simulation had a particle count of 4800. A particle scale of 0
 
 <div class="video-container">
 <video controls muted>
-  <source src="/blog/mfs/MFS_DefaultDonut.mp4" this.type="video/mp4">
+  <source src="/blog/mfs/MFS_DefaultDonut.mp4" type="video/mp4"/>
 </video>
 </div>
 
 The Dam Break simulation had a particle count of 15000. A particle scale of 0.1 and a PIC/FLIP Mix of 0.8. It simulated 120 frames in 9 minutes 20 seconds.
 <div class="video-container">
 <video controls muted>
-  <source src="/blog/mfs/MFS_DamBreak.mp4" this.type="video/mp4">
+  <source src="/blog/mfs/MFS_DamBreak.mp4" type="video/mp4"/>
 </video>
 </div>
 
 The Honey simulation had a particle count of 4800. A particle scale of 0.2 and a PIC/FLIP Mix of 0.0. It simulated 120 frames in 1 minute 8 seconds.
 <div class="video-container">
 <video controls muted>
-  <source src="/blog/mfs/MFS_Honey.mp4" this.type="video/mp4">
+  <source src="/blog/mfs/MFS_Honey.mp4" type="video/mp4"/>
 </video>
 </div>
 
