@@ -1,7 +1,7 @@
 ---
-title: "Large Scale Multi-Layer FX in USD"
+title: "Large Scale Simulations with USD in Houdini Solaris"
 date: 2025-05-08
-description: "A study on combining large scale simulations with USD in Houdini."
+description: "A study on combining large scale simulations with USD in Houdini Solaris."
 tags: ["university", "solo", 'usd', "fx", "study"]
 ---
 
@@ -19,10 +19,48 @@ In this practice-led project I will explore how Pixar's USD can be used in a Mul
 
 *This exploration was done entirely in Houdini due to its compatibility with USD. However, the concepts in this study can be applied to other softwares.*
 
+## Context
+
+USD is beginning to become more popular in the Animation / VFX industry.
+
+However, it is confusing to use and there is not a lot of information about how to go about doing a shot pipeline.
+
+Studios have also invented their own ways of using USD in production; some are 100% USD based, some are 50/50, some don't use USD at all.​
+
+<div style="display:flex; justify-content: center; gap: 2em;">
+    <div>
+
+        ![Pixar's Pipeline](/blog/personalinquiry/pixar_pipe.jpg)
+
+        Pixar's USD Pipeline (Full USD)
+
+    </div>
+    <div>
+
+        ![Dreamworks' Pipeline](/blog/personalinquiry/dreamworks_pipe.png)
+
+        Dreamwork's USD Pipeline (mixed USD)
+
+    </div>
+</div>
+
+
+This project looks to explore how to create a full USD FX shot in Houdini Solaris. It will answer:
+
+*​How does USD work in a shot context?​*
+
+*How can I effectively bring my RBD, Vellum, and SOP simulations into USD?​​*
+
+*What’s the most optimal way to cache fluids in USD, and what are procedurals?​​*
+
+*How can I include Volume simulations in my USD file?​​*
+
+*What do I do next?*
+
 ## 01 USD Layering
 *How does USD work in a shot context?*
 
-<div style="display:flex; justify-content: center; gap: 2em; falign-items: start; text-align: left;">
+<div style="display:flex; justify-content: center; gap: 2em; align-items: start; text-align: left;">
 <div>
 I began by looking at how USD stages are composed. The two biggest takeaways I got were:​
 
@@ -177,5 +215,22 @@ I could then combine all the layers together and render them out. This could be 
 <div class="video-container">
     <video controls muted> <source src="/blog/personalinquiry/pi_artefact_render.mov" type="video/mp4"/></video>
 </div>
+
+## Takeaways
+
+- USD scenes can be overridden and edited non-destructively.
+
+
+- SOP Imports are good for most cases, large scale sims work best with "Transform by Points".
+
+
+- USD Procedurals are extremely useful for saving time and memory.
+
+
+- VDB's break when "empty" and need to be toggled.
+
+
+- Projects can be "packaged" which is optimal for render-farm rendering.
+
 
 *This article was written by Christopher Hosken on May 3rd, 2025*
