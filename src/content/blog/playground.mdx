@@ -5,5 +5,18 @@ description: "A place for me to experiment. If you found this page, good on you!
 tags: ["hidden"]
 ---
 
+import MediaSlider from '../../components/blog/MediaSlider.astro';
 
-
+<MediaSlider 
+  items={[
+    {
+      src: "/blog/jupiter/dull_turntable.mp4",
+      alt: "Beautiful sunset",
+      type: "video"
+    },
+    {
+      src: "/blog/jupiter/vibrant_turntable.mp4",
+      type: "video"
+    },
+  ]}
+/>
