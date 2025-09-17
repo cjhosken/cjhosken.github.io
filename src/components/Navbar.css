@@ -4,7 +4,8 @@ nav {
     position: absolute;
     height: fit-content;
     width: 100vw;
-    background-color: var(--dark-color);
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

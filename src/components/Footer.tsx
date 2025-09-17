@@ -6,7 +6,7 @@ export default function Footer() {
     const [isSmall, setIsSmall] = useState<boolean>(false);
 
     useEffect(() => {
-        const handleResize = () => setIsSmall(window.innerWidth <= 850);
+        const handleResize = () => setIsSmall(window.innerWidth <= 875);
         handleResize(); // run once
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -40,7 +40,7 @@ export default function Footer() {
                         <a href="tel:+447393979912">
                             {isSmall ? "Phone" : "(+44)7393979912"}
                         </a>
-                        <a href="" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf">
+                        <a href="/Christopher_Hosken_Curriculum_Vitae_2025.pdf" target="_blank">
                             {isSmall ? "CV" : "Download CV"}
                         </a>
                      </div>

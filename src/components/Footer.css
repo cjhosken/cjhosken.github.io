@@ -19,7 +19,7 @@ footer .container > div {
     align-items: center;
     text-align: center;
     justify-content: start;
-    width: 20rem;
+    width: 15rem;
 }
 
 footer .container > div > div {
@@ -41,7 +41,8 @@ footer .container > div a {
 footer .container .header {
     color: var(--primary-color);
     font-size: 1.25rem;
-    margin: 1rem 0;
+    text-align: center;
+    margin: 1rem auto;
 }
 
 #copyright {
