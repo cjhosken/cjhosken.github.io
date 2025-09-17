@@ -1,7 +1,17 @@
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+    const [isSmall, setIsSmall] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsSmall(window.innerWidth <= 850);
+        handleResize(); // run once
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <footer>
             <div className="container">
@@ -24,9 +34,15 @@ export default function Footer() {
                 <div id="contact">
                     <p className="header"> Contact </p>
                     <div className="list">
-                        <a href="mailto:hoskenchristopher@gmail.com">hoskenchristopher@gmail.com</a>
-                        <a href="tel:+447393979912">(+44)7393979912</a>
-                        <a href="" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf">Download Curriculum Vitae (CV)</a>
+                        <a href="mailto:hoskenchristopher@gmail.com">
+                            {isSmall ? "Email" : "hoskenchristopher@gmail.com"}
+                        </a>
+                        <a href="tel:+447393979912">
+                            {isSmall ? "Phone" : "(+44)7393979912"}
+                        </a>
+                        <a href="" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf">
+                            {isSmall ? "CV" : "Download CV"}
+                        </a>
                      </div>
                 </div>
             </div>

@@ -12,10 +12,62 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --dark-color: #111;
   --primary-color: #ff0062;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+a:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 24px;
 }

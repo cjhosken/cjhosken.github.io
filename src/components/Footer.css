@@ -2,14 +2,15 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    background-color: #1A1A1A;
-    padding: 2rem 0;
+    background-color: var(--dark-color);
+    padding: 1rem 0;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
 footer .container {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 footer .container > div {
