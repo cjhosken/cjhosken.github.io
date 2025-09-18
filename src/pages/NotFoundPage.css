@@ -1,0 +1,15 @@
+#error-container {
+    flex: 1;
+    margin: 10rem 0rem;
+}
+
+#error-container h1 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#error-container img {
+    width: 30rem;
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 10px 50px rgba(0, 0, 0, 1);
+}

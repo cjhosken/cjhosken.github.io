@@ -20,6 +20,21 @@
   text-align: left;
   top: 20%;
   left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#cover h1 {
+    font-size: 8rem;
+}
+
+#cover p {
+    margin: 0;
+    font-size: 3rem;
+}
+
+#cover button {
+
 }
 
 #hero #icon-bar {
@@ -36,25 +51,37 @@
 /* About Section */
 #about {
   padding: 3rem 2rem;
-  background: red;
 }
 .about-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  max-width: 80%;
   align-items: center;
-  max-width: 1000px;
   margin: 0 auto;
 }
+
+#info {
+    width: 60%;
+}
+
+#info p {
+    font-size: 1.5rem;
+}
+
 .headshot {
-  width: 180px;
-  height: 180px;
+    margin: 2rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* History */
-#history {
+#experience {
   padding: 3rem 2rem;
   max-width: 800px;
   margin: 0 auto;
@@ -68,6 +95,8 @@
   padding-left: 1rem;
   border-left: 3px solid #333;
 }
+
+.timeline li #date
 
 /* Skills */
 #skills {

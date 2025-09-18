@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     const [isSmall, setIsSmall] = useState<boolean>(false);
@@ -18,9 +19,9 @@ export default function Footer() {
                 <div id="links">
                     <p className="header"> Links </p>
                     <div className="list">
-                        <a href="/index.html">Home</a>
-                        <a href="">Projects</a>
-                        <a href="">Contact</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </div>
                 <div id="socials">
@@ -40,7 +41,7 @@ export default function Footer() {
                         <a href="tel:+447393979912">
                             {isSmall ? "Phone" : "(+44)7393979912"}
                         </a>
-                        <a href="/Christopher_Hosken_Curriculum_Vitae_2025.pdf" target="_blank">
+                        <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank">
                             {isSmall ? "CV" : "Download CV"}
                         </a>
                      </div>

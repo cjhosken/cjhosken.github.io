@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
     return (
         <nav>
             <div id="logo-container">
-                <a href="/index.html">
+                <Link to="/">
                     <img src="/favicon_white.svg" id="logo" alt="Christopher Hosken Logo"/>
-                </a>
+                </Link>
             </div>
             <div id="links">
-                <a href="/index.html">Home</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <Link to="/">Home</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         </nav>
     )

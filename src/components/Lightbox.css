@@ -13,6 +13,7 @@
 #lightbox .container {
     position: relative;
     width: 81%;
+    max-width: 1920px;
     height: fit-content;
     background-color: black;
     border-radius: 16px;
