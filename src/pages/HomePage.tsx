@@ -63,7 +63,6 @@ export default function HomePage() {
               <h2>Hello! I'm Christopher Hosken</h2>
               <p>
                 I'm a Generalist TD currently studying Computer Animation Technical Arts at Bournemouth University.
-                With experience in all aspects of the CG/VFX pipeline, I am able to fit into whatever role given to me.
                 My passions include Artificial Intelligence, Web Development, and all things Universal Scene Description (USD).
               </p>
             </div>
@@ -75,14 +74,17 @@ export default function HomePage() {
           <h2>Experience</h2>
           <ul className="timeline">
             <li>
-              <strong>R&D Intern</strong> — Electric Theatre Collective
-              <br /><em id="date">Jun 2025 – Sep 2025</em>
+              <img src="/logos/etc.png" width="100px"/>
+              <strong>R&D Intern</strong> | Electric Theatre Collective 
+              <br/>
+              <em id="date">Jun 2025 – Sep 2025</em>
               <p id="description">Delivered 3D assets, animation, and lighting for commercials and short films.</p>
             </li>
             <li>
-              <strong>Computer Animation Technical Arts</strong> — Bournemouth University  
-              <br /><em>Sep 2023 – Current</em>
-              <p>Specialized in 3D production, rendering, and technical direction.</p>
+              <img src="/logos/bu.jpg" width="100px"/>
+              <strong>Computer Animation Technical Arts</strong> | Bournemouth University<br/>
+              <em id="date">Sep 2023 – Current</em>
+              <p id="description">Specialized in 3D production, rendering, and technical direction.</p>
             </li>
           </ul>
         </section>
