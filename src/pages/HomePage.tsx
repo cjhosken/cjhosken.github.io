@@ -106,7 +106,7 @@ export default function HomePage() {
               <li>
                 <a href="https://electrictheatre.tv" target="_blank">
                   <div className="header">
-                    <img src="/logos/etc.png" />
+                    <img src="/images/logos/etc.png"/>
                     <div className="title">
                       <h1>R&D Intern</h1>
                       <h2>Electric Theatre Collective</h2>
@@ -129,7 +129,7 @@ export default function HomePage() {
               <li>
                 <a href="https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation" target="_blank">
                   <div className="header">
-                    <img src="/logos/bu.jpg" />
+                    <img src="/images/logos/bu.jpg"/>
                     <div className="title">
                       <h1>(BA) Computer Animation Technical Arts</h1>
                       <h2>Bournemouth University</h2>
@@ -147,33 +147,33 @@ export default function HomePage() {
         <section id="skills">
           <h2>Skills</h2>
           <div className="skills">
-            <a href="https://www.sidefx.com/products/houdini/" target="_blank" className="skill"><img src="/software/houdini.png"/></a>
-            <a href="https://www.blender.org/" target="_blank" className="skill"><img src="/software/blender.png"/></a>
-            <a href="https://www.autodesk.com/uk/products/maya/overview" target="_blank" className="skill"><img src="/software/maya.png"/></a>
-            <a href="https://www.adobe.com/creativecloud/3d-ar/campaign/pricing.html" target="_blank" className="skill"><img src="/software/substance.png"/></a>
-            <a href="https://www.foundry.com/products/mari" target="_blank" className="skill"><img src="/software/mari.png"/></a>
-            <a href="https://www.foundry.com/products/nuke-family/nuke/" target="_blank" className="skill"><img src="/software/nuke.png"/></a>
-            <a href="https://www.maxon.net/en/zbrush" target="_blank" className="skill"><img src="/software/zbrush.png"/></a>
-            <a href="https://unity.com/" target="_blank" className="skill"><img src="/software/unity.png"/></a>
-            <a href="https://www.unrealengine.com/en-US" target="_blank" className="skill"><img src="/software/unreal.png"/></a>
+            <a href="https://www.sidefx.com/products/houdini/" target="_blank" className="skill"><img src="/images/software/houdini.png"/></a>
+            <a href="https://www.blender.org/" target="_blank" className="skill"><img src="/images/software/blender.png"/></a>
+            <a href="https://www.autodesk.com/uk/products/maya/overview" target="_blank" className="skill"><img src="/images/software/maya.png"/></a>
+            <a href="https://www.adobe.com/creativecloud/3d-ar/campaign/pricing.html" target="_blank" className="skill"><img src="/images/software/substance.png"/></a>
+            <a href="https://www.foundry.com/products/mari" target="_blank" className="skill"><img src="/images/software/mari.png"/></a>
+            <a href="https://www.foundry.com/products/nuke-family/nuke/" target="_blank" className="skill"><img src="/images/software/nuke.png"/></a>
+            <a href="https://www.maxon.net/en/zbrush" target="_blank" className="skill"><img src="/images/software/zbrush.png"/></a>
+            <a href="https://unity.com/" target="_blank" className="skill"><img src="/images/software/unity.png"/></a>
+            <a href="https://www.unrealengine.com/en-US" target="_blank" className="skill"><img src="/images/software/unreal.png"/></a>
 
-            <a href="https://www.pixar.com/openusd" target="_blank" className="skill"><img src="/software/usd.png"/></a>
-            <a href="https://www.qt.io/" target="_blank" className="skill"><img src="/software/qt.png"/></a>
-            <a href="https://www.opengl.org/" target="_blank" className="skill"><img src="/software/opengl.png"/></a>
-            <a href="https://www.linux.org/" target="_blank" className="skill"><img src="/software/linux.png"/></a>
-            <a href="https://www.microsoft.com/en-gb/windows" target="_blank" className="skill"><img src="/software/windows.png"/></a>
-            <a href="https://www.android.com/intl/en_uk/" target="_blank" className="skill"><img src="/software/android.svg"/></a>
+            <a href="https://www.pixar.com/openusd" target="_blank" className="skill"><img src="/images/software/usd.png"/></a>
+            <a href="https://www.qt.io/" target="_blank" className="skill"><img src="/images/software/qt.png"/></a>
+            <a href="https://www.opengl.org/" target="_blank" className="skill"><img src="/images/software/opengl.png"/></a>
+            <a href="https://www.linux.org/" target="_blank" className="skill"><img src="/images/software/linux.png"/></a>
+            <a href="https://www.microsoft.com/en-gb/windows" target="_blank" className="skill"><img src="/images/software/windows.png"/></a>
+            <a href="https://www.android.com/intl/en_uk/" target="_blank" className="skill"><img src="/images/software/android.svg"/></a>
 
-            <a href="https://www.python.org/" target="_blank" className="skill"><img src="/software/python.png"/></a>
-            <a href="https://cplusplus.com/" target="_blank" className="skill"><img src="/software/cpp.png"/></a>
-            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" className="skill"><img src="/software/c.png"/></a>
-            <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" className="skill"><img src="/software/csharp.svg"/></a>
-            <a href="https://www.java.com/en/" target="_blank" className="skill"><img src="/software/java.png"/></a>
-            <a href="https://www.rust-lang.org/" target="_blank" className="skill"><img src="/software/rust.png"/></a>
-            <a href="https://www.itonlinelearning.com/blog/html-css-and-javascript-essential-front-end-languages-explained/" target="_blank" className="skill"><img src="/software/web.png"/></a>
-            <a href="https://vite.dev/" target="_blank" className="skill"><img src="/software/vite.png"/></a>
-            <a href="https://react.dev/" target="_blank" className="skill"><img src="/software/react.png"/></a>
-            <a href="https://flutter.dev/" target="_blank" className="skill"><img src="/software/flutter.png"/></a>
+            <a href="https://www.python.org/" target="_blank" className="skill"><img src="/images/software/python.png"/></a>
+            <a href="https://cplusplus.com/" target="_blank" className="skill"><img src="/images/software/cpp.png"/></a>
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" className="skill"><img src="/images/software/c.png"/></a>
+            <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" className="skill"><img src="/images/software/csharp.svg"/></a>
+            <a href="https://www.java.com/en/" target="_blank" className="skill"><img src="/images/software/java.png"/></a>
+            <a href="https://www.rust-lang.org/" target="_blank" className="skill"><img src="/images/software/rust.png"/></a>
+            <a href="https://www.itonlinelearning.com/blog/html-css-and-javascript-essential-front-end-languages-explained/" target="_blank" className="skill"><img src="/images/software/web.png"/></a>
+            <a href="https://vite.dev/" target="_blank" className="skill"><img src="/images/software/vite.png"/></a>
+            <a href="https://react.dev/" target="_blank" className="skill"><img src="/images/software/react.png"/></a>
+            <a href="https://flutter.dev/" target="_blank" className="skill"><img src="/images/software/flutter.png"/></a>
 
           </div>
           <p>git, npm, Docker, rez, VEX, MEL, ComfyUI, Qube, Davinci Resolve, Premiere Pro, Karma, Arnold, VRay, Renderman </p>

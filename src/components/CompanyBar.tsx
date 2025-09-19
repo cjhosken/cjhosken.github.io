@@ -4,12 +4,12 @@ export default function CompanyBar() {
   const companies = [
     {
       name: "ETC",
-      img: "/logos/etc.png",
+      img: "/images/logos/etc.png",
       link: "https://electrictheatre.tv/",
     },
     {
       name: "NCCA",
-      img: "/logos/ncca.png",
+      img: "/images/logos/ncca.png",
       link: "https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation",
     }
   ];
