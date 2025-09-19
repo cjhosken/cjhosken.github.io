@@ -16,7 +16,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="container">
-                <div id="links">
+                <div id="footer-links">
                     <p className="header"> Links </p>
                     <div className="list">
                         <Link to="/">Home</Link>
@@ -24,7 +24,7 @@ export default function Footer() {
                         <Link to="/contact">Contact</Link>
                     </div>
                 </div>
-                <div id="socials">
+                <div id="footer-socials">
                     <p className="header"> Socials </p>
                     <div className="list">
                         <a href="https://www.linkedin.com/in/christopher-hosken/" className="icon" target="_blank"><FaLinkedin/></a>
@@ -32,7 +32,7 @@ export default function Footer() {
                         <a href="https://www.youtube.com/@cjhosken" className="icon" target="_blank"><FaYoutube/></a>
                     </div>
                 </div>
-                <div id="contact">
+                <div id="footer-contact">
                     <p className="header"> Contact </p>
                     <div className="list">
                         <a href="mailto:hoskenchristopher@gmail.com">
