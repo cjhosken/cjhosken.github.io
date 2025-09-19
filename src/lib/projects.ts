@@ -20,7 +20,7 @@ export async function loadProjects(): Promise<Project[]> {
 
   for (const path in projectFiles) {
     const slug = path.split("/").pop()?.replace(".md", "") ?? "";
-    const raw = await projectFiles[path]();
+    const raw = await projectFiles[path]() as string;
     const { attributes, body } = fm<ProjectAttributes>(raw);
 
     projects.push({

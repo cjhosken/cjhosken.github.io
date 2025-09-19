@@ -32,8 +32,8 @@ export default function ContactPage() {
     const payload = {
       access_key: "d26e944b-e198-429e-9d3e-f191f2589f9b",
       from_name: "cjhosken.github.io",
-      subject,
       ...formData,
+      subject,
     };
 
     try {
