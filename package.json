@@ -20,7 +20,7 @@
     "katex": "^0.16.22",
     "mapbox-gl": "^3.11.1",
     "netlify": "^13.3.5",
-    "nodemailer": "^6.10.1",
+    "nodemailer": "^7.0.9",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "sitemap": "^8.0.0",
