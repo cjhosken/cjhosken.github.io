@@ -39,117 +39,80 @@ const pageMetadata = {
 ---
 
 <Layout metadata={pageMetadata}>
-  <div class="contact-container container">
-    <div class="contact-header header">
-      <h1>Contact</h1>
-      <p>
-        Feel free to get in touch using the form below or reach out to me directly via 
-        hoskenchristopher@gmail.com or LinkedIn.
-      </p>
-    </div>
-    <div class="contact-info">
-
-
-      <div class="contact-item">
-        <Icon name="mdi:map-marker" size="24" />
-        <div>
-          <h2>Location</h2>
-          <a href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9" target="_blank" class="md-button">Bournemouth, UK</a>
+  <img class="pageBanner" src="/images/contact.gif" alt="Contact banner" />
+        <div id="contact">
+          <div id="contact-container">
+            <a
+              href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contactInfo"
+            >
+              <Icon name="mdi:location" size="32" />
+              <h1> Location </h1>
+              <p> Bournemouth, UK </p>
+            </a>
+            <a
+              href="mailto:hoskenchristopher@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contactInfo"
+            >
+              <Icon name="mdi:email" size="32" />
+              <h1> Email </h1>
+              <p> hoskenchristopher@gmail.com </p>
+            </a>
+            <a
+              href="/ChristopherHosken_CurriculumVitae_2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contactInfo"
+            >
+              <Icon name="mdi:download" size="32" />
+              <h1> Download CV</h1>
+              <p> Curriculum Vitae </p>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="contact-item">
-        <Icon name="mdi:email" size="24" />
-        <div>
-          <h2>Email</h2>
-          <a href="mailto:hoskenchristopher@gmail.com" class="md-button">hoskenchristopher@gmail.com</a>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <Icon name="mdi:file-download" size="24" />
-        <div>
-          <h2>Download CV</h2>
-          <md-filled-button>
-            <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button">Curriculum Vitae</a>
-          </md-filled-button>
-        </div>
-      </div>
-    </div>
     <ContactForm />
   </div>
 </Layout>
 
 <style is:global>
 
-  .contact-header::before {
-    background: url("/images/contact-background.png") no-repeat center center;
-    background-size: cover;
-  }
-  
-
-  .contact-title {
-    color: var(--md-sys-color-primary);
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .contact-info {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 4em;
-  }
-
-  .contact-item {
-    margin: 0em 2em;
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-  }
+    width: 100%;
+    box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.8);
+}
 
-  .contact-item h2 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.1rem;
-    color: var(--md-sys-color-on-surface);
-  }
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem 0rem;
+    width: fit-content;
+    gap: 4rem;
+}
 
-  .contact-item p {
-    margin: 0;
-    color: var(--md-sys-color-on-surface-variant);
-  }
-  @media (max-width: 768px) {
-    .contact-content {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
+.contactInfo {
+    width: 25rem;
+    font-size: 2rem;
+    text-align: center;
+}
 
-    .contact-map {
-      order: -1;
-    }
+.contactInfo h1 {
+    font-size: 1.5rem;
+}
 
-    /* Add these new rules */
-    .contact-info {
-      flex-direction: column;
-      gap: 2em;
-      align-items: center;
-      text-align: center;
-    }
+.contactInfo p {
+    font-size: 1rem;
+}
 
-    .contact-item {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
 
-    .contact-item > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+
 </style>

@@ -1,361 +1,738 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon/components';
-import SoftwareCard from "../components/SoftwareCard.astro"
-import CompanyCard from "../components/CompanyCard.astro"
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import SoftwareCard from "../components/SoftwareCard.astro";
+import CompanyCard from "../components/CompanyCard.astro";
 
 const primaryKeywords = [
-  'Christopher Hosken', 'Chris Hosken',
-  'Generalist TD', "CG Generalist", "VFX Generalist",
-  'Technical Director', '3D Technical Director', "FX Technical Director", "Pipeline Technical Director",
-  'Bournemouth University', 'Computer Animation Technical Arts', "Chiang Mai International School",
-  "Bournemouth", "UK", "Thailand", "Chiang Mai",
-  'Christopher Hosken Portfolio', 'Chris Hosken TD', 'Chris Hosken VFX', "Christopher Hosken Generalist",
-  "NCCA", "BOAP", "ETC", "Electric Theatre Collective"
+  "Christopher Hosken",
+  "Chris Hosken",
+  "Generalist TD",
+  "CG Generalist",
+  "VFX Generalist",
+  "Technical Director",
+  "3D Technical Director",
+  "FX Technical Director",
+  "Pipeline Technical Director",
+  "Bournemouth University",
+  "Computer Animation Technical Arts",
+  "Chiang Mai International School",
+  "Bournemouth",
+  "UK",
+  "Thailand",
+  "Chiang Mai",
+  "Christopher Hosken Portfolio",
+  "Chris Hosken TD",
+  "Chris Hosken VFX",
+  "Christopher Hosken Generalist",
+  "NCCA",
+  "BOAP",
+  "ETC",
+  "Electric Theatre Collective",
 ];
 
 const secondaryKeywords = [
-  'C++ Developer', 'USD Developer', 'Python Developer', 'Software Developer', 'Animation Tools Developer', 'Asset Pipeline Developer', '3D Pipeline Developer', '3D Tool Developer',
-  'Houdini Artist', 'Blender Artist', 'Maya Artist',
-  'Technical Director', 'Rigging TD', 'Pipeline TD', "FX TD", 'Rendering TD', 'Unreal Engine TD',
-  'Technical Artist', 'Generalist Artist', '3D Artist', 'VFX Artist', 'CFX Artist', 'FX Artist', 'Simulation Artist','Procedural Artist',
-  "Blender", "Houdini FX", "Maya", "Unreal Engine", "Unity", "Maya", "Nuke", "Katana", "Photoshop", "Substance Painter", "Mari", "ZBrush",
-  "OpenUSD", "Pixar USD", "USD", "Python", "C++", "C#", "JavaScript", "HTML", "CSS", "Git", "GitHub", "Kotline", "Java"
+  "C++ Developer",
+  "USD Developer",
+  "Python Developer",
+  "Software Developer",
+  "Animation Tools Developer",
+  "Asset Pipeline Developer",
+  "3D Pipeline Developer",
+  "3D Tool Developer",
+  "Houdini Artist",
+  "Blender Artist",
+  "Maya Artist",
+  "Technical Director",
+  "Rigging TD",
+  "Pipeline TD",
+  "FX TD",
+  "Rendering TD",
+  "Unreal Engine TD",
+  "Technical Artist",
+  "Generalist Artist",
+  "3D Artist",
+  "VFX Artist",
+  "CFX Artist",
+  "FX Artist",
+  "Simulation Artist",
+  "Procedural Artist",
+  "Blender",
+  "Houdini FX",
+  "Maya",
+  "Unreal Engine",
+  "Unity",
+  "Maya",
+  "Nuke",
+  "Katana",
+  "Photoshop",
+  "Substance Painter",
+  "Mari",
+  "ZBrush",
+  "OpenUSD",
+  "Pixar USD",
+  "USD",
+  "Python",
+  "C++",
+  "C#",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "Git",
+  "GitHub",
+  "Kotline",
+  "Java",
 ];
 
 const pageMetadata = {
   keywords: [...primaryKeywords, ...secondaryKeywords],
-  image: '/images/seo-homepage.jpg'
+  image: "/images/seo-homepage.jpg",
 };
 ---
 
 <Layout metadata={pageMetadata}>
   <section id="hero">
-    <video id="cover-video" autoplay muted loop>
-      <source src="/videos/cover.mov"/>
+    <video id="backdrop" autoplay muted loop>
+      <source src="/videos/cover.mov" type="video/mp4" />
     </video>
-    <div id="cover-info">
-        <h1>Christopher Hosken</h1>
-        <h2>CG Generalist | Generalist TD</h2>
-        <button class="md-button md-box-button" id="open-video-lightbox"> Watch My Showreel </button>
+    <div id="cover">
+      <h1>Christopher Hosken</h1>
+      <p>CG Generalist | Generalist TD</p>
+      <button id="open-video-lightbox">Watch My Showreel</button>
     </div>
-    <div id="cover-icons">
-        <a href="https://www.linkedin.com/in/christopher-hosken/" target="_blank" class="md-button"><Icon name="mdi:linkedin"/></a>
-        <a href="https://github.com/cjhosken" target="_blank" class="md-button"><Icon name="mdi:github"/></a>
-        <a href="https://www.youtube.com/@cjhosken" target="_blank" aria-label="Youtube" class="md-button"><Icon name="mdi:youtube" /></a>
-        <a href="https://www.artstation.com/cjhosken" target="_blank" class="md-button"><Icon name="mdi:artstation"/></a>
+    <div id="icon-bar">
+      <a
+        href="https://www.linkedin.com/in/christopher-hosken/"
+        target="_blank"
+        class="icon"><Icon name="mdi:linkedin" /></a
+      >
+      <a href="https://github.com/cjhosken" target="_blank" class="icon"
+        ><Icon name="mdi:github" /></a
+      >
+      <a
+        href="https://www.youtube.com/@cjhosken"
+        target="_blank"
+        aria-label="Youtube"
+        class="icon"><Icon name="mdi:youtube" /></a
+      >
     </div>
   </section>
   <section id="about">
-    <h1>About Me</h1>
-    <img src="/profile.jpg" id="profile">
-    <p>
-      I am a Computer Animation Technical Arts student at Bournemouth University, aspiring to become a Generalist Technical Director (TD) in the animation and VFX industry. 
-      With practicalCG/VFX pipeline, encompassing modeling, surfacing, rigging, scripting, animation, FX, lighting, rendering, compositing, and editing. 
-      I have practical experience with industry-standard tools such as Houdini, Maya, Blender, Substance Painter, and Nuke. 
-      Additionally, I have developed pipeline tools for Houdini, Maya, and Blender, and possess proficiency in programming languages including Python, Java, C, C++, C#, Kotlin, and VEX. 
-      My versatility allows me to adapt to various roles within a studio environment. I am eager to engage with new opportunities and collaborations in the field.
-    <div id="general-skills-container">
-      <div
-          class="general-skill-item"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-once="true"
-      >
-          <Icon name="mdi:movie" id="icon" />
-          <h1>CG / VFX</h1>
-          <p>
-              I've worked in every part of the CG and VFX pipeline, on
-              numerous solo and group projects, in mulitple softwares. My
-              broad range of knowledge makes it possible for me to fit in
-              wherever is needed in a studio pipeline.
-          </p>
+    <div class="about-container">
+      <img src="/profile.jpg" alt="Christopher Hosken" class="headshot" />
+      <div id="info">
+        <h2>Hey! I'm Christopher Hosken</h2>
+        <p>
+          I'm an aspiring Generalist TD currently studying Computer Animation at
+          Bournemouth University. I love all aspects of the VFX/Animation
+          pipeline and am adaptable and willing to fit multiple positions. I am
+          passionate about all things tech and am currently exploring Artificial
+          Intelligence, Web Applications, and all things USD! I am currently
+          looking for TD roles in pipeline, FX and RnD.
+        </p>
       </div>
-      <div
-          class="general-skill-item"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-once="true"
+    </div>
+  </section>
+  <section id="features">
+    <div class="container">
+      <a
+        href="https://github.com/cjhosken-studio"
+        target="_blank"
+        class="feature"
       >
-          <Icon name="mdi:pipe" id="icon" />
-          <h1>IT & PIPELINE</h1>
-          <p>
-              My vast experience in multiple softwares makes me a troubleshooting expert! 
-              My core understanding of 3d applications allows me to pick apart complex problems, which I can then develop pipeline tools for.
-              I have experience with managing large Rez libraries, as well as dealing with frontend and backend web based apps in Vite + React.
-
-          </p>
-      </div>
-      <div
-          class="general-skill-item"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-once="true"
-      >
-          <Icon name="mdi:code" id="icon" />
-          <h1>RND</h1>
-          <p>
-            I have a strong Mathematics and programming background. 
-            Profficient in languages such as Python, C++, VEX and MEL and with working knowledge of Qt, OpenGL, USD and Generative AI,
-            I have developed numerous efficient render engines and simulation tools.
-          </p>
-      </div>
-  </div>
-
-    <a class="md-button md-box-button" href="/blog"> View My Portfolio </a>
-
+        {/*<FaGear />*/}
+        <Icon name="mdi:gear" size="42" />
+        <h1>Pipeline</h1>
+        <p>
+          My experience as both an artist and a developer has allowed me to
+          write complex, user-friendly tools in production. Currently, I am
+          experimenting and with how USD can be used to streamline and create
+          modern studio pipelines.
+        </p>
+      </a>
+      <a href="/blog" class="feature" target="_blank"> 
+        {/*<FaFire />*/}
+        <Icon name="mdi:fire" size="42" />
+        <h1>FX</h1>
+        <p>
+          Primarily working in Houdini, I love working with fluids, pyro,
+          vellum, and muscles. I'm growing an interest in CFX but love working
+          on a variety of shots!
+        </p>
+      </a>
+      <a href="https://github.com/cjhosken" target="_blank" class="feature">
+        {/*<FaCode />*/}
+        <Icon name="mdi:code" size="42" />
+        <h1>R&D</h1>
+        <p>
+          I have a strong mathematics, physics, and programming background with
+          knowledge of Python, C++, Qt, OpenGL, and USD. I'm currently learning
+          web development with Vite and React and seeing how the future of VFX
+          can be web-based.
+        </p>
+      </a>
+    </div>
+    <a href="/blog" target="_blank" id="portfolio" class="button"> See Portfolio </a>
   </section>
   <section id="history">
-    <h1>Experience</h1>
-    <div id="history-list-container">
-        <div
-            class="history-item"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-once="true"
-        >
-            <Icon name="mdi:school" id="icon" />
-            <h1>Bournemouth University</h1>
-            <h2>SEP 2023 - PRESENT | BOURNEMOUTH</h2>
-            <h2>BA COMPUTER ANIMATION TECHNICAL ARTS</h2>
-            <p>
-                Bournemouth University has given me a strong understanding
-                of CG fundamentals and professional practices. 
-                I was given chances to explore new technologies and ideas, as well as collaborate with others to create short animations.
-
-                This Houdini Accredited course taught me how to think procedurally and launched me into developing Houdini-centric pipelines and projects. 
-              </p>
-        </div>
-        <div
-            class="history-item"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-once="true"
-        >
-            <Icon name="mdi:briefcase" id="icon" />
-            <h1>Electric Theatre Collective</h1>
-            <h2>JUN 2025 - SEP 2025 | LONDON</h2>
-            <h2>R&D INTERN</h2>
-            <p>
-               My time at Electirc Theatre Collective was spent doing a mix of pipeline and FX. 
-               I developed ETC's Blender pipeline tools and took part in moving numerous in house tools into Houdini Solaris for USD.
-
-               I was also reponsible for fx elements in few live projects, in which I did CFX, FX, and general pipeline troubleshooting.
+    {/* History Section */}
+    <section id="experience" class="history-container">
+      <h2 class="experience">Experience</h2>
+      <ul class="timeline">
+        <li>
+          <a href="https://electrictheatre.tv" target="_blank">
+            <div class="header">
+              <img src="/images/logos/etc.png" />
+              <div class="title">
+                <h1>R&D Intern</h1>
+                <h2>Electric Theatre Collective</h2>
+              </div>
+            </div>
+            <em id="date">Jun 2025 – Sep 2025</em>
+            <p id="description">
+              - Responsible for FX elements on live projects <br />
+              - Developed user-friendly AI tools for motion capture and camera tracking
+              <br />
+              - Built a web app to rent AWS machines for rendering <br />
+              - Integrated Blender into ETC’s pipeline <br />
             </p>
-        </div>
-    </div>
-    <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" download="ChristopherHosken_CurriculumVitae_2025.pdf" class="md-button md-box-button">Download Curriculum Vitae</a>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="education" class="history-container">
+      <h2 class="experience">Education</h2>
+      <ul class="timeline">
+        <li>
+          <a
+            href="https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation"
+            target="_blank"
+          >
+            <div class="header">
+              <img src="/images/logos/bu.jpg" />
+              <div class="title">
+                <h1>Computer Animation Technical Arts</h1>
+                <h2>Bournemouth University | Bachelor of Arts</h2>
+              </div>
+            </div>
+            <em id="date">Sep 2023 - Jun 2026 (Expected)</em>
+            <p id="description">
+              - Skills: Pipeline, Asset Creation, Rigging, FX, Lighting, Rendering, Compositing </br>
+              - Primarily worked in Houdini with Solaris </br>
+              - Developed Pipeline tools and renderfarm tools for the University </br>
+              - Directed and led projects & volunteered for the BFX Festival.
+            </p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <a href="/ChristopherHosken_CurriculumVitae_2025.pdf" target="_blank" class="button" id="cv"> See Curriculum Vitae </a>
   </section>
-  <section id="software">
-    <div class="container">
-    <SoftwareCard title="Houdini" img="/images/software/houdini.png" url="https://www.sidefx.com/products/houdini/"/>
-    <SoftwareCard title="Maya" img="/images/software/maya.png" url="https://www.autodesk.com/uk/products/maya/overview" />
-    <SoftwareCard title="Blender" img="/images/software/blender.png" url="https://www.blender.org/"/>
-    <SoftwareCard title="ZBrush" img="/images/software/zbrush.png" url="https://www.maxon.net/en/zbrush"/>
-    <SoftwareCard title="Adobe Substance Painter" img="/images/software/painter.svg" url="https://www.adobe.com/uk/products/substance3d/apps/painter.html"/>
-    <SoftwareCard title="Mari" img="/images/software/mari.png" url="https://www.foundry.com/products/mari" />
-    <SoftwareCard title="Katana" img="/images/software/katana.png" url="https://www.foundry.com/products/katana" />
-    <SoftwareCard title="Nuke" img="/images/software/nuke.png" url="https://www.foundry.com/products/nuke-family/nuke" />
-    <SoftwareCard title="Unreal Engine" img="/images/software/unreal.png" url="https://www.unrealengine.com/en-US"/>
-    <SoftwareCard title="USD" img="/images/software/usd.png" url="https://openusd.org/release/index.html" />
-    <SoftwareCard title="Python" img="/images/software/python.png" url="https://www.python.org/" />
-    <SoftwareCard title="Java" img="/images/software/java.png" url="https://www.java.com/en/" />
-    <SoftwareCard title="C,C++,C#" img="/images/software/cpp.png" url="https://www.w3schools.com/cpp/cpp_intro.asp" />
-    <SoftwareCard title="HTML, CSS, JS" img="/images/software/web.png" url="https://www.w3schools.com/html/default.asp"/>
-  </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <SoftwareCard
+        title="Houdini"
+        img="/images/software/houdini.png"
+        url="https://www.sidefx.com/products/houdini/"
+      />
+      <SoftwareCard
+        title="Blender"
+        img="/images/software/blender.png"
+        url="https://www.blender.org/"
+      />
+      <SoftwareCard
+        title="Maya"
+        img="/images/software/maya.png"
+        url="https://www.autodesk.com/uk/products/maya/overview"
+      />
+      <SoftwareCard
+        title="Substance 3D"
+        img="/images/software/substance.png"
+        url="https://www.adobe.com/creativecloud/3d-ar/campaign/pricing.html"
+      />
+      <SoftwareCard
+        title="Mari"
+        img="/images/software/mari.png"
+        url="https://www.foundry.com/products/mari"
+      />
+      <SoftwareCard
+        title="Nuke"
+        img="/images/software/nuke.png"
+        url="https://www.foundry.com/products/nuke-family/nuke/"
+      />
+      <SoftwareCard
+        title="ZBrush"
+        img="/images/software/zbrush.png"
+        url="https://www.maxon.net/en/zbrush"
+      />
+      <SoftwareCard
+        title="Unity"
+        img="/images/software/unity.png"
+        url="https://unity.com/"
+      />
+      <SoftwareCard
+        title="Unreal Engine"
+        img="/images/software/unreal.png"
+        url="https://www.unrealengine.com/en-US"
+      />
+      <SoftwareCard
+        title="OpenUSD"
+        img="/images/software/usd.png"
+        url="https://www.pixar.com/openusd"
+      />
+      <SoftwareCard
+        title="Qt"
+        img="/images/software/qt.png"
+        url="https://www.qt.io/"
+      />
+      <SoftwareCard
+        title="OpenGL"
+        img="/images/software/opengl.png"
+        url="https://www.opengl.org/"
+      />
+      <SoftwareCard
+        title="Linux"
+        img="/images/software/linux.png"
+        url="https://www.linux.org/"
+      />
+      <SoftwareCard
+        title="Windows"
+        img="/images/software/windows.png"
+        url="https://www.microsoft.com/en-gb/windows"
+      />
+      <SoftwareCard
+        title="Android"
+        img="/images/software/android.svg"
+        url="https://www.android.com/intl/en_uk/"
+      />
+      <SoftwareCard
+        title="Python"
+        img="/images/software/python.png"
+        url="https://www.python.org/"
+      />
+      <SoftwareCard
+        title="C++"
+        img="/images/software/cpp.png"
+        url="https://cplusplus.com/"
+      />
+      <SoftwareCard
+        title="C"
+        img="/images/software/c.png"
+        url="https://en.wikipedia.org/wiki/C_(programming_language)"
+      />
+      <SoftwareCard
+        title="C#"
+        img="/images/software/csharp.svg"
+        url="https://dotnet.microsoft.com/en-us/languages/csharp"
+      />
+      <SoftwareCard
+        title="Java"
+        img="/images/software/java.png"
+        url="https://www.java.com/en/"
+      />
+      <SoftwareCard
+        title="Rust"
+        img="/images/software/rust.png"
+        url="https://www.rust-lang.org/"
+      />
+      <SoftwareCard
+        title="Web (HTML, CSS, JS)"
+        img="/images/software/web.png"
+        url="https://www.itonlinelearning.com/blog/html-css-and-javascript-essential-front-end-languages-explained/"
+      />
+      <SoftwareCard
+        title="Vite"
+        img="/images/software/vite.png"
+        url="https://vite.dev/"
+      />
+      <SoftwareCard
+        title="React"
+        img="/images/software/react.png"
+        url="https://react.dev/"
+      />
+      <SoftwareCard
+        title="Flutter"
+        img="/images/software/flutter.png"
+        url="https://flutter.dev/"
+      />
+    </div>
+    <p>
+      git, npm, Docker, rez, VEX, MEL, ComfyUI, Qube, Davinci Resolve, Premiere
+      Pro, Karma, Arnold, VRay, Renderman
+    </p>
+    <p>Leadership Initiative, Communication, Problem Solving</p>
+    <p>
+      French (Niveau B1), Audio Tech, Graphic Design, Calculus, Statistics,
+      Physics
+    </p>
   </section>
   <section id="companies">
-    <CompanyCard title="NCCA"
-        img="/images/companies/ncca.png"
-        url="https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation"
-    />
-    <CompanyCard
-        title="Electric Theatre Collective"
-        img="/images/companies/etc.png"
-        url="https://electrictheatre.tv/"
-    />
-  </section>
+  <CompanyCard
+    title="NCCA"
+    img="/images/companies/ncca.png"
+    url="https://www.bournemouth.ac.uk/about/our-faculties/faculty-media-communication/national-centre-computer-animation"
+  />
+  <CompanyCard
+    title="Electric Theatre Collective"
+    img="/images/companies/etc.png"
+    url="https://electrictheatre.tv/"
+  />
+</section>
 </Layout>
-<style>
-  section {
+
+<style is:global>
+#hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero #backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hero #cover {
+  position: absolute;
+  color: white;
+  text-align: left;
+  top: 20%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#cover h1 {
+  font-size: 8rem; /* default (desktop) */
+}
+
+#cover p {
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #cover h1 {
+    font-size: 15vw; /* smaller on mobile */
+  }
+
+  #cover p {
+    font-size: 5vw;
+  }
+}
+
+#cover button {
+  width: 12rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+#hero #icon-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+
+/* About Section */
+#about {
+  padding: 3rem 2rem;
+  background-color: #242424;
+  box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.5);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 80%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#info {
+    width: 60%;
+}
+
+#info p {
+    font-size: 1.5rem;
+}
+
+.headshot {
+    margin: 2rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    overflow: hidden;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
   }
 
-  section>h1 {
-    font-size: 3.5em;
-  }
-  #hero{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    align-items: start;
+  #info {
+    width: 80%;
   }
 
-  #hero #cover-video {
-    position: absolute;
+  #info p {
+      font-size: 1.2rem;
+  }
+}
+
+
+#features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0rem;
+}
+
+#features .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
+  padding: 3rem 0rem;
+}
+
+.feature {
+  width: 20rem;
+  height: 25rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #242424;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: solid transparent 2px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.feature:hover {
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+  border: solid var(--primary-color) 2px;
+  background-color: rgb(95, 27, 55);
+  transform: scale(1.05);
+  color: white;
+}
+
+.feature h1 {
+  font-size: 3rem;
+}
+
+.feature p {
+  font-size: 1.25rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: solid 2px transparent;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  transform: scale(1.05);
+  border: solid 2px var(--primary-color);
+}
+
+#history {
+  width: 100%;
+  height: fit-content;
+  background-color: #242424;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  align-items: center;
+}
+
+#history #cv {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* History */
+.history-container {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.history-container .experience {
+  padding: 0em 1em;
+  border-bottom: solid 4px var(--primary-color);
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline li {
+  padding-left: 1rem;
+  margin: 2rem;
+  background-color: #202020;
+  border-radius: 16px;
+  padding: 1rem;
+  border: solid #333 2px;
+  box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all ease 0.3s;
+  min-height: 18rem;
+  min-width: 300px;
+  width: 100%;
+}
+
+.timeline li:hover {
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+  border: solid var(--primary-color) 2px;
+  background-color: rgb(95, 27, 55);
+  transform: scale(1.05);
+}
+
+.timeline li:hover a {
+  color: white;
+}
+
+.timeline li .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.timeline li img {
+  margin-right: 1rem;
+  width: 4rem;
+  border-radius: 16px;
+}
+
+.timeline li .header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.timeline li .header h1 {
+  font-size: 2.5rem;
+}
+
+.timeline li .header h2 {
+  font-size: 1.5rem;
+}
+
+.timeline li #date {
+  font-size: 1.25rem;
+}
+
+.timeline li #description {
+  font-size: 1.25rem;
+}
+
+/* Skills */
+#skills {
+  padding: 3rem 2rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.skill {
+  padding: 0.75rem 1.25rem;
+  background: #242424;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.5);
+   border: solid transparent 2px;
+  z-index: 2;
+}
+
+.skill:hover {
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+  border: solid var(--primary-color) 2px;
+  background-color: rgb(95, 27, 55);
+  transform: scale(1.05);
+}
+
+.skill img {
+  width: 90%;
+  object-fit: cover;
+}
+
+#skills p {
+  margin: 1rem;
+  font-size: 1rem;
+  color: #AAA;
+}
+
+#companies{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  #hero #cover-info {
-    top: 15%;
-    left: 10%;
-    position: absolute;
-  }
-
-  #hero #cover-info h1 {
-    font-size: 7em;
-    margin-bottom: 0em;
-  }
-
-  #hero #cover-info h2 {
-    font-size: 3em;
-    font-weight: 300;
-    margin: 0;
-    margin-bottom: 1em;
-  }
-
-  #hero #open-video-lightbox {
-    width: 300px;
-    height: 50px;
-  }
-
-  #hero #cover-icons {
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    gap: 1em;
-    bottom: 0%;
-    right: 0%;
-    margin: 2em;
-    font-size: 2em;
-  }
-
-  @media (max-width: 768px) {
-    #hero #cover-icons {
-      font-size: 1.5em;
-    }
-
-    #hero #cover-info h1 {
-      font-size: 4em;
-    }
-
-
-    #hero #cover-info h2 {
-      font-size: 2em;
-    }
-
-  }
-
-  #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    height: 100%;
-    margin: 3em auto;
-    justify-content: center;
-  }
-
-  #profile {
-    margin: 1em;
-    width: 250px;
-    border-radius: 50%;
-    border: solid rgba(255, 255, 255, 0.1) 2px;
-  }
-
-  #about>p {
-    width: 50vw;
-    text-align: center;
-  }
-
-  #history {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(22, 22, 25);
-  }
-  
-  #history-list-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-  }
+    gap: 3rem;
+    /* space between companies */
+    padding: 1rem;
+    background-color: #111;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.35);
+}
 
-  .history-item {
-    text-align: center;
-    align-self: baseline;
-    margin: 2em;
-    width: 500px;
-    height: 100%;
-  }
-
-
-  #general-skills-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-  }
-
-  .general-skill-item {
-    text-align: center;
-    justify-self: start;
-    align-self: baseline;
-    margin: 2em;
-    width: 300px;
-    height: 100%
-  }
-
-  #icon {
-    font-size: 2.5em;
-    color: var(--md-sys-color-primary);
-  }
-
-
-  #software {
-    margin: 0 auto;
-    background-color: rgb(22, 22, 25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #software .container {
-    padding: 5em 0em;
-    width: 60vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-
-  #companies {
-    background-color: rgb(16, 16, 18);
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+#open-video-lightbox {
+  height: 4rem !important;
+  width: 15rem !important;
+}
 
 </style>

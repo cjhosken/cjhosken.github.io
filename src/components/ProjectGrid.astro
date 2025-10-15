@@ -48,17 +48,18 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
     text-decoration: none;
     font-size: 0.9rem;
     transition: all 0.2s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
   }
 
   .tag:hover {
     cursor: pointer;
+    color: white;
     background: rgba(255, 255, 255, 0.2);
   }
 
   .tag.active {
-    background: white;
-    color: black;
+    background: var(--primary-color);
+    color: white;
   }
 
   .project-grid {
@@ -84,13 +85,15 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
     flex-direction: column;
     width: 300px;
     height: 350px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
   }
 
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: var(--primary-color);
+    color: white;
   }
 
   .card-image-container {
@@ -162,8 +165,9 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
   }
 
   .pagination-button {
+    font-size: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
@@ -174,7 +178,8 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
 
   .pagination-button:hover {
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--primary-color);
+    color: white;
   }
 
   .page-info {

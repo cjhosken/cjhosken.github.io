@@ -1,158 +1,118 @@
-/* src/styles/theme.css */
 :root {
-    /* Primary color palette */
-    --md-sys-color-primary: #eb285a;
-    --md-sys-color-on-primary: #FFFFFF;
-    --md-sys-color-primary-container: #EADDFF;
-    --md-sys-color-on-primary-container: #21005D;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-    /* Surface colors */
-    --md-sys-color-surface: #1C1B1F;
-    --md-sys-color-on-surface: #FFFBFE;
-    --md-sys-color-surface-variant: #0c0c0e;
-    --md-sys-color-on-surface-variant: #b2b0b4;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
 
-    /* Other colors */
-    --md-sys-color-error: #B3261E;
-    --md-sys-color-on-error: #FFFFFF;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    /* Elevation shadows */
-    --md-sys-elevation-level-0: none;
-    --md-sys-elevation-level-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-
-
-    --md-sys-color-outline: #505158;
+  --dark-color: #030303;
+  --primary-color: #ff0062;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-    font-size: 1.25em;
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: var(--md-sys-color-primary);
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.link {
-    text-decoration: none;
-    color: var(--md-sys-color-primary);
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.35s ease;
+main {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
-.link:hover {
-    border-bottom: 2px solid var(--md-sys-color-primary);
-}
-
-button {
-    background-color: transparent;
-    border: none;
-}
-
-.md-button {
-    text-decoration: none;
-    color: var(--md-sys-color-on-surface);
-    transition: color ease 0.25s;
-    font-size: 1em;
-}
-
-.md-button:hover {
-    cursor: pointer;
-    color: var(--md-sys-color-primary);
-    border-bottom: none;
-}
-
-.md-box-button {
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
-    padding: 10px 20px;
-    border-radius: 2em;
-    border: solid 2px transparent;
-    transition: background-color ease 0.25s;
-}
-
-.md-box-button:hover {
-    background-color: transparent;
-    border: solid 2px var(--md-sys-color-on-primary);
-}
-
-.md-box-button:hover {
-    cursor: pointer;
-    color: white;
-}
-
-
-/* Add this to your existing theme.css */
-
-/* For WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 5px;
     height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--md-sys-color-surface-variant);
+    background: transparent;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--md-sys-color-primary);
+    background: var(--primary-color);
     border-radius: 5px;
 }
 
-
-
-.container {
-    align-items: center;
-    padding: 2rem 0rem;
-    width: 100%;
+a {
+  color: white;
+  text-decoration: none;
+  transition: all ease 0.3s;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0rem;
-    padding-top: 64px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    /* Needed for absolute positioning of pseudo-element */
-    z-index: 1;
-    /* Ensure content stays above blurred background */
+a:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    filter: blur(10px) brightness(50%);
-    z-index: -1;
-    /* Send the background behind the content */
+.icon {
+  font-size: 24px;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: solid 2px transparent;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
-.header p {
-    text-align: center;
-    margin: 0em 2rem;
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: solid 2px transparent;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  transform: scale(1.05);
+  border: solid 2px var(--primary-color);
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  transform: scale(1.05);
+  border: solid 2px var(--primary-color);
+}
+
+.pageBanner {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
 }

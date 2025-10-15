@@ -3,7 +3,6 @@
 import '@material/web/button/text-button.js';
 import '@material/web/button/filled-button.js';
 import '@material/web/iconbutton/icon-button.js';
-import { Icon } from 'astro-icon/components'
 ---
 
 <header class="navbar">
@@ -19,24 +18,7 @@ import { Icon } from 'astro-icon/components'
       <a class="md-button" href="/blog/">Projects</a>
       <a class="md-button" href="/contact/">Contact</a>
     </nav>
-    
-    <!-- Mobile Menu Button -->
-    <button class="mobile-menu-button md-button" aria-label="Open menu">
-      <Icon name="mdi:menu" size="32" />
-    </button>
-  </div>
   
-  <!-- Fullscreen Mobile Overlay -->
-  <div class="mobile-overlay" id="mobileOverlay">
-    <div class="mobile-overlay-content">
-      <a href="/" class="mobile-nav-item md-button link">Home</a>
-      <a href="/blog/" class="mobile-nav-item md-button link">Projects</a>
-      <a href="/contact/" class="mobile-nav-item md-button link">Contact</a>
-    </div>
-    <button class="close-button md-button" aria-label="Close menu">
-      <Icon name="mdi:close" size="32" />
-    </button>
-  </div>
 </header>
 
 <style is:global>
@@ -129,27 +111,4 @@ import { Icon } from 'astro-icon/components'
     color: var(--md-sys-color-on-surface);
   }
   
-  @media (max-width: 768px) {
-    .desktop-nav {
-      display: none;
-    }
-    
-    .mobile-menu-button {
-      display: block;
-    }
-  }
 </style>
-
-<script is:inline>
-  document.querySelector('.mobile-menu-button').addEventListener('click', () => {
-    const overlay = document.getElementById('mobileOverlay');
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when overlay is open
-  });
-  
-  document.querySelector('.close-button').addEventListener('click', () => {
-    const overlay = document.getElementById('mobileOverlay');
-    overlay.classList.remove('open');
-    document.body.style.overflow = ''; // Restore scrolling
-  });
-</script>
