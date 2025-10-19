@@ -7,14 +7,14 @@ tags: ["university", 'usd', "fx", "study"]
 
 <div style="display: flex; justify-content:center; align-items: center; margin: 1em; gap: 1em;">
 
-<a class="md-box-button" href="/blog/personalinquiry/PI_Documentation_2024_25.pdf" target="_blank"> Project Report </a>
+<a class="button" href="/blog/personalinquiry/PI_Documentation_2024_25.pdf" target="_blank"> Project Report </a>
 
-<a class="md-box-button" href="/blog/personalinquiry/LargeScaleSimulationsUSDHoudiniSolaris_web.pdf" target="_blank"> Presentation </a>
+<a class="button" href="/blog/personalinquiry/LargeScaleSimulationsUSDHoudiniSolaris_web.pdf" target="_blank"> Presentation </a>
 
 
 </div>
 
-<div class="video-container">
+<div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Grj7DGVJXIw?si=2Wa3LBJl3lJ-pk8B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -36,32 +36,28 @@ However, it is confusing to use and there is not a lot of information about how 
 
 Studios have also invented their own ways of using USD in production; some are 100% USD based, some are 50/50, some don't use USD at all.​
 
-<div style="display:flex; justify-content: center; gap: 2em; margin: 2em 0em;">
-    <div>
+<div style="display:flex; flex-direction: column; align-items: center; justify-content: center; margin: 2rem 0em;">
 
-        <img src="/blog/personalinquiry/pixar_pipe.jpg" style="height:200px; width:auto;"/>
+    <img src="/blog/personalinquiry/pixar_pipe.jpg"/>
 
-        Pixar's USD Pipeline (Full USD)
+    *Pixar's USD Pipeline (Full USD)*
 
-    </div>
-    <div>
+    <img src="/blog/personalinquiry/dreamworks_pipe.png"/>
 
-        <img src="/blog/personalinquiry/dreamworks_pipe.png" style="height:200px; width:auto;"/>
+    *Dreamwork's USD Pipeline (mixed USD)*
 
-        Dreamwork's USD Pipeline (mixed USD)
-    </div>
 </div>
 
 
 This project looks to explore how to create a full USD FX shot in Houdini Solaris. It will answer:
 
-*​How does USD work in a shot context?​*
+- *​How does USD work in a shot context?​*
 
-*How can I effectively bring my RBD, Vellum, and SOP simulations into USD?​​*
+- *How can I effectively bring my RBD, Vellum, and SOP simulations into USD?​​*
 
-*What’s the most optimal way to cache fluids in USD, and what are procedurals?​​*
+- *What’s the most optimal way to cache fluids in USD, and what are procedurals?​​*
 
-*How can I include Volume simulations in my USD file?​​*
+- *How can I include Volume simulations in my USD file?​​*
 
 *What do I do next?*
 
@@ -85,13 +81,13 @@ I then took the Vesperion Dragon alembic animation and re-exported a USD file al
 Sublayers or Asset References reference other .usd files.
 Flattening is when all the references are “resolved” and baked into 1 file. This destroys references but means that all your data is stored in 1 place.
 
-<img src="/blog/personalinquiry/layers.png" style="width: 250px; height:auto;"/>
+<img src="/blog/personalinquiry/layers.png" style="width: 50%;"/>
 
 Anything above a layer break doesn’t get included in a USD export.
 
 </div>
 
-<img src="/blog/personalinquiry/anim_script.png" style="height: 840px; width:auto;"/>
+<img src="/blog/personalinquiry/anim_script.png" style="width:50%;"/>
 
 </div>
 
@@ -117,7 +113,7 @@ I found that Vellum and small SOP simulations could be directly converted into U
 
 </div>
 
-<div style="display:flex; justify-content: center; gap: 2em; flex-wrap: wrap; align-items: start; text-align: center;">
+<div style="display:flex; justify-content: center; gap: 2em; flex-wrap: wrap; align-items: start; text-align: center; margin-top: 5rem; margin-bottom: 5rem;">
 
 <div style="width: 200px;">
 <p> **SOP Import** </p>
@@ -190,8 +186,6 @@ One issue I came across was that .VDBs don’t like to be “empty”, so I had 
 ![Cache](/blog/personalinquiry/pyro_cache.png)
 
 ![Cache](/blog/personalinquiry/pyro_cache2.png)
-
-You need to configure the pyrosolver for VDBs
 
 </div>
 
