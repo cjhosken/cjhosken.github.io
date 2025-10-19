@@ -1,0 +1,53 @@
+---
+title: "REBELS PIPELINE"
+date: 2026-05-16
+description: ""
+tags: ["university", "team", "vfx", "film", "hidden"]
+---
+
+[Home](/blog/rebels)
+
+<div style="display: flex; flex-direction: row; align-items:center; justify-content:space-between;">
+
+[Post Production](/blog/rebels/postproduction)  
+
+[Home](/blog/rebels)
+
+[Asset Creation](/blog/rebels/postproduction/assets)
+
+</div>
+
+
+## REBELS Pipeline
+
+Pipeline was a large challenge early on as we wanted to have a production system that was easy to use and could flow quite nicely. We based our folder structure off Cave Academy's vfx sequence structure and made our own changes where needed.
+
+Chris was in charge of maintaining the pipeline and keeping the plugin tools up to date.
+
+## Machine & Software Specs
+
+As of 2025, the machines at Bournemouth Unviersity had a 12th Gen i9 CPU, 64GB Ram, and an Nvidia RTX 4080. For REBELS we used:
+
+- Houdini 20.5.332
+- Maya 2024/2025
+- Nuke 15v0.2
+- Blender 3.3.0
+- Arnold (Htoa)
+- Syntheyes
+- DaVinci Resolve
+- Agisoft MetaShape Pro 2.2
+- Substance Painter 11.0+
+
+## Cross Compatibility & Storage
+
+All the machines on campus are dual boot Windows/RHEL9. We wanted to use something that would allow us to share files between the two, and across multiple machines. Our approach to this was to use Microsoft Teams and OneDrive. We found that a singular Teams group could hold up to 25TB data, and we could use shortcuts in OneDrive to directly access this data.
+
+To get this working in linux, Chris designed an rclone setup script that would mount the teams drive into `/home/user/REBELS`. 
+He also setup an `$RBL` environment variable for Linux and Windows which could be use for absolute pathing (otherwise a user's username would break absolute paths). However, we tried to stick with using relative pathing where possible.
+
+## USD, Houdini, Arnold
+
+REBELS used a Houdini centric USD pipeline, with rendering in Arnold.
+
+## Color Pipeline
+Color pipeline was one of the hardest parts of the entire project.
