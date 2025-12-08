@@ -457,22 +457,28 @@ const pageMetadata = {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 80%;
+  text-align: center;
+  gap: 1rem;
+  max-width: 100%;
   align-items: center;
   margin: 0 auto;
 }
 
 #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 60%;
 }
 
 #info p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .headshot {
-    margin: 2rem;
+  margin: 2rem;
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -521,7 +527,7 @@ const pageMetadata = {
 }
 
 .feature {
-  width: 20rem;
+  width: 15rem;
   height: 25rem;
   padding: 2rem;
   text-align: center;
@@ -725,7 +731,6 @@ const pageMetadata = {
     align-items: center;
     gap: 3rem;
     /* space between companies */
-    padding: 1rem;
     background-color: #111;
     box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.35);
 }
