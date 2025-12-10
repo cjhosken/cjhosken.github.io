@@ -45,6 +45,11 @@ main {
   font-size: 2rem;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 10px;
@@ -64,6 +69,7 @@ a {
   color: white;
   text-decoration: none;
   transition: all ease 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -84,6 +90,7 @@ button {
   border-radius: 16px;
   cursor: pointer;
   transition: all ease 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button {

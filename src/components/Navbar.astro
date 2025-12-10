@@ -1,25 +1,52 @@
 ---
-// Navbar.astro
 import '@material/web/button/text-button.js';
 import '@material/web/button/filled-button.js';
 import '@material/web/iconbutton/icon-button.js';
 ---
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
 <header class="navbar">
   <div class="navbar-container">
-    <!-- Logo/Brand -->
+    <!-- Logo / Brand -->
     <a href="/" class="brand">
       <img src="/favicon_white.svg" alt="Logo" width="100%" height="48" />
     </a>
-    
+
     <!-- Desktop Navigation -->
     <nav class="desktop-nav">
       <a class="md-button" href="/">Home</a>
       <a class="md-button" href="/blog/">Projects</a>
       <a class="md-button" href="/contact/">Contact</a>
     </nav>
-  
+
+    <!-- Mobile Menu Button -->
+    <md-icon-button class="mobile-menu-button" id="mobileMenuButton">
+      <span class="material-icons" id="menuIcon">menu</span>
+    </md-icon-button>
+  </div>
 </header>
+
+<!-- Mobile Fullscreen Overlay -->
+<div class="mobile-overlay" id="mobileOverlay">
+  <div class="mobile-overlay-content">
+    <a class="md-button mobile-nav-item" href="/">Home</a>
+    <a class="md-button mobile-nav-item" href="/blog/">Projects</a>
+    <a class="md-button mobile-nav-item" href="/contact/">Contact</a>
+  </div>
+</div>
+
+<script>
+  const overlay = document.getElementById("mobileOverlay");
+  const button = document.getElementById("mobileMenuButton");
+  const icon = document.getElementById("menuIcon");
+
+  button?.addEventListener("click", () => {
+    const isOpen = overlay?.classList.toggle("open");
+    icon!.textContent = isOpen ? "close" : "menu";
+
+    document.documentElement.classList.toggle("no-scroll", isOpen);
+  });
+</script>
 
 <style is:global>
   .navbar {
@@ -33,46 +60,43 @@ import '@material/web/iconbutton/icon-button.js';
     display: flex;
     align-items: center;
     padding: 0 16px;
-    overflow-x: hidden;
   }
-  
+
   .navbar-container {
     width: 100%;
     margin: 0 auto;
-    margin-right: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .brand {
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-decoration: none;
     color: var(--md-sys-color-on-surface);
     display: flex;
     align-items: center;
     gap: 8px;
   }
-  
+
   .desktop-nav {
     display: flex;
     gap: 5em;
+    margin-right: 1rem;
   }
-  
+
   .mobile-menu-button {
     display: none;
+    color: var(--md-sys-color-on-surface);
   }
-  
-  /* Fullscreen overlay styles */
+
+  /* Mobile Overlay */
   .mobile-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: var(--md-sys-color-surface);
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -81,35 +105,46 @@ import '@material/web/iconbutton/icon-button.js';
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
-  
+
   .mobile-overlay.open {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
   }
-  
+
   .mobile-overlay-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 100%;
-    max-width: 300px;
     text-align: center;
   }
-  
+
   .mobile-nav-item {
     width: 100%;
+    max-width: 240px;
+    font-size: 1.4rem;
+    padding: 0.75em 1em;
+    display: flex;
     justify-content: center;
-    padding: 1em;
-    font-size: 1.5rem;
   }
-  
+
+
   .close-button {
     position: absolute;
-    top: 1em;
-    right: 1em;
-    margin-right: 1em;
+    top: 1rem;
+    right: 1rem;
     color: var(--md-sys-color-on-surface);
   }
-  
+
+  /* RESPONSIVE BEHAVIOR */
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-menu-button {
+      display: inline-flex;
+    }
+  }
 </style>

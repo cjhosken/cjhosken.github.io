@@ -144,10 +144,9 @@ const pageMetadata = {
         <Icon name="mdi:gear" size="42" />
         <h1>Pipeline</h1>
         <p>
-          My experience as both an artist and a developer has allowed me to
-          write complex, user-friendly tools in production. Currently, I am
-          experimenting and with how USD can be used to streamline and create
-          modern studio pipelines.
+          My experience as both an artist and developer has allowed me to
+          write complex, user-friendly tools. Currently, I am
+          experimenting with USD for modern pipelines.
         </p>
       </a>
       <a href="/blog" class="feature" target="_blank"> 
@@ -165,9 +164,8 @@ const pageMetadata = {
         <Icon name="mdi:code" size="42" />
         <h1>R&D</h1>
         <p>
-          I have a strong mathematics, physics, and programming background with
-          knowledge of Python, C++, Qt, OpenGL, and USD. I'm currently learning
-          web development with Vite and React and seeing how the future of VFX
+          I have a mathematics, physics, and programming background. I'm currently learning
+          web development and seeing how the future of VFX/Animation
           can be web-based.
         </p>
       </a>
@@ -444,7 +442,6 @@ const pageMetadata = {
   gap: 1.5rem;
 }
 
-
 /* About Section */
 #about {
   padding: 3rem 2rem;
@@ -504,7 +501,6 @@ const pageMetadata = {
   }
 }
 
-
 #features {
   width: 100%;
   display: flex;
@@ -528,8 +524,9 @@ const pageMetadata = {
 
 .feature {
   width: 15rem;
-  height: 25rem;
+  max-height: 28rem;
   padding: 2rem;
+  
   text-align: center;
   background-color: #242424;
   border-radius: 16px;
@@ -573,6 +570,54 @@ const pageMetadata = {
   border: solid 2px var(--primary-color);
 }
 
+/* MOBILE FIX FOR EXPERIENCE + EDUCATION */
+@media (max-width: 768px) {
+  #history {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .history-container {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 0;
+  }
+
+  .history-container .experience {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .timeline li {
+    margin: 1rem 0;
+    padding: 1.25rem;
+    min-width: 0;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .timeline li img {
+    width: 3rem;
+  }
+
+  .timeline li .header h1 {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+  }
+
+  .timeline li .header h2 {
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
+  }
+
+  .timeline li #date,
+  .timeline li #description {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+}
+
 #history {
   width: 100%;
   height: fit-content;
@@ -590,13 +635,13 @@ const pageMetadata = {
 
 /* History */
 .history-container {
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 80%;
 }
 
 .history-container .experience {
@@ -611,7 +656,8 @@ const pageMetadata = {
   list-style: none;
   padding: 0;
   text-align: left;
-  width: 100%;
+  min-width: 50%;
+  width: fit-content;
 }
 
 .timeline li {
@@ -660,11 +706,11 @@ const pageMetadata = {
 }
 
 .timeline li .header h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .timeline li .header h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .timeline li #date {
@@ -672,7 +718,8 @@ const pageMetadata = {
 }
 
 .timeline li #description {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
+  color: #DDD;
 }
 
 /* Skills */

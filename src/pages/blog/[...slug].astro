@@ -198,16 +198,21 @@ const { Content } = await post.render();
     .blog-post img {
       margin: 1.5rem 0;
     }
+  }
 
-    .astro-code {
-      padding: 0.75rem;
-      font-size: 0.9rem;
-    }
+  /* Make code blocks wrap instead of scroll */
+  .astro-code {
+    white-space: pre-wrap;    /* Wrap long lines */
+    word-break: break-word;   /* Break long words if needed */
+    overflow-x: visible;      /* Remove horizontal scrollbar */
+    overflow-y: visible;      /* Ensure full height expands */
+    margin: 1em 0em;
+  }
 
-    blockquote {
-      margin: 1.5rem 0;
-      padding-left: 0.75rem;
-    }
+  /* Keep code inside <code> tags wrapping */
+  .astro-code code {
+    white-space: inherit;
+    word-break: inherit;
   }
 
   /* Ultra small screens (phones < 400px) */
@@ -224,4 +229,23 @@ const { Content } = await post.render();
       font-size: 1rem;
     }
   }
+
+.blog-post table {
+  width: fit-content%;
+  border-collapse: collapse;
+  border: 2px solid #333;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.blog-post th,
+.blog-post td {
+  border: 1px solid #333;
+  padding: 0.5rem 2rem;
+}
+.blog-post th {
+  background-color: #444;
+}
+
 </style>

@@ -40,81 +40,94 @@ const pageMetadata = {
 
 <Layout metadata={pageMetadata}>
   <img class="pageBanner" src="/images/contact.gif" alt="Contact banner" />
-        <div id="contact">
-          <div id="contact-container">
-            <a
-              href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contactInfo"
-            >
-              <Icon name="mdi:location" size="32" />
-              <h1> Location </h1>
-              <p> Bournemouth, UK </p>
-            </a>
-            <a
-              href="mailto:hoskenchristopher@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contactInfo"
-            >
-              <Icon name="mdi:email" size="32" />
-              <h1> Email </h1>
-              <p> hoskenchristopher@gmail.com </p>
-            </a>
-            <a
-              href="/ChristopherHosken_CurriculumVitae_2025.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contactInfo"
-            >
-              <Icon name="mdi:download" size="32" />
-              <h1> Download CV</h1>
-              <p> Curriculum Vitae </p>
-            </a>
-          </div>
-        </div>
-    <ContactForm />
+  <div id="contact">
+    <div id="contact-container">
+      <a
+        href="https://maps.app.goo.gl/MKvBbA925MdXYqBv9"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contactInfo"
+      >
+        <Icon name="mdi:location" size="32" />
+        <h1>Location</h1>
+        <p>Bournemouth, UK</p>
+      </a>
+      <a
+        href="mailto:hoskenchristopher@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contactInfo"
+      >
+        <Icon name="mdi:email" size="32" />
+        <h1>Email</h1>
+        <p>hoskenchristopher@gmail.com</p>
+      </a>
+      <a
+        href="/ChristopherHosken_CurriculumVitae_2025.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contactInfo"
+      >
+        <Icon name="mdi:download" size="32" />
+        <h1>Download CV</h1>
+        <p>Curriculum Vitae</p>
+      </a>
+    </div>
   </div>
+  <ContactForm />
 </Layout>
 
 <style is:global>
-
-#contact {
+  #contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.8);
-}
+  }
 
-#contact-container {
+  #contact-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
     padding: 4rem 0rem;
-    width: fit-content;
-    gap: 4rem;
-}
+  }
 
-.contactInfo {
-    width: 70%;
-    font-size: 2rem;
+  .contactInfo {
+    flex: 1 1 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0; /* allows proper shrinking */
     text-align: center;
-}
+    justify-content: center;
 
-.contactInfo h1 {
-  text-align: center;
-    font-size: 1.25rem;
-}
+    /* responsive font scaling */
+    font-size: clamp(0.75rem, 2.5vw, 1.2rem);
+  }
 
-.contactInfo p {
-  text-align: center;
-    font-size: 1rem;
-}
+  .contactInfo h1 {
+    font-size: clamp(0.7rem, 3vw, 1.3rem);
+    margin-top: 0.5rem;
+  }
 
+  .contactInfo p {
+    font-size: clamp(0.5rem, 2.3vw, 1rem);
+    margin-top:;
+  }
 
+  @media (max-width: 420px) {
+    .contactInfo {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+    #contact-container {
+      gap: 1rem;
+      padding: 1rem 0rem;
+    }
+  }
 
 </style>
