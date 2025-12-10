@@ -58,7 +58,7 @@ const defaultVideos = [
     .lightbox-card {
         width: 90vw;
         max-width: 1200px;
-        background: var(--md-sys-color-surface);
+        background: #000;
         border-radius: 12px;
         padding: 16px;
         box-shadow: var(--md-sys-elevation-level-3);
@@ -98,7 +98,7 @@ const defaultVideos = [
         width: calc(100% - 40px);
         background: var(--md-sys-color-surface-variant);
         color: var(--md-sys-color-on-surface-variant);
-        border: 1px solid var(--md-sys-color-outline);
+        border: 2px solid #333;
         border-radius: 20px;
         font-size: 1rem;
         outline: none;
@@ -108,6 +108,11 @@ const defaultVideos = [
         background-repeat: no-repeat;
         background-position: right 0.7rem top 50%;
         background-size: 0.65rem auto;
+    }
+
+    .video-select option {
+        background-color: black;
+        color: white;
     }
 
     .close-button {
