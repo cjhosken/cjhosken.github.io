@@ -1,6 +1,6 @@
 ---
 title: "REBELS Rigging & Animation"
-date: 2025-12-15
+date: 2025-12-16
 description: ""
 tags: ["university", "team", "vfx", "film", "hidden"]
 ---
@@ -17,7 +17,78 @@ tags: ["university", "team", "vfx", "film", "hidden"]
 
 # Introduction
 
-This section is currently under development.
+REBELS is the first student projects at Bournemouth University to have a full APEX Animation Pipeline. 
+This was a decision made to avoid the Maya / Houdini conversion that would have needed to be done.
+
+It was an incredibly risky decision and we came across numerous issues and frustrations. 
+We've decided write about our experience and understanding of it to help future artists navigate using APEX.
+
+*It is important to preface that we were using Houdini 20.5, therefore APEX was not as polished as it is in future versions. Many of the issues we had are likely to have been resolved.*
+
+# APEX Rigging
+
+APEX (All-Purpose EXecution) is Houdini's new rigging and animation alternative to KineFX. 
+It features a specialized rigging graph system that can be more quickly executed than other methods.
+
+At the time of production, there was very little documentation on how APEX worked. I (Chris) spent months figuring out how the graph system worked and how to create custom components for our rigs.
+
+There are 3 steps to rigging in APEX.
+
+1. Create the Joints
+2. Bind the Skin
+3. Build the APEX Graph
+
+Steps 1 and 2 are trivial and are the same as how one would rig with KineFX; you need to generate points, give them orientations, and then bind them to the skin.
+
+Our assets were mostly hard surface (with the exception of a few wires), so our binding process was extremely simple.
+
+The part that will be mostly addressed is step 3. How to build the APEX Graph
+
+## The APEX Graph
+
+For anyone who has done node based rigging before (like in Maya), you'd understand the premise of using nodes to control your rig.
+
+APEX is similar, however you very rarely ever touch the rig graph; You create nodes that edit it. A good analogy is like telling somebody how you want your car to be built, instead of building it yourself.
+
+*This is specific to building rigs in a non-destructive way. There are techniques that allow you to edit graph directly, however we found that to often "lock" the graph and stop future changes from being passed through.*
+
+Houdini has some pre-built components that edit the APEX Graph for you, such as the fk component. These could be added by an APEX component builder. If you're stictly using the prebuilt components, then rigging with APEX is extremely simple.
+
+However, alot of the functionality we wanted with our rigs involved us making our own custom components and rig setups.
+
+## APEX and USD
+Another challenge that I had was getting the APEX rig to communicate nicely with USD. This was done by creating a rig.usd layer which could be added onto our character.
+
+The rig.usd layer contained the bound model geometry as well as the rig skeleton. There was a handy solaris node which allowed for that.
+
+I would then export an apex rig graph as Houdini .bgeo which could then be combined together in our custom "REBELS Asset" node. The node would take the apex animation done by the artist, and map it onto the .usd asset using rig.usd layer.
+We could then bake out the animation as one whole USD layer to use for FX and Lighting.  
+
+
+# Motion Capture
+
+Although a few of us had prior experience with animating, None of us had a particular interested in the actual animation process. 
+We decided that it would be quicker and easier to use motion capture instead, and then we all do a little bit of manual cleanup for the shots.
+
+We went through multiple phases of how we wanted to do our motion capture. 
+At first we hoped to use the University's old motion capture system, which we quickly found to be extremely convoluted and required more work than hand animation.
+
+We then looked at AI motion capture systems, in which quite a few proved to be promising. However it struggled for alot of the shots in which our characters would be sitting.
+
+Luckily, we were able to reach out to a fellow student who owned an X-Sens suit. We spent an afternoon capturing all the motion clips we needed, and then jumped into retargeting and cleanup.
+
+## Re-Targeting
+The Retargeting system in Houdini was an absolute breeze. 
+I developed a node that allowed us to feed in our APEX rig, rest t-pose, and animation, and it would spit out a near perfect animated APEX character.
+The challenge then came with the cleanup animation.
+
+
+# Animating in APEX
+We found animating within APEX extremely frustating. 
+Whether it was crashes, the viewport freezing, our dealing with broken parent constraints, alot of our time was spent debugging APEX than actually animating in it.
+
+However, we were able to get most of our shots animated, and the fact that it was fed directly into USD meant that we wasted no time with import/export issues. The animation files were also incredibally lightweight.
+
 
 <div style="display: flex; flex-direction: row; align-items:center; justify-content:space-between;">
 
