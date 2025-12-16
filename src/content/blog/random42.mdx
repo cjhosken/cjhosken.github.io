@@ -1,0 +1,84 @@
+---
+title: Random42 Masterclass
+date: 2025-12-16
+description: "Medical Visualization of Hepatitis B using Blender and Nuke for Random42."
+tags: ["university", "animation"]
+---
+
+<div class="video-container">
+  <video controls muted>
+    <source src="/blog/random42/Random42_HepatitisB_ChristopherHosken.mov" type="video/mp4"/>
+  </video>
+</div>
+
+# Introduction
+One of our units at Bournemouth University involved us being given a task by Industry Professionals. 
+I decided to choose the Random42 brief as a chance to work as a generalist, as well as dive back into Blender.
+
+# Brief
+The brief was simple; given a clip of audio, make a medical visualization of the Hepatitis B virus travelling through the body and attaching to the liver. 
+We were given free reign to use whatever software we liked, and we had 3 months to complete the project.
+
+# Pre-Production
+
+## Initial Research
+I wanted my animation to invoke the same sort of feeling one would get looking at sci-fi cinematics, so I began by researching into a few artists who I could take inspiration from.
+
+<img src="/blog/random42/references_001.png"/>
+
+I also wanted my project to feel scientifcally accurate, so I also researched the virus itself, as well as the parts of the body it would interact with.
+
+
+Once I was complete with my research, I jumped into Blender to create my animatic.
+
+## Animatic
+
+For my animatic, I blocked everything out using very basic shapes.
+
+<div class="video-container">
+  <video controls muted>
+    <source src="/blog/random42/animatic_v001.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+I also quickly made some "thumbails" to help convey the mood I wanted for the film.
+
+<div style="display: flex; flex-wrap: wrap; width: 100%; margin: 1rem 0rem;">
+  <img src="/blog/random42/thumbnail_sh01_001.png"/>
+  <img src="/blog/random42/thumbnail_sh02_001.png"/>
+  <img src="/blog/random42/thumbnail_sh02_002.png"/>
+  <img src="/blog/random42/thumbnail_sh03_001.png"/>
+  <img src="/blog/random42/thumbnail_sh04_001.png"/>  
+</div>
+
+I then showed the animatic and thumbnails to Random42.
+
+# Production
+Once everyone was happy with the animatic, I moved onto the polishing the shots.
+
+## The Virus
+For the Virus, I took some medical data and remeshed it into a blobby shape. I then designed a shader in Blender to make it feel hostile and alive.
+
+## Lighting
+For lighting I used alot of atmospherics and fog. I enjoyed everything being rim lit.
+
+## ACES Pipeline
+Colorspace has always been a confusing subject, and with the newly released Blender 5.0 (with ACES), 
+I decided it would be the perfect project to try and properly understand what was going on.
+I was able to pass through the correct color from Blender, to Nuke, all the way into Resolve, which was extremely satisfying to see.
+
+## Compositing
+Alot of the extra detail in the animatic came from the compositing side. 
+I didn't want to try and manually render dust or any other effects (due to time constraints), so those were added inside of Nuke.
+
+## Editing
+I had a working edit file from when the animatic was made, and I would consistently update it through production as shots were updated.
+I would take the composited shots, edit the color, and then add some graphics on top.
+
+I also took the original voice lines and fed them into ElevenLabs, an AI tool that creates professional voice over audio from text.
+
+# Conclusion
+
+Overall I was satisfied with the project. Given more time I would have loved to refine some of the lighting and motion of the shots, as well as add some simulated elements within Houdini.
+
+*Written December 16, 2025 by Christopher Hosken*
