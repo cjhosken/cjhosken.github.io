@@ -22,10 +22,6 @@ const { Content } = await post.render();
 ---
 
 <BlogLayout title={post.data.title} description={post.data.description}>
-  <script
-    type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
   <article class="blog-post">
     <header>
       <h1>{post.data.title}</h1>
