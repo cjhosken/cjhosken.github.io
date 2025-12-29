@@ -49,12 +49,89 @@ To get this working in Linux, I also designed an rclone setup script that would 
 
 I also setup a `$RBL` environment variable for Linux and Windows which could be use for absolute pathing (otherwise a user's username would break absolute paths). However, we tried to stick with using relative pathing where possible.
 
+### Houdini Non-Commercial Challenges
+One challenge we had was that when working on REBELS on our home devices, our files would lock to an Apprentice Non-Commercial version. This meant that all usd files were being saved as .usdnc, and our render's were watermarked.
+
+To solve this, we had to come up with a specific workflow that avoided the "corruption" of our scenes.
+
 ## USD, Houdini, Solaris
 
 We quickly agreed on using a Houdini centric USD pipeline for production. It was incredibly successful in previous group projects and we didn't want to deal with the fuss of Maya projects.
 
-Our rendering was done in Solaris, which meant that we could switch to any renderer we felt like. 
-However we stuck with Karma because it was one of the fastest renderers available to us (It also meant we could use the renderfarm).
+
+### The Asset Pipeline
+
+Our asset pipeline begins with modelling in any DCC of choice and exporting as .usd (or another format) into Houdini (and other respective DCCs).
+Then, textures and lookdev (and potentially a groom) are combined into a static usd asset layer. This is the base asset.
+
+Rigs are then created using Houdini APEX. The APEX graph is saved as houdini .bgeo, and the USD binding is saved as a layer which is added onto the base asset.
+
+Using a custom asset loader, the asset can be loaded statically, with a rig, and with our without groom. When doing CFX, the CFX setup .bgeo can be used for simulating as it can hold all the vellum (or other sim) properties.
+
+<img src="/blog/rebels/pipeline/asset_pipe.png" style="margin: 1rem auto; height: 365px;"/>
+<br/>
+
+You can read more about how we made our assets [here](/blog/rebels/assets).
+
+### The Shot Pipeline
+
+Our shot pipeline was primarily Houdini and USD based, aside from compositing which was done in Nuke.
+We had two kinds of shots in production, VFX and CG.
+
+**- Shot Pipeline: VFX -**
+
+VFX shots begin with taking the original footage and converting it into a .exr sequence. 
+This sequence can then be tracked in SynthEyes in which a 3D camera, dummy geometry, and distortion data are generated.
+
+The 3D camera and dummy geometry are fed into Houdini for layout, whilst the distortion data is used to create undistorted backplates (these will be redistorted later with our CG).
+
+<br/>
+**- Shot Pipeline: Layout -**
+
+CG shots skip the footage, tracking, and distortion step and jump straight into layout.
+
+In layout, USD assets are referenced in and camera animation is polished. A layout layer is published for the next step of the pipeline.
+<br/>
+**- Shot Pipeline: Animation -**
+
+In animation, rigged USD assets are referenced and animated. This can overwrite any layout USD assets that need animation due to how USD is designed.
+Once animation is complete, a animation layer is published.
+
+Read about more of our challenges with animtion [here](/blog/rebels/animation).
+
+<br/>
+**- Shot Pipeline: FX -**
+
+In FX, the data from layout and animation layers can be used to do RBD destruction, pyro, and whatever else. Volumes are added to the stage as .VDBs and other geometry elements are added normally.
+The finished shot is then exported as an fx layer.
+In some cases, we had multiple FX layers so that we could render specific FX elements without loading *everything*.
+
+You can read more in depth on how we did our FX in Houdini [here](/blog/rebels/fx).
+
+<br/>
+**- Shot Pipeline: Lighting -**
+
+As we already have the layout layer from the start. We were able to Lighting whilst animation and FX were under way. In lighting we would setup our render settings and render layers with AOVs and LPEs. We then would export our lighting.usd layer.
+<br/>
+
+**- Shot Pipeline: Rendering -**
+
+For rendering, we would have a Houdini file that would load in *all* the layers that we needed. From here we would do any last minute render fixes (such as DOF, Motion Blur, Overscan) and then we would render the shot out.
+
+Becase we were using Solaris, we could switch to any renderer that we wanted (with a few tweaks). We originally wanted to use Arnold for rendering but we stuck with Karma because it was one of the fastest renderers available to us (It also meant we could use the renderfarm).
+
+
+<br/>
+**- Shot Pipeline: Compositing -**
+
+In compositing we are then able to load our the footage .exr sequence, the rendered frames (as a .exr sequence) and (if needed) entire .usd scene into Nuke. From there we composite and export out frames for the final edit. 
+
+In some shots we had matte paintings. These were done in Photoshop and Nuke.
+
+You can read more about our compositing techniques [here](/blog/rebels/comp).
+
+
+<img src="/blog/rebels/pipeline/shot_pipe.png" style="margin: 1rem auto; height: 600px;"/>
 
 ## Color Pipeline
 We struggled alot early on with our color pipeline, however towards the middle part of production we started to understand how things worked.
@@ -63,11 +140,28 @@ All our renders were done in ACEScg, we had a custom OCIO config that was shared
 
 ## Custom Tools & The NCCA Renderfarm
 
-I also developed numerous Houdini tools for Asset Building, Lookdev, Rendering, and the incredibly successful NCCA Renderfarm Tool.
+I also developed numerous Houdini tools to help speed up production. Below you can see our custom SOP nodes (left), and custom LOP nodes (right).
+<div style="
+    display:flex;
+    width:100%;
+    max-width:1000px;
+    gap:0rem;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items:center;
+    margin:1rem auto;
+">
+    <img src="/blog/rebels/pipeline/sop_nodes.png" style="flex:1; height: 220px; object-fit:fit;"/>
+    <img src="/blog/rebels/pipeline/lop_nodes.png" style="flex:1; height: 220px; object-fit:fit;"/>
+</div>
+
+I also made a custom Houdini launcher for the project. Featuring ours truly, Timothy Courtice.
+
+<img src="/blog/rebels/pipeline/splash.jpg" style="height: 300px;"/>
 
 ### The NCCA Renderfarm
 
-The NCCA Renderfarm has been known to be unusable by students at Bournemouth. Mostly abandoned, it was only configured to work with rendering in Houdini.
+The NCCA Renderfarm is infamous for being unusable at Bournemouth University. Mostly abandoned, it was only configured to work with rendering in Houdini.
 
 The farm featured a convoluted submission setup, in which most previously written tools were depricated. 
 I spent a couple weeks developing a Houdini Solaris node that would package projects into a single folder, submit it to the farm, and then render them as a farm job.
