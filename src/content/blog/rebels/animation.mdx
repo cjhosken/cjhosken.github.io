@@ -74,7 +74,7 @@ For anyone who has done node based rigging before (like with Maya's node graph),
     margin:1rem auto;
 ">
     <img src="/blog/rebels/animation/apexgraph.png" style="flex:1; height: 500px; object-fit:fit;"/>
-    <div style="flex: 2; display flex; height: 400px; justify-content: top; align-items: center;">
+    <div style="flex: 2; display flex; height: fit-content; justify-content: top; align-items: center;">
         APEX is similar, however you very rarely ever touch the rig graph; You create nodes that edit it. For example, if you wanted to parent two nodes together. You wouldnt join them up, you'd use a node to connect them.
 
         This very much feels like an extra step, however SideFX suggest it leads to a more non-destructive (and more quickly executed) rig workflow.
@@ -95,13 +95,14 @@ With REBELS, there were some specific controls we needed which involved building
     width:100%;
     max-width:1000px;
     gap:0rem;
+    height: fit-content;
     justify-content:center;
     flex-wrap: wrap;
     align-items:center;
     margin:1rem auto;
 ">
     <img src="/blog/rebels/animation/fins.png" style="flex:1; height: 300px; object-fit:fit;"/>
-    <div style="flex: 1.4; display flex; height: 300px; justify-content: top; align-items: center;">
+    <div style="flex: 1.4; display flex; height: fit-content; justify-content: top; align-items: center;">
         One of these components was the "head fin spread" component. I choose to focus on this one for it's technical simplicity.
 
         Tim's model contained a number of fins on the back of the head. We wanted to be able to control the "spread" of these fins instead of having to animate each one individually.
@@ -159,13 +160,14 @@ The rig.usd was built in Solaris using a SOP Import Character. It would use the 
     width:100%;
     max-width:1000px;
     gap:0rem;
+    height: fit-content;
     justify-content:center;
     flex-wrap: wrap;
     align-items:center;
     margin:1rem auto;
 ">
     <img src="/blog/rebels/animation/usd.png" style="flex:1; height: 400px; object-fit:fit; padding-bottom: 1rem;"/>
-    <div style="flex: 0.4; display flex; height: 400px; justify-content: top; align-items: center;">
+    <div style="flex: 0.4; display flex; height: fit-content; justify-content: top; align-items: center;">
         The rig.usd was built in Solaris using a SOP Import Character. It would use the rig joints from step 1, and the bound geometry from step 2 to create a fully functional USD rigged character.
 
         *(left) the solaris rig.usd setup*
@@ -200,11 +202,12 @@ The re-targeting system in Houdini behaved relatively well.
     gap:0rem;
     justify-content:center;
     flex-wrap: wrap;
+    height: fit-content;
     align-items:center;
     margin:1rem auto;
 ">
     <img src="/blog/rebels/animation/retargeting.png" style="flex:1; height: 300px; object-fit:fit; padding-bottom: 1rem;"/>
-    <div style="flex: 1.5; display flex; height: 300px; justify-content: top; align-items: center;">
+    <div style="flex: 1.5; display flex; height: fit-content; justify-content: top; align-items: center;">
             I developed a node that allowed us to feed in our APEX rig, rest t-pose, and animation, and it would spit out a near perfect animated APEX character. 
             
             The node would bring controls out of the APEX rig, transform them using Houdini's built in re-targeting tools, and then feed them back into the APEX rig for animation cleanup.
@@ -218,7 +221,19 @@ Whether it was crashes, the viewport freezing, our dealing with broken parent co
 
 Halfway through production, we switched from Houdini 20.5 to Houdini 21, which fixed a lot of our issues and made animating in APEX much more enjoyable. However it contained a few bugs which caused our rigs to behave incredibily slow.
 
-[INCLUDE ANIMATION WIP IMAGES]
+<div style="
+    display:flex;
+    width:100%;
+    max-width:1000px;
+    gap:0rem;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items:center;
+    margin:1rem auto;
+">
+    <img src="/blog/rebels/animation/animation.png" style="flex:1; height: 400px; object-fit:fit; padding-bottom: 1rem;"/>
+    *A still frame of our animation viewport.*
+</div>
 
 By the end of the animation stage, we were animating some shots in Houdini 20.5, and some in Houdini 21. Since everything was USD it didn't matter what version of Houdini we were using since the output USD file was the same.
 
