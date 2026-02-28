@@ -1,20 +1,263 @@
 ---
-title: "Deadshot R&D (In-Progress)"
-date: 2026-04-02
-description: "Research & Development of Open-Source monocular motion capture on the web."
+title: "Deadshot"
+date: 2026-03-05
+description: "An Evaluation of Open-Source Web-Based Monocular Pose Estimation for Motion Capture."
 tags: ["university", "study", "code"]
 ---
 
 <div style="display: flex; justify-content:center; align-items: center; margin: 1em; gap: 1em;">
 
+<a class="button" href="/blog/deadshot/RND_Deadshot_Report_2025_26.pdf" target="_blank"> Paper </a>
+<a class="button" href="/blog/deadshot/RND_Deadshot_Poster_2025_26.pdf" target="_blank"> Poster </a>
 <a class="button" href="https://github.com/cjhosken/deadshot" target="_blank"> GitHub Repo </a>
 <a class="button" href="https://cjhosken.github.io/deadshot" target="_blank"> Deadshot App </a>
 
 </div>
 
-# Introduction
+# Deadshot: An Evaluation of Open-Source Web-Based Monocular Pose Estimation for Motion Capture
+**Christopher Hosken (s5605094)**
 
-I wanted to explore the possibility of web-based motion capture, for all.
-This project is still under development and is not yet complete, Do not expect it to be production ready.
+Supervised by Zhidong Xiao
 
-You can play with the demo here: <a href="https://cjhosken.github.io/deadshot" target="_blank">Deadshot Demo</a> (Webcam Required)
+
+<br/>
+---
+<p></p>
+ABSTRACT. We present Deadshot, an open-source, browser-based framework for accessible monocular motion capture. While video-based pose estimation offers a low-cost alternative to conventional techniques, costly closed-source codebases, technical friction in offline setups, and insufficient motion data accuracy remain significant barriers to public accessibility and adoption within the Computer Graphics industry. Deadshot explores these challenges by integrating existing, open-source pose-estimation frameworks with novel algorithms for temporal-velocity-confidence smoothing and joint retargeting. This work demonstrates a complete, browser-based system, serving as both a technical offering and study in the modern world of motion capture technology.
+
+
+
+<div>
+![test](/blog/deadshot/cover.jpg)
+</div>
+
+The Deadshot web application is publicly available at [cjhosken.github.io/deadshot](https://cjhosken.github.io/deadshot).
+The full source code can be found at [github.com/cjhosken/deadshot](https://github.com/cjhosken/deadshot).
+
+KEY WORDS: Web Technologies, Computer Vision, Motion Capture, Open Source
+
+---
+
+## CONTENTS
+
+1. 	INTRODUCTION
+
+2. 	RELATED WORK
+
+3. 	DEADSHOT: TECHNICAL FRAMEWORK
+
+    3.1	METHODOLOGY
+
+		- 3.1.1	POSE ESTIMATION AND JOINT RETARGETING
+
+		- 3.1.2	LOCOMOTION AND CONTINUOUS PELVIS SIMULATION
+
+		- 3.1.3	POLISHING AND JITTER REDUCTION
+
+	3.2	ACCESSIBLE MOTION CAPTURE
+
+	3.3	OPEN-SOURCE MOTION CAPTURE
+
+	3.4	EXPORTED MOTION CAPTURE
+
+4. 	RESULTS AND DISCUSSION
+
+5. 	CONCLUSION AND FUTURE WORK
+
+---
+
+<br/>
+
+
+
+## 1	INTRODUCTION
+
+Being able to portray movement has been a desire for many artists, whether it be in puppetry, animation, acting, or even painting. In today’s age, making things move has become a necessity in visual storytelling. In the digital realm, however, it is not easy. Animators spend weeks blocking, splining, and refining a character's movement for only a short section of a film. Such as in feature animation, where animators are required to complete 3-4 seconds of animation per week (Riki, 2013). This is where the idea of motion capture was formed. For animations that focus on realism, it was found to be easier to capture the movement of real actors, rather than do it all from scratch.
+
+
+## 2	RELATED WORK
+
+For the past couple of decades, the conventional approach for motion capture has been marker-based. This technique uses highly reflective (or emissive) dots on an actor that are picked up by luminance cameras. These cameras track the dots to create a 4-dimensional point cloud (the fourth dimension being time). A technician then goes in and constructs a skeleton from the point cloud, which is then exported into an animation software for cleanup (Nogueira, 2011). Figure 1 below demonstrates the required “kit” needed for marker-based motion capture.
+
+<div style="text-align: center; margin: 1em;">
+![test](https://www.cnet.com/a/img/resize/75c0c65f69a57e1032dd3aabeeceddf1ea4460bd/hub/2010/11/24/86193c4e-f0f8-11e2-8c7c-d4ae52e62bcc/avatar_behind_scenes_4.jpg?auto=webp&fit=crop&height=900&width=1200)
+
+*Figure 1. Behind the scenes of Avatar at Weta Digital. (Pendlebury, 2010)*
+
+</div>
+
+The challenge with marker-based motion capture is that it is incredibly expensive and much more technically challenging than hand-based animation. Users have to painstakingly process and clean up their data and be able to afford the multi-camera array and equipment for capturing said data. The complexity of setting up and dealing with these challenges often only large studios can afford (Nogueira, 2011).
+
+That is why in recent years, companies like XSens and Rokoko have stepped up to create motion capture body suits. Although still using “markers”, Motion capture suits are a much more intuitive system for indie professionals, artists and studios. Gyroscopic sensors are embedded inside the suit that allow it to reconstruct an animated skeleton, live. These suits bypass complex setup and cleanup and take you straight into animation.
+
+<div style="text-align: center; margin: 1em;">
+
+![test](https://i.ytimg.com/vi/fr2ZEz7ZUC0/maxresdefault.jpg)
+
+*Figure 2. Motion capture tools for VFX artists. (Rokoko, 2026)*
+
+</div>
+
+Although much simpler than marker-based motion capture, magnetic interference and sensor drift can cause jittering and inaccurate motion. They also cost upwards of $2000 (Rokoko, 2025) (Xsens, 2025). Which, while affordable for professionals, is not something that could be considered “publicly available”.
+
+With recent advances in AI and computer vision, a new technique has arisen: markerless motion capture. This method takes the accuracy of marker-based motion capture (multiple cameras), with no suit. Actors can wear normal clothing, and a skeleton can be reconstructed. In fact, skeletons can be generated from a single “monocular” camera (Wandt et al., 2026).
+
+This is where companies like Radical Motion, Move AI, and QuickMagic come in. Artists upload videos of themselves acting and receive accurate motion capture clips in return! Yet, products are closed off from the general public and can only be used through a freemium or paid membership (RadicalMotion, 2026) (Move AI, 2026).
+
+<div style="text-align: center; margin: 1em;">
+![test](https://cdn.radicalmotion.com/2024/08/omniverse-hero-image.png)
+
+*Figure 3. RaDiCAL - AI-powered 3D Animation (RadicalMotion, 2026)*
+
+</div>
+
+
+## 3	DEADSHOT: TECHNICAL FRAMEWORK
+
+The intention behind Deadshot was to solve challenges of accessibility, cost, and proprietary nature in modern motion capture tools. The system explores the feasibility of developing a motion capture solution that is:
+Easily Accessible (Browser-based and low-cost)
+Entirely Free and Open Source
+Capable of producing production-level quality motion
+
+
+## 3.1	METHODOLOGY
+
+The Deadshot framework is built as a web application using Vite+React Typescript and THREE.js as the 3D engine, selected for its cross-platform compatibility and ease of development. The core technical pipeline is defined by three key stages: Pose Estimation, Locomotion, and Polishing.
+
+
+### 3.1.1	POSE ESTIMATION AND JOINT RETARGETING
+
+Deadshot utilizes the open-source Mediapipe framework for monocular pose estimation, which outputs a skeleton containing 2D screen coordinates (x, y), an estimated depth coordinate (z), and a prediction confidence (c) for each joint. 
+
+The inherent challenge with monocular motion capture, compared to traditional multi-camera triangulation  (Nogueira, 2011), is the difficulty in accurately determining the 3d position of the skeleton.
+
+The initial MediaPipe estimated pose is mapped to the webcam space, therefore any real-world movements towards and away from the camera result in a scaled skeleton rather than a translated one. Instead of normalizing the skeleton using edge-length measurements, we calculate quaternion angles of the pose joints and map them onto a character rig. This technique ensures that the angles of the character’s movement remain consistent, regardless of the size or scale of the capture skeleton.
+
+
+### 3.1.2	LOCOMOTION AND CONTINUOUS PELVIS SIMULATION
+
+The trouble with only mapping joint rotations is the loss of all translational data, which is essential for the pelvis joint’s locomotion. Without it, the character would appear to float. Our solution involves a continuous live simulation of the pelvis. So that if a character crouches, their torso goes down instead of the character floating.
+
+
+We introduce our own "continuous" simulation of the pelvis to allow hip motion on all 3 axes. In which B is the joint bones, and H is the pelvis position.
+
+
+
+### 3.1.3	POLISHING AND JITTER REDUCTION
+
+To mitigate high-frequency jitter in pose estimation, we introduce a proprietary smoothing method termed “adaptive velocity-confidence smoothing”. The approach combines velocity-aware filtering, confidence weighted modulation, and linear interpolation. It operates as a pre-processing stage to retargeting and locomotion adjustments. 
+
+The filter first computes a per-point velocity vector from consecutive estimated positions. The magnitude of this velocity serves as the primary signal for determining the degree of temporal smoothing. Intuitively, slow motions are smoothed more aggressively to subpress jitter, whereas faster motions preserve responsiveness.
+
+
+
+We compute an adaptive smoothing coefficient α using two parameters αslow and αfast, together with velocity threshold T. When the velocity magnitude falls below T, stronger smoothing by αslow is applied; otherwise, the filter switches to using a weaker αfast. Although we adopt a piecewise formulation in our implementation, a continuous interpolation between the two values would provide a straightforward generalization.
+
+
+
+To further stabilise unreliable detections, the smoothing coefficient is modulated by a remapped pose-estimation confidence value. This ensures that low-confidence observations receive increased smoothing, whereas high-confidence detectors retain temporal fidelity.
+
+
+
+For Deadshot, we empirically selected αslow = 0.3, αfast = 0.8, and T = 0.03. The final step linearly interpolates the joint displacement according to the adaptive  αfinal, and the resulting positions are forwarded to the retargeting and locomotion modules to 
+construct the final pose.
+
+
+The smoothing filter suppresses high-frequency variations while preserving global structure. The velocity standard deviation decreased by 0.15%, whilst the maximum absolute step change decreased by 25.17%. These metrics indicate effective attenuation of “jitter” with negligible impact on overall motion.
+
+<div style="text-align: center; margin: 1em;">
+![test](/blog/deadshot/data.png)
+
+*Figure 9. Adaptive Velocity-Confidence Smoothing Comparisons*
+</div>
+
+## 3.2	ACCESSIBLE MOTION CAPTURE
+
+There are types of “accessible” which have to be addressed in this content. First, being practically accessible: Users should be able to use the app anywhere, anytime, on (almost) anything. We also want as few external hardware requirements as possible:
+
+Technique
+Devices
+Python/C++ App
+Laptops/Desktops
+Mobile App
+Mobile
+Web App
+Anything with a web browser
+
+We find a web app to be the most accessible framework as it is cross-platform and cross-device, meaning anybody could access it. The only limitation that could exist is a nonexistent camera, which most devices have nowadays. 
+
+The second definition of “accessible” is more like “ease of use”. Users who aren’t tech savvy would need a very simple plug-and-play system. The use of the web is beneficial as it requires no downloading at all. Deadshot was also designed to be “bare bones” so that anybody could use it.
+
+
+## 3.3	OPEN-SOURCE MOTION CAPTURE
+
+The central core of motion capture is its pose-estimation technology. Pose-estimation takes in an image (or video) of a subject, and maps key marker-points onto them, such as in Figure 4. These marker-points can then be combined to create a pose-aligned skeleton.
+
+<div style="text-align: center; margin: 1em;">
+![test](https://sigmoidal.ai/wp-content/uploads/2023/07/Roberto-Carlos-Pose-Estimation-2.png)
+
+*Figure 10. Introduction to Mediapipe and Pose Estimation (Souto et al., 2023)*
+</div>
+
+Under the pretense of “Open Source”, we can either train our own pose-estimation model (off open-source datasets), or, when under more time pressure, find a pre-existing open-source model. Due to the length of this study it was more beneficial using a pre-existing open-source technique than training our own. 
+
+The popular two that run on the web are MediaPipe (Google, 2024) and Yolo (Jocher, 2020). The struggle with MediaPipe (and Yolo) is that we need accurate depth to be able to accurately create our skeleton. This could be done with multiple cameras, however that adds an increasing level of complexity and also eliminates the chance for mobile devices to be used. MediaPipe has a z-depth estimation, hence our choice to use it, however its z-depth is only an estimate and contains numerical inaccuracies.
+
+
+## 3.4	EXPORTED MOTION CAPTURE
+
+Motion capture is commonly exported for further usage in Digital Content Creation (DCC) software. Deadshot provides motion export via a .gltf file format, which can be directly imported into applications like Blender. The web application allows users to “record” their motion, play it back, and then export (or delete) their action sequences. 
+
+<div style="text-align: center; margin: 1em;">
+![test](/blog/deadshot/blender.png)
+
+
+*Figure 11. Deadshot motion imported into Blender as a .gltf*
+</div>
+
+
+
+## 4	RESULTS AND DISCUSSION
+
+The Deadshot application operates with a live webcam in which users can adjust their camera and record motion clips. External links to the source code and documentation are provided within the web-application, and a debug checkbox is included to show/hide the original 3D pose estimated skeleton. Recorded motion can be played back using the timeline before being exported to external software.
+
+<div style="text-align: center; margin: 1em;">
+![test](/blog/deadshot/cover.jpg)
+
+*Figure 12. An example of Deadshot in use whilst recording a motion clip.*
+</div>
+
+<div style="text-align: center; margin: 1em;">
+![test](/blog/deadshot/timeline.png)
+
+*Figure 13. Deadshot’s motion clip playback timeline.*
+</div>
+
+Deadshot successfully achieved the goals of being Easily Accessible and Open Source. However, the quality of the motion capture does not meet professional production standards. This is mostly due to limitations of existing open-source pose-estimation models such as MediaPipe; Where whilst the (x, y) positions are accurate, the estimated depth (z) is often inaccurate or non-existent, impacting the precision of the reconstructed 3D skeleton.
+
+
+## 5	CONCLUSION AND FUTURE WORK
+
+Deadshot is an exploration into the strengths and weaknesses of open-source, web-based monocular motion capture. It is very accessible, user-friendly, and can fit into larger computer graphics pipelines. The main limitation however, is the quality of the pose-estimation model and retargeting.
+
+Future work will focus on three areas: (1) Training a web-based pose-estimation model with accurate z-depth prediction. (2) Porting more accurate, locally run 3D pose-estimation techniques to the web and (3) implementing custom WASM bindings for FBX and USD for broader compatibility with DCC applications like Houdini and Maya.
+
+
+REFERENCES
+
+Google. (2024, June 7). google-ai-edge/mediapipe. GitHub. https://github.com/google-ai-edge/mediapipe
+Google. (2025, January 13). Pose landmark detection guide | Google AI Edge. Google for Developers. https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker
+Jocher, G. (2020, May 18). YOLOv8 Documentation. Docs.ultralytics.com. https://docs.ultralytics.com/
+Move AI. (2026, February 11). MOVE Ai. Www.move.ai. https://www.move.ai/
+Nogueira, P. (2011). Motion Capture Fundamentals a Critical and Comparative Analysis on Real-World Applications. https://paginas.fe.up.pt/~prodei/dsie12/papers/paper_7.pdf
+Pendlebury, T. (2010, November 24). “Avatar”: Behind the scenes at Weta Digital. CNET. https://www.cnet.com/culture/avatar-behind-the-scenes-at-weta-digital/
+RadicalMotion. (2026, February 11). RADiCAL - AI-powered 3D animation. RADiCAL. https://radicalmotion.com/
+Riki, J. K. (2013, November 18). How Fast Should You Animate? Animator Island. https://www.animatorisland.com/how-fast-should-you-animate/
+Rokoko. (2025, December 13). Rokoko - Animation and MoCap Tools for all Creators. Rokoko.com. https://www.rokoko.com/
+Rokoko. (2026). Motion capture tools optimised for VFX artists. Rokoko.com. https://www.rokoko.com/use-cases/animation-film-vfx
+Souto, T., Peixoto, L., Costa, L., & Elleres, P. (2023). ARTIFICIAL INTELLIGENCE IN THE COMBINATION OF TECHNOLOGY WITH ERGONOMICS FOR ESTIMATION OF CORRECT POSTURE BASED ON PYTHON. International Journal of Advanced Research, 11(1), 183–190. https://doi.org/10.21474/IJAR01/17694
+Wandt, B., Ackermann, H., & Rosenhahn, B. (2026). 3D Human Motion Capture From Monocular Image Sequences. Cv-Foundation.org, 1(1), 1–8. https://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W06/html/Wandt_3D_Human_Motion_2015_CVPR_paper.html
+Xsens. (2025, March 10). Xsens Motion Capture Pricing? Xsens.com; Movella. https://www.xsens.com/resources/xsens-motion-capture-pricing
+
+
+
