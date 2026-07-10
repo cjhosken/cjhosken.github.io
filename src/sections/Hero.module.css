@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 18, 0.3) 0%,
+    rgba(14, 14, 18, 0.1) 40%,
+    rgba(14, 14, 18, 0.6) 80%,
+    rgba(14, 14, 18, 1) 100%
+  );
+  z-index: 1;
+}
+
+.cover {
+  position: absolute;
+  color: white;
+  text-align: left;
+  top: 22%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cover h1 {
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  line-height: 1;
+  background: linear-gradient(135deg, #ffffff 60%, #ff4d8a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cover p {
+  margin: 0;
+  font-size: clamp(1.2rem, 3vw, 3rem);
+  color: var(--color-text-muted);
+}
+
+.showreelBtn {
+  width: 14rem;
+  height: 3.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: var(--gradient-accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(255, 0, 98, 0.3);
+}
+
+.showreelBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(255, 0, 98, 0.5);
+}
+
+.iconBar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.iconBar a {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: transform var(--transition), color var(--transition);
+}
+
+.iconBar a:hover {
+  transform: scale(1.15);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .cover {
+    top: 25%;
+    left: 6%;
+  }
+
+  .cover p {
+    font-size: clamp(1rem, 5vw, 2rem);
+  }
+
+  .showreelBtn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 0.85rem;
+  }
+
+  .iconBar {
+    bottom: 2rem;
+    right: 1.5rem;
+    top: auto;
+    gap: 1rem;
+  }
+
+  .iconBar a {
+    font-size: 20px;
+  }
+}

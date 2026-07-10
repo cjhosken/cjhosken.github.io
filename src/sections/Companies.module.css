@@ -1,0 +1,17 @@
+.companies {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 50%, var(--color-bg) 100%);
+}
+
+@media (max-width: 768px) {
+  .companies {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3.5rem 1rem;
+  }
+}

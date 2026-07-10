@@ -1,0 +1,1 @@
+export { SoftwareCard } from './SoftwareCard'
